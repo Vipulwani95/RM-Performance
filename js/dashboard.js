@@ -127,6 +127,10 @@
       }
     }
 
+    if (window.RAW_DATA) {
+      return processRawData(window.RAW_DATA);
+    }
+
     if (window.SAMPLE_DATA) {
       return processRawData(window.SAMPLE_DATA);
     }

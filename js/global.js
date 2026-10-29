@@ -1008,7 +1008,15 @@
     const ymPrefix = getYearMonthFromLabel(comparisonMonth);
     const filtered = records.filter(r => r.date && r.date.startsWith(ymPrefix));
 
-    const labels = filtered.map(r => r.date.substring(8, 10)); // days
+    // Update Card Title dynamically with selected comparison month
+    const titleEl = canvas.closest('.chart-card')?.querySelector('.card-title');
+    if (titleEl) {
+      titleEl.textContent = `Daily Paid AB Trend (${comparisonMonth})`;
+    }
+
+    const labels = filtered.length > 0 
+      ? filtered.map(r => r.date.substring(8, 10))
+      : ['No data for ' + comparisonMonth];
     const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
 
     const datasets = seniorRMs.map(rm => ({
@@ -1057,7 +1065,15 @@
     const ymPrefix = getYearMonthFromLabel(comparisonMonth);
     const filtered = records.filter(r => r.date && r.date.startsWith(ymPrefix));
 
-    const labels = filtered.map(r => r.date.substring(8, 10));
+    // Update Card Title dynamically with selected comparison month
+    const titleEl = canvas.closest('.chart-card')?.querySelector('.card-title');
+    if (titleEl) {
+      titleEl.textContent = `Daily Active Users Trend (${comparisonMonth})`;
+    }
+
+    const labels = filtered.length > 0
+      ? filtered.map(r => r.date.substring(8, 10))
+      : ['No data for ' + comparisonMonth];
     const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
 
     const datasets = seniorRMs.map(rm => ({
