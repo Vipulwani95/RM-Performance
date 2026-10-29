@@ -323,7 +323,7 @@
       let totalActiveAb = 0;
       let totalPaidAb = 0;
 
-      months.forEach(ym => {
+      monthsArr.forEach(ym => {
         const row = mData[ym] || {};
         totalDials += (row.totalDials || 0);
         totalConnected += (row.totalConnected || 0);
