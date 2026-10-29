@@ -65,29 +65,20 @@
 
   // UI Event Handlers & Filter Setup
   function initControls() {
-    // Populate month dropdown (descending)
-    const monthSelect = document.getElementById('globalMonthSelect');
-    if (monthSelect) {
-      monthSelect.innerHTML = '';
-      const revMonths = [...dashboardData.months].reverse();
-      revMonths.forEach(ym => {
-        const opt = document.createElement('option');
-        opt.value = ym;
-        opt.textContent = getMonthLabel(ym);
-        if (ym === selectedMonth) opt.selected = true;
-        monthSelect.appendChild(opt);
-      });
-
-      monthSelect.addEventListener('change', (e) => {
-        selectedMonth = e.target.value;
-        renderCurrentView();
-      });
-    }
-
     // Initialize selectedMonths Set with all months
     selectedMonths = new Set(dashboardData.months);
+    selectedMonth = dashboardData.months[dashboardData.months.length - 1]; // latest month
 
-    // Multi-Month Filter Pills
+    function syncSelectedMonth() {
+      // Pick the latest month among selectedMonths for single-month components
+      const sorted = dashboardData.months.filter(m => selectedMonths.has(m));
+      if (sorted.length > 0) {
+        selectedMonth = sorted[sorted.length - 1];
+        comparisonMonth = getMonthLabel(selectedMonth);
+      }
+    }
+
+    // Unified Month Filter Pills
     const monthToggleContainer = document.getElementById('monthToggleGroup');
     if (monthToggleContainer) {
       monthToggleContainer.innerHTML = '';
@@ -109,6 +100,7 @@
             selectedMonths.add(ym);
             btn.classList.add('active');
           }
+          syncSelectedMonth();
           renderCurrentView();
         });
         monthToggleContainer.appendChild(btn);
@@ -120,6 +112,7 @@
     if (btnAllMonths) {
       btnAllMonths.addEventListener('click', () => {
         selectedMonths = new Set(dashboardData.months);
+        syncSelectedMonth();
         updateMonthToggleButtons();
         renderCurrentView();
       });
@@ -130,16 +123,18 @@
       btnLast3M.addEventListener('click', () => {
         const last3 = dashboardData.months.slice(-3);
         selectedMonths = new Set(last3);
+        syncSelectedMonth();
         updateMonthToggleButtons();
         renderCurrentView();
       });
     }
 
-    const btnLast6M = document.getElementById('btnSelectLast6Months');
-    if (btnLast6M) {
-      btnLast6M.addEventListener('click', () => {
-        const last6 = dashboardData.months.slice(-6);
-        selectedMonths = new Set(last6);
+    const btnLatestOnly = document.getElementById('btnSelectLatestOnly');
+    if (btnLatestOnly) {
+      btnLatestOnly.addEventListener('click', () => {
+        const latest = dashboardData.months[dashboardData.months.length - 1];
+        selectedMonths = new Set([latest]);
+        syncSelectedMonth();
         updateMonthToggleButtons();
         renderCurrentView();
       });
@@ -293,18 +288,44 @@
     const prevMonthIdx = dashboardData.months.indexOf(selectedMonth) - 1;
     const prevMonth = prevMonthIdx >= 0 ? dashboardData.months[prevMonthIdx] : null;
 
+    const isMultiMonth = selectedMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedMonths.has(m));
+    const periodLabel = isMultiMonth 
+      ? `${monthsArr.length} Months (${getMonthLabel(monthsArr[0])} – ${getMonthLabel(monthsArr[monthsArr.length - 1])})`
+      : getMonthLabel(selectedMonth);
+
     // Render a row of 6 cards for each selected RM
     Array.from(selectedRMs).forEach(rm => {
       const conf = RM_CONFIG[rm];
-      const curr = dashboardData.monthlyByRM[rm][selectedMonth] || {};
-      const prev = prevMonth ? dashboardData.monthlyByRM[rm][prevMonth] || {} : {};
+      const mData = dashboardData.monthlyByRM[rm] || {};
 
-      const dialsMoM = calcMoM(curr.totalDials, prev.totalDials);
-      const connMoM = calcMoM(curr.totalConnected, prev.totalConnected);
-      const rateDelta = (curr.connectionRate || 0) - (prev.connectionRate || 0);
-      const talkMoM = calcMoM(curr.avgTalktime, prev.avgTalktime);
-      const onbMoM = calcMoM(curr.onboardings, prev.onboardings);
-      const abMoM = calcMoM(curr.avgActiveAb, prev.avgActiveAb);
+      let totalDials = 0;
+      let totalConnected = 0;
+      let totalTalk = 0;
+      let totalWorking = 0;
+      let totalOnb = 0;
+      let activeAbLast = 0;
+
+      monthsArr.forEach(m => {
+        const row = mData[m] || {};
+        totalDials += (row.totalDials || 0);
+        totalConnected += (row.totalConnected || 0);
+        totalTalk += (row.talktime || 0);
+        totalWorking += (row.workingDays || 0);
+        totalOnb += (row.onboardings || 0);
+        if (row.lastActiveAb) activeAbLast = row.lastActiveAb;
+      });
+
+      const connRate = totalDials > 0 ? (totalConnected / totalDials) * 100 : 0;
+      const avgTalk = totalWorking > 0 ? (totalTalk / totalWorking) : 0;
+      const avgDialsPerDay = totalWorking > 0 ? Math.round(totalDials / totalWorking) : 0;
+      const avgConnPerDay = totalWorking > 0 ? Math.round(totalConnected / totalWorking) : 0;
+
+      // For single month, compute MoM delta; for multi-month, show total working days
+      const prevMonthIdx = dashboardData.months.indexOf(selectedMonth) - 1;
+      const prevMonth = prevMonthIdx >= 0 ? dashboardData.months[prevMonthIdx] : null;
+      const prev = prevMonth ? dashboardData.monthlyByRM[rm][prevMonth] || {} : {};
+      const dialsMoM = calcMoM(totalDials, prev.totalDials);
 
       // Monthly dial history for sparkline
       const dialHistory = dashboardData.months.map(m => (dashboardData.monthlyByRM[rm][m] || {}).totalDials || 0);
@@ -318,6 +339,9 @@
             <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-primary);">${conf.name}</h3>
             <span class="zone-badge ${conf.badgeClass}">${conf.zone}</span>
             <span style="font-size: 0.8rem; color: var(--text-muted);">${conf.role}</span>
+            <span style="font-size: 0.78rem; background: #f1f5f9; padding: 0.2rem 0.55rem; border-radius: 4px; font-weight: 600; color: #475569;">
+              ${periodLabel}
+            </span>
           </div>
           <a href="profile.html?rm=${encodeURIComponent(rm)}" style="font-size: 0.82rem; font-weight: 600; color: ${conf.color}; text-decoration: none;">
             Full Profile →
@@ -327,26 +351,25 @@
           <!-- Total Dials -->
           <div class="kpi-card" data-color="${rm.toLowerCase()}">
             <div class="kpi-top">
-              <span class="kpi-label">Total Dials</span>
+              <span class="kpi-label">${isMultiMonth ? 'Period Dials' : 'Total Dials'}</span>
             </div>
-            <div class="kpi-value">${formatNumber(curr.totalDials || 0)}</div>
+            <div class="kpi-value">${formatNumber(totalDials)}</div>
             <div class="kpi-footer">
-              <span class="kpi-delta ${dialsMoM >= 0 ? 'positive' : 'negative'}">
-                ${dialsMoM >= 0 ? '↑' : '↓'} ${Math.abs(dialsMoM).toFixed(1)}%
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
+                Avg ${avgDialsPerDay}/day (${totalWorking}d)
               </span>
-              <canvas id="spark-${rm}-dials" width="70" height="24" class="kpi-sparkline"></canvas>
             </div>
           </div>
 
           <!-- Total Connected -->
           <div class="kpi-card" data-color="${rm.toLowerCase()}">
             <div class="kpi-top">
-              <span class="kpi-label">Total Connected</span>
+              <span class="kpi-label">${isMultiMonth ? 'Period Connected' : 'Total Connected'}</span>
             </div>
-            <div class="kpi-value">${formatNumber(curr.totalConnected || 0)}</div>
+            <div class="kpi-value">${formatNumber(totalConnected)}</div>
             <div class="kpi-footer">
-              <span class="kpi-delta ${connMoM >= 0 ? 'positive' : 'negative'}">
-                ${connMoM >= 0 ? '↑' : '↓'} ${Math.abs(connMoM).toFixed(1)}%
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
+                Avg ${avgConnPerDay}/day
               </span>
             </div>
           </div>
@@ -356,10 +379,10 @@
             <div class="kpi-top">
               <span class="kpi-label">Connect Rate</span>
             </div>
-            <div class="kpi-value">${formatPct(curr.connectionRate || 0)}</div>
+            <div class="kpi-value">${formatPct(connRate)}</div>
             <div class="kpi-footer">
-              <span class="kpi-delta ${rateDelta >= 0 ? 'positive' : 'negative'}">
-                ${rateDelta >= 0 ? '↑' : '↓'} ${Math.abs(rateDelta).toFixed(1)}% pts
+              <span style="font-size: 0.75rem; color: var(--text-muted);">
+                ${formatNumber(totalConnected)} / ${formatNumber(totalDials)}
               </span>
             </div>
           </div>
@@ -369,10 +392,10 @@
             <div class="kpi-top">
               <span class="kpi-label">Avg Daily Talk</span>
             </div>
-            <div class="kpi-value">${formatMinutes(curr.avgTalktime || 0)}</div>
+            <div class="kpi-value">${formatMinutes(avgTalk)}</div>
             <div class="kpi-footer">
-              <span class="kpi-delta ${talkMoM >= 0 ? 'positive' : 'negative'}">
-                ${talkMoM >= 0 ? '↑' : '↓'} ${Math.abs(talkMoM).toFixed(1)}%
+              <span style="font-size: 0.75rem; color: var(--text-muted);">
+                ${formatMinutes(totalTalk)} total
               </span>
             </div>
           </div>
@@ -382,10 +405,10 @@
             <div class="kpi-top">
               <span class="kpi-label">Onboardings</span>
             </div>
-            <div class="kpi-value">${formatNumber(curr.onboardings || 0)}</div>
+            <div class="kpi-value">${formatNumber(totalOnb)}</div>
             <div class="kpi-footer">
-              <span class="kpi-delta ${onbMoM >= 0 ? 'positive' : 'negative'}">
-                ${onbMoM >= 0 ? '↑' : '↓'} ${Math.abs(onbMoM).toFixed(1)}%
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
+                ${isMultiMonth ? 'Period Total' : 'Monthly Total'}
               </span>
             </div>
           </div>
@@ -395,10 +418,10 @@
             <div class="kpi-top">
               <span class="kpi-label">Active ABs</span>
             </div>
-            <div class="kpi-value">${formatNumber(curr.avgActiveAb || curr.lastActiveAb || 0)}</div>
+            <div class="kpi-value">${formatNumber(activeAbLast)}</div>
             <div class="kpi-footer">
-              <span class="kpi-delta ${abMoM >= 0 ? 'positive' : 'negative'}">
-                ${abMoM >= 0 ? '↑' : '↓'} ${Math.abs(abMoM).toFixed(1)}%
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
+                Active Portfolios
               </span>
             </div>
           </div>

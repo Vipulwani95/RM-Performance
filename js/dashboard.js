@@ -119,8 +119,13 @@
       try {
         const resp = await fetch(appsScriptUrl);
         if (resp.ok) {
-          const json = await resp.json();
-          return processRawData(json);
+          const contentType = resp.headers.get('content-type') || '';
+          if (contentType.includes('application/json')) {
+            const json = await resp.json();
+            return processRawData(json);
+          } else {
+            console.warn('Apps Script returned non-JSON response (likely Google auth redirect), falling back to local data.');
+          }
         }
       } catch (e) {
         console.warn('Apps Script fetch failed, falling back to local data.', e);

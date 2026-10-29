@@ -90,30 +90,20 @@
       });
     }
 
-    // Month Selector
-    const monthSelect = document.getElementById('profileMonthSelect');
-    if (monthSelect) {
-      monthSelect.innerHTML = '';
-      const revMonths = [...dashboardData.months].reverse();
-      revMonths.forEach(ym => {
-        const opt = document.createElement('option');
-        opt.value = ym;
-        opt.textContent = getMonthLabel(ym);
-        if (ym === activeMonth) opt.selected = true;
-        monthSelect.appendChild(opt);
-      });
+    // Default: selectedProfMonths contains all months
+    selectedProfMonths = new Set(dashboardData.months);
+    activeMonth = dashboardData.months[dashboardData.months.length - 1]; // latest month
+    comparisonMonth = getMonthLabel(activeMonth);
 
-      monthSelect.addEventListener('change', (e) => {
-        activeMonth = e.target.value;
+    function syncProfActiveMonth() {
+      const sorted = dashboardData.months.filter(m => selectedProfMonths.has(m));
+      if (sorted.length > 0) {
+        activeMonth = sorted[sorted.length - 1];
         comparisonMonth = getMonthLabel(activeMonth);
-        renderFullProfile();
-      });
+      }
     }
 
-    // Default: compare months contains all months
-    selectedProfMonths = new Set(dashboardData.months);
-
-    // Multi-Month Filter Pills for Profile
+    // Unified Month Filter Pills for Profile
     const profMonthToggleContainer = document.getElementById('profMonthToggleGroup');
     if (profMonthToggleContainer) {
       profMonthToggleContainer.innerHTML = '';
@@ -135,6 +125,7 @@
             selectedProfMonths.add(ym);
             btn.classList.add('active');
           }
+          syncProfActiveMonth();
           renderFullProfile();
         });
         profMonthToggleContainer.appendChild(btn);
@@ -146,6 +137,7 @@
     if (btnAll) {
       btnAll.addEventListener('click', () => {
         selectedProfMonths = new Set(dashboardData.months);
+        syncProfActiveMonth();
         updateProfMonthToggleButtons();
         renderFullProfile();
       });
@@ -155,6 +147,7 @@
     if (btnLast3) {
       btnLast3.addEventListener('click', () => {
         selectedProfMonths = new Set(dashboardData.months.slice(-3));
+        syncProfActiveMonth();
         updateProfMonthToggleButtons();
         renderFullProfile();
       });
@@ -163,7 +156,9 @@
     const btnCurrentOnly = document.getElementById('btnProfCurrentOnly');
     if (btnCurrentOnly) {
       btnCurrentOnly.addEventListener('click', () => {
-        selectedProfMonths = new Set([activeMonth]);
+        const latest = dashboardData.months[dashboardData.months.length - 1];
+        selectedProfMonths = new Set([latest]);
+        syncProfActiveMonth();
         updateProfMonthToggleButtons();
         renderFullProfile();
       });
