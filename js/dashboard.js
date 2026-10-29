@@ -222,12 +222,18 @@
         const dayDials = d_onboarding + d_active + d_reactive + d_consistent + d_acq + d_home + d_phone + d_other;
         const dayTalk = Number(r.talktime || 0);
 
-        m.dailyDials.push({ date: r.date, dials: dayDials, talktime: dayTalk });
+        const sumConn = (Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
+          Number(r.reactive_connect || 0) + Number(r.consistent_connect || 0) +
+          Number(r.acquisition_connect || 0) + Number(r.home_service_connect || 0) +
+          Number(r.phone_connect || 0) + Number(r.other_connect || 0));
+        const dayConnected = Number(r.total_connected || 0) || sumConn;
 
-        if (dayDials > 0 || dayTalk > 0) {
+        m.dailyDials.push({ date: r.date, dials: dayDials, connected: dayConnected, talktime: dayTalk });
+
+        if (dayDials > 0 || dayTalk > 0 || dayConnected > 0) {
           m.workingDays++;
         }
-        if (dayDials >= 50) {
+        if (dayConnected >= 50) {
           m.consistentDays++;
         }
 
@@ -249,12 +255,7 @@
         m.other_connect += Number(r.other_connect || 0);
 
         m.totalDials += dayDials;
-
-        const sumConn = (Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
-          Number(r.reactive_connect || 0) + Number(r.consistent_connect || 0) +
-          Number(r.acquisition_connect || 0) + Number(r.home_service_connect || 0) +
-          Number(r.phone_connect || 0) + Number(r.other_connect || 0));
-        m.totalConnected += (Number(r.total_connected || 0) || sumConn);
+        m.totalConnected += dayConnected;
         m.talktime += dayTalk;
         m.onboardings += Number(r.onboardings || 0);
 

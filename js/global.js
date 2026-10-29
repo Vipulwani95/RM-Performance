@@ -30,21 +30,34 @@
   // Chart Registry for destroying old instances
   const chartRegistry = {};
 
-  function registerChart(canvasId, chart) {
+  function destroyChart(canvasId) {
     if (chartRegistry[canvasId]) {
-      chartRegistry[canvasId].destroy();
+      try { chartRegistry[canvasId].destroy(); } catch (e) {}
+      delete chartRegistry[canvasId];
     }
+    const canvas = typeof canvasId === 'string' ? document.getElementById(canvasId) : canvasId;
+    if (canvas && typeof Chart !== 'undefined' && Chart.getChart) {
+      try {
+        const existing = Chart.getChart(canvas);
+        if (existing) existing.destroy();
+      } catch (e) {}
+    }
+  }
+
+  function registerChart(canvasId, chart) {
     chartRegistry[canvasId] = chart;
     return chart;
   }
 
   function destroyAllCharts() {
     Object.keys(chartRegistry).forEach(id => {
-      if (chartRegistry[id]) {
-        chartRegistry[id].destroy();
-        delete chartRegistry[id];
-      }
+      destroyChart(id);
     });
+    if (typeof Chart !== 'undefined' && Chart.instances) {
+      Object.keys(Chart.instances).forEach(key => {
+        try { Chart.instances[key].destroy(); } catch (e) {}
+      });
+    }
   }
 
   // Initialization
@@ -251,6 +264,7 @@
   }
 
   function renderCurrentView() {
+    destroyAllCharts();
     renderActiveTabContent();
   }
 
@@ -657,6 +671,8 @@
   function createLineChart(canvasId, labels, datasets, unitLabel, unitSuffix = '') {
     const canvas = document.getElementById(canvasId);
     if (!canvas) return;
+
+    destroyChart(canvasId);
 
     const ctx = canvas.getContext('2d');
     const chart = new Chart(ctx, {
@@ -1206,21 +1222,35 @@
     const canvas = document.getElementById('chartPaidAbTrend');
     if (!canvas) return;
 
-    const records = dashboardData.paidAB || [];
-    // Filter to selected month
-    const ymPrefix = getYearMonthFromLabel(comparisonMonth);
-    const filtered = records.filter(r => r.date && r.date.startsWith(ymPrefix));
+    destroyChart('chartPaidAbTrend');
 
-    // Update Card Title dynamically with selected comparison month
+    const records = dashboardData.paidAB || [];
+    const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
     const titleEl = canvas.closest('.chart-card')?.querySelector('.card-title');
-    if (titleEl) {
-      titleEl.textContent = `Daily Paid AB Trend (${comparisonMonth})`;
+
+    // Available months in paidAB: 2026-07 to 2026-10
+    const availPaidMonths = dashboardData.months.filter(m => selectedMonths.has(m) && ['2026-07', '2026-08', '2026-09', '2026-10'].includes(m));
+    const targetMonths = availPaidMonths.length > 0 ? availPaidMonths : ['2026-10'];
+    const isMultiMonth = targetMonths.length > 1;
+
+    let filtered = [];
+    let labels = [];
+
+    if (isMultiMonth) {
+      if (titleEl) titleEl.textContent = `Daily Paid AB Comparison (${targetMonths.map(getMonthLabel).join(', ')})`;
+      filtered = records.filter(r => r.date && targetMonths.some(ym => r.date.startsWith(ym)));
+      const mNames = { '07': 'Jul', '08': 'Aug', '09': 'Sep', '10': 'Oct' };
+      labels = filtered.map(r => `${r.date.substring(8, 10)}-${mNames[r.date.substring(5, 7)] || ''}`);
+    } else {
+      const ym = targetMonths[0];
+      if (titleEl) titleEl.textContent = `Daily Paid AB Trend (${getMonthLabel(ym)})`;
+      filtered = records.filter(r => r.date && r.date.startsWith(ym));
+      labels = filtered.map(r => r.date.substring(8, 10));
     }
 
-    const labels = filtered.length > 0 
-      ? filtered.map(r => r.date.substring(8, 10))
-      : ['No data for ' + comparisonMonth];
-    const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
+    if (seniorRMs.length === 0) {
+      labels = ['Select Senior RMs in filter'];
+    }
 
     const datasets = seniorRMs.map(rm => ({
       label: rm,
@@ -1228,7 +1258,7 @@
       borderColor: RM_CONFIG[rm].color,
       backgroundColor: RM_CONFIG[rm].color,
       borderWidth: 2,
-      pointRadius: 2.5,
+      pointRadius: isMultiMonth ? 1.8 : 2.5,
       tension: 0.2
     }));
 
@@ -1245,14 +1275,14 @@
           tooltip: {
             backgroundColor: '#0f172a',
             callbacks: {
-              title: (items) => `${comparisonMonth} Day ${items[0].label}`,
+              title: (items) => `Date: ${filtered[items[0].dataIndex]?.date || items[0].label}`,
               label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y} Paid ABs`
             }
           }
         },
         scales: {
           y: { beginAtZero: true, grid: { color: '#f1f5f9' } },
-          x: { grid: { display: false } }
+          x: { grid: { display: false }, ticks: { font: { family: 'Inter', size: 10 }, maxRotation: 45 } }
         }
       }
     });
@@ -1264,20 +1294,34 @@
     const canvas = document.getElementById('chartActiveUsersTrend');
     if (!canvas) return;
 
-    const records = dashboardData.activeUsers || [];
-    const ymPrefix = getYearMonthFromLabel(comparisonMonth);
-    const filtered = records.filter(r => r.date && r.date.startsWith(ymPrefix));
+    destroyChart('chartActiveUsersTrend');
 
-    // Update Card Title dynamically with selected comparison month
+    const records = dashboardData.activeUsers || [];
+    const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
     const titleEl = canvas.closest('.chart-card')?.querySelector('.card-title');
-    if (titleEl) {
-      titleEl.textContent = `Daily Active Users Trend (${comparisonMonth})`;
+
+    const availActiveMonths = dashboardData.months.filter(m => selectedMonths.has(m) && ['2026-07', '2026-08', '2026-09', '2026-10'].includes(m));
+    const targetMonths = availActiveMonths.length > 0 ? availActiveMonths : ['2026-10'];
+    const isMultiMonth = targetMonths.length > 1;
+
+    let filtered = [];
+    let labels = [];
+
+    if (isMultiMonth) {
+      if (titleEl) titleEl.textContent = `Daily Active Users Comparison (${targetMonths.map(getMonthLabel).join(', ')})`;
+      filtered = records.filter(r => r.date && targetMonths.some(ym => r.date.startsWith(ym)));
+      const mNames = { '07': 'Jul', '08': 'Aug', '09': 'Sep', '10': 'Oct' };
+      labels = filtered.map(r => `${r.date.substring(8, 10)}-${mNames[r.date.substring(5, 7)] || ''}`);
+    } else {
+      const ym = targetMonths[0];
+      if (titleEl) titleEl.textContent = `Daily Active Users Trend (${getMonthLabel(ym)})`;
+      filtered = records.filter(r => r.date && r.date.startsWith(ym));
+      labels = filtered.map(r => r.date.substring(8, 10));
     }
 
-    const labels = filtered.length > 0
-      ? filtered.map(r => r.date.substring(8, 10))
-      : ['No data for ' + comparisonMonth];
-    const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
+    if (seniorRMs.length === 0) {
+      labels = ['Select Senior RMs in filter'];
+    }
 
     const datasets = seniorRMs.map(rm => ({
       label: rm,
@@ -1285,7 +1329,7 @@
       borderColor: RM_CONFIG[rm].color,
       backgroundColor: RM_CONFIG[rm].color,
       borderWidth: 2,
-      pointRadius: 2.5,
+      pointRadius: isMultiMonth ? 1.8 : 2.5,
       tension: 0.2
     }));
 
@@ -1302,14 +1346,14 @@
           tooltip: {
             backgroundColor: '#0f172a',
             callbacks: {
-              title: (items) => `${comparisonMonth} Day ${items[0].label}`,
+              title: (items) => `Date: ${filtered[items[0].dataIndex]?.date || items[0].label}`,
               label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y} Active Users`
             }
           }
         },
         scales: {
           y: { beginAtZero: true, grid: { color: '#f1f5f9' } },
-          x: { grid: { display: false } }
+          x: { grid: { display: false }, ticks: { font: { family: 'Inter', size: 10 }, maxRotation: 45 } }
         }
       }
     });
@@ -1481,97 +1525,160 @@
     if (!container) return;
     container.innerHTML = '';
 
-    const bData = dashboardData.bucketAnalysis[comparisonMonth];
-    if (!bData) {
-      container.innerHTML = `<div style="padding: 2rem; color: var(--text-muted); text-align: center;">No 25+/25- bucket report for ${comparisonMonth}</div>`;
+    const allBucketMonths = ['Jul-2026', 'Aug-2026', 'Sep-2026', 'Oct-2026'];
+    const availBucketLabels = dashboardData.months
+      .filter(m => selectedMonths.has(m))
+      .map(getMonthLabel)
+      .filter(lbl => allBucketMonths.includes(lbl) && dashboardData.bucketAnalysis[lbl]);
+
+    const targetBucketLabels = availBucketLabels.length > 0 ? availBucketLabels : ['Oct-2026'];
+    const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
+
+    if (seniorRMs.length === 0) {
+      container.innerHTML = `<div style="padding: 2rem; color: var(--text-muted); text-align: center;">25+/25- Volume Bucket Breakdown tracks Senior RMs (Malik, Dipali, Ramya). Please select at least one senior RM.</div>`;
       return;
     }
 
-    const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
+    // Header with Month Switcher Tabs
+    const headerWrapper = document.createElement('div');
+    headerWrapper.style.display = 'flex';
+    headerWrapper.style.justifyContent = 'space-between';
+    headerWrapper.style.alignItems = 'center';
+    headerWrapper.style.marginBottom = '1.5rem';
+    headerWrapper.style.flexWrap = 'wrap';
+    headerWrapper.style.gap = '0.5rem';
 
-    seniorRMs.forEach(rm => {
-      const rObj = bData[rm];
-      if (!rObj) return;
+    headerWrapper.innerHTML = `
+      <div>
+        <h3 style="font-size: 1.15rem; font-weight: 700;">25+ / <25 Volume Bucket Breakdown</h3>
+        <p style="font-size: 0.8rem; color: var(--text-muted);">Compare High (25+) vs Low (<25) volume lead clusters across months</p>
+      </div>
+      <div class="month-toggles" id="globalBucketMonthTabs" style="display: flex; gap: 0.35rem;">
+        <button type="button" class="month-toggle-btn active" data-bmonth="all">All Selected Months</button>
+        ${targetBucketLabels.map(lbl => `<button type="button" class="month-toggle-btn" data-bmonth="${lbl}">${lbl}</button>`).join('')}
+      </div>
+    `;
+    container.appendChild(headerWrapper);
 
-      const conf = RM_CONFIG[rm];
-      const section = document.createElement('div');
-      section.style.marginBottom = '2.5rem';
-      section.innerHTML = `
-        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
-          <span style="width: 12px; height: 12px; border-radius: 50%; background: ${conf.color}"></span>
-          <h3 style="font-size: 1.15rem; font-weight: 700;">${rm} — 25+ / <25 Volume Bucket Breakdown (${comparisonMonth})</h3>
-        </div>
-        <div class="bucket-wrapper">
-          <!-- High Volume 25+ -->
-          <div class="bucket-column">
-            <div class="bucket-header high">
-              <span>📈 25+ (High Volume)</span>
-              <span style="font-size: 0.75rem; opacity: 0.9;">High Activity Clusters</span>
-            </div>
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>AB</th>
-                  <th>Workable/AB</th>
-                  <th>Paid AB</th>
-                  <th>% Paid</th>
-                  <th>Conversion</th>
-                  <th>Conv %</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${rObj.high.map(row => `
-                  <tr>
-                    <td><strong>${row.category}</strong></td>
-                    <td>${formatNumber(row.ab)}</td>
-                    <td>${row.workable_per_ab}</td>
-                    <td>${formatNumber(row.paid_ab)}</td>
-                    <td><span class="cell-badge good">${row.pct_paid}</span></td>
-                    <td>${formatNumber(row.conversion)}</td>
-                    <td><span class="cell-badge good">${row.conversion_pct}</span></td>
-                  </tr>
-                `).join('')}
-              </tbody>
-            </table>
+    const tablesContainer = document.createElement('div');
+    container.appendChild(tablesContainer);
+
+    function renderMonthTables(monthFilter) {
+      tablesContainer.innerHTML = '';
+      const monthsToRender = monthFilter === 'all' ? targetBucketLabels : [monthFilter];
+
+      monthsToRender.forEach(mLabel => {
+        const bData = dashboardData.bucketAnalysis[mLabel];
+        if (!bData) return;
+
+        const monthSection = document.createElement('div');
+        monthSection.style.marginBottom = '2.5rem';
+        monthSection.innerHTML = `
+          <div style="font-weight: 700; font-size: 1rem; margin-bottom: 1rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+            <span class="zone-badge badge-north" style="background: #f1f5f9; color: #334155; font-size: 0.85rem; padding: 0.25rem 0.6rem;">${mLabel}</span>
+            <span>Lead Volume Cluster Breakdown</span>
           </div>
+        `;
 
-          <!-- Low Volume <25 -->
-          <div class="bucket-column">
-            <div class="bucket-header low">
-              <span>📉 <25 (Low Volume)</span>
-              <span style="font-size: 0.75rem; opacity: 0.9;">Low Activity Clusters</span>
+        seniorRMs.forEach(rm => {
+          const rObj = bData[rm];
+          if (!rObj) return;
+          const conf = RM_CONFIG[rm];
+
+          const rmBlock = document.createElement('div');
+          rmBlock.style.marginBottom = '1.75rem';
+          rmBlock.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: ${conf.color}"></span>
+              <strong style="font-size: 0.95rem;">${rm}</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">(${conf.zone})</span>
             </div>
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>AB</th>
-                  <th>Workable/AB</th>
-                  <th>Paid AB</th>
-                  <th>% Paid</th>
-                  <th>Conversion</th>
-                  <th>Conv %</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${rObj.low.map(row => `
-                  <tr>
-                    <td><strong>${row.category}</strong></td>
-                    <td>${formatNumber(row.ab)}</td>
-                    <td>${row.workable_per_ab}</td>
-                    <td>${formatNumber(row.paid_ab)}</td>
-                    <td><span class="cell-badge ${parseFloat(row.pct_paid) > 25 ? 'good' : 'warn'}">${row.pct_paid}</span></td>
-                    <td>${formatNumber(row.conversion)}</td>
-                    <td><span class="cell-badge good">${row.conversion_pct}</span></td>
-                  </tr>
-                `).join('')}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      `;
-      container.appendChild(section);
+            <div class="bucket-wrapper">
+              <!-- High Volume 25+ -->
+              <div class="bucket-column">
+                <div class="bucket-header high">
+                  <span>📈 25+ (High Volume)</span>
+                  <span style="font-size: 0.75rem; opacity: 0.9;">High Activity</span>
+                </div>
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>AB</th>
+                      <th>Workable/AB</th>
+                      <th>Paid AB</th>
+                      <th>% Paid</th>
+                      <th>Conversion</th>
+                      <th>Conv %</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${rObj.high.map(row => `
+                      <tr>
+                        <td><strong>${row.category}</strong></td>
+                        <td>${formatNumber(row.ab)}</td>
+                        <td>${row.workable_per_ab}</td>
+                        <td>${formatNumber(row.paid_ab)}</td>
+                        <td><span class="cell-badge good">${row.pct_paid}</span></td>
+                        <td>${formatNumber(row.conversion)}</td>
+                        <td><span class="cell-badge good">${row.conversion_pct}</span></td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Low Volume <25 -->
+              <div class="bucket-column">
+                <div class="bucket-header low">
+                  <span>📉 <25 (Low Volume)</span>
+                  <span style="font-size: 0.75rem; opacity: 0.9;">Low Activity</span>
+                </div>
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>AB</th>
+                      <th>Workable/AB</th>
+                      <th>Paid AB</th>
+                      <th>% Paid</th>
+                      <th>Conversion</th>
+                      <th>Conv %</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${rObj.low.map(row => `
+                      <tr>
+                        <td><strong>${row.category}</strong></td>
+                        <td>${formatNumber(row.ab)}</td>
+                        <td>${row.workable_per_ab}</td>
+                        <td>${formatNumber(row.paid_ab)}</td>
+                        <td><span class="cell-badge ${parseFloat(row.pct_paid) > 25 ? 'good' : 'warn'}">${row.pct_paid}</span></td>
+                        <td>${formatNumber(row.conversion)}</td>
+                        <td><span class="cell-badge good">${row.conversion_pct}</span></td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          `;
+          monthSection.appendChild(rmBlock);
+        });
+
+        tablesContainer.appendChild(monthSection);
+      });
+    }
+
+    renderMonthTables('all');
+
+    document.querySelectorAll('#globalBucketMonthTabs .month-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('#globalBucketMonthTabs .month-toggle-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        const bMonth = e.target.getAttribute('data-bmonth');
+        renderMonthTables(bMonth);
+      });
     });
   }
 
@@ -1695,7 +1802,7 @@
           </div>
         </div>
         <div style="margin-top: 0.75rem; font-size: 0.75rem; color: var(--text-muted);">
-          ${m.consistentDays || 0} / ${m.workingDays || 0} days with 50+ dials
+          ${m.consistentDays || 0} / ${m.workingDays || 0} days with 50+ connected calls
         </div>
       `;
       container.appendChild(card);

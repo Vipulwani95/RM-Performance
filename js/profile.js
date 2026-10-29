@@ -29,21 +29,34 @@
   // Chart Registry for destroying old instances
   const chartRegistry = {};
 
-  function registerChart(canvasId, chart) {
+  function destroyChart(canvasId) {
     if (chartRegistry[canvasId]) {
-      chartRegistry[canvasId].destroy();
+      try { chartRegistry[canvasId].destroy(); } catch (e) {}
+      delete chartRegistry[canvasId];
     }
+    const canvas = typeof canvasId === 'string' ? document.getElementById(canvasId) : canvasId;
+    if (canvas && typeof Chart !== 'undefined' && Chart.getChart) {
+      try {
+        const existing = Chart.getChart(canvas);
+        if (existing) existing.destroy();
+      } catch (e) {}
+    }
+  }
+
+  function registerChart(canvasId, chart) {
     chartRegistry[canvasId] = chart;
     return chart;
   }
 
   function destroyAllCharts() {
     Object.keys(chartRegistry).forEach(id => {
-      if (chartRegistry[id]) {
-        chartRegistry[id].destroy();
-        delete chartRegistry[id];
-      }
+      destroyChart(id);
     });
+    if (typeof Chart !== 'undefined' && Chart.instances) {
+      Object.keys(Chart.instances).forEach(key => {
+        try { Chart.instances[key].destroy(); } catch (e) {}
+      });
+    }
   }
 
   document.addEventListener('DOMContentLoaded', async () => {
@@ -893,32 +906,86 @@
       }
     }
 
+    const availPaidMonths = dashboardData.months.filter(m => selectedProfMonths.has(m) && ['2026-07', '2026-08', '2026-09', '2026-10'].includes(m));
+    const isMultiMonthPaid = availPaidMonths.length > 1;
+
     // Render Paid AB
     const paidCanvas = document.getElementById('chartProfPaidAb');
     if (paidCanvas) {
-      const ymPrefix = getYearMonthFromLabel(comparisonMonth);
-      const filtered = (dashboardData.paidAB || []).filter(r => r.date && r.date.startsWith(ymPrefix));
-      const labels = filtered.map(r => r.date.substring(8, 10));
+      const titleEl = paidCanvas.closest('.chart-card')?.querySelector('.card-title');
+      const monthColorMap = {
+        '2026-07': '#64748b',
+        '2026-08': '#f59e0b',
+        '2026-09': '#06b6d4',
+        '2026-10': conf.color
+      };
+
+      let labels = [];
+      let datasets = [];
+
+      if (isMultiMonthPaid) {
+        if (titleEl) titleEl.textContent = `Daily Paid AB Comparison (${availPaidMonths.map(getMonthLabel).join(' vs ')})`;
+        labels = Array.from({ length: 31 }, (_, i) => String(i + 1).padStart(2, '0'));
+        datasets = availPaidMonths.map((ym) => {
+          const color = monthColorMap[ym] || '#6366f1';
+          const isLatest = ym === availPaidMonths[availPaidMonths.length - 1];
+          const filtered = (dashboardData.paidAB || []).filter(r => r.date && r.date.startsWith(ym));
+          const dayMap = {};
+          filtered.forEach(r => {
+            const d = parseInt(r.date.substring(8, 10), 10);
+            dayMap[d] = r[activeRM] || 0;
+          });
+          const data = Array.from({ length: 31 }, (_, i) => dayMap[i + 1] !== undefined ? dayMap[i + 1] : null);
+
+          return {
+            label: getMonthLabel(ym),
+            data,
+            borderColor: color,
+            backgroundColor: color,
+            borderWidth: isLatest ? 3 : 2,
+            pointRadius: isLatest ? 3 : 2,
+            tension: 0.2,
+            spanGaps: false
+          };
+        });
+      } else {
+        const ym = availPaidMonths.length === 1 ? availPaidMonths[0] : getYearMonthFromLabel(comparisonMonth);
+        if (titleEl) titleEl.textContent = `Daily Paid AB Trend (${getMonthLabel(ym)})`;
+        const filtered = (dashboardData.paidAB || []).filter(r => r.date && r.date.startsWith(ym));
+        labels = filtered.map(r => r.date.substring(8, 10));
+        datasets = [{
+          label: 'Paid AB',
+          data: filtered.map(r => r[activeRM] || 0),
+          borderColor: conf.color,
+          backgroundColor: conf.subtleColor,
+          fill: true,
+          borderWidth: 2.5,
+          pointRadius: 3,
+          tension: 0.2
+        }];
+      }
 
       const chart = new Chart(paidCanvas.getContext('2d'), {
         type: 'line',
-        data: {
-          labels,
-          datasets: [{
-            label: 'Paid AB',
-            data: filtered.map(r => r[activeRM] || 0),
-            borderColor: conf.color,
-            backgroundColor: conf.subtleColor,
-            fill: true,
-            borderWidth: 2.5,
-            pointRadius: 3,
-            tension: 0.2
-          }]
-        },
+        data: { labels, datasets },
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          scales: { y: { beginAtZero: true } }
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { position: 'top', labels: { boxWidth: 12, font: { family: 'Inter', size: 11, weight: 600 } } },
+            tooltip: {
+              backgroundColor: '#0f172a',
+              callbacks: {
+                title: items => `Day ${items[0].label}`,
+                label: ctx => ctx.parsed.y !== null ? ` ${ctx.dataset.label}: ${ctx.parsed.y} Paid ABs` : null
+              }
+            }
+          },
+          scales: {
+            x: { grid: { color: '#f1f5f9' }, ticks: { font: { family: 'Inter', size: 10 } } },
+            y: { beginAtZero: true, grid: { color: '#f1f5f9' } }
+          }
         }
       });
       registerChart('chartProfPaidAb', chart);
@@ -927,29 +994,80 @@
     // Render Active Users
     const actCanvas = document.getElementById('chartProfActiveUsers');
     if (actCanvas) {
-      const ymPrefix = getYearMonthFromLabel(comparisonMonth);
-      const filtered = (dashboardData.activeUsers || []).filter(r => r.date && r.date.startsWith(ymPrefix));
-      const labels = filtered.map(r => r.date.substring(8, 10));
+      const titleEl = actCanvas.closest('.chart-card')?.querySelector('.card-title');
+      const monthColorMap = {
+        '2026-07': '#64748b',
+        '2026-08': '#f59e0b',
+        '2026-09': '#06b6d4',
+        '2026-10': conf.color
+      };
+
+      let labels = [];
+      let datasets = [];
+
+      if (isMultiMonthPaid) {
+        if (titleEl) titleEl.textContent = `Daily Active Users Comparison (${availPaidMonths.map(getMonthLabel).join(' vs ')})`;
+        labels = Array.from({ length: 31 }, (_, i) => String(i + 1).padStart(2, '0'));
+        datasets = availPaidMonths.map((ym) => {
+          const color = monthColorMap[ym] || '#6366f1';
+          const isLatest = ym === availPaidMonths[availPaidMonths.length - 1];
+          const filtered = (dashboardData.activeUsers || []).filter(r => r.date && r.date.startsWith(ym));
+          const dayMap = {};
+          filtered.forEach(r => {
+            const d = parseInt(r.date.substring(8, 10), 10);
+            dayMap[d] = r[activeRM] || 0;
+          });
+          const data = Array.from({ length: 31 }, (_, i) => dayMap[i + 1] !== undefined ? dayMap[i + 1] : null);
+
+          return {
+            label: getMonthLabel(ym),
+            data,
+            borderColor: color,
+            backgroundColor: color,
+            borderWidth: isLatest ? 3 : 2,
+            pointRadius: isLatest ? 3 : 2,
+            tension: 0.2,
+            spanGaps: false
+          };
+        });
+      } else {
+        const ym = availPaidMonths.length === 1 ? availPaidMonths[0] : getYearMonthFromLabel(comparisonMonth);
+        if (titleEl) titleEl.textContent = `Daily Active Users Trend (${getMonthLabel(ym)})`;
+        const filtered = (dashboardData.activeUsers || []).filter(r => r.date && r.date.startsWith(ym));
+        labels = filtered.map(r => r.date.substring(8, 10));
+        datasets = [{
+          label: 'Active Users',
+          data: filtered.map(r => r[activeRM] || 0),
+          borderColor: conf.color,
+          backgroundColor: conf.subtleColor,
+          fill: true,
+          borderWidth: 2.5,
+          pointRadius: 3,
+          tension: 0.2
+        }];
+      }
 
       const chart = new Chart(actCanvas.getContext('2d'), {
         type: 'line',
-        data: {
-          labels,
-          datasets: [{
-            label: 'Active Users',
-            data: filtered.map(r => r[activeRM] || 0),
-            borderColor: conf.color,
-            backgroundColor: conf.subtleColor,
-            fill: true,
-            borderWidth: 2.5,
-            pointRadius: 3,
-            tension: 0.2
-          }]
-        },
+        data: { labels, datasets },
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          scales: { y: { beginAtZero: true } }
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { position: 'top', labels: { boxWidth: 12, font: { family: 'Inter', size: 11, weight: 600 } } },
+            tooltip: {
+              backgroundColor: '#0f172a',
+              callbacks: {
+                title: items => `Day ${items[0].label}`,
+                label: ctx => ctx.parsed.y !== null ? ` ${ctx.dataset.label}: ${ctx.parsed.y} Active Users` : null
+              }
+            }
+          },
+          scales: {
+            x: { grid: { color: '#f1f5f9' }, ticks: { font: { family: 'Inter', size: 10 } } },
+            y: { beginAtZero: true, grid: { color: '#f1f5f9' } }
+          }
         }
       });
       registerChart('chartProfActiveUsers', chart);
@@ -970,89 +1088,390 @@
     }
     container.style.display = 'block';
 
-    const bData = dashboardData.bucketAnalysis[comparisonMonth];
-    const rObj = bData ? bData[activeRM] : null;
+    const allBucketMonths = ['Jul-2026', 'Aug-2026', 'Sep-2026', 'Oct-2026'];
+    const availBucketLabels = dashboardData.months
+      .filter(m => selectedProfMonths.has(m))
+      .map(getMonthLabel)
+      .filter(lbl => allBucketMonths.includes(lbl) && dashboardData.bucketAnalysis[lbl] && dashboardData.bucketAnalysis[lbl][activeRM]);
 
-    if (!rObj) {
-      container.innerHTML = `<div class="card" style="padding: 1.5rem; color: var(--text-muted); text-align: center;">No 25+/25- bucket report for ${comparisonMonth}</div>`;
+    if (availBucketLabels.length === 0) {
+      container.innerHTML = `
+        <div class="card" style="padding: 1.75rem; color: var(--text-muted); text-align: center;">
+          25+ / &lt;25 Volume Bucket Breakdown is tracked from Jul-2026 onwards. No records for selected timeline.
+        </div>
+      `;
       return;
     }
 
+    if (availBucketLabels.length === 1) {
+      // Single Month Detailed Breakdown
+      const curMonth = availBucketLabels[0];
+      const rObj = dashboardData.bucketAnalysis[curMonth][activeRM];
+
+      container.innerHTML = `
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">25+ / <25 Volume Bucket Breakdown (${curMonth})</div>
+              <div class="card-subtitle">Performance comparison between High and Low volume lead clusters</div>
+            </div>
+          </div>
+          <div class="bucket-wrapper">
+            <div class="bucket-column">
+              <div class="bucket-header high">
+                <span>📈 25+ (High Volume)</span>
+              </div>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>AB</th>
+                    <th>Workable/AB</th>
+                    <th>Paid AB</th>
+                    <th>% Paid</th>
+                    <th>Conversion</th>
+                    <th>Conv %</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${rObj.high.map(row => `
+                    <tr>
+                      <td><strong>${row.category}</strong></td>
+                      <td>${formatNumber(row.ab)}</td>
+                      <td>${row.workable_per_ab}</td>
+                      <td>${formatNumber(row.paid_ab)}</td>
+                      <td><span class="cell-badge good">${row.pct_paid}</span></td>
+                      <td>${formatNumber(row.conversion)}</td>
+                      <td><span class="cell-badge good">${row.conversion_pct}</span></td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bucket-column">
+              <div class="bucket-header low">
+                <span>📉 <25 (Low Volume)</span>
+              </div>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>AB</th>
+                    <th>Workable/AB</th>
+                    <th>Paid AB</th>
+                    <th>% Paid</th>
+                    <th>Conversion</th>
+                    <th>Conv %</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${rObj.low.map(row => `
+                    <tr>
+                      <td><strong>${row.category}</strong></td>
+                      <td>${formatNumber(row.ab)}</td>
+                      <td>${row.workable_per_ab}</td>
+                      <td>${formatNumber(row.paid_ab)}</td>
+                      <td><span class="cell-badge ${parseFloat(row.pct_paid) > 25 ? 'good' : 'warn'}">${row.pct_paid}</span></td>
+                      <td>${formatNumber(row.conversion)}</td>
+                      <td><span class="cell-badge good">${row.conversion_pct}</span></td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      `;
+      return;
+    }
+
+    // MULTI-MONTH COMPARISON MODE
+    const summaries = availBucketLabels.map(lbl => {
+      const rObj = dashboardData.bucketAnalysis[lbl][activeRM];
+      const highAb = rObj.high.reduce((s, r) => s + r.ab, 0);
+      const highPaid = rObj.high.reduce((s, r) => s + r.paid_ab, 0);
+      const highConv = rObj.high.reduce((s, r) => s + r.conversion, 0);
+      const lowAb = rObj.low.reduce((s, r) => s + r.ab, 0);
+      const lowPaid = rObj.low.reduce((s, r) => s + r.paid_ab, 0);
+      const lowConv = rObj.low.reduce((s, r) => s + r.conversion, 0);
+      return {
+        month: lbl,
+        highAb, highPaid,
+        highPaidPct: highAb > 0 ? Number(((highPaid / highAb) * 100).toFixed(1)) : 0,
+        highConv,
+        lowAb, lowPaid,
+        lowPaidPct: lowAb > 0 ? Number(((lowPaid / lowAb) * 100).toFixed(1)) : 0,
+        lowConv,
+        totalConv: highConv + lowConv
+      };
+    });
+
     container.innerHTML = `
+      <div class="card" style="margin-bottom: 1.75rem;">
+        <div class="card-header">
+          <div>
+            <div class="card-title">25+ / <25 Volume Bucket Breakdown — Multi-Month Trend (${availBucketLabels.join(', ')})</div>
+            <div class="card-subtitle">Performance trajectory between High (25+) and Low (<25) volume lead clusters</div>
+          </div>
+        </div>
+
+        <!-- 2 Side-by-Side Comparison Charts -->
+        <div class="grid-2" style="margin-top: 1rem; margin-bottom: 1.5rem;">
+          <div class="chart-card">
+            <div class="card-title">% Paid AB Trend (25+ vs <25)</div>
+            <div class="chart-wrapper">
+              <canvas id="chartProfBucketPaidPct"></canvas>
+            </div>
+          </div>
+          <div class="chart-card">
+            <div class="card-title">Conversions Volume (25+ vs <25)</div>
+            <div class="chart-wrapper">
+              <canvas id="chartProfBucketConversions"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Multi-Month Summary Table -->
+        <div style="overflow-x: auto; margin-top: 1rem;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>25+ ABs</th>
+                <th>25+ Paid AB</th>
+                <th>25+ % Paid</th>
+                <th>25+ Conversions</th>
+                <th><25 ABs</th>
+                <th><25 Paid AB</th>
+                <th><25 % Paid</th>
+                <th><25 Conversions</th>
+                <th>Total Conversions</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${summaries.map(s => `
+                <tr>
+                  <td><strong>${s.month}</strong></td>
+                  <td>${formatNumber(s.highAb)}</td>
+                  <td>${formatNumber(s.highPaid)}</td>
+                  <td><span class="cell-badge good">${s.highPaidPct}%</span></td>
+                  <td><strong>${formatNumber(s.highConv)}</strong></td>
+                  <td>${formatNumber(s.lowAb)}</td>
+                  <td>${formatNumber(s.lowPaid)}</td>
+                  <td><span class="cell-badge ${s.lowPaidPct > 20 ? 'good' : 'warn'}">${s.lowPaidPct}%</span></td>
+                  <td>${formatNumber(s.lowConv)}</td>
+                  <td><strong style="color: var(--primary);">${formatNumber(s.totalConv)}</strong></td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Detailed Breakdown per Month with Tab Pills -->
       <div class="card">
         <div class="card-header">
           <div>
-            <div class="card-title">25+ / <25 Volume Bucket Breakdown (${comparisonMonth})</div>
-            <div class="card-subtitle">Performance comparison between High and Low volume lead clusters</div>
+            <div class="card-title">Category Breakdown by Month</div>
+            <div class="card-subtitle">Granular performance in Consistent, Reactive, and Active categories</div>
+          </div>
+          <div class="month-toggles" id="profBucketMonthTabs" style="display: flex; gap: 0.35rem;">
+            <button type="button" class="month-toggle-btn active" data-bmonth="all">All Months</button>
+            ${availBucketLabels.map(lbl => `<button type="button" class="month-toggle-btn" data-bmonth="${lbl}">${lbl}</button>`).join('')}
           </div>
         </div>
-        <div class="bucket-wrapper">
-          <div class="bucket-column">
-            <div class="bucket-header high">
-              <span>📈 25+ (High Volume)</span>
-            </div>
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>AB</th>
-                  <th>Workable/AB</th>
-                  <th>Paid AB</th>
-                  <th>% Paid</th>
-                  <th>Conversion</th>
-                  <th>Conv %</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${rObj.high.map(row => `
-                  <tr>
-                    <td><strong>${row.category}</strong></td>
-                    <td>${formatNumber(row.ab)}</td>
-                    <td>${row.workable_per_ab}</td>
-                    <td>${formatNumber(row.paid_ab)}</td>
-                    <td><span class="cell-badge good">${row.pct_paid}</span></td>
-                    <td>${formatNumber(row.conversion)}</td>
-                    <td><span class="cell-badge good">${row.conversion_pct}</span></td>
-                  </tr>
-                `).join('')}
-              </tbody>
-            </table>
-          </div>
-
-          <div class="bucket-column">
-            <div class="bucket-header low">
-              <span>📉 <25 (Low Volume)</span>
-            </div>
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>AB</th>
-                  <th>Workable/AB</th>
-                  <th>Paid AB</th>
-                  <th>% Paid</th>
-                  <th>Conversion</th>
-                  <th>Conv %</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${rObj.low.map(row => `
-                  <tr>
-                    <td><strong>${row.category}</strong></td>
-                    <td>${formatNumber(row.ab)}</td>
-                    <td>${row.workable_per_ab}</td>
-                    <td>${formatNumber(row.paid_ab)}</td>
-                    <td><span class="cell-badge ${parseFloat(row.pct_paid) > 25 ? 'good' : 'warn'}">${row.pct_paid}</span></td>
-                    <td>${formatNumber(row.conversion)}</td>
-                    <td><span class="cell-badge good">${row.conversion_pct}</span></td>
-                  </tr>
-                `).join('')}
-              </tbody>
-            </table>
-          </div>
-        </div>
+        <div id="profBucketDetailContainer" style="margin-top: 1rem;"></div>
       </div>
     `;
+
+    // Render Chart 1: Paid AB %
+    const paidPctCanvas = document.getElementById('chartProfBucketPaidPct');
+    if (paidPctCanvas) {
+      const chart = new Chart(paidPctCanvas.getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: availBucketLabels,
+          datasets: [
+            {
+              label: '25+ % Paid',
+              data: summaries.map(s => s.highPaidPct),
+              borderColor: '#10b981',
+              backgroundColor: '#10b981',
+              borderWidth: 3,
+              pointRadius: 4.5,
+              tension: 0.2
+            },
+            {
+              label: '<25 % Paid',
+              data: summaries.map(s => s.lowPaidPct),
+              borderColor: '#f59e0b',
+              backgroundColor: '#f59e0b',
+              borderWidth: 2.5,
+              borderDash: [5, 4],
+              pointRadius: 4,
+              tension: 0.2
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'top', labels: { boxWidth: 12, font: { family: 'Inter', size: 11 } } },
+            tooltip: {
+              backgroundColor: '#0f172a',
+              callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y}%` }
+            }
+          },
+          scales: {
+            y: { beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } }
+          }
+        }
+      });
+      registerChart('chartProfBucketPaidPct', chart);
+    }
+
+    // Render Chart 2: Conversions
+    const convCanvas = document.getElementById('chartProfBucketConversions');
+    if (convCanvas) {
+      const chart = new Chart(convCanvas.getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: availBucketLabels,
+          datasets: [
+            {
+              label: '25+ Conversions',
+              data: summaries.map(s => s.highConv),
+              backgroundColor: conf.color,
+              borderRadius: 4
+            },
+            {
+              label: '<25 Conversions',
+              data: summaries.map(s => s.lowConv),
+              backgroundColor: '#94a3b8',
+              borderRadius: 4
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'top', labels: { boxWidth: 12, font: { family: 'Inter', size: 11 } } },
+            tooltip: {
+              backgroundColor: '#0f172a',
+              callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString('en-IN')} conversions` }
+            }
+          },
+          scales: {
+            y: { beginAtZero: true, ticks: { callback: v => v.toLocaleString('en-IN') } }
+          }
+        }
+      });
+      registerChart('chartProfBucketConversions', chart);
+    }
+
+    // Helper to render detailed bucket tables
+    function renderDetailTables(monthFilter) {
+      const detailContainer = document.getElementById('profBucketDetailContainer');
+      if (!detailContainer) return;
+      detailContainer.innerHTML = '';
+
+      const monthsToRender = monthFilter === 'all' ? availBucketLabels : [monthFilter];
+
+      monthsToRender.forEach(mLabel => {
+        const rObj = dashboardData.bucketAnalysis[mLabel][activeRM];
+        if (!rObj) return;
+
+        const wrapper = document.createElement('div');
+        wrapper.style.marginBottom = '2rem';
+        wrapper.innerHTML = `
+          <div style="font-weight: 700; font-size: 1rem; margin-bottom: 0.75rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+            <span class="zone-badge badge-north" style="background: #f1f5f9; color: #334155;">${mLabel}</span>
+            <span>Category Performance Breakdown</span>
+          </div>
+          <div class="bucket-wrapper">
+            <div class="bucket-column">
+              <div class="bucket-header high">
+                <span>📈 25+ (High Volume) — ${mLabel}</span>
+              </div>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>AB</th>
+                    <th>Workable/AB</th>
+                    <th>Paid AB</th>
+                    <th>% Paid</th>
+                    <th>Conversion</th>
+                    <th>Conv %</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${rObj.high.map(row => `
+                    <tr>
+                      <td><strong>${row.category}</strong></td>
+                      <td>${formatNumber(row.ab)}</td>
+                      <td>${row.workable_per_ab}</td>
+                      <td>${formatNumber(row.paid_ab)}</td>
+                      <td><span class="cell-badge good">${row.pct_paid}</span></td>
+                      <td>${formatNumber(row.conversion)}</td>
+                      <td><span class="cell-badge good">${row.conversion_pct}</span></td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bucket-column">
+              <div class="bucket-header low">
+                <span>📉 <25 (Low Volume) — ${mLabel}</span>
+              </div>
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>AB</th>
+                    <th>Workable/AB</th>
+                    <th>Paid AB</th>
+                    <th>% Paid</th>
+                    <th>Conversion</th>
+                    <th>Conv %</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${rObj.low.map(row => `
+                    <tr>
+                      <td><strong>${row.category}</strong></td>
+                      <td>${formatNumber(row.ab)}</td>
+                      <td>${row.workable_per_ab}</td>
+                      <td>${formatNumber(row.paid_ab)}</td>
+                      <td><span class="cell-badge ${parseFloat(row.pct_paid) > 25 ? 'good' : 'warn'}">${row.pct_paid}</span></td>
+                      <td>${formatNumber(row.conversion)}</td>
+                      <td><span class="cell-badge good">${row.conversion_pct}</span></td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+        detailContainer.appendChild(wrapper);
+      });
+    }
+
+    renderDetailTables('all');
+
+    // Attach click events to tabs
+    document.querySelectorAll('#profBucketMonthTabs .month-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('#profBucketMonthTabs .month-toggle-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        const bMonth = e.target.getAttribute('data-bmonth');
+        renderDetailTables(bMonth);
+      });
+    });
   }
 
   // =========================================================================
@@ -1090,7 +1509,7 @@
 
     const subText = document.getElementById('profConsistencySub');
     if (subText) {
-      subText.textContent = `${m.consistentDays || 0} of ${m.workingDays || 0} logged days met 50+ dials threshold`;
+      subText.textContent = `${m.consistentDays || 0} of ${m.workingDays || 0} logged days met 50+ connected calls threshold`;
     }
 
     // Working days & avg calls history bar chart
@@ -1112,7 +1531,7 @@
               borderRadius: 4
             },
             {
-              label: 'Consistent Days (50+ dials)',
+              label: 'Consistent Days (50+ connected)',
               data: months.map(m => (mData[m] || {}).consistentDays || 0),
               backgroundColor: conf.color,
               borderRadius: 4
