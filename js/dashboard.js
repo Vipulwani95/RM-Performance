@@ -236,6 +236,8 @@
         m.other_dial += d_other;
         m.other_connect += Number(r.other_connect || 0);
 
+        m.totalDials += dayDials;
+
         const sumConn = (Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
           Number(r.reactive_connect || 0) + Number(r.consistent_connect || 0) +
           Number(r.acquisition_connect || 0) + Number(r.home_service_connect || 0) +
