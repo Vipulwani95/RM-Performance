@@ -103,7 +103,7 @@
       <div class="profile-quick-stats">
         <div class="profile-stat-box">
           <div class="val" id="profBannerDials">--</div>
-          <div class="lbl">Dials (MTD)</div>
+          <div class="lbl" id="profBannerDialsLbl">Dials (MTD)</div>
         </div>
         <div class="profile-stat-box">
           <div class="val" id="profBannerConnRate">--%</div>
@@ -128,14 +128,14 @@
         <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.01em;">
           Section A: Key Performance Indicators
         </h3>
-        <p style="font-size: 0.82rem; color: var(--text-muted);">Current month totals with month-on-month velocity</p>
+        <p style="font-size: 0.82rem; color: var(--text-muted);" id="profKpiSubtitle">Current month totals with month-on-month velocity</p>
       </div>
 
       <div class="grid-6">
         <!-- Total Dials -->
         <div class="kpi-card" data-color="primary">
           <div class="kpi-top">
-            <span class="kpi-label">Total Dials</span>
+            <span class="kpi-label" id="profKpiDialsLbl">Total Dials</span>
           </div>
           <div class="kpi-value" id="kpiProfDials">--</div>
           <div class="kpi-footer">
@@ -147,7 +147,7 @@
         <!-- Total Connected -->
         <div class="kpi-card" data-color="success">
           <div class="kpi-top">
-            <span class="kpi-label">Total Connected</span>
+            <span class="kpi-label" id="profKpiConnLbl">Total Connected</span>
           </div>
           <div class="kpi-value" id="kpiProfConnected">--</div>
           <div class="kpi-footer">
@@ -361,8 +361,8 @@
         <div class="chart-card tall">
           <div class="card-header">
             <div>
-              <div class="card-title">Selected Month Call Distribution</div>
-              <div class="card-subtitle">Percentage proportion of call types</div>
+              <div class="card-title" id="profDialDonutTitle">Selected Month Call Distribution</div>
+              <div class="card-subtitle" id="profDialDonutSubtitle">Percentage proportion of call types</div>
             </div>
           </div>
           <div class="chart-wrapper tall">

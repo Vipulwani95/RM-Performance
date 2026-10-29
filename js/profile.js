@@ -221,7 +221,37 @@
   // =========================================================================
   function renderProfileHeader() {
     const conf = RM_CONFIG[activeRM];
-    const m = dashboardData.monthlyByRM[activeRM][activeMonth] || {};
+    const isMultiMonth = selectedProfMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedProfMonths.has(m));
+
+    let dials = 0;
+    let connected = 0;
+    let talktime = 0;
+    let workingDays = 0;
+    let consistentDays = 0;
+
+    if (isMultiMonth) {
+      monthsArr.forEach(ym => {
+        const row = dashboardData.monthlyByRM[activeRM][ym] || {};
+        dials += row.totalDials || 0;
+        connected += row.totalConnected || 0;
+        talktime += row.talktime || 0;
+        workingDays += row.workingDays || 0;
+        consistentDays += row.consistentDays || 0;
+      });
+    } else {
+      const m = dashboardData.monthlyByRM[activeRM][activeMonth] || {};
+      dials = m.totalDials || 0;
+      connected = m.totalConnected || 0;
+      talktime = m.talktime || 0;
+      workingDays = m.workingDays || 0;
+      consistentDays = m.consistentDays || 0;
+    }
+
+    const connRate = dials > 0 ? (connected / dials) * 100 : 0;
+    const avgTalk = workingDays > 0 ? (talktime / workingDays) : 0;
+    const consistency = workingDays > 0 ? (consistentDays / workingDays) * 100 : 0;
+
     const root = document.documentElement;
     root.style.setProperty('--profile-color', conf.color);
 
@@ -236,7 +266,10 @@
       zoneBadge.textContent = conf.zone;
     }
     if (tenureEl) {
-      tenureEl.textContent = `${conf.role} • Data Tracking: ${conf.dataStart} – Oct 2026`;
+      const periodStr = isMultiMonth
+        ? `${monthsArr.length} Months Selected (${getMonthLabel(monthsArr[0])} – ${getMonthLabel(monthsArr[monthsArr.length - 1])})`
+        : `Tracking: ${getMonthLabel(activeMonth)}`;
+      tenureEl.textContent = `${conf.role} • ${periodStr}`;
     }
     if (avatarEl) {
       avatarEl.textContent = activeRM.substring(0, 2).toUpperCase();
@@ -245,61 +278,139 @@
 
     // Banner Quick Stats
     const bDials = document.getElementById('profBannerDials');
+    const bDialsLbl = document.getElementById('profBannerDialsLbl');
     const bConn = document.getElementById('profBannerConnRate');
     const bTalk = document.getElementById('profBannerTalktime');
     const bCons = document.getElementById('profBannerConsistency');
 
-    if (bDials) bDials.textContent = formatNumber(m.totalDials || 0);
-    if (bConn) bConn.textContent = formatPct(m.connectionRate || 0);
-    if (bTalk) bTalk.textContent = formatMinutes(m.avgTalktime || 0);
-    if (bCons) bCons.textContent = formatPct(m.consistencyScore || 0, 0);
+    if (bDials) bDials.textContent = formatNumber(dials);
+    if (bDialsLbl) bDialsLbl.textContent = isMultiMonth ? 'Period Dials' : `Dials (${getMonthLabel(activeMonth)})`;
+    if (bConn) bConn.textContent = formatPct(connRate);
+    if (bTalk) bTalk.textContent = formatMinutes(avgTalk);
+    if (bCons) bCons.textContent = formatPct(consistency, 0);
   }
 
   // =========================================================================
   // SECTION A: KPI SUMMARY (6 SCORECARDS)
   // =========================================================================
   function renderKPISummary() {
-    const prevMonthIdx = dashboardData.months.indexOf(activeMonth) - 1;
-    const prevMonth = prevMonthIdx >= 0 ? dashboardData.months[prevMonthIdx] : null;
-
-    const curr = dashboardData.monthlyByRM[activeRM][activeMonth] || {};
-    const prev = prevMonth ? dashboardData.monthlyByRM[activeRM][prevMonth] || {} : {};
-
-    const dialsMoM = calcMoM(curr.totalDials, prev.totalDials);
-    const connMoM = calcMoM(curr.totalConnected, prev.totalConnected);
-    const rateDelta = (curr.connectionRate || 0) - (prev.connectionRate || 0);
-    const talkMoM = calcMoM(curr.avgTalktime, prev.avgTalktime);
-    const onbMoM = calcMoM(curr.onboardings, prev.onboardings);
-    const abMoM = calcMoM(curr.activeAbSum || 0, prev.activeAbSum || 0);
-
     const conf = RM_CONFIG[activeRM];
+    const isMultiMonth = selectedProfMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedProfMonths.has(m));
 
-    // Set KPI Values
-    document.getElementById('kpiProfDials').textContent = formatNumber(curr.totalDials || 0);
-    document.getElementById('kpiProfConnected').textContent = formatNumber(curr.totalConnected || 0);
-    document.getElementById('kpiProfRate').textContent = formatPct(curr.connectionRate || 0);
-    document.getElementById('kpiProfTalktime').textContent = formatMinutes(curr.avgTalktime || 0);
-    document.getElementById('kpiProfOnboardings').textContent = formatNumber(curr.onboardings || 0);
-    document.getElementById('kpiProfActiveAb').textContent = formatNumber(curr.activeAbSum || 0);
+    const subtitleEl = document.getElementById('profKpiSubtitle');
+    const dialsLbl = document.getElementById('profKpiDialsLbl');
+    const connLbl = document.getElementById('profKpiConnLbl');
 
-    // Set Deltas
-    setDelta('deltaProfDials', dialsMoM, '%');
-    setDelta('deltaProfConnected', connMoM, '%');
-    setDelta('deltaProfRate', rateDelta, '% pts');
-    setDelta('deltaProfTalktime', talkMoM, '%');
-    setDelta('deltaProfOnboardings', onbMoM, '%');
-    setDelta('deltaProfActiveAb', abMoM, '%');
+    if (isMultiMonth) {
+      // MULTI-MONTH AGGREGATE MODE
+      if (subtitleEl) {
+        subtitleEl.textContent = `Cumulative period totals across ${monthsArr.length} selected months (${getMonthLabel(monthsArr[0])} – ${getMonthLabel(monthsArr[monthsArr.length - 1])})`;
+      }
+      if (dialsLbl) dialsLbl.textContent = 'Period Dials';
+      if (connLbl) connLbl.textContent = 'Period Connected';
 
-    // Display Daily Average Pace
-    const workingDays = curr.workingDays || 1;
-    const avgDialsPerDay = Math.round((curr.totalDials || 0) / workingDays);
-    const avgConnPerDay = Math.round((curr.totalConnected || 0) / workingDays);
+      let totalDials = 0;
+      let totalConnected = 0;
+      let totalTalk = 0;
+      let totalWorking = 0;
+      let totalConsistent = 0;
+      let totalOnb = 0;
+      let totalActiveAb = 0;
 
-    const paceDialsEl = document.getElementById('paceProfDials');
-    if (paceDialsEl) paceDialsEl.textContent = `Avg ${avgDialsPerDay}/day (${workingDays}d)`;
+      monthsArr.forEach(ym => {
+        const row = dashboardData.monthlyByRM[activeRM][ym] || {};
+        totalDials += row.totalDials || 0;
+        totalConnected += row.totalConnected || 0;
+        totalTalk += row.talktime || 0;
+        totalWorking += row.workingDays || 0;
+        totalConsistent += row.consistentDays || 0;
+        totalOnb += row.onboardings || 0;
+        totalActiveAb += row.activeAbSum || 0;
+      });
 
-    const paceConnEl = document.getElementById('paceProfConnected');
-    if (paceConnEl) paceConnEl.textContent = `Avg ${avgConnPerDay}/day (${workingDays}d)`;
+      const connRate = totalDials > 0 ? (totalConnected / totalDials) * 100 : 0;
+      const avgTalk = totalWorking > 0 ? (totalTalk / totalWorking) : 0;
+      const avgDialsPerDay = totalWorking > 0 ? Math.round(totalDials / totalWorking) : 0;
+      const avgConnPerDay = totalWorking > 0 ? Math.round(totalConnected / totalWorking) : 0;
+
+      // Values
+      document.getElementById('kpiProfDials').textContent = formatNumber(totalDials);
+      document.getElementById('kpiProfConnected').textContent = formatNumber(totalConnected);
+      document.getElementById('kpiProfRate').textContent = formatPct(connRate);
+      document.getElementById('kpiProfTalktime').textContent = formatMinutes(avgTalk);
+      document.getElementById('kpiProfOnboardings').textContent = formatNumber(totalOnb);
+      document.getElementById('kpiProfActiveAb').textContent = formatNumber(totalActiveAb);
+
+      // Period Indicators
+      setPeriodBadge('deltaProfDials', `${monthsArr.length} Months`, '#e0e7ff', '#3730a3');
+      setPeriodBadge('deltaProfConnected', `${totalWorking} Days`, '#dcfce7', '#166534');
+      setPeriodBadge('deltaProfRate', 'Overall Avg', '#fef3c7', '#92400e');
+      setPeriodBadge('deltaProfTalktime', 'Per Work Day', '#e0e7ff', '#3730a3');
+      setPeriodBadge('deltaProfOnboardings', 'Period Total', '#dcfce7', '#166534');
+      setPeriodBadge('deltaProfActiveAb', 'All Days Sum', '#e0e7ff', '#3730a3');
+
+      // Pace
+      const paceDialsEl = document.getElementById('paceProfDials');
+      if (paceDialsEl) paceDialsEl.textContent = `Avg ${avgDialsPerDay}/day (${totalWorking}d)`;
+
+      const paceConnEl = document.getElementById('paceProfConnected');
+      if (paceConnEl) paceConnEl.textContent = `Avg ${avgConnPerDay}/day`;
+
+    } else {
+      // SINGLE MONTH MODE
+      if (subtitleEl) {
+        subtitleEl.textContent = `Monthly performance totals with month-on-month velocity for ${getMonthLabel(activeMonth)}`;
+      }
+      if (dialsLbl) dialsLbl.textContent = 'Total Dials';
+      if (connLbl) connLbl.textContent = 'Total Connected';
+
+      const prevMonthIdx = dashboardData.months.indexOf(activeMonth) - 1;
+      const prevMonth = prevMonthIdx >= 0 ? dashboardData.months[prevMonthIdx] : null;
+
+      const curr = dashboardData.monthlyByRM[activeRM][activeMonth] || {};
+      const prev = prevMonth ? dashboardData.monthlyByRM[activeRM][prevMonth] || {} : {};
+
+      const dialsMoM = calcMoM(curr.totalDials, prev.totalDials);
+      const connMoM = calcMoM(curr.totalConnected, prev.totalConnected);
+      const rateDelta = (curr.connectionRate || 0) - (prev.connectionRate || 0);
+      const talkMoM = calcMoM(curr.avgTalktime, prev.avgTalktime);
+      const onbMoM = calcMoM(curr.onboardings, prev.onboardings);
+      const abMoM = calcMoM(curr.activeAbSum || 0, prev.activeAbSum || 0);
+
+      document.getElementById('kpiProfDials').textContent = formatNumber(curr.totalDials || 0);
+      document.getElementById('kpiProfConnected').textContent = formatNumber(curr.totalConnected || 0);
+      document.getElementById('kpiProfRate').textContent = formatPct(curr.connectionRate || 0);
+      document.getElementById('kpiProfTalktime').textContent = formatMinutes(curr.avgTalktime || 0);
+      document.getElementById('kpiProfOnboardings').textContent = formatNumber(curr.onboardings || 0);
+      document.getElementById('kpiProfActiveAb').textContent = formatNumber(curr.activeAbSum || 0);
+
+      setDelta('deltaProfDials', dialsMoM, '%');
+      setDelta('deltaProfConnected', connMoM, '%');
+      setDelta('deltaProfRate', rateDelta, '% pts');
+      setDelta('deltaProfTalktime', talkMoM, '%');
+      setDelta('deltaProfOnboardings', onbMoM, '%');
+      setDelta('deltaProfActiveAb', abMoM, '%');
+
+      const workingDays = curr.workingDays || 1;
+      const avgDialsPerDay = Math.round((curr.totalDials || 0) / workingDays);
+      const avgConnPerDay = Math.round((curr.totalConnected || 0) / workingDays);
+
+      const paceDialsEl = document.getElementById('paceProfDials');
+      if (paceDialsEl) paceDialsEl.textContent = `Avg ${avgDialsPerDay}/day (${workingDays}d)`;
+
+      const paceConnEl = document.getElementById('paceProfConnected');
+      if (paceConnEl) paceConnEl.textContent = `Avg ${avgConnPerDay}/day (${workingDays}d)`;
+    }
+  }
+
+  function setPeriodBadge(elementId, text, bg, color) {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+    el.className = 'kpi-delta';
+    el.style.background = bg;
+    el.style.color = color;
+    el.innerHTML = text;
   }
 
   function setDelta(elementId, delta, suffix = '%') {
@@ -671,8 +782,11 @@
   // =========================================================================
   function renderDialComposition() {
     const mData = dashboardData.monthlyByRM[activeRM];
-    const months = dashboardData.months;
-    const labels = dashboardData.monthLabels;
+    const isMultiMonth = selectedProfMonths.size > 1;
+    const months = isMultiMonth
+      ? dashboardData.months.filter(m => selectedProfMonths.has(m))
+      : dashboardData.months;
+    const labels = months.map(getMonthLabel);
 
     const types = [
       { key: 'onboarding_dial', label: 'Onboarding', color: '#6366F1' },
@@ -717,11 +831,31 @@
       registerChart('chartProfDialStacked', chart);
     }
 
-    // Donut for Active Month Split
+    // Donut for Active Month Split (or Multi-Month Split)
     const donutCanvas = document.getElementById('chartProfDialDonut');
     if (donutCanvas) {
-      const curr = mData[activeMonth] || {};
-      const donutValues = types.map(t => curr[t.key] || 0);
+      let donutValues;
+      let totalDials = 0;
+
+      const donutTitleEl = document.getElementById('profDialDonutTitle');
+      const donutSubEl = document.getElementById('profDialDonutSubtitle');
+
+      if (isMultiMonth) {
+        if (donutTitleEl) donutTitleEl.textContent = `Call Type Mix (${months.length} Selected Months)`;
+        if (donutSubEl) donutSubEl.textContent = `Aggregated percentage proportion across selected timeline`;
+
+        donutValues = types.map(t => {
+          return months.reduce((sum, m) => sum + ((mData[m] || {})[t.key] || 0), 0);
+        });
+        totalDials = donutValues.reduce((a, b) => a + b, 0);
+      } else {
+        if (donutTitleEl) donutTitleEl.textContent = `${getMonthLabel(activeMonth)} Call Distribution`;
+        if (donutSubEl) donutSubEl.textContent = `Percentage proportion of call types for active month`;
+
+        const curr = mData[activeMonth] || {};
+        donutValues = types.map(t => curr[t.key] || 0);
+        totalDials = curr.totalDials || 1;
+      }
 
       const chart = new Chart(donutCanvas.getContext('2d'), {
         type: 'doughnut',
@@ -744,8 +878,7 @@
               callbacks: {
                 label: ctx => {
                   const val = ctx.parsed || 0;
-                  const total = curr.totalDials || 1;
-                  const pct = ((val / total) * 100).toFixed(1);
+                  const pct = totalDials > 0 ? ((val / totalDials) * 100).toFixed(1) : 0;
                   return ` ${ctx.label}: ${val.toLocaleString('en-IN')} (${pct}%)`;
                 }
               }
@@ -765,42 +898,50 @@
     if (!container) return;
     container.innerHTML = '';
 
-    const records = (dashboardData.rmDaily[activeRM] || []).filter(r => r.date && r.date.startsWith(activeMonth));
-    const totalTalk = records.reduce((acc, r) => acc + Number(r.talktime || 0), 0);
-    const avgTalk = records.length > 0 ? totalTalk / records.length : 0;
+    const isMultiMonth = selectedProfMonths.size > 1;
+    const monthsToRender = isMultiMonth
+      ? dashboardData.months.filter(m => selectedProfMonths.has(m))
+      : [activeMonth];
 
-    const wrapper = document.createElement('div');
-    wrapper.innerHTML = `
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
-        <span style="font-weight: 700; font-size: 0.95rem;">${getMonthLabel(activeMonth)} Daily Talktime Distribution</span>
-        <span style="font-size: 0.82rem; color: var(--text-muted);">
-          Total: <strong>${formatMinutes(totalTalk)}</strong> • Avg: <strong>${formatMinutes(avgTalk)}/day</strong>
-        </span>
-      </div>
-    `;
+    monthsToRender.forEach((mKey, idx) => {
+      const records = (dashboardData.rmDaily[activeRM] || []).filter(r => r.date && r.date.startsWith(mKey));
+      const totalTalk = records.reduce((acc, r) => acc + Number(r.talktime || 0), 0);
+      const avgTalk = records.length > 0 ? totalTalk / records.length : 0;
 
-    const grid = document.createElement('div');
-    grid.className = 'heatmap-grid';
-    grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(36px, 1fr))';
+      const wrapper = document.createElement('div');
+      wrapper.style.marginBottom = idx < monthsToRender.length - 1 ? '1.5rem' : '0';
+      wrapper.innerHTML = `
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.75rem;">
+          <span style="font-weight: 700; font-size: 0.95rem;">${getMonthLabel(mKey)} Daily Talktime Distribution</span>
+          <span style="font-size: 0.82rem; color: var(--text-muted);">
+            Total: <strong>${formatMinutes(totalTalk)}</strong> • Avg: <strong>${formatMinutes(avgTalk)}/day</strong> (${records.length} logged days)
+          </span>
+        </div>
+      `;
 
-    records.forEach(r => {
-      const mins = Number(r.talktime || 0);
-      let lvl = 'hm-lvl-0';
-      if (mins > 0 && mins < 30) lvl = 'hm-lvl-1';
-      else if (mins >= 30 && mins < 60) lvl = 'hm-lvl-2';
-      else if (mins >= 60 && mins < 90) lvl = 'hm-lvl-3';
-      else if (mins >= 90) lvl = 'hm-lvl-4';
+      const grid = document.createElement('div');
+      grid.className = 'heatmap-grid';
+      grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(36px, 1fr))';
 
-      const dayNum = parseInt(r.date.split('-')[2], 10);
-      const cell = document.createElement('div');
-      cell.className = `heatmap-cell ${lvl}`;
-      cell.textContent = dayNum;
-      cell.title = `Date: ${r.date}\nTalktime: ${mins} minutes\nTotal Connected: ${formatNumber(r.total_connected || 0)}`;
-      grid.appendChild(cell);
+      records.forEach(r => {
+        const mins = Number(r.talktime || 0);
+        let lvl = 'hm-lvl-0';
+        if (mins > 0 && mins < 30) lvl = 'hm-lvl-1';
+        else if (mins >= 30 && mins < 60) lvl = 'hm-lvl-2';
+        else if (mins >= 60 && mins < 90) lvl = 'hm-lvl-3';
+        else if (mins >= 90) lvl = 'hm-lvl-4';
+
+        const dayNum = parseInt(r.date.split('-')[2], 10);
+        const cell = document.createElement('div');
+        cell.className = `heatmap-cell ${lvl}`;
+        cell.textContent = dayNum;
+        cell.title = `Date: ${r.date}\nTalktime: ${mins} minutes\nTotal Connected: ${formatNumber(r.total_connected || 0)}`;
+        grid.appendChild(cell);
+      });
+
+      wrapper.appendChild(grid);
+      container.appendChild(wrapper);
     });
-
-    wrapper.appendChild(grid);
-    container.appendChild(wrapper);
   }
 
   // =========================================================================
@@ -1478,9 +1619,27 @@
   // SECTION G: CONSISTENCY SECTION
   // =========================================================================
   function renderConsistencySection() {
-    const m = dashboardData.monthlyByRM[activeRM][activeMonth] || {};
-    const score = Math.round(m.consistencyScore || 0);
+    const isMultiMonth = selectedProfMonths.size > 1;
+    let score = 0;
+    let consistentDays = 0;
+    let workingDays = 0;
+
     const conf = RM_CONFIG[activeRM];
+
+    if (isMultiMonth) {
+      const monthsArr = dashboardData.months.filter(m => selectedProfMonths.has(m));
+      monthsArr.forEach(mKey => {
+        const row = (dashboardData.monthlyByRM[activeRM] || {})[mKey] || {};
+        consistentDays += row.consistentDays || 0;
+        workingDays += row.workingDays || 0;
+      });
+      score = workingDays > 0 ? Math.round((consistentDays / workingDays) * 100) : 0;
+    } else {
+      const m = (dashboardData.monthlyByRM[activeRM] || {})[activeMonth] || {};
+      score = Math.round(m.consistencyScore || 0);
+      consistentDays = m.consistentDays || 0;
+      workingDays = m.workingDays || 0;
+    }
 
     // Gauge
     const canvas = document.getElementById('chartProfGauge');
@@ -1509,13 +1668,16 @@
 
     const subText = document.getElementById('profConsistencySub');
     if (subText) {
-      subText.textContent = `${m.consistentDays || 0} of ${m.workingDays || 0} logged days met 50+ connected calls threshold`;
+      const periodLabel = isMultiMonth ? `across ${selectedProfMonths.size} selected months` : `${getMonthLabel(activeMonth)}`;
+      subText.textContent = `${consistentDays} of ${workingDays} logged days met 50+ connected calls threshold (${periodLabel})`;
     }
 
     // Working days & avg calls history bar chart
     const histCanvas = document.getElementById('chartProfWorkingDays');
     if (histCanvas) {
-      const months = dashboardData.months.slice(-5);
+      const months = isMultiMonth
+        ? dashboardData.months.filter(m => selectedProfMonths.has(m))
+        : dashboardData.months.slice(-5);
       const labels = months.map(getMonthLabel);
       const mData = dashboardData.monthlyByRM[activeRM];
 
