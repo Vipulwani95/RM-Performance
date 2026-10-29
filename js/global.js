@@ -88,6 +88,8 @@
       if (sorted.length > 0) {
         selectedMonth = sorted[sorted.length - 1];
         comparisonMonth = getMonthLabel(selectedMonth);
+        const compSelect = document.getElementById('compMonthSelect');
+        if (compSelect) compSelect.value = comparisonMonth;
       }
     }
 
@@ -472,6 +474,9 @@
     if (!container) return;
     container.innerHTML = '';
 
+    const isMultiMonth = selectedMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedMonths.has(m));
+
     const zones = [
       { name: 'North & Chennai', badge: 'badge-north', rms: ['Malik'] },
       { name: 'West Zone', badge: 'badge-west', rms: ['Dipali'] },
@@ -487,14 +492,16 @@
       let totalOnb = 0;
 
       z.rms.forEach(rm => {
-        const m = dashboardData.monthlyByRM[rm][selectedMonth];
-        if (m) {
-          totalDials += m.totalDials;
-          totalConnected += m.totalConnected;
-          totalTalk += m.talktime;
-          totalWorking += m.workingDays;
-          totalOnb += m.onboardings;
-        }
+        monthsArr.forEach(ym => {
+          const m = (dashboardData.monthlyByRM[rm] || {})[ym];
+          if (m) {
+            totalDials += m.totalDials || 0;
+            totalConnected += m.totalConnected || 0;
+            totalTalk += m.talktime || 0;
+            totalWorking += m.workingDays || 0;
+            totalOnb += m.onboardings || 0;
+          }
+        });
       });
 
       const connRate = totalDials > 0 ? (totalConnected / totalDials) * 100 : 0;
@@ -510,7 +517,7 @@
         <div class="zone-metrics-grid">
           <div class="zone-metric-item">
             <span class="val">${formatNumber(totalDials)}</span>
-            <span class="lbl">Dials</span>
+            <span class="lbl">${isMultiMonth ? 'Period Dials' : 'Dials'}</span>
           </div>
           <div class="zone-metric-item">
             <span class="val">${formatPct(connRate)}</span>
@@ -765,7 +772,16 @@
     const canvas = document.getElementById('chartDialComposition');
     if (!canvas) return;
 
+    destroyChart('chartDialComposition');
+
     const rms = Array.from(selectedRMs);
+    const isMultiMonth = selectedMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedMonths.has(m));
+    const titleEl = canvas.closest('.chart-card')?.querySelector('.card-subtitle');
+    if (titleEl) {
+      titleEl.textContent = `Breakdown across 8 call categories for ${isMultiMonth ? monthsArr.length + ' selected months (' + monthsArr.map(getMonthLabel).join(', ') + ')' : getMonthLabel(selectedMonth)}`;
+    }
+
     const types = [
       { key: 'onboarding_dial', label: 'Onboarding', color: '#6366F1' },
       { key: 'active_dial', label: 'Active', color: '#10B981' },
@@ -779,7 +795,9 @@
 
     const datasets = types.map(t => ({
       label: t.label,
-      data: rms.map(rm => (dashboardData.monthlyByRM[rm][selectedMonth] || {})[t.key] || 0),
+      data: rms.map(rm => {
+        return monthsArr.reduce((sum, ym) => sum + ((dashboardData.monthlyByRM[rm]?.[ym] || {})[t.key] || 0), 0);
+      }),
       backgroundColor: t.color,
       borderRadius: 4
     }));
@@ -824,7 +842,16 @@
     const canvas = document.getElementById('chartConnectRateByType');
     if (!canvas) return;
 
+    destroyChart('chartConnectRateByType');
+
     const rms = Array.from(selectedRMs);
+    const isMultiMonth = selectedMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedMonths.has(m));
+    const titleEl = canvas.closest('.chart-card')?.querySelector('.card-subtitle');
+    if (titleEl) {
+      titleEl.textContent = `Connection success rate per call category (${isMultiMonth ? monthsArr.length + ' selected months' : getMonthLabel(selectedMonth)})`;
+    }
+
     const dialCategories = [
       { name: 'Active', dKey: 'active_dial', cKey: 'active_connect' },
       { name: 'Reactive', dKey: 'reactive_dial', cKey: 'reactive_connect' },
@@ -836,10 +863,14 @@
     ];
 
     const datasets = rms.map(rm => {
-      const m = dashboardData.monthlyByRM[rm][selectedMonth] || {};
       const rates = dialCategories.map(cat => {
-        const d = m[cat.dKey] || 0;
-        const c = m[cat.cKey] || 0;
+        let d = 0;
+        let c = 0;
+        monthsArr.forEach(ym => {
+          const m = (dashboardData.monthlyByRM[rm] || {})[ym] || {};
+          d += m[cat.dKey] || 0;
+          c += m[cat.cKey] || 0;
+        });
         return d > 0 ? Number(((c / d) * 100).toFixed(1)) : 0;
       });
       return {
@@ -891,10 +922,12 @@
     container.innerHTML = '';
 
     const rms = Array.from(selectedRMs);
+    const isMultiMonth = selectedMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedMonths.has(m));
 
     rms.forEach(rm => {
       const conf = RM_CONFIG[rm];
-      const records = (dashboardData.rmDaily[rm] || []).filter(r => r.date && r.date.startsWith(selectedMonth));
+      const records = (dashboardData.rmDaily[rm] || []).filter(r => r.date && monthsArr.some(ym => r.date.startsWith(ym)));
 
       const row = document.createElement('div');
       row.className = 'heatmap-rm-row';
@@ -905,7 +938,7 @@
             <span>${rm}</span>
           </div>
           <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 500;">
-            ${records.length} logged days in ${getMonthLabel(selectedMonth)}
+            ${records.length} logged days (${isMultiMonth ? monthsArr.length + ' Months' : getMonthLabel(selectedMonth)})
           </span>
         </div>
       `;
@@ -1389,6 +1422,8 @@
     const canvas = document.getElementById('chartRadarComparison');
     if (!canvas) return;
 
+    destroyChart('chartRadarComparison');
+
     const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
     const metrics = [
       'Dial Volume',
@@ -1399,22 +1434,47 @@
       'Conversion %'
     ];
 
-    // Compute raw metrics for each Senior RM in the selected month
+    const isMultiMonth = selectedMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedMonths.has(m));
+    const titleEl = canvas.closest('.chart-card')?.querySelector('.card-subtitle');
+    if (titleEl) {
+      titleEl.textContent = `Balanced performance profile across 6 key metrics (${isMultiMonth ? monthsArr.length + ' selected months' : getMonthLabel(selectedMonth)})`;
+    }
+
+    // Compute raw metrics for each Senior RM across selected months
     const compObj = dashboardData.comparison[comparisonMonth] || {};
     const rawScores = {};
 
     seniorRMs.forEach(rm => {
-      const m = dashboardData.monthlyByRM[rm][selectedMonth] || {};
+      let dials = 0;
+      let connected = 0;
+      let talk = 0;
+      let working = 0;
+      let onb = 0;
+      let activeAb = 0;
+
+      monthsArr.forEach(ym => {
+        const m = (dashboardData.monthlyByRM[rm] || {})[ym] || {};
+        dials += m.totalDials || 0;
+        connected += m.totalConnected || 0;
+        talk += m.talktime || 0;
+        working += m.workingDays || 0;
+        onb += m.onboardings || 0;
+        activeAb += m.activeAbSum || 0;
+      });
+
+      const connRate = dials > 0 ? (connected / dials) * 100 : 0;
+      const avgTalk = working > 0 ? talk / working : 0;
       const conv = compObj.rms && compObj.rms[rm] && compObj.rms[rm].curr
         ? parseFloat(compObj.rms[rm].curr.conversionPct) || 0
         : 0;
 
       rawScores[rm] = [
-        m.totalDials || 0,
-        m.connectionRate || 0,
-        m.avgTalktime || 0,
-        m.onboardings || 0,
-        m.activeAbSum || 0,
+        dials,
+        connRate,
+        avgTalk,
+        onb,
+        activeAb,
         conv
       ];
     });
@@ -1484,10 +1544,31 @@
     tableBody.innerHTML = '';
 
     const rms = Array.from(selectedRMs);
+    const isMultiMonth = selectedMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedMonths.has(m));
     const compObj = dashboardData.comparison[comparisonMonth] || {};
 
     const rows = rms.map(rm => {
-      const m = dashboardData.monthlyByRM[rm][selectedMonth] || {};
+      let dials = 0;
+      let connected = 0;
+      let talk = 0;
+      let working = 0;
+      let onb = 0;
+      let consistent = 0;
+
+      monthsArr.forEach(ym => {
+        const m = (dashboardData.monthlyByRM[rm] || {})[ym] || {};
+        dials += m.totalDials || 0;
+        connected += m.totalConnected || 0;
+        talk += m.talktime || 0;
+        working += m.workingDays || 0;
+        onb += m.onboardings || 0;
+        consistent += m.consistentDays || 0;
+      });
+
+      const connRate = dials > 0 ? (connected / dials) * 100 : 0;
+      const avgTalk = working > 0 ? talk / working : 0;
+      const consistency = working > 0 ? (consistent / working) * 100 : 0;
       const conv = compObj.rms && compObj.rms[rm] && compObj.rms[rm].curr
         ? compObj.rms[rm].curr.conversionPct
         : 'N/A';
@@ -1496,13 +1577,13 @@
         rm,
         role: RM_CONFIG[rm].role,
         zone: RM_CONFIG[rm].zone,
-        dials: m.totalDials || 0,
-        connected: m.totalConnected || 0,
-        connRate: m.connectionRate || 0,
-        avgTalk: m.avgTalktime || 0,
-        onb: m.onboardings || 0,
+        dials,
+        connected,
+        connRate,
+        avgTalk,
+        onb,
         convPct: conv,
-        consistency: m.consistencyScore || 0
+        consistency
       };
     });
 
@@ -1711,8 +1792,12 @@
     const canvas = document.getElementById('chartWorkingDays');
     if (!canvas) return;
 
+    destroyChart('chartWorkingDays');
+
     const rms = Array.from(selectedRMs);
-    const months = dashboardData.months.slice(-5); // last 5 months
+    const months = selectedMonths.size > 1
+      ? dashboardData.months.filter(m => selectedMonths.has(m))
+      : dashboardData.months.slice(-5); // last 5 months
     const labels = months.map(getMonthLabel);
 
     const datasets = rms.map(rm => ({
@@ -1750,8 +1835,12 @@
     const canvas = document.getElementById('chartAvgDailyCalls');
     if (!canvas) return;
 
+    destroyChart('chartAvgDailyCalls');
+
     const rms = Array.from(selectedRMs);
-    const months = dashboardData.months.slice(-5);
+    const months = selectedMonths.size > 1
+      ? dashboardData.months.filter(m => selectedMonths.has(m))
+      : dashboardData.months.slice(-5);
     const labels = months.map(getMonthLabel);
 
     const datasets = rms.map(rm => ({
@@ -1795,10 +1884,20 @@
     container.innerHTML = '';
 
     const rms = Array.from(selectedRMs);
+    const isMultiMonth = selectedMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedMonths.has(m));
 
     rms.forEach(rm => {
-      const m = dashboardData.monthlyByRM[rm][selectedMonth] || {};
-      const score = Math.round(m.consistencyScore || 0);
+      let consistentDays = 0;
+      let workingDays = 0;
+
+      monthsArr.forEach(ym => {
+        const m = (dashboardData.monthlyByRM[rm] || {})[ym] || {};
+        consistentDays += (m.consistentDays || 0);
+        workingDays += (m.workingDays || 0);
+      });
+
+      const score = workingDays > 0 ? Math.round((consistentDays / workingDays) * 100) : 0;
       const conf = RM_CONFIG[rm];
 
       const card = document.createElement('div');
@@ -1817,7 +1916,7 @@
           </div>
         </div>
         <div style="margin-top: 0.75rem; font-size: 0.75rem; color: var(--text-muted);">
-          ${m.consistentDays || 0} / ${m.workingDays || 0} days with 50+ connected calls
+          ${consistentDays} / ${workingDays} days with 50+ connected calls (${isMultiMonth ? monthsArr.length + 'M' : getMonthLabel(selectedMonth)})
         </div>
       `;
       container.appendChild(card);
@@ -1825,6 +1924,7 @@
       setTimeout(() => {
         const c = document.getElementById(`gauge-${rm}`);
         if (!c) return;
+        destroyChart(`gauge-${rm}`);
         const gChart = new Chart(c.getContext('2d'), {
           type: 'doughnut',
           data: {
@@ -1852,10 +1952,25 @@
     container.innerHTML = '';
 
     const rms = Array.from(selectedRMs);
+    const isMultiMonth = selectedMonths.size > 1;
+    const monthsArr = dashboardData.months.filter(m => selectedMonths.has(m));
+    const titleEl = container.closest('.card')?.querySelector('.card-subtitle');
+    if (titleEl) {
+      titleEl.textContent = `Daily dial volume patterns throughout ${isMultiMonth ? monthsArr.length + ' selected months (' + monthsArr.map(getMonthLabel).join(', ') + ')' : getMonthLabel(selectedMonth)}`;
+    }
 
     rms.forEach(rm => {
-      const m = dashboardData.monthlyByRM[rm][selectedMonth] || {};
-      const dials = (m.dailyDials || []).map(d => d.dials);
+      let totalPeriodDials = 0;
+      let allDailyDials = [];
+
+      monthsArr.forEach(ym => {
+        const m = (dashboardData.monthlyByRM[rm] || {})[ym] || {};
+        totalPeriodDials += (m.totalDials || 0);
+        (m.dailyDials || []).forEach(d => {
+          allDailyDials.push(d.dials || 0);
+        });
+      });
+
       const conf = RM_CONFIG[rm];
 
       const item = document.createElement('div');
@@ -1870,20 +1985,20 @@
       item.innerHTML = `
         <div style="width: 140px;">
           <div style="font-weight: 700; font-size: 0.9rem;">${rm}</div>
-          <div style="font-size: 0.72rem; color: var(--text-muted);">${dials.length} logging days</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted);">${allDailyDials.length} logging days ${isMultiMonth ? '(' + monthsArr.length + 'M)' : ''}</div>
         </div>
         <div style="flex: 1; height: 35px; margin: 0 1rem;">
           <canvas id="sp-daily-${rm}" width="400" height="35" style="width: 100%; height: 35px;"></canvas>
         </div>
-        <div style="text-align: right; width: 100px;">
-          <div style="font-weight: 700; font-size: 0.95rem;">${formatNumber(m.totalDials || 0)}</div>
-          <div style="font-size: 0.72rem; color: var(--text-muted);">Total Dials</div>
+        <div style="text-align: right; width: 110px;">
+          <div style="font-weight: 700; font-size: 0.95rem;">${formatNumber(totalPeriodDials)}</div>
+          <div style="font-size: 0.72rem; color: var(--text-muted);">${isMultiMonth ? 'Period Dials' : 'Total Dials'}</div>
         </div>
       `;
       container.appendChild(item);
 
       setTimeout(() => {
-        drawSparkline(`sp-daily-${rm}`, dials, conf.color);
+        drawSparkline(`sp-daily-${rm}`, allDailyDials, conf.color);
       }, 50);
     });
   }
