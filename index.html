@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM Performance Dashboard | Ambassador Club</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Chart.js v4 from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Hidden Configuration for Google Apps Script Web App URL -->
+  <input type="hidden" id="appsScriptUrl" value="https://script.google.com/a/macros/nobroker.in/s/AKfycbztUt3a2KbJ2ZEfhyUohuGypIcx24fC_Zm76m-g5Kf96ysfOURKYVZPHIvP85AWuoS9/exec">
+
+  <!-- Loading Overlay -->
+  <div id="loadingOverlay">
+    <div class="spinner"></div>
+    <div class="loading-text">Loading Executive Dashboard...</div>
+  </div>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-section">
+        <div class="brand-icon">AC</div>
+        <div class="brand-titles">
+          <h1>RM Performance Dashboard <span class="brand-badge">Executive</span></h1>
+          <p>Ambassador Club • Executive Performance & Productivity Intelligence</p>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Home
+        </a>
+        <a href="global.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Team Comparison
+        </a>
+        <a href="profile.html?rm=Malik" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          RM Profile
+        </a>
+      </nav>
+
+      <div class="header-meta">
+        <div class="meta-pill">
+          <span class="pulse-dot"></span>
+          <span>Live Reporting</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-wrapper">
+
+    <!-- Executive Hero Section -->
+    <section class="hero-hub">
+      <div class="hero-tag">Ambassador Club Leadership Portal</div>
+      <h2 class="hero-title">Relationship Manager Performance Intelligence</h2>
+      <p class="hero-subtitle">
+        High-fidelity executive tracking across call activity, connection rates, conversions, daily talktime, and operational consistency across North, West, South, and New Joiner cohorts.
+      </p>
+
+      <!-- Quick Executive Summary Ribbon -->
+      <div class="grid-4" style="margin-bottom: 0;">
+        <div class="kpi-card" data-color="primary" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px);">
+          <div class="kpi-top">
+            <span class="kpi-label">Team Dials (MTD)</span>
+          </div>
+          <div class="kpi-value" id="hubTotalDials">--</div>
+          <div class="kpi-footer">
+            <span class="kpi-delta positive" id="hubDialsMoM">-- MoM</span>
+            <span style="font-size: 0.72rem; color: var(--text-muted);">Oct 2026</span>
+          </div>
+        </div>
+
+        <div class="kpi-card" data-color="success" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px);">
+          <div class="kpi-top">
+            <span class="kpi-label">Connect Rate (Team)</span>
+          </div>
+          <div class="kpi-value" id="hubConnRate">--%</div>
+          <div class="kpi-footer">
+            <span class="cell-badge good">Optimal > 30%</span>
+            <span style="font-size: 0.72rem; color: var(--text-muted);">Overall</span>
+          </div>
+        </div>
+
+        <div class="kpi-card" data-color="warning" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px);">
+          <div class="kpi-top">
+            <span class="kpi-label">Conversions (MTD)</span>
+          </div>
+          <div class="kpi-value" id="hubConversions">--</div>
+          <div class="kpi-footer">
+            <span class="cell-badge good">Senior RMs</span>
+            <span style="font-size: 0.72rem; color: var(--text-muted);">Oct 2026</span>
+          </div>
+        </div>
+
+        <div class="kpi-card" data-color="primary" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px);">
+          <div class="kpi-top">
+            <span class="kpi-label">Avg Daily Talktime</span>
+          </div>
+          <div class="kpi-value" id="hubAvgTalktime">--</div>
+          <div class="kpi-footer">
+            <span class="cell-badge good">Team Avg</span>
+            <span style="font-size: 0.72rem; color: var(--text-muted);">Per Working Day</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Hub (2 Big Executive Cards) -->
+    <section>
+      <div style="margin-bottom: 1.25rem;">
+        <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">
+          Select Analysis Mode
+        </h3>
+        <p style="font-size: 0.88rem; color: var(--text-muted);">Choose between multi-RM cross-comparison or individual deep-dive profiles.</p>
+      </div>
+
+      <div class="nav-feature-grid">
+        <!-- Card 1: Team Comparison -->
+        <a href="global.html" class="nav-feature-card">
+          <div>
+            <div class="nav-feature-icon" style="background: #e0e7ff; color: #4f46e5;">📊</div>
+            <h4 class="nav-feature-title">Global Team Comparison</h4>
+            <p class="nav-feature-desc">
+              Compare all 5 RMs side-by-side with interactive multi-line trend charts, radar analysis, 25+ volume bucket breakdowns, and sortable ranking tables.
+            </p>
+          </div>
+          <div class="nav-feature-link">
+            Open Team Comparison View →
+          </div>
+        </a>
+
+        <!-- Card 2: RM Individual Profiles -->
+        <a href="profile.html?rm=Malik" class="nav-feature-card profile-card">
+          <div>
+            <div class="nav-feature-icon" style="background: #d1fae5; color: #059669;">👤</div>
+            <h4 class="nav-feature-title">RM Deep-Dive Profiles</h4>
+            <p class="nav-feature-desc">
+              Detailed single-page scrollable profiles for each Relationship Manager. Inspect dedicated KPI scorecards, month-on-month trendlines, talktime heatmaps, and consistency metrics.
+            </p>
+          </div>
+          <div class="nav-feature-link" style="color: #059669;">
+            Explore RM Profiles →
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Individual RM Roster Preview -->
+    <section style="margin-top: 1rem;">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+        <div>
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em;">
+            Relationship Managers Roster
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">Click on any RM card below to launch their detailed profile.</p>
+        </div>
+      </div>
+
+      <div class="rm-preview-grid" id="rmPreviewGrid">
+        <!-- Rendered dynamically via dashboard.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Ambassador Club Performance Dashboard</strong> • Executive Intelligence System
+      </div>
+      <div>
+        Last Updated: <span id="lastUpdatedTs" style="font-weight: 600; color: var(--text-primary);">Oct 29, 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        const data = await window.RM_DASHBOARD.fetchDashboardData();
+        window.RM_DASHBOARD.initLandingPage(data);
+      } catch (e) {
+        console.error(e);
+      } finally {
+        window.RM_DASHBOARD.hideLoader();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Excel source file (too large for git, data is in data.js)
+*.xlsx
+
+# Service account credentials (NEVER commit)
+*.json
+!data.json
+!apps-script/appsscript.json
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini

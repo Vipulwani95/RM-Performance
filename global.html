@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Comparison | RM Performance Dashboard</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Chart.js v4 from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Hidden Configuration for Google Apps Script Web App URL -->
+  <input type="hidden" id="appsScriptUrl" value="https://script.google.com/a/macros/nobroker.in/s/AKfycbztUt3a2KbJ2ZEfhyUohuGypIcx24fC_Zm76m-g5Kf96ysfOURKYVZPHIvP85AWuoS9/exec">
+
+  <!-- Loading Overlay -->
+  <div id="loadingOverlay">
+    <div class="spinner"></div>
+    <div class="loading-text">Loading Team Comparison...</div>
+  </div>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-section">
+        <div class="brand-icon">AC</div>
+        <div class="brand-titles">
+          <h1>RM Performance — Team Comparison</h1>
+          <p>Ambassador Club • Cross-RM Benchmarking & Multi-Line Trend Analysis</p>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Home
+        </a>
+        <a href="global.html" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Team Comparison
+        </a>
+        <a href="profile.html?rm=Malik" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          RM Profile
+        </a>
+      </nav>
+
+      <div class="header-meta">
+        <div class="meta-pill">
+          <span class="pulse-dot"></span>
+          <span>Live Data</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-wrapper">
+
+    <!-- Global Filter Bar -->
+    <div class="filter-bar">
+      <!-- Month Filter -->
+      <div class="filter-group">
+        <span class="filter-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Month
+        </span>
+        <select id="globalMonthSelect" class="select-control"></select>
+      </div>
+
+      <!-- RM Filter Toggle Pills -->
+      <div class="filter-group">
+        <span class="filter-label">Filter RMs:</span>
+        <div class="rm-toggles" id="rmToggleGroup">
+          <!-- Populated dynamically -->
+        </div>
+
+        <div style="display: flex; gap: 0.25rem; margin-left: 0.5rem;">
+          <button type="button" class="btn-ghost" id="btnSelectAll">All</button>
+          <button type="button" class="btn-ghost" id="btnSelectSeniors">Seniors</button>
+          <button type="button" class="btn-ghost" id="btnSelectNew">New Joiners</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="tabs-container">
+      <button type="button" class="tab-btn active" data-tab="overview">
+        <span>📊</span> Overview
+      </button>
+      <button type="button" class="tab-btn" data-tab="trends">
+        <span>📈</span> MoM Trends
+      </button>
+      <button type="button" class="tab-btn" data-tab="dials">
+        <span>📞</span> Dial Analysis
+      </button>
+      <button type="button" class="tab-btn" data-tab="conversions">
+        <span>🎯</span> Conversions
+      </button>
+      <button type="button" class="tab-btn" data-tab="comparisons">
+        <span>⚖️</span> Head-to-Head & Ranking
+      </button>
+      <button type="button" class="tab-btn" data-tab="consistency">
+        <span>⏱️</span> Consistency & Working Days
+      </button>
+    </div>
+
+    <!-- ===================================================================
+         TAB 1: OVERVIEW
+         =================================================================== -->
+    <div id="tab-overview" class="tab-content active">
+      <!-- Dynamic KPI Scorecards per selected RM -->
+      <div id="overviewKpiContainer"></div>
+
+      <!-- Zone Performance Summary -->
+      <div class="card" style="margin-top: 1.5rem;">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Zone Performance Summary</div>
+            <div class="card-subtitle">Aggregated performance across geographic operating territories</div>
+          </div>
+        </div>
+        <div class="grid-4" id="zoneSummaryContainer" style="margin-bottom: 0;"></div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         TAB 2: TRENDS (8 STANDALONE & PAIRED CHARTS IN 2-COLUMN GRID)
+         =================================================================== -->
+    <div id="tab-trends" class="tab-content">
+      <div class="grid-2">
+        <!-- 1. Total Dial Calls per Month -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">1. Total Dial Calls per Month</div>
+              <div class="card-subtitle">Aggregated monthly outgoing dial volume per RM</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartTrendDials"></canvas>
+          </div>
+        </div>
+
+        <!-- 2. Total Connected Calls per Month -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">2. Total Connected Calls per Month</div>
+              <div class="card-subtitle">Successfully connected conversations per month</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartTrendConnect"></canvas>
+          </div>
+        </div>
+
+        <!-- 3. Connection Rate % per Month -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">3. Connection Rate % per Month</div>
+              <div class="card-subtitle">Ratio of connected calls to total dials</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartTrendRate"></canvas>
+          </div>
+        </div>
+
+        <!-- 4. Average Daily Talktime per Month -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">4. Average Daily Talktime per Month</div>
+              <div class="card-subtitle">Average minutes of call duration per working day</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartTrendTalktime"></canvas>
+          </div>
+        </div>
+
+        <!-- 5. Total Onboardings per Month -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">5. Total Onboardings per Month</div>
+              <div class="card-subtitle">Completed customer onboarding counts</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartTrendOnboardings"></canvas>
+          </div>
+        </div>
+
+        <!-- 6. Active Followups (Paired: Dial = solid, Connect = dashed) -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">6. Active Followups — Dial vs Connect</div>
+              <div class="card-subtitle">Solid line = Dials, Dashed line = Connected calls</div>
+            </div>
+            <div class="legend-guide">
+              <span class="legend-guide-item"><span class="line-sample-solid"></span> Dial</span>
+              <span class="legend-guide-item"><span class="line-sample-dashed"></span> Connect</span>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartTrendActiveFollowup"></canvas>
+          </div>
+        </div>
+
+        <!-- 7. Reactive Followups (Paired: Dial = solid, Connect = dashed) -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">7. Reactive Followups — Dial vs Connect</div>
+              <div class="card-subtitle">Solid line = Dials, Dashed line = Connected calls</div>
+            </div>
+            <div class="legend-guide">
+              <span class="legend-guide-item"><span class="line-sample-solid"></span> Dial</span>
+              <span class="legend-guide-item"><span class="line-sample-dashed"></span> Connect</span>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartTrendReactiveFollowup"></canvas>
+          </div>
+        </div>
+
+        <!-- 8. Consistent Followups (Paired: Dial = solid, Connect = dashed) -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">8. Consistent Followups — Dial vs Connect</div>
+              <div class="card-subtitle">Solid line = Dials, Dashed line = Connected calls</div>
+            </div>
+            <div class="legend-guide">
+              <span class="legend-guide-item"><span class="line-sample-solid"></span> Dial</span>
+              <span class="legend-guide-item"><span class="line-sample-dashed"></span> Connect</span>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartTrendConsistentFollowup"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         TAB 3: DIAL ANALYSIS
+         =================================================================== -->
+    <div id="tab-dials" class="tab-content">
+      <div class="grid-2">
+        <!-- Stacked Bar: Dial Composition -->
+        <div class="chart-card tall">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Dial Composition by Category</div>
+              <div class="card-subtitle">Breakdown across 8 call categories for selected month</div>
+            </div>
+          </div>
+          <div class="chart-wrapper tall">
+            <canvas id="chartDialComposition"></canvas>
+          </div>
+        </div>
+
+        <!-- Connect Rate by Type -->
+        <div class="chart-card tall">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Connect Rate % by Category</div>
+              <div class="card-subtitle">Connection success rate per call category</div>
+            </div>
+          </div>
+          <div class="chart-wrapper tall">
+            <canvas id="chartConnectRateByType"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Talktime Calendar Heatmap -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Daily Talktime Heatmap (Calendar Grid)</div>
+            <div class="card-subtitle">Color intensity indicates minutes of talktime logged per day</div>
+          </div>
+          <div class="heatmap-legend">
+            <span>0m</span>
+            <span class="hm-scale-box hm-lvl-0"></span>
+            <span class="hm-scale-box hm-lvl-1"></span>
+            <span class="hm-scale-box hm-lvl-2"></span>
+            <span class="hm-scale-box hm-lvl-3"></span>
+            <span class="hm-scale-box hm-lvl-4"></span>
+            <span>90m+</span>
+          </div>
+        </div>
+        <div id="teamHeatmapContainer" class="heatmap-container"></div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         TAB 4: CONVERSIONS
+         =================================================================== -->
+    <div id="tab-conversions" class="tab-content">
+      <!-- Comparison Filter -->
+      <div class="filter-bar" style="margin-bottom: 1.5rem; background: #ffffff;">
+        <div class="filter-group">
+          <span class="filter-label">Comparison Period:</span>
+          <select id="compMonthSelect" class="select-control">
+            <option value="Oct-2026" selected>Oct-2026</option>
+            <option value="Sep-2026">Sep-2026</option>
+            <option value="Aug-2026">Aug-2026</option>
+            <option value="Jul-2026">Jul-2026</option>
+          </select>
+        </div>
+        <div style="font-size: 0.8rem; color: var(--text-muted);">
+          Note: Conversion reports track Senior RMs with assigned workable portfolios.
+        </div>
+      </div>
+
+      <!-- Conversion Funnel Card -->
+      <div class="card" style="margin-bottom: 1.75rem;">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Conversion Funnel by RM</div>
+            <div class="card-subtitle">Total Leads → Workable Leads → Final Conversions</div>
+          </div>
+        </div>
+        <div class="card-body" id="conversionFunnelContainer"></div>
+      </div>
+
+      <!-- 2 Grids: Trend & Projection -->
+      <div class="grid-2">
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">MoM Conversion % Trend</div>
+              <div class="card-subtitle">Historical conversion rate progression</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartConversionTrend"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Target vs Actual vs Projection</div>
+              <div class="card-subtitle">Target attainment and month-end conversion outlook</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProjVsActual"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paid AB & Active Users Daily Lines -->
+      <div class="grid-2">
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Daily Paid AB Trend</div>
+              <div class="card-subtitle">Daily count of paying Ambassador Club members</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartPaidAbTrend"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Daily Active Users Trend</div>
+              <div class="card-subtitle">Daily active users engaged per RM portfolio</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartActiveUsersTrend"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================================================================
+         TAB 5: COMPARISONS & RANKING
+         =================================================================== -->
+    <div id="tab-comparisons" class="tab-content">
+      <div class="grid-2">
+        <!-- Spider/Radar Chart -->
+        <div class="chart-card tall">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Senior RM Performance Radar</div>
+              <div class="card-subtitle">Normalized 0-100 benchmarking across 6 core pillars</div>
+            </div>
+          </div>
+          <div class="chart-wrapper tall">
+            <canvas id="chartRadarComparison"></canvas>
+          </div>
+        </div>
+
+        <!-- RM Ranking Table -->
+        <div class="chart-card tall" style="overflow-x: auto;">
+          <div class="card-header">
+            <div>
+              <div class="card-title">RM League Table & Rankings</div>
+              <div class="card-subtitle">Cross-metric rankings for selected month</div>
+            </div>
+          </div>
+          <table class="data-table" id="rankingTable">
+            <thead>
+              <tr>
+                <th style="width: 40px; text-align: center;">#</th>
+                <th>RM Name</th>
+                <th>Zone</th>
+                <th>Dials</th>
+                <th>Connected</th>
+                <th>Connect %</th>
+                <th>Avg Talk</th>
+                <th>Onb</th>
+                <th>Conv %</th>
+                <th>Consistency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 25+/25- Bucket Breakdown Section -->
+      <div id="bucketAnalysisContainer"></div>
+    </div>
+
+    <!-- ===================================================================
+         TAB 6: CONSISTENCY
+         =================================================================== -->
+    <div id="tab-consistency" class="tab-content">
+      <div class="grid-2">
+        <!-- Working Days per Month -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Logged Working Days per Month</div>
+              <div class="card-subtitle">Active logging days per month</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartWorkingDays"></canvas>
+          </div>
+        </div>
+
+        <!-- Avg Daily Calls on Working Days -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Avg Daily Calls on Working Days</div>
+              <div class="card-subtitle">Dial productivity pace per active working day</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartAvgDailyCalls"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consistency Gauges (>= 50 dials/day) -->
+      <div class="card" style="margin-bottom: 1.75rem;">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Operational Consistency Score</div>
+            <div class="card-subtitle">% of working days meeting minimum threshold of 50+ dials per day</div>
+          </div>
+        </div>
+        <div class="grid-6" id="consistencyGaugeCards" style="margin-bottom: 0;"></div>
+      </div>
+
+      <!-- Daily Activity Sparklines Card -->
+      <div class="card">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Daily Activity Distribution</div>
+            <div class="card-subtitle">Daily dial volume patterns throughout selected month</div>
+          </div>
+        </div>
+        <div id="dailySparklineContainer" style="display: flex; flex-direction: column; gap: 0.75rem;"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Ambassador Club Performance Dashboard</strong> • Executive Intelligence System
+      </div>
+      <div>
+        Last Updated: <span id="lastUpdatedTs" style="font-weight: 600; color: var(--text-primary);">Oct 29, 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/global.js"></script>
+</body>
+</html>

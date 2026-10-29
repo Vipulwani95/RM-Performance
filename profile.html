@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM Profile Deep Dive | Ambassador Club</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Chart.js v4 from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- Hidden Configuration for Google Apps Script Web App URL -->
+  <input type="hidden" id="appsScriptUrl" value="https://script.google.com/a/macros/nobroker.in/s/AKfycbztUt3a2KbJ2ZEfhyUohuGypIcx24fC_Zm76m-g5Kf96ysfOURKYVZPHIvP85AWuoS9/exec">
+
+  <!-- Loading Overlay -->
+  <div id="loadingOverlay">
+    <div class="spinner"></div>
+    <div class="loading-text">Loading RM Profile...</div>
+  </div>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-section">
+        <div class="brand-icon">AC</div>
+        <div class="brand-titles">
+          <h1>RM Performance — Individual Profile</h1>
+          <p>Ambassador Club • Dedicated Relationship Manager Performance Drill-Down</p>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Home
+        </a>
+        <a href="global.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Team Comparison
+        </a>
+        <a href="profile.html?rm=Malik" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          RM Profile
+        </a>
+      </nav>
+
+      <div class="header-meta">
+        <div class="meta-pill">
+          <span class="pulse-dot"></span>
+          <span>Profile View</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-wrapper">
+
+    <!-- Filter Bar: RM & Month Selector -->
+    <div class="filter-bar">
+      <div class="filter-group">
+        <span class="filter-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          Select RM:
+        </span>
+        <select id="profileRmSelect" class="select-control" style="font-weight: 700; min-width: 220px;"></select>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Month:
+        </span>
+        <select id="profileMonthSelect" class="select-control"></select>
+      </div>
+    </div>
+
+    <!-- RM Profile Banner -->
+    <section class="profile-banner" id="profBanner">
+      <div class="profile-identity">
+        <div class="profile-avatar" id="profAvatar">RM</div>
+        <div class="profile-info">
+          <h2 id="profName">Relationship Manager</h2>
+          <div class="profile-tags">
+            <span class="zone-badge badge-north" id="profZoneBadge">Zone</span>
+            <span style="font-size: 0.85rem; color: var(--text-muted);" id="profTenure">Tenure & Data Window</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-quick-stats">
+        <div class="profile-stat-box">
+          <div class="val" id="profBannerDials">--</div>
+          <div class="lbl">Dials (MTD)</div>
+        </div>
+        <div class="profile-stat-box">
+          <div class="val" id="profBannerConnRate">--%</div>
+          <div class="lbl">Connect %</div>
+        </div>
+        <div class="profile-stat-box">
+          <div class="val" id="profBannerTalktime">--</div>
+          <div class="lbl">Avg Talktime</div>
+        </div>
+        <div class="profile-stat-box">
+          <div class="val" id="profBannerConsistency">--%</div>
+          <div class="lbl">Consistency</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION A: KPI SUMMARY CARDS
+         =================================================================== -->
+    <section style="margin-bottom: 2.25rem;">
+      <div style="margin-bottom: 1rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.01em;">
+          Section A: Key Performance Indicators
+        </h3>
+        <p style="font-size: 0.82rem; color: var(--text-muted);">Current month totals with month-on-month velocity</p>
+      </div>
+
+      <div class="grid-6">
+        <!-- Total Dials -->
+        <div class="kpi-card" data-color="primary">
+          <div class="kpi-top">
+            <span class="kpi-label">Total Dials</span>
+          </div>
+          <div class="kpi-value" id="kpiProfDials">--</div>
+          <div class="kpi-footer">
+            <span class="kpi-delta positive" id="deltaProfDials">--</span>
+            <canvas id="sparkProfDials" width="70" height="24" class="kpi-sparkline"></canvas>
+          </div>
+        </div>
+
+        <!-- Total Connected -->
+        <div class="kpi-card" data-color="success">
+          <div class="kpi-top">
+            <span class="kpi-label">Total Connected</span>
+          </div>
+          <div class="kpi-value" id="kpiProfConnected">--</div>
+          <div class="kpi-footer">
+            <span class="kpi-delta positive" id="deltaProfConnected">--</span>
+          </div>
+        </div>
+
+        <!-- Connection Rate % -->
+        <div class="kpi-card" data-color="warning">
+          <div class="kpi-top">
+            <span class="kpi-label">Connect Rate</span>
+          </div>
+          <div class="kpi-value" id="kpiProfRate">--%</div>
+          <div class="kpi-footer">
+            <span class="kpi-delta positive" id="deltaProfRate">--</span>
+          </div>
+        </div>
+
+        <!-- Avg Daily Talktime -->
+        <div class="kpi-card" data-color="primary">
+          <div class="kpi-top">
+            <span class="kpi-label">Avg Daily Talk</span>
+          </div>
+          <div class="kpi-value" id="kpiProfTalktime">--</div>
+          <div class="kpi-footer">
+            <span class="kpi-delta positive" id="deltaProfTalktime">--</span>
+          </div>
+        </div>
+
+        <!-- Onboardings -->
+        <div class="kpi-card" data-color="success">
+          <div class="kpi-top">
+            <span class="kpi-label">Onboardings</span>
+          </div>
+          <div class="kpi-value" id="kpiProfOnboardings">--</div>
+          <div class="kpi-footer">
+            <span class="kpi-delta positive" id="deltaProfOnboardings">--</span>
+          </div>
+        </div>
+
+        <!-- Active ABs -->
+        <div class="kpi-card" data-color="primary">
+          <div class="kpi-top">
+            <span class="kpi-label">Active ABs</span>
+          </div>
+          <div class="kpi-value" id="kpiProfActiveAb">--</div>
+          <div class="kpi-footer">
+            <span class="kpi-delta positive" id="deltaProfActiveAb">--</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION B: MONTHLY TRENDS (THEIR DATA ONLY - 8 CLEAN CHARTS)
+         =================================================================== -->
+    <section style="margin-bottom: 2.25rem;">
+      <div style="margin-bottom: 1rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.01em;">
+          Section B: Historical Monthly Trends
+        </h3>
+        <p style="font-size: 0.82rem; color: var(--text-muted);">Dedicated trendlines isolating this RM's performance trajectory</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- 1. Total Dials -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">1. Total Dial Calls per Month</div>
+              <div class="card-subtitle">Monthly outbound call progression</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProfDials"></canvas>
+          </div>
+        </div>
+
+        <!-- 2. Total Connected -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">2. Total Connected Calls per Month</div>
+              <div class="card-subtitle">Monthly connected conversations volume</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProfConnect"></canvas>
+          </div>
+        </div>
+
+        <!-- 3. Connection Rate % -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">3. Connection Rate % per Month</div>
+              <div class="card-subtitle">Connect efficiency over time</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProfRate"></canvas>
+          </div>
+        </div>
+
+        <!-- 4. Avg Daily Talktime -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">4. Average Daily Talktime per Month</div>
+              <div class="card-subtitle">Call depth & duration per active working day</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProfTalktime"></canvas>
+          </div>
+        </div>
+
+        <!-- 5. Total Onboardings -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">5. Total Onboardings per Month</div>
+              <div class="card-subtitle">Monthly customer onboarding acquisition</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProfOnboardings"></canvas>
+          </div>
+        </div>
+
+        <!-- 6. Active Followups (Paired) -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">6. Active Followups — Dial vs Connect</div>
+              <div class="card-subtitle">Solid line = Dials, Dashed line = Connects</div>
+            </div>
+            <div class="legend-guide">
+              <span class="legend-guide-item"><span class="line-sample-solid"></span> Dial</span>
+              <span class="legend-guide-item"><span class="line-sample-dashed"></span> Connect</span>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProfActiveFollowup"></canvas>
+          </div>
+        </div>
+
+        <!-- 7. Reactive Followups (Paired) -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">7. Reactive Followups — Dial vs Connect</div>
+              <div class="card-subtitle">Solid line = Dials, Dashed line = Connects</div>
+            </div>
+            <div class="legend-guide">
+              <span class="legend-guide-item"><span class="line-sample-solid"></span> Dial</span>
+              <span class="legend-guide-item"><span class="line-sample-dashed"></span> Connect</span>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProfReactiveFollowup"></canvas>
+          </div>
+        </div>
+
+        <!-- 8. Consistent Followups (Paired) -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">8. Consistent Followups — Dial vs Connect</div>
+              <div class="card-subtitle">Solid line = Dials, Dashed line = Connects</div>
+            </div>
+            <div class="legend-guide">
+              <span class="legend-guide-item"><span class="line-sample-solid"></span> Dial</span>
+              <span class="legend-guide-item"><span class="line-sample-dashed"></span> Connect</span>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProfConsistentFollowup"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION C: DIAL COMPOSITION
+         =================================================================== -->
+    <section style="margin-bottom: 2.25rem;">
+      <div style="margin-bottom: 1rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.01em;">
+          Section C: Dial Composition & Call Mix
+        </h3>
+        <p style="font-size: 0.82rem; color: var(--text-muted);">Historical composition and current month category split</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="chart-card tall">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Monthly Dial Breakdown</div>
+              <div class="card-subtitle">Composition across all 8 call categories</div>
+            </div>
+          </div>
+          <div class="chart-wrapper tall">
+            <canvas id="chartProfDialStacked"></canvas>
+          </div>
+        </div>
+
+        <div class="chart-card tall">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Selected Month Call Distribution</div>
+              <div class="card-subtitle">Percentage proportion of call types</div>
+            </div>
+          </div>
+          <div class="chart-wrapper tall">
+            <canvas id="chartProfDialDonut"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION D: TALKTIME HEATMAP
+         =================================================================== -->
+    <section style="margin-bottom: 2.25rem;">
+      <div style="margin-bottom: 1rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.01em;">
+          Section D: Talktime Calendar Heatmap
+        </h3>
+        <p style="font-size: 0.82rem; color: var(--text-muted);">Daily engagement minutes calendar distribution</p>
+      </div>
+
+      <div class="card">
+        <div id="profHeatmapContainer"></div>
+        <div class="heatmap-legend">
+          <span>0m</span>
+          <span class="hm-scale-box hm-lvl-0"></span>
+          <span class="hm-scale-box hm-lvl-1"></span>
+          <span class="hm-scale-box hm-lvl-2"></span>
+          <span class="hm-scale-box hm-lvl-3"></span>
+          <span class="hm-scale-box hm-lvl-4"></span>
+          <span>90m+</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION E: CONVERSION SECTION
+         =================================================================== -->
+    <section style="margin-bottom: 2.25rem;">
+      <div style="margin-bottom: 1rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.01em;">
+          Section E: Conversion & Portfolio Engagement
+        </h3>
+        <p style="font-size: 0.82rem; color: var(--text-muted);">Funnel metrics, Paid AB trajectories, and daily active user activity</p>
+      </div>
+
+      <div id="profConversionSection">
+        <!-- Rendered via profile.js -->
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECTION F: 25+/25- BUCKET ANALYSIS
+         =================================================================== -->
+    <section id="profBucketSection" style="margin-bottom: 2.25rem;">
+      <!-- Rendered via profile.js -->
+    </section>
+
+    <!-- ===================================================================
+         SECTION G: CONSISTENCY STATS
+         =================================================================== -->
+    <section style="margin-bottom: 2.25rem;">
+      <div style="margin-bottom: 1rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.01em;">
+          Section G: Operational Consistency & Working Days
+        </h3>
+        <p style="font-size: 0.82rem; color: var(--text-muted);">Tracking disciplined execution against the 50+ daily dials benchmark</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Gauge Card -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Consistency Score Benchmark</div>
+              <div class="card-subtitle">% of working days reaching 50+ outbound dials</div>
+            </div>
+          </div>
+          <div class="gauge-card-body">
+            <div style="position: relative; width: 170px; height: 170px;">
+              <canvas id="chartProfGauge" width="170" height="170"></canvas>
+              <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div class="gauge-center-text" id="profConsistencyScoreNum">--%</div>
+                <div class="gauge-caption">CONSISTENCY</div>
+              </div>
+            </div>
+            <div style="margin-top: 1rem; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary);" id="profConsistencySub">
+              --
+            </div>
+          </div>
+        </div>
+
+        <!-- Working vs Consistent Days -->
+        <div class="chart-card">
+          <div class="card-header">
+            <div>
+              <div class="card-title">Working Days vs 50+ Dial Days</div>
+              <div class="card-subtitle">Month-by-month consistency track record</div>
+            </div>
+          </div>
+          <div class="chart-wrapper">
+            <canvas id="chartProfWorkingDays"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- App Footer -->
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Ambassador Club Performance Dashboard</strong> • Executive Intelligence System
+      </div>
+      <div>
+        Last Updated: <span id="lastUpdatedTs" style="font-weight: 600; color: var(--text-primary);">Oct 29, 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/dashboard.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>
