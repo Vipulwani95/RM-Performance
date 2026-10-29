@@ -117,7 +117,10 @@
 
     if (appsScriptUrl) {
       try {
-        const resp = await fetch(appsScriptUrl);
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 2500);
+        const resp = await fetch(appsScriptUrl, { signal: controller.signal });
+        clearTimeout(timeoutId);
         if (resp.ok) {
           const contentType = resp.headers.get('content-type') || '';
           if (contentType.includes('application/json')) {
@@ -128,7 +131,7 @@
           }
         }
       } catch (e) {
-        console.warn('Apps Script fetch failed, falling back to local data.', e);
+        console.warn('Apps Script fetch failed or timed out, falling back to local data.', e);
       }
     }
 
@@ -267,7 +270,8 @@
       Object.values(mMap).forEach(m => {
         m.connectionRate = m.totalDials > 0 ? (m.totalConnected / m.totalDials) * 100 : 0;
         m.avgTalktime = m.workingDays > 0 ? (m.talktime / m.workingDays) : 0;
-        m.avgActiveAb = m.activeAbCount > 0 ? Math.round(m.activeAbSum / m.activeAbCount) : m.lastActiveAb;
+        m.totalActiveAb = m.activeAbSum;
+        m.avgActiveAb = m.activeAbSum; // Sum up of all days
         m.consistencyScore = m.workingDays > 0 ? (m.consistentDays / m.workingDays) * 100 : 0;
       });
 

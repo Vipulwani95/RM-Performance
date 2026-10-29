@@ -304,7 +304,7 @@
       let totalTalk = 0;
       let totalWorking = 0;
       let totalOnb = 0;
-      let activeAbLast = 0;
+      let totalActiveAb = 0;
 
       monthsArr.forEach(m => {
         const row = mData[m] || {};
@@ -313,7 +313,7 @@
         totalTalk += (row.talktime || 0);
         totalWorking += (row.workingDays || 0);
         totalOnb += (row.onboardings || 0);
-        if (row.lastActiveAb) activeAbLast = row.lastActiveAb;
+        totalActiveAb += (row.activeAbSum || 0);
       });
 
       const connRate = totalDials > 0 ? (totalConnected / totalDials) * 100 : 0;
@@ -418,7 +418,7 @@
             <div class="kpi-top">
               <span class="kpi-label">Active ABs</span>
             </div>
-            <div class="kpi-value">${formatNumber(activeAbLast)}</div>
+            <div class="kpi-value">${formatNumber(totalActiveAb)}</div>
             <div class="kpi-footer">
               <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
                 Active Portfolios
@@ -1355,7 +1355,7 @@
         m.connectionRate || 0,
         m.avgTalktime || 0,
         m.onboardings || 0,
-        m.avgActiveAb || m.lastActiveAb || 0,
+        m.activeAbSum || 0,
         conv
       ];
     });

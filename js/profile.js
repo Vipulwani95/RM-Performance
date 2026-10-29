@@ -184,14 +184,23 @@
 
   function renderFullProfile() {
     destroyAllCharts();
-    renderProfileHeader();
-    renderKPISummary();
-    renderMonthlyTrends();
-    renderDialComposition();
-    renderTalktimeHeatmap();
-    renderConversionSection();
-    renderBucketAnalysis();
-    renderConsistencySection();
+    const sections = [
+      ['Header', renderProfileHeader],
+      ['KPI Summary', renderKPISummary],
+      ['Monthly Trends', renderMonthlyTrends],
+      ['Dial Composition', renderDialComposition],
+      ['Talktime Heatmap', renderTalktimeHeatmap],
+      ['Conversion Section', renderConversionSection],
+      ['Bucket Analysis', renderBucketAnalysis],
+      ['Consistency Section', renderConsistencySection]
+    ];
+    sections.forEach(([name, fn]) => {
+      try {
+        fn();
+      } catch (err) {
+        console.error(`Error in render section [${name}]:`, err);
+      }
+    });
   }
 
   // =========================================================================
@@ -248,7 +257,7 @@
     const rateDelta = (curr.connectionRate || 0) - (prev.connectionRate || 0);
     const talkMoM = calcMoM(curr.avgTalktime, prev.avgTalktime);
     const onbMoM = calcMoM(curr.onboardings, prev.onboardings);
-    const abMoM = calcMoM(curr.avgActiveAb, prev.avgActiveAb);
+    const abMoM = calcMoM(curr.activeAbSum || 0, prev.activeAbSum || 0);
 
     const conf = RM_CONFIG[activeRM];
 
@@ -258,7 +267,7 @@
     document.getElementById('kpiProfRate').textContent = formatPct(curr.connectionRate || 0);
     document.getElementById('kpiProfTalktime').textContent = formatMinutes(curr.avgTalktime || 0);
     document.getElementById('kpiProfOnboardings').textContent = formatNumber(curr.onboardings || 0);
-    document.getElementById('kpiProfActiveAb').textContent = formatNumber(curr.avgActiveAb || curr.lastActiveAb || 0);
+    document.getElementById('kpiProfActiveAb').textContent = formatNumber(curr.activeAbSum || 0);
 
     // Set Deltas
     setDelta('deltaProfDials', dialsMoM, '%');
@@ -842,6 +851,7 @@
       const conv = curr.conversion || 0;
       const convPct = curr.conversionPct || '0%';
       const convNum = parseFloat(convPct) || 0;
+      const workPct = ((workable / totalLeads) * 100).toFixed(1);
       // Proportional bar widths:
       // Total Leads = 100%
       // Workable = (workable / totalLeads) * 100
@@ -873,6 +883,14 @@
           </div>
         </div>
       `;
+    } else {
+      if (funnelContainer) {
+        funnelContainer.innerHTML = `
+          <div style="padding: 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.88rem;">
+            Conversion funnel tracking is available for Jul 2026 onwards. No funnel records found for ${comparisonMonth}.
+          </div>
+        `;
+      }
     }
 
     // Render Paid AB
