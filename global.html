@@ -64,13 +64,23 @@
 
     <!-- Global Filter Bar -->
     <div class="filter-bar">
-      <!-- Month Filter -->
+      <!-- Month Filter (Active Month + Multi-Month Pills) -->
       <div class="filter-group">
         <span class="filter-label">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-          Month
+          Active Month:
         </span>
         <select id="globalMonthSelect" class="select-control"></select>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">Compare Months:</span>
+        <div class="month-toggles" id="monthToggleGroup"></div>
+        <div style="display: flex; gap: 0.25rem;">
+          <button type="button" class="btn-ghost" id="btnSelectAllMonths">All</button>
+          <button type="button" class="btn-ghost" id="btnSelectLast3Months">Last 3M</button>
+          <button type="button" class="btn-ghost" id="btnSelectLast6Months">Last 6M</button>
+        </div>
       </div>
 
       <!-- RM Filter Toggle Pills -->
@@ -282,6 +292,17 @@
             <canvas id="chartConnectRateByType"></canvas>
           </div>
         </div>
+      </div>
+
+      <!-- NEW: Multi-Month Cross-Comparison Table & Breakdown -->
+      <div class="card" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+        <div class="card-header">
+          <div>
+            <div class="card-title">Month-on-Month Dial & Connection Comparison Matrix</div>
+            <div class="card-subtitle">Side-by-side performance across your selected months for selected RMs</div>
+          </div>
+        </div>
+        <div id="dialMomComparisonContainer" style="overflow-x: auto;"></div>
       </div>
 
       <!-- Talktime Calendar Heatmap -->

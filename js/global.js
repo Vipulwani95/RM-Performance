@@ -23,6 +23,7 @@
   let dashboardData = null;
   let selectedRMs = new Set(['Malik', 'Ramya', 'Dipali', 'Shirish', 'Anand']);
   let selectedMonth = '2026-10';
+  let selectedMonths = new Set(); // Will initialize to all available months
   let comparisonMonth = 'Oct-2026';
   let activeTab = 'overview';
 
@@ -79,6 +80,67 @@
 
       monthSelect.addEventListener('change', (e) => {
         selectedMonth = e.target.value;
+        renderCurrentView();
+      });
+    }
+
+    // Initialize selectedMonths Set with all months
+    selectedMonths = new Set(dashboardData.months);
+
+    // Multi-Month Filter Pills
+    const monthToggleContainer = document.getElementById('monthToggleGroup');
+    if (monthToggleContainer) {
+      monthToggleContainer.innerHTML = '';
+      const revMonths = [...dashboardData.months].reverse();
+      revMonths.forEach(ym => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'month-toggle-btn active';
+        btn.setAttribute('data-ym', ym);
+        btn.textContent = getMonthLabel(ym);
+
+        btn.addEventListener('click', () => {
+          if (selectedMonths.has(ym)) {
+            if (selectedMonths.size > 1) {
+              selectedMonths.delete(ym);
+              btn.classList.remove('active');
+            }
+          } else {
+            selectedMonths.add(ym);
+            btn.classList.add('active');
+          }
+          renderCurrentView();
+        });
+        monthToggleContainer.appendChild(btn);
+      });
+    }
+
+    // Quick Month Shortcuts
+    const btnAllMonths = document.getElementById('btnSelectAllMonths');
+    if (btnAllMonths) {
+      btnAllMonths.addEventListener('click', () => {
+        selectedMonths = new Set(dashboardData.months);
+        updateMonthToggleButtons();
+        renderCurrentView();
+      });
+    }
+
+    const btnLast3M = document.getElementById('btnSelectLast3Months');
+    if (btnLast3M) {
+      btnLast3M.addEventListener('click', () => {
+        const last3 = dashboardData.months.slice(-3);
+        selectedMonths = new Set(last3);
+        updateMonthToggleButtons();
+        renderCurrentView();
+      });
+    }
+
+    const btnLast6M = document.getElementById('btnSelectLast6Months');
+    if (btnLast6M) {
+      btnLast6M.addEventListener('click', () => {
+        const last6 = dashboardData.months.slice(-6);
+        selectedMonths = new Set(last6);
+        updateMonthToggleButtons();
         renderCurrentView();
       });
     }
@@ -163,6 +225,14 @@
     document.querySelectorAll('.rm-toggle-btn').forEach(btn => {
       const rm = btn.getAttribute('data-rm');
       if (selectedRMs.has(rm)) btn.classList.add('active');
+      else btn.classList.remove('active');
+    });
+  }
+
+  function updateMonthToggleButtons() {
+    document.querySelectorAll('.month-toggle-btn').forEach(btn => {
+      const ym = btn.getAttribute('data-ym');
+      if (selectedMonths.has(ym)) btn.classList.add('active');
       else btn.classList.remove('active');
     });
   }
@@ -408,8 +478,10 @@
   // SECTION 2: TRENDS TAB (8 CHARTS: 5 STANDALONE + 3 PAIRED)
   // =========================================================================
   function renderTrendsTab() {
-    const labels = dashboardData.monthLabels;
-    const months = dashboardData.months;
+    // Filter months based on multi-month selection
+    const allMonths = dashboardData.months;
+    const months = allMonths.filter(m => selectedMonths.has(m));
+    const labels = months.map(getMonthLabel);
     const rms = Array.from(selectedRMs);
 
     // 1. Total Dial Calls per Month
@@ -631,6 +703,7 @@
   function renderDialAnalysisTab() {
     renderStackedDialComposition();
     renderConnectRateByType();
+    renderDialMomMatrix();
     renderTeamTalktimeHeatmap();
   }
 
@@ -805,6 +878,110 @@
       row.appendChild(grid);
       container.appendChild(row);
     });
+  }
+
+  // Month-on-Month Dial & Connection Comparison Matrix
+  function renderDialMomMatrix() {
+    const container = document.getElementById('dialMomComparisonContainer');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const rms = Array.from(selectedRMs);
+    const months = dashboardData.months.filter(m => selectedMonths.has(m));
+
+    if (rms.length === 0 || months.length === 0) {
+      container.innerHTML = '<div style="padding: 2rem; color: var(--text-muted); text-align: center;">Please select at least 1 RM and 1 Month to view comparison.</div>';
+      return;
+    }
+
+    let html = `
+      <table class="data-table" style="width: 100%; font-size: 0.84rem;">
+        <thead>
+          <tr>
+            <th style="min-width: 140px;">Relationship Manager</th>
+            <th style="min-width: 100px;">Metric</th>
+    `;
+
+    months.forEach(ym => {
+      html += `<th style="text-align: right; min-width: 90px;">${getMonthLabel(ym)}</th>`;
+    });
+
+    html += `
+            <th style="text-align: right; min-width: 90px; background: #f8fafc;">Total / Avg</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    rms.forEach(rm => {
+      const conf = RM_CONFIG[rm];
+      const mData = dashboardData.monthlyByRM[rm] || {};
+
+      let totalDials = 0;
+      let totalConn = 0;
+      let totalTalk = 0;
+      let totalDays = 0;
+
+      // Row 1: Dials
+      html += `
+        <tr style="border-top: 2px solid var(--border-light);">
+          <td rowspan="4" style="vertical-align: top; font-weight: 700; background: #ffffff;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.2rem;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: ${conf.color}"></span>
+              <span>${rm}</span>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem; font-weight: normal;">
+              ${conf.zone}
+            </div>
+          </td>
+          <td style="font-weight: 600; color: #4338ca;">Total Dials</td>
+      `;
+
+      months.forEach(ym => {
+        const d = mData[ym]?.totalDials || 0;
+        totalDials += d;
+        html += `<td style="text-align: right; font-weight: 600;">${d > 0 ? formatNumber(d) : '<span style=\"color:#cbd5e1;\">—</span>'}</td>`;
+      });
+      html += `<td style="text-align: right; font-weight: 700; background: #f8fafc; color: #4338ca;">${formatNumber(totalDials)}</td></tr>`;
+
+      // Row 2: Connected Calls
+      html += `<tr><td style="font-weight: 600; color: #059669;">Connected Calls</td>`;
+      months.forEach(ym => {
+        const c = mData[ym]?.totalConnected || 0;
+        totalConn += c;
+        html += `<td style="text-align: right; font-weight: 600;">${c > 0 ? formatNumber(c) : '<span style=\"color:#cbd5e1;\">—</span>'}</td>`;
+      });
+      html += `<td style="text-align: right; font-weight: 700; background: #f8fafc; color: #059669;">${formatNumber(totalConn)}</td></tr>`;
+
+      // Row 3: Connection Rate %
+      html += `<tr><td style="color: var(--text-muted);">Connect Rate %</td>`;
+      months.forEach(ym => {
+        const rate = mData[ym]?.connectionRate || 0;
+        const d = mData[ym]?.totalDials || 0;
+        html += `<td style="text-align: right;">${d > 0 ? formatPct(rate) : '<span style=\"color:#cbd5e1;\">—</span>'}</td>`;
+      });
+      const overallRate = totalDials > 0 ? (totalConn / totalDials) * 100 : 0;
+      html += `<td style="text-align: right; font-weight: 600; background: #f8fafc;">${formatPct(overallRate)}</td></tr>`;
+
+      // Row 4: Avg Daily Talktime
+      html += `<tr><td style="color: var(--text-muted);">Avg Daily Talktime</td>`;
+      months.forEach(ym => {
+        const talk = mData[ym]?.avgTalktime || 0;
+        const days = mData[ym]?.workingDays || 0;
+        totalTalk += (mData[ym]?.talktime || 0);
+        totalDays += days;
+        html += `<td style="text-align: right;">${days > 0 ? formatMinutes(talk) : '<span style=\"color:#cbd5e1;\">—</span>'}</td>`;
+      });
+      const overallAvgTalk = totalDays > 0 ? (totalTalk / totalDays) : 0;
+      html += `<td style="text-align: right; font-weight: 600; background: #f8fafc;">${formatMinutes(overallAvgTalk)}</td></tr>`;
+    });
+
+    html += `
+        </tbody>
+      </table>
+    `;
+
+    container.innerHTML = html;
   }
 
   // =========================================================================
