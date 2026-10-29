@@ -23,6 +23,7 @@
   let dashboardData = null;
   let activeRM = 'Malik';
   let activeMonth = '2026-10';
+  let selectedProfMonths = new Set();
   let comparisonMonth = 'Oct-2026';
 
   // Chart Registry for destroying old instances
@@ -109,6 +110,65 @@
       });
     }
 
+    // Default: compare months contains all months
+    selectedProfMonths = new Set(dashboardData.months);
+
+    // Multi-Month Filter Pills for Profile
+    const profMonthToggleContainer = document.getElementById('profMonthToggleGroup');
+    if (profMonthToggleContainer) {
+      profMonthToggleContainer.innerHTML = '';
+      const revMonths = [...dashboardData.months].reverse();
+      revMonths.forEach(ym => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'month-toggle-btn active';
+        btn.setAttribute('data-ym', ym);
+        btn.textContent = getMonthLabel(ym);
+
+        btn.addEventListener('click', () => {
+          if (selectedProfMonths.has(ym)) {
+            if (selectedProfMonths.size > 1) {
+              selectedProfMonths.delete(ym);
+              btn.classList.remove('active');
+            }
+          } else {
+            selectedProfMonths.add(ym);
+            btn.classList.add('active');
+          }
+          renderFullProfile();
+        });
+        profMonthToggleContainer.appendChild(btn);
+      });
+    }
+
+    // Quick Month Shortcuts for Profile
+    const btnAll = document.getElementById('btnProfAllMonths');
+    if (btnAll) {
+      btnAll.addEventListener('click', () => {
+        selectedProfMonths = new Set(dashboardData.months);
+        updateProfMonthToggleButtons();
+        renderFullProfile();
+      });
+    }
+
+    const btnLast3 = document.getElementById('btnProfLast3Months');
+    if (btnLast3) {
+      btnLast3.addEventListener('click', () => {
+        selectedProfMonths = new Set(dashboardData.months.slice(-3));
+        updateProfMonthToggleButtons();
+        renderFullProfile();
+      });
+    }
+
+    const btnCurrentOnly = document.getElementById('btnProfCurrentOnly');
+    if (btnCurrentOnly) {
+      btnCurrentOnly.addEventListener('click', () => {
+        selectedProfMonths = new Set([activeMonth]);
+        updateProfMonthToggleButtons();
+        renderFullProfile();
+      });
+    }
+
     // Last updated
     const tsEl = document.getElementById('lastUpdatedTs');
     if (tsEl && dashboardData.metadata && dashboardData.metadata.lastUpdated) {
@@ -117,6 +177,14 @@
         day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
       });
     }
+  }
+
+  function updateProfMonthToggleButtons() {
+    document.querySelectorAll('#profMonthToggleGroup .month-toggle-btn').forEach(btn => {
+      const ym = btn.getAttribute('data-ym');
+      if (selectedProfMonths.has(ym)) btn.classList.add('active');
+      else btn.classList.remove('active');
+    });
   }
 
   function renderFullProfile() {
@@ -205,9 +273,16 @@
     setDelta('deltaProfOnboardings', onbMoM, '%');
     setDelta('deltaProfActiveAb', abMoM, '%');
 
-    // Mini Sparkline
-    const dialHistory = dashboardData.months.map(m => (dashboardData.monthlyByRM[activeRM][m] || {}).totalDials || 0);
-    drawSparkline('sparkProfDials', dialHistory, conf.color);
+    // Display Daily Average Pace
+    const workingDays = curr.workingDays || 1;
+    const avgDialsPerDay = Math.round((curr.totalDials || 0) / workingDays);
+    const avgConnPerDay = Math.round((curr.totalConnected || 0) / workingDays);
+
+    const paceDialsEl = document.getElementById('paceProfDials');
+    if (paceDialsEl) paceDialsEl.textContent = `Avg ${avgDialsPerDay}/day (${workingDays}d)`;
+
+    const paceConnEl = document.getElementById('paceProfConnected');
+    if (paceConnEl) paceConnEl.textContent = `Avg ${avgConnPerDay}/day (${workingDays}d)`;
   }
 
   function setDelta(elementId, delta, suffix = '%') {
@@ -222,142 +297,308 @@
   // SECTION B: MONTHLY TRENDS (THEIR DATA ONLY - 8 CLEAN CHARTS)
   // =========================================================================
   function renderMonthlyTrends() {
-    const labels = dashboardData.monthLabels;
-    const months = dashboardData.months;
     const conf = RM_CONFIG[activeRM];
     const col = conf.color;
-
-    // Filter out months prior to RM's start if they have 0 dials
     const mData = dashboardData.monthlyByRM[activeRM];
 
-    // 1. Total Dial Calls per Month
-    createSingleLineChart('chartProfDials', labels, [{
-      label: 'Total Dials',
-      data: months.map(m => (mData[m] || {}).totalDials || 0),
-      borderColor: col,
-      backgroundColor: conf.subtleColor,
-      fill: true,
-      borderWidth: 3,
-      pointRadius: 4,
-      tension: 0.25
-    }], 'Calls');
+    // Determine if single-month daily view or multi-month trend
+    const isSingleMonth = selectedProfMonths.size === 1;
+    const singleMonthKey = isSingleMonth ? Array.from(selectedProfMonths)[0] : null;
 
-    // 2. Total Connected Calls per Month
-    createSingleLineChart('chartProfConnect', labels, [{
-      label: 'Connected Calls',
-      data: months.map(m => (mData[m] || {}).totalConnected || 0),
-      borderColor: col,
-      backgroundColor: conf.subtleColor,
-      fill: true,
-      borderWidth: 3,
-      pointRadius: 4,
-      tension: 0.25
-    }], 'Calls');
+    // Update Section Title & Subtitle dynamically
+    const titleEl = document.getElementById('profTrendsSectionTitle');
+    const subtitleEl = document.getElementById('profTrendsSectionSubtitle');
+    if (isSingleMonth) {
+      if (titleEl) titleEl.textContent = `Section B: Day-by-Day Daily Performance (${getMonthLabel(singleMonthKey)})`;
+      if (subtitleEl) subtitleEl.textContent = `Day-wise granular activity tracking for ${activeRM} throughout ${getMonthLabel(singleMonthKey)}`;
+    } else {
+      if (titleEl) titleEl.textContent = 'Section B: Month-on-Month Performance Trends';
+      if (subtitleEl) subtitleEl.textContent = `Dedicated multi-month progression isolating ${activeRM}'s performance trajectory across selected months`;
+    }
 
-    // 3. Connection Rate % per Month
-    createSingleLineChart('chartProfRate', labels, [{
-      label: 'Connection Rate %',
-      data: months.map(m => Number(((mData[m] || {}).connectionRate || 0).toFixed(1))),
-      borderColor: col,
-      backgroundColor: conf.subtleColor,
-      fill: true,
-      borderWidth: 3,
-      pointRadius: 4,
-      tension: 0.25
-    }], '%', '%');
+    if (isSingleMonth) {
+      // DAY-WISE MODE for selected single month
+      const dailyRecords = (dashboardData.rmDaily[activeRM] || [])
+        .filter(r => r.date && r.date.startsWith(singleMonthKey))
+        .sort((a, b) => a.date.localeCompare(b.date));
 
-    // 4. Average Daily Talktime per Month
-    createSingleLineChart('chartProfTalktime', labels, [{
-      label: 'Avg Daily Talktime (min)',
-      data: months.map(m => Math.round((mData[m] || {}).avgTalktime || 0)),
-      borderColor: col,
-      backgroundColor: conf.subtleColor,
-      fill: true,
-      borderWidth: 3,
-      pointRadius: 4,
-      tension: 0.25
-    }], 'Minutes', 'm');
+      const labels = dailyRecords.map(r => r.date.substring(8, 10)); // Day of month
 
-    // 5. Total Onboardings per Month
-    createSingleLineChart('chartProfOnboardings', labels, [{
-      label: 'Onboardings',
-      data: months.map(m => (mData[m] || {}).onboardings || 0),
-      borderColor: col,
-      backgroundColor: conf.subtleColor,
-      fill: true,
-      borderWidth: 3,
-      pointRadius: 4,
-      tension: 0.25
-    }], 'Onboardings');
-
-    // 6. Active Followups: Dial (solid) + Connect (dashed)
-    createSingleLineChart('chartProfActiveFollowup', labels, [
-      {
-        label: 'Active - Dial',
-        data: months.map(m => (mData[m] || {}).active_dial || 0),
+      // 1. Dials
+      createSingleLineChart('chartProfDials', labels, [{
+        label: 'Daily Dials',
+        data: dailyRecords.map(r => {
+          return Number(r.onboarding_dial || 0) + Number(r.active_dial || 0) +
+            Number(r.reactive_dial || 0) + Number(r.consistent_dial || 0) +
+            Number(r.acquisition_dial || 0) + Number(r.home_service_dial || 0) +
+            Number(r.phone_dial || 0) + Number(r.other_dial || 0);
+        }),
         borderColor: col,
-        backgroundColor: col,
+        backgroundColor: conf.subtleColor,
+        fill: true,
+        borderWidth: 2.5,
+        pointRadius: 3,
+        tension: 0.2
+      }], 'Calls');
+
+      // 2. Connected Calls
+      createSingleLineChart('chartProfConnect', labels, [{
+        label: 'Daily Connected',
+        data: dailyRecords.map(r => Number(r.total_connected || 0)),
+        borderColor: col,
+        backgroundColor: conf.subtleColor,
+        fill: true,
+        borderWidth: 2.5,
+        pointRadius: 3,
+        tension: 0.2
+      }], 'Calls');
+
+      // 3. Connection Rate %
+      createSingleLineChart('chartProfRate', labels, [{
+        label: 'Daily Connect %',
+        data: dailyRecords.map(r => {
+          const d = Number(r.onboarding_dial || 0) + Number(r.active_dial || 0) +
+            Number(r.reactive_dial || 0) + Number(r.consistent_dial || 0) +
+            Number(r.acquisition_dial || 0) + Number(r.home_service_dial || 0) +
+            Number(r.phone_dial || 0) + Number(r.other_dial || 0);
+          const c = Number(r.total_connected || 0);
+          return d > 0 ? Number(((c / d) * 100).toFixed(1)) : 0;
+        }),
+        borderColor: col,
+        backgroundColor: conf.subtleColor,
+        fill: true,
+        borderWidth: 2.5,
+        pointRadius: 3,
+        tension: 0.2
+      }], '%', '%');
+
+      // 4. Daily Talktime
+      createSingleLineChart('chartProfTalktime', labels, [{
+        label: 'Daily Talktime (min)',
+        data: dailyRecords.map(r => Number(r.talktime || 0)),
+        borderColor: col,
+        backgroundColor: conf.subtleColor,
+        fill: true,
+        borderWidth: 2.5,
+        pointRadius: 3,
+        tension: 0.2
+      }], 'Minutes', 'm');
+
+      // 5. Onboardings
+      createSingleLineChart('chartProfOnboardings', labels, [{
+        label: 'Daily Onboardings',
+        data: dailyRecords.map(r => Number(r.onboardings || 0)),
+        borderColor: col,
+        backgroundColor: conf.subtleColor,
+        fill: true,
+        borderWidth: 2.5,
+        pointRadius: 3,
+        tension: 0.2
+      }], 'Onboardings');
+
+      // 6. Active Followups (Daily Dial vs Connect)
+      createSingleLineChart('chartProfActiveFollowup', labels, [
+        {
+          label: 'Active - Dial',
+          data: dailyRecords.map(r => Number(r.active_dial || 0)),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 2.5,
+          pointRadius: 3,
+          tension: 0.2
+        },
+        {
+          label: 'Active - Connect',
+          data: dailyRecords.map(r => Number(r.active_connect || 0)),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 2,
+          borderDash: [5, 4],
+          pointRadius: 3,
+          tension: 0.2
+        }
+      ], 'Calls');
+
+      // 7. Reactive Followups (Daily Dial vs Connect)
+      createSingleLineChart('chartProfReactiveFollowup', labels, [
+        {
+          label: 'Reactive - Dial',
+          data: dailyRecords.map(r => Number(r.reactive_dial || 0)),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 2.5,
+          pointRadius: 3,
+          tension: 0.2
+        },
+        {
+          label: 'Reactive - Connect',
+          data: dailyRecords.map(r => Number(r.reactive_connect || 0)),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 2,
+          borderDash: [5, 4],
+          pointRadius: 3,
+          tension: 0.2
+        }
+      ], 'Calls');
+
+      // 8. Consistent Followups (Daily Dial vs Connect)
+      createSingleLineChart('chartProfConsistentFollowup', labels, [
+        {
+          label: 'Consistent - Dial',
+          data: dailyRecords.map(r => Number(r.consistent_dial || 0)),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 2.5,
+          pointRadius: 3,
+          tension: 0.2
+        },
+        {
+          label: 'Consistent - Connect',
+          data: dailyRecords.map(r => Number(r.consistent_connect || 0)),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 2,
+          borderDash: [5, 4],
+          pointRadius: 3,
+          tension: 0.2
+        }
+      ], 'Calls');
+
+    } else {
+      // MULTI-MONTH MODE across selected months
+      const months = dashboardData.months.filter(m => selectedProfMonths.has(m));
+      const labels = months.map(getMonthLabel);
+
+      // 1. Total Dial Calls per Month
+      createSingleLineChart('chartProfDials', labels, [{
+        label: 'Total Dials',
+        data: months.map(m => (mData[m] || {}).totalDials || 0),
+        borderColor: col,
+        backgroundColor: conf.subtleColor,
+        fill: true,
         borderWidth: 3,
         pointRadius: 4,
         tension: 0.25
-      },
-      {
-        label: 'Active - Connect',
-        data: months.map(m => (mData[m] || {}).active_connect || 0),
-        borderColor: col,
-        backgroundColor: col,
-        borderWidth: 2,
-        borderDash: [5, 4],
-        pointRadius: 3.5,
-        tension: 0.25
-      }
-    ], 'Calls');
+      }], 'Calls');
 
-    // 7. Reactive Followups: Dial (solid) + Connect (dashed)
-    createSingleLineChart('chartProfReactiveFollowup', labels, [
-      {
-        label: 'Reactive - Dial',
-        data: months.map(m => (mData[m] || {}).reactive_dial || 0),
+      // 2. Total Connected Calls per Month
+      createSingleLineChart('chartProfConnect', labels, [{
+        label: 'Connected Calls',
+        data: months.map(m => (mData[m] || {}).totalConnected || 0),
         borderColor: col,
-        backgroundColor: col,
+        backgroundColor: conf.subtleColor,
+        fill: true,
         borderWidth: 3,
         pointRadius: 4,
         tension: 0.25
-      },
-      {
-        label: 'Reactive - Connect',
-        data: months.map(m => (mData[m] || {}).reactive_connect || 0),
-        borderColor: col,
-        backgroundColor: col,
-        borderWidth: 2,
-        borderDash: [5, 4],
-        pointRadius: 3.5,
-        tension: 0.25
-      }
-    ], 'Calls');
+      }], 'Calls');
 
-    // 8. Consistent Followups: Dial (solid) + Connect (dashed)
-    createSingleLineChart('chartProfConsistentFollowup', labels, [
-      {
-        label: 'Consistent - Dial',
-        data: months.map(m => (mData[m] || {}).consistent_dial || 0),
+      // 3. Connection Rate % per Month
+      createSingleLineChart('chartProfRate', labels, [{
+        label: 'Connection Rate %',
+        data: months.map(m => Number(((mData[m] || {}).connectionRate || 0).toFixed(1))),
         borderColor: col,
-        backgroundColor: col,
+        backgroundColor: conf.subtleColor,
+        fill: true,
         borderWidth: 3,
         pointRadius: 4,
         tension: 0.25
-      },
-      {
-        label: 'Consistent - Connect',
-        data: months.map(m => (mData[m] || {}).consistent_connect || 0),
+      }], '%', '%');
+
+      // 4. Average Daily Talktime per Month
+      createSingleLineChart('chartProfTalktime', labels, [{
+        label: 'Avg Daily Talktime (min)',
+        data: months.map(m => Math.round((mData[m] || {}).avgTalktime || 0)),
         borderColor: col,
-        backgroundColor: col,
-        borderWidth: 2,
-        borderDash: [5, 4],
-        pointRadius: 3.5,
+        backgroundColor: conf.subtleColor,
+        fill: true,
+        borderWidth: 3,
+        pointRadius: 4,
         tension: 0.25
-      }
-    ], 'Calls');
+      }], 'Minutes', 'm');
+
+      // 5. Total Onboardings per Month
+      createSingleLineChart('chartProfOnboardings', labels, [{
+        label: 'Onboardings',
+        data: months.map(m => (mData[m] || {}).onboardings || 0),
+        borderColor: col,
+        backgroundColor: conf.subtleColor,
+        fill: true,
+        borderWidth: 3,
+        pointRadius: 4,
+        tension: 0.25
+      }], 'Onboardings');
+
+      // 6. Active Followups: Dial (solid) + Connect (dashed)
+      createSingleLineChart('chartProfActiveFollowup', labels, [
+        {
+          label: 'Active - Dial',
+          data: months.map(m => (mData[m] || {}).active_dial || 0),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 3,
+          pointRadius: 4,
+          tension: 0.25
+        },
+        {
+          label: 'Active - Connect',
+          data: months.map(m => (mData[m] || {}).active_connect || 0),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 2,
+          borderDash: [5, 4],
+          pointRadius: 3.5,
+          tension: 0.25
+        }
+      ], 'Calls');
+
+      // 7. Reactive Followups: Dial (solid) + Connect (dashed)
+      createSingleLineChart('chartProfReactiveFollowup', labels, [
+        {
+          label: 'Reactive - Dial',
+          data: months.map(m => (mData[m] || {}).reactive_dial || 0),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 3,
+          pointRadius: 4,
+          tension: 0.25
+        },
+        {
+          label: 'Reactive - Connect',
+          data: months.map(m => (mData[m] || {}).reactive_connect || 0),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 2,
+          borderDash: [5, 4],
+          pointRadius: 3.5,
+          tension: 0.25
+        }
+      ], 'Calls');
+
+      // 8. Consistent Followups: Dial (solid) + Connect (dashed)
+      createSingleLineChart('chartProfConsistentFollowup', labels, [
+        {
+          label: 'Consistent - Dial',
+          data: months.map(m => (mData[m] || {}).consistent_dial || 0),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 3,
+          pointRadius: 4,
+          tension: 0.25
+        },
+        {
+          label: 'Consistent - Connect',
+          data: months.map(m => (mData[m] || {}).consistent_connect || 0),
+          borderColor: col,
+          backgroundColor: col,
+          borderWidth: 2,
+          borderDash: [5, 4],
+          pointRadius: 3.5,
+          tension: 0.25
+        }
+      ], 'Calls');
+    }
   }
 
   function createSingleLineChart(canvasId, labels, datasets, unitLabel, unitSuffix = '') {
@@ -605,26 +846,32 @@
       const workable = curr.workableLeads || 0;
       const conv = curr.conversion || 0;
       const convPct = curr.conversionPct || '0%';
-      const workPct = ((workable / totalLeads) * 100).toFixed(1);
+      const convNum = parseFloat(convPct) || 0;
+      // Proportional bar widths:
+      // Total Leads = 100%
+      // Workable = (workable / totalLeads) * 100
+      // Conversions = (conv / totalLeads) * 100 = (workable/totalLeads) * (conv/workable)
+      const convRealPct = ((conv / totalLeads) * 100).toFixed(1);
+      const convBarWidth = Math.max(10, Math.min(parseFloat(workPct), (conv / totalLeads) * 100));
 
       funnelContainer.innerHTML = `
         <div class="funnel-container">
           <div class="funnel-row">
             <div class="funnel-label"><strong>${activeRM} Leads</strong></div>
             <div class="funnel-bars-group">
-              <div class="funnel-bar-track">
+              <div class="funnel-bar-track" title="Total Leads: ${formatNumber(totalLeads)}">
                 <div class="funnel-bar-fill" style="width: 100%; background: #64748b;">
-                  Total Leads: ${formatNumber(totalLeads)}
+                  Total Leads: ${formatNumber(totalLeads)} (100%)
                 </div>
               </div>
-              <div class="funnel-bar-track">
+              <div class="funnel-bar-track" title="Workable Leads: ${formatNumber(workable)} (${workPct}% of Total)">
                 <div class="funnel-bar-fill" style="width: ${workPct}%; background: ${conf.color};">
                   Workable: ${formatNumber(workable)} (${workPct}%)
                 </div>
               </div>
-              <div class="funnel-bar-track">
-                <div class="funnel-bar-fill" style="width: ${Math.max(15, parseFloat(convPct) * 4)}%; background: #10b981;">
-                  Conversions: ${formatNumber(conv)} (${convPct})
+              <div class="funnel-bar-track" title="Conversions: ${formatNumber(conv)} (${convPct} of Workable, ${convRealPct}% of Total)">
+                <div class="funnel-bar-fill" style="width: ${convBarWidth}%; background: #10b981;">
+                  Conversions: ${formatNumber(conv)} (${convPct} of Workable)
                 </div>
               </div>
             </div>

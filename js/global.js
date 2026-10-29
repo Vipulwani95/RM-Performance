@@ -1027,31 +1027,34 @@
 
       const item = document.createElement('div');
       item.className = 'funnel-row';
-      item.innerHTML = `
+        const convRealPct = ((conv / totalLeads) * 100).toFixed(1);
+        const convBarWidth = Math.max(8, Math.min(parseFloat(workPct), (conv / totalLeads) * 100));
+
+        item.innerHTML = `
         <div class="funnel-label">
           <div style="display: flex; align-items: center; gap: 0.4rem;">
             <span style="width: 10px; height: 10px; border-radius: 50%; background: ${conf.color}"></span>
             <strong>${rm}</strong>
           </div>
-          <span style="font-size: 0.75rem; color: var(--text-muted);">Conv: ${convPct}</span>
+          <span style="font-size: 0.75rem; color: var(--text-muted);">${convPct} of Workable</span>
         </div>
         <div class="funnel-bars-group">
           <!-- Total Leads -->
           <div class="funnel-bar-track" title="Total Leads: ${formatNumber(totalLeads)}">
             <div class="funnel-bar-fill" style="width: 100%; background: #64748b;">
-              Total Leads: ${formatNumber(totalLeads)}
+              Total Leads: ${formatNumber(totalLeads)} (100%)
             </div>
           </div>
           <!-- Workable Leads -->
-          <div class="funnel-bar-track" title="Workable Leads: ${formatNumber(workable)} (${workPct}%)">
+          <div class="funnel-bar-track" title="Workable Leads: ${formatNumber(workable)} (${workPct}% of Total)">
             <div class="funnel-bar-fill" style="width: ${workPct}%; background: ${conf.color};">
               Workable: ${formatNumber(workable)} (${workPct}%)
             </div>
           </div>
           <!-- Conversions -->
-          <div class="funnel-bar-track" title="Conversions: ${formatNumber(conv)} (${convPct})">
-            <div class="funnel-bar-fill" style="width: ${Math.max(12, parseFloat(convPct) * 4)}%; background: #10b981;">
-              Conversions: ${formatNumber(conv)} (${convPct})
+          <div class="funnel-bar-track" title="Conversions: ${formatNumber(conv)} (${convPct} of Workable, ${convRealPct}% of Total)">
+            <div class="funnel-bar-fill" style="width: ${convBarWidth}%; background: #10b981;">
+              Conversions: ${formatNumber(conv)} (${convPct} of Workable)
             </div>
           </div>
         </div>

@@ -75,9 +75,19 @@
       <div class="filter-group">
         <span class="filter-label">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-          Month:
+          Active Month:
         </span>
         <select id="profileMonthSelect" class="select-control"></select>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-label">Compare Months:</span>
+        <div class="month-toggles" id="profMonthToggleGroup"></div>
+        <div style="display: flex; gap: 0.25rem;">
+          <button type="button" class="btn-ghost" id="btnProfAllMonths">All</button>
+          <button type="button" class="btn-ghost" id="btnProfLast3Months">Last 3M</button>
+          <button type="button" class="btn-ghost" id="btnProfCurrentOnly">Current</button>
+        </div>
       </div>
     </div>
 
@@ -134,7 +144,7 @@
           <div class="kpi-value" id="kpiProfDials">--</div>
           <div class="kpi-footer">
             <span class="kpi-delta positive" id="deltaProfDials">--</span>
-            <canvas id="sparkProfDials" width="70" height="24" class="kpi-sparkline"></canvas>
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;" id="paceProfDials">--/day</span>
           </div>
         </div>
 
@@ -146,6 +156,7 @@
           <div class="kpi-value" id="kpiProfConnected">--</div>
           <div class="kpi-footer">
             <span class="kpi-delta positive" id="deltaProfConnected">--</span>
+            <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;" id="paceProfConnected">--/day</span>
           </div>
         </div>
 
@@ -200,10 +211,12 @@
          =================================================================== -->
     <section style="margin-bottom: 2.25rem;">
       <div style="margin-bottom: 1rem;">
-        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.01em;">
-          Section B: Historical Monthly Trends
+        <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.01em;" id="profTrendsSectionTitle">
+          Section B: Performance Trends
         </h3>
-        <p style="font-size: 0.82rem; color: var(--text-muted);">Dedicated trendlines isolating this RM's performance trajectory</p>
+        <p style="font-size: 0.82rem; color: var(--text-muted);" id="profTrendsSectionSubtitle">
+          Tracking performance metrics across selected timeline
+        </p>
       </div>
 
       <div class="grid-2">
