@@ -1076,6 +1076,9 @@
   // =========================================================================
   function renderConversionsTab() {
     renderConversionFunnel();
+    renderTotalLeadsTrend();
+    renderWorkableLeadsTrend();
+    renderLeadsMomMatrix();
     renderConversionTrend();
     renderProjectionsVsActuals();
     renderPaidAbTrend();
@@ -1150,11 +1153,261 @@
     });
   }
 
+  function getActiveComparisonMonths() {
+    const ymToComp = { '2026-07': 'Jul-2026', '2026-08': 'Aug-2026', '2026-09': 'Sep-2026', '2026-10': 'Oct-2026' };
+    const filtered = dashboardData.months.filter(m => selectedMonths.has(m) && ymToComp[m]).map(m => ymToComp[m]);
+    return filtered.length > 0 ? filtered : ['Jul-2026', 'Aug-2026', 'Sep-2026', 'Oct-2026'];
+  }
+
+  function renderTotalLeadsTrend() {
+    const canvas = document.getElementById('chartTotalLeadsTrend');
+    if (!canvas) return;
+
+    destroyChart('chartTotalLeadsTrend');
+
+    const compMonths = getActiveComparisonMonths();
+    const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
+
+    const datasets = seniorRMs.map(rm => {
+      const dataPoints = compMonths.map(m => {
+        const c = dashboardData.comparison[m];
+        if (c && c.rms && c.rms[rm] && c.rms[rm].curr) {
+          return c.rms[rm].curr.totalLeads || 0;
+        }
+        return 0;
+      });
+
+      return {
+        label: rm,
+        data: dataPoints,
+        borderColor: RM_CONFIG[rm].color,
+        backgroundColor: RM_CONFIG[rm].color,
+        borderWidth: 2.5,
+        pointRadius: 5,
+        pointHoverRadius: 7,
+        tension: 0.2
+      };
+    });
+
+    const ctx = canvas.getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: compMonths,
+        datasets: datasets
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, font: { family: 'Inter', size: 11 } } },
+          tooltip: {
+            backgroundColor: '#0f172a',
+            callbacks: {
+              label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString('en-IN')} Total Leads`
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            grid: { color: '#f1f5f9' },
+            ticks: { callback: v => v.toLocaleString('en-IN') }
+          },
+          x: { grid: { color: '#f1f5f9' } }
+        }
+      }
+    });
+
+    registerChart('chartTotalLeadsTrend', chart);
+  }
+
+  function renderWorkableLeadsTrend() {
+    const canvas = document.getElementById('chartWorkableLeadsTrend');
+    if (!canvas) return;
+
+    destroyChart('chartWorkableLeadsTrend');
+
+    const compMonths = getActiveComparisonMonths();
+    const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
+
+    const datasets = seniorRMs.map(rm => {
+      const dataPoints = compMonths.map(m => {
+        const c = dashboardData.comparison[m];
+        if (c && c.rms && c.rms[rm] && c.rms[rm].curr) {
+          return c.rms[rm].curr.workableLeads || 0;
+        }
+        return 0;
+      });
+
+      return {
+        label: rm,
+        data: dataPoints,
+        borderColor: RM_CONFIG[rm].color,
+        backgroundColor: RM_CONFIG[rm].color,
+        borderWidth: 2.5,
+        pointRadius: 5,
+        pointHoverRadius: 7,
+        tension: 0.2
+      };
+    });
+
+    const ctx = canvas.getContext('2d');
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: compMonths,
+        datasets: datasets
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'top', labels: { boxWidth: 12, font: { family: 'Inter', size: 11 } } },
+          tooltip: {
+            backgroundColor: '#0f172a',
+            callbacks: {
+              label: (ctx) => {
+                const rm = ctx.dataset.label;
+                const m = compMonths[ctx.dataIndex];
+                const c = dashboardData.comparison[m]?.rms?.[rm]?.curr;
+                const total = c?.totalLeads || 0;
+                const pct = total > 0 ? ((ctx.parsed.y / total) * 100).toFixed(1) : 0;
+                return ` ${rm}: ${ctx.parsed.y.toLocaleString('en-IN')} Workable (${pct}% of Total)`;
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            grid: { color: '#f1f5f9' },
+            ticks: { callback: v => v.toLocaleString('en-IN') }
+          },
+          x: { grid: { color: '#f1f5f9' } }
+        }
+      }
+    });
+
+    registerChart('chartWorkableLeadsTrend', chart);
+  }
+
+  function renderLeadsMomMatrix() {
+    const container = document.getElementById('leadsMomComparisonContainer');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const compMonths = getActiveComparisonMonths();
+    const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
+
+    if (seniorRMs.length === 0) {
+      container.innerHTML = '<div style="padding: 2rem; color: var(--text-muted); text-align: center;">Please select Senior RMs (Malik, Dipali, Ramya) in the filter bar.</div>';
+      return;
+    }
+
+    let html = `
+      <table class="data-table" style="width: 100%; font-size: 0.84rem;">
+        <thead>
+          <tr>
+            <th style="min-width: 140px;">Relationship Manager</th>
+            <th style="min-width: 130px;">Lead Metric</th>
+    `;
+
+    compMonths.forEach(m => {
+      html += `<th style="text-align: right; min-width: 100px;">${m}</th>`;
+    });
+
+    html += `
+            <th style="text-align: right; min-width: 110px; background: #f8fafc;">Period Total / Avg</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    seniorRMs.forEach(rm => {
+      const conf = RM_CONFIG[rm];
+      let sumTotalLeads = 0;
+      let sumWorkable = 0;
+      let sumConv = 0;
+
+      // Row 1: Total Leads
+      html += `
+        <tr style="border-top: 2px solid var(--border-light);">
+          <td rowspan="5" style="vertical-align: top; font-weight: 700; background: #ffffff;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 0.2rem;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: ${conf.color}"></span>
+              <span>${rm}</span>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--text-muted); margin-top: 0.2rem; font-weight: normal;">
+              ${conf.zone} • Senior RM
+            </div>
+          </td>
+          <td style="font-weight: 600; color: #475569;">Total Incoming Leads</td>
+      `;
+
+      compMonths.forEach(m => {
+        const val = dashboardData.comparison[m]?.rms?.[rm]?.curr?.totalLeads || 0;
+        sumTotalLeads += val;
+        html += `<td style="text-align: right; font-weight: 600;">${val > 0 ? val.toLocaleString('en-IN') : '—'}</td>`;
+      });
+      html += `<td style="text-align: right; font-weight: 700; background: #f8fafc; color: #475569;">${sumTotalLeads.toLocaleString('en-IN')}</td></tr>`;
+
+      // Row 2: Workable Leads
+      html += `<tr><td style="font-weight: 600; color: #4f46e5;">Workable Leads</td>`;
+      compMonths.forEach(m => {
+        const val = dashboardData.comparison[m]?.rms?.[rm]?.curr?.workableLeads || 0;
+        sumWorkable += val;
+        html += `<td style="text-align: right; font-weight: 600; color: #4f46e5;">${val > 0 ? val.toLocaleString('en-IN') : '—'}</td>`;
+      });
+      html += `<td style="text-align: right; font-weight: 700; background: #f8fafc; color: #4f46e5;">${sumWorkable.toLocaleString('en-IN')}</td></tr>`;
+
+      // Row 3: Workable %
+      html += `<tr><td style="color: var(--text-muted);">Workable % (Eligibility)</td>`;
+      compMonths.forEach(m => {
+        const c = dashboardData.comparison[m]?.rms?.[rm]?.curr;
+        const tot = c?.totalLeads || 0;
+        const work = c?.workableLeads || 0;
+        const pct = tot > 0 ? ((work / tot) * 100).toFixed(1) : 0;
+        html += `<td style="text-align: right; color: var(--text-secondary);">${tot > 0 ? pct + '%' : '—'}</td>`;
+      });
+      const avgWorkPct = sumTotalLeads > 0 ? ((sumWorkable / sumTotalLeads) * 100).toFixed(1) : 0;
+      html += `<td style="text-align: right; font-weight: 600; background: #f8fafc;">${avgWorkPct}%</td></tr>`;
+
+      // Row 4: Conversions
+      html += `<tr><td style="font-weight: 600; color: #10b981;">Conversions</td>`;
+      compMonths.forEach(m => {
+        const val = dashboardData.comparison[m]?.rms?.[rm]?.curr?.conversion || 0;
+        sumConv += val;
+        html += `<td style="text-align: right; font-weight: 600; color: #10b981;">${val > 0 ? val.toLocaleString('en-IN') : '—'}</td>`;
+      });
+      html += `<td style="text-align: right; font-weight: 700; background: #f8fafc; color: #10b981;">${sumConv.toLocaleString('en-IN')}</td></tr>`;
+
+      // Row 5: Conversion Rate %
+      html += `<tr><td style="color: var(--text-muted);">Conversion % of Workable</td>`;
+      compMonths.forEach(m => {
+        const c = dashboardData.comparison[m]?.rms?.[rm]?.curr;
+        const pctStr = c?.conversionPct || '0%';
+        html += `<td style="text-align: right; font-weight: 600;">${pctStr}</td>`;
+      });
+      const avgConvPct = sumWorkable > 0 ? ((sumConv / sumWorkable) * 100).toFixed(1) : 0;
+      html += `<td style="text-align: right; font-weight: 700; background: #f8fafc; color: #047857;">${avgConvPct}%</td></tr>`;
+    });
+
+    html += `
+        </tbody>
+      </table>
+    `;
+
+    container.innerHTML = html;
+  }
+
   function renderConversionTrend() {
     const canvas = document.getElementById('chartConversionTrend');
     if (!canvas) return;
 
-    const compMonths = ['Jul-2026', 'Aug-2026', 'Sep-2026', 'Oct-2026'];
+    destroyChart('chartConversionTrend');
+
+    const compMonths = getActiveComparisonMonths();
     const seniorRMs = ['Malik', 'Dipali', 'Ramya'].filter(rm => selectedRMs.has(rm));
 
     const datasets = seniorRMs.map(rm => {

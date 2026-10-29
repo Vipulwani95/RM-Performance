@@ -1000,6 +1000,18 @@
         <div class="card-body" id="profFunnelContainer"></div>
       </div>
 
+      <div class="card" style="margin-bottom: 1.75rem;">
+        <div class="card-header">
+          <div>
+            <div class="card-title">MoM Total vs Workable Leads Progression</div>
+            <div class="card-subtitle">Month-by-month lead volume, workable eligibility, and conversions (Jul 2026 – Oct 2026)</div>
+          </div>
+        </div>
+        <div class="chart-wrapper">
+          <canvas id="chartProfLeadsTrend"></canvas>
+        </div>
+      </div>
+
       <div class="grid-2">
         <div class="chart-card">
           <div class="card-title">Daily Paid AB Trend (${comparisonMonth})</div>
@@ -1066,6 +1078,98 @@
           </div>
         `;
       }
+    }
+
+    // Render MoM Leads Progression Chart
+    const leadsCanvas = document.getElementById('chartProfLeadsTrend');
+    if (leadsCanvas) {
+      destroyChart('chartProfLeadsTrend');
+      const ymToComp = { '2026-07': 'Jul-2026', '2026-08': 'Aug-2026', '2026-09': 'Sep-2026', '2026-10': 'Oct-2026' };
+      const filtered = dashboardData.months.filter(m => selectedProfMonths.has(m) && ymToComp[m]).map(m => ymToComp[m]);
+      const compMonths = filtered.length > 0 ? filtered : ['Jul-2026', 'Aug-2026', 'Sep-2026', 'Oct-2026'];
+
+      const totalLeadsData = [];
+      const workableData = [];
+      const convData = [];
+
+      compMonths.forEach(m => {
+        const c = dashboardData.comparison[m]?.rms?.[activeRM]?.curr;
+        totalLeadsData.push(c?.totalLeads || 0);
+        workableData.push(c?.workableLeads || 0);
+        convData.push(c?.conversion || 0);
+      });
+
+      const chart = new Chart(leadsCanvas.getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: compMonths,
+          datasets: [
+            {
+              type: 'bar',
+              label: 'Total Leads',
+              data: totalLeadsData,
+              backgroundColor: '#94a3b8',
+              borderRadius: 4,
+              order: 2
+            },
+            {
+              type: 'bar',
+              label: 'Workable Leads',
+              data: workableData,
+              backgroundColor: conf.color,
+              borderRadius: 4,
+              order: 2
+            },
+            {
+              type: 'line',
+              label: 'Conversions',
+              data: convData,
+              borderColor: '#10b981',
+              backgroundColor: '#10b981',
+              borderWidth: 2.5,
+              pointRadius: 5,
+              tension: 0.2,
+              order: 1
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { position: 'top', labels: { boxWidth: 12, font: { family: 'Inter', size: 11 } } },
+            tooltip: {
+              backgroundColor: '#0f172a',
+              callbacks: {
+                label: (ctx) => {
+                  const m = compMonths[ctx.dataIndex];
+                  const c = dashboardData.comparison[m]?.rms?.[activeRM]?.curr;
+                  const total = c?.totalLeads || 0;
+                  const work = c?.workableLeads || 0;
+                  const val = ctx.parsed.y;
+                  if (ctx.dataset.label === 'Workable Leads') {
+                    const pct = total > 0 ? ((work / total) * 100).toFixed(1) : 0;
+                    return ` ${ctx.dataset.label}: ${val.toLocaleString('en-IN')} (${pct}% of Total)`;
+                  } else if (ctx.dataset.label === 'Conversions') {
+                    const pct = c?.conversionPct || '0%';
+                    return ` ${ctx.dataset.label}: ${val.toLocaleString('en-IN')} (${pct} of Workable)`;
+                  }
+                  return ` ${ctx.dataset.label}: ${val.toLocaleString('en-IN')}`;
+                }
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: { color: '#f1f5f9' },
+              ticks: { callback: v => v.toLocaleString('en-IN') }
+            },
+            x: { grid: { display: false } }
+          }
+        }
+      });
+      registerChart('chartProfLeadsTrend', chart);
     }
 
     const availPaidMonths = dashboardData.months.filter(m => selectedProfMonths.has(m) && ['2026-07', '2026-08', '2026-09', '2026-10'].includes(m));
