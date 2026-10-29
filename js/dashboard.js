@@ -203,6 +203,7 @@
             activeAbSum: 0,
             activeAbCount: 0,
             lastActiveAb: 0,
+            paidAbSum: 0,
             dailyDials: []
           };
         }
@@ -267,12 +268,22 @@
         }
       });
 
+      // Aggregate Paid AB for this RM from raw.paidAB
+      (raw.paidAB || []).forEach(p => {
+        if (!p.date) return;
+        const pYm = p.date.substring(0, 7);
+        if (mMap[pYm]) {
+          mMap[pYm].paidAbSum = (mMap[pYm].paidAbSum || 0) + Number(p[rm] || 0);
+        }
+      });
+
       // Compute derived metrics
       Object.values(mMap).forEach(m => {
         m.connectionRate = m.totalDials > 0 ? (m.totalConnected / m.totalDials) * 100 : 0;
         m.avgTalktime = m.workingDays > 0 ? (m.talktime / m.workingDays) : 0;
         m.totalActiveAb = m.activeAbSum;
         m.avgActiveAb = m.activeAbSum; // Sum up of all days
+        m.totalPaidAb = m.paidAbSum;
         m.consistencyScore = m.workingDays > 0 ? (m.consistentDays / m.workingDays) * 100 : 0;
       });
 

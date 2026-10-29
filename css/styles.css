@@ -589,6 +589,13 @@ body {
   margin-bottom: 1.75rem;
 }
 
+.grid-7 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
 /* ==========================================================================
    KPI SCORECARDS
    ========================================================================== */
@@ -1503,12 +1510,14 @@ th.sort-desc::after {
    RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 @media (max-width: 1200px) {
+  .grid-7 { grid-template-columns: repeat(4, 1fr); }
   .grid-6 { grid-template-columns: repeat(3, 1fr); }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .rm-preview-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 900px) {
+  .grid-7 { grid-template-columns: repeat(2, 1fr); }
   .grid-2 { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
   .nav-feature-grid { grid-template-columns: 1fr; }
@@ -1520,6 +1529,7 @@ th.sort-desc::after {
 }
 
 @media (max-width: 600px) {
+  .grid-7 { grid-template-columns: 1fr; }
   .grid-6 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr; }
   .rm-preview-grid { grid-template-columns: 1fr; }

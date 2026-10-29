@@ -317,6 +317,7 @@
       let totalConsistent = 0;
       let totalOnb = 0;
       let totalActiveAb = 0;
+      let totalPaidAb = 0;
 
       monthsArr.forEach(ym => {
         const row = dashboardData.monthlyByRM[activeRM][ym] || {};
@@ -327,6 +328,7 @@
         totalConsistent += row.consistentDays || 0;
         totalOnb += row.onboardings || 0;
         totalActiveAb += row.activeAbSum || 0;
+        totalPaidAb += row.paidAbSum || 0;
       });
 
       const connRate = totalDials > 0 ? (totalConnected / totalDials) * 100 : 0;
@@ -341,6 +343,10 @@
       document.getElementById('kpiProfTalktime').textContent = formatMinutes(avgTalk);
       document.getElementById('kpiProfOnboardings').textContent = formatNumber(totalOnb);
       document.getElementById('kpiProfActiveAb').textContent = formatNumber(totalActiveAb);
+      const paidAbEl = document.getElementById('kpiProfPaidAbVal');
+      if (paidAbEl) {
+        paidAbEl.textContent = conf.hasConversionData ? formatNumber(totalPaidAb) : 'N/A';
+      }
 
       // Period Indicators
       setPeriodBadge('deltaProfDials', `${monthsArr.length} Months`, '#e0e7ff', '#3730a3');
@@ -349,6 +355,11 @@
       setPeriodBadge('deltaProfTalktime', 'Per Work Day', '#e0e7ff', '#3730a3');
       setPeriodBadge('deltaProfOnboardings', 'Period Total', '#dcfce7', '#166534');
       setPeriodBadge('deltaProfActiveAb', 'All Days Sum', '#e0e7ff', '#3730a3');
+      if (conf.hasConversionData) {
+        setPeriodBadge('deltaProfPaidAb', 'All Days Sum', '#dcfce7', '#166534');
+      } else {
+        setPeriodBadge('deltaProfPaidAb', 'New Joiner', '#f1f5f9', '#64748b');
+      }
 
       // Pace
       const paceDialsEl = document.getElementById('paceProfDials');
@@ -377,6 +388,7 @@
       const talkMoM = calcMoM(curr.avgTalktime, prev.avgTalktime);
       const onbMoM = calcMoM(curr.onboardings, prev.onboardings);
       const abMoM = calcMoM(curr.activeAbSum || 0, prev.activeAbSum || 0);
+      const paidMoM = calcMoM(curr.paidAbSum || 0, prev.paidAbSum || 0);
 
       document.getElementById('kpiProfDials').textContent = formatNumber(curr.totalDials || 0);
       document.getElementById('kpiProfConnected').textContent = formatNumber(curr.totalConnected || 0);
@@ -384,6 +396,10 @@
       document.getElementById('kpiProfTalktime').textContent = formatMinutes(curr.avgTalktime || 0);
       document.getElementById('kpiProfOnboardings').textContent = formatNumber(curr.onboardings || 0);
       document.getElementById('kpiProfActiveAb').textContent = formatNumber(curr.activeAbSum || 0);
+      const singlePaidAbEl = document.getElementById('kpiProfPaidAbVal');
+      if (singlePaidAbEl) {
+        singlePaidAbEl.textContent = conf.hasConversionData ? formatNumber(curr.paidAbSum || 0) : 'N/A';
+      }
 
       setDelta('deltaProfDials', dialsMoM, '%');
       setDelta('deltaProfConnected', connMoM, '%');
@@ -391,6 +407,11 @@
       setDelta('deltaProfTalktime', talkMoM, '%');
       setDelta('deltaProfOnboardings', onbMoM, '%');
       setDelta('deltaProfActiveAb', abMoM, '%');
+      if (conf.hasConversionData) {
+        setDelta('deltaProfPaidAb', paidMoM, '%');
+      } else {
+        setPeriodBadge('deltaProfPaidAb', 'New Joiner', '#f1f5f9', '#64748b');
+      }
 
       const workingDays = curr.workingDays || 1;
       const avgDialsPerDay = Math.round((curr.totalDials || 0) / workingDays);

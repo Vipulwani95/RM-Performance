@@ -319,15 +319,17 @@
       let totalWorking = 0;
       let totalOnb = 0;
       let totalActiveAb = 0;
+      let totalPaidAb = 0;
 
-      monthsArr.forEach(m => {
-        const row = mData[m] || {};
+      months.forEach(ym => {
+        const row = mData[ym] || {};
         totalDials += (row.totalDials || 0);
         totalConnected += (row.totalConnected || 0);
         totalTalk += (row.talktime || 0);
         totalWorking += (row.workingDays || 0);
         totalOnb += (row.onboardings || 0);
         totalActiveAb += (row.activeAbSum || 0);
+        totalPaidAb += (row.paidAbSum || 0);
       });
 
       const connRate = totalDials > 0 ? (totalConnected / totalDials) * 100 : 0;
@@ -361,7 +363,7 @@
             Full Profile →
           </a>
         </div>
-        <div class="grid-6">
+        <div class="grid-7">
           <!-- Total Dials -->
           <div class="kpi-card" data-color="${rm.toLowerCase()}">
             <div class="kpi-top">
@@ -435,7 +437,20 @@
             <div class="kpi-value">${formatNumber(totalActiveAb)}</div>
             <div class="kpi-footer">
               <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
-                Active Portfolios
+                All Days Sum
+              </span>
+            </div>
+          </div>
+
+          <!-- Paid ABs -->
+          <div class="kpi-card" data-color="${rm.toLowerCase()}">
+            <div class="kpi-top">
+              <span class="kpi-label">Paid ABs</span>
+            </div>
+            <div class="kpi-value">${conf.hasConversionData ? formatNumber(totalPaidAb) : 'N/A'}</div>
+            <div class="kpi-footer">
+              <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">
+                ${conf.hasConversionData ? 'All Days Sum' : 'New Joiner'}
               </span>
             </div>
           </div>
