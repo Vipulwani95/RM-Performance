@@ -225,7 +225,7 @@
 
         // Sum of all outbound dials (Columns B, D, F, H, J, L, N, P, R - strictly excluding onboardings)
         const sumDials = d_onboarding + d_active + d_reactive + d_consistent + d_acq + d_home + d_phone + d_other + d_builder;
-        const dayDials = Number(r.total_dialed || 0) > 0 ? Number(r.total_dialed) : sumDials;
+        const dayDials = sumDials > 0 ? sumDials : Number(r.total_dialed || 0);
         const dayTalk = Number(r.talktime !== undefined && r.talktime !== null ? r.talktime : (r.talk_time || 0));
 
         // Sum of all connected calls (Columns C, E, G, I, K, M, O, Q, S - strictly excluding onboardings)

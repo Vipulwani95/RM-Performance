@@ -1,4 +1,4 @@
-// Auto-generated from Google Sheet on 2026-11-10T06:56:38.038Z
+// Auto-generated from Google Sheet on 2026-11-10T08:05:38.949Z
 window.RAW_DATA = {
   "rmDaily": {
     "Malik": [
@@ -20,10 +20,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 80,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 196
       },
       {
         "date": "2025-12-27",
@@ -43,10 +47,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 25,
         "other_connect": 14,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 180
       },
       {
         "date": "2025-12-29",
@@ -66,10 +74,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 11,
         "other_connect": 7,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 129
+        "talk_time": 129,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 129,
+        "total_dialed": 178
       },
       {
         "date": "2025-12-30",
@@ -91,8 +103,12 @@ window.RAW_DATA = {
         "other_connect": 5,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 171
       },
       {
         "date": "2026-01-01",
@@ -112,10 +128,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-01-02",
@@ -135,10 +155,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 30,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 119
+        "talk_time": 119,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 119,
+        "total_dialed": 140
       },
       {
         "date": "2026-01-03",
@@ -158,10 +182,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 10,
         "other_connect": 6,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 64
+        "talk_time": 64,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 64,
+        "total_dialed": 169
       },
       {
         "date": "2026-01-04",
@@ -181,10 +209,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-01-05",
@@ -204,10 +236,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-01-06",
@@ -227,10 +263,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 58,
         "active_ab": 0,
-        "talk_time": 58,
-        "total_connected": 142
+        "talk_time": 142,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 142,
+        "total_dialed": 154
       },
       {
         "date": "2026-01-07",
@@ -250,10 +290,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 65,
         "active_ab": 0,
-        "talk_time": 65,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 143
       },
       {
         "date": "2026-01-08",
@@ -273,10 +317,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 42,
         "active_ab": 0,
-        "talk_time": 42,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 132
       },
       {
         "date": "2026-01-09",
@@ -296,10 +344,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 29,
         "active_ab": 0,
-        "talk_time": 29,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 164
       },
       {
         "date": "2026-01-10",
@@ -319,10 +371,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 21,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 27,
         "active_ab": 0,
-        "talk_time": 27,
-        "total_connected": 146
+        "talk_time": 146,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 146,
+        "total_dialed": 201
       },
       {
         "date": "2026-01-11",
@@ -342,10 +398,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-01-12",
@@ -365,10 +425,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 141
+        "talk_time": 141,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 141,
+        "total_dialed": 165
       },
       {
         "date": "2026-01-13",
@@ -388,10 +452,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 37,
         "other_connect": 15,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 158
       },
       {
         "date": "2026-01-14",
@@ -411,10 +479,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 205
       },
       {
         "date": "2026-01-15",
@@ -434,10 +506,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-01-16",
@@ -457,10 +533,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 130
+        "talk_time": 130,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 130,
+        "total_dialed": 151
       },
       {
         "date": "2026-01-17",
@@ -480,10 +560,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 134
+        "talk_time": 134,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 134,
+        "total_dialed": 171
       },
       {
         "date": "2026-01-18",
@@ -503,10 +587,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-01-19",
@@ -526,10 +614,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-01-20",
@@ -549,10 +641,14 @@ window.RAW_DATA = {
         "phone_connect": 18,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 153
       },
       {
         "date": "2026-01-21",
@@ -572,10 +668,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 129
+        "talk_time": 129,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 129,
+        "total_dialed": 153
       },
       {
         "date": "2026-01-22",
@@ -595,10 +695,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 107
+        "talk_time": 107,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 107,
+        "total_dialed": 160
       },
       {
         "date": "2026-01-23",
@@ -618,10 +722,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 143
       },
       {
         "date": "2026-01-24",
@@ -641,10 +749,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 107
+        "talk_time": 107,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 107,
+        "total_dialed": 144
       },
       {
         "date": "2026-01-25",
@@ -664,10 +776,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-01-26",
@@ -687,10 +803,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-01-27",
@@ -710,10 +830,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 34,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 119
+        "talk_time": 119,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 119,
+        "total_dialed": 162
       },
       {
         "date": "2026-01-28",
@@ -733,10 +857,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 162
       },
       {
         "date": "2026-01-29",
@@ -756,10 +884,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 136
+        "talk_time": 136,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 136,
+        "total_dialed": 148
       },
       {
         "date": "2026-01-30",
@@ -779,10 +911,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 111
+        "talk_time": 111,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 111,
+        "total_dialed": 174
       },
       {
         "date": "2026-01-31",
@@ -805,7 +941,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-01",
@@ -825,10 +965,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-02",
@@ -848,10 +992,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 166
       },
       {
         "date": "2026-02-03",
@@ -871,10 +1019,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 120
+        "talk_time": 120,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 120,
+        "total_dialed": 166
       },
       {
         "date": "2026-02-04",
@@ -894,10 +1046,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 32,
         "other_connect": 14,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 140
+        "talk_time": 140,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 140,
+        "total_dialed": 180
       },
       {
         "date": "2026-02-05",
@@ -917,10 +1073,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 22,
         "other_connect": 6,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 208
       },
       {
         "date": "2026-02-06",
@@ -940,10 +1100,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-07",
@@ -963,10 +1127,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 21,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 109
+        "talk_time": 109,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 109,
+        "total_dialed": 178
       },
       {
         "date": "2026-02-08",
@@ -986,10 +1154,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-09",
@@ -1009,10 +1181,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 23,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 157
       },
       {
         "date": "2026-02-10",
@@ -1032,10 +1208,14 @@ window.RAW_DATA = {
         "phone_connect": 23,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 197
       },
       {
         "date": "2026-02-11",
@@ -1055,10 +1235,14 @@ window.RAW_DATA = {
         "phone_connect": 14,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 121
+        "talk_time": 121,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 121,
+        "total_dialed": 189
       },
       {
         "date": "2026-02-12",
@@ -1078,10 +1262,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 31
+        "talk_time": 31,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 31,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-13",
@@ -1101,10 +1289,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 147
       },
       {
         "date": "2026-02-14",
@@ -1124,10 +1316,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-15",
@@ -1147,10 +1343,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-16",
@@ -1170,10 +1370,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 143
+        "talk_time": 143,
+        "total_connected": 86,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 143,
+        "total_dialed": 169
       },
       {
         "date": "2026-02-17",
@@ -1193,10 +1397,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 170
       },
       {
         "date": "2026-02-18",
@@ -1216,10 +1424,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-19",
@@ -1239,10 +1451,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-20",
@@ -1262,10 +1478,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 103
+        "talk_time": 103,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 103,
+        "total_dialed": 149
       },
       {
         "date": "2026-02-21",
@@ -1285,10 +1505,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 92
+        "talk_time": 92,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 92,
+        "total_dialed": 156
       },
       {
         "date": "2026-02-22",
@@ -1308,10 +1532,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-23",
@@ -1331,10 +1559,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 134
+        "talk_time": 134,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 134,
+        "total_dialed": 154
       },
       {
         "date": "2026-02-24",
@@ -1354,10 +1586,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 146
+        "talk_time": 146,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 146,
+        "total_dialed": 174
       },
       {
         "date": "2026-02-25",
@@ -1377,10 +1613,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 139
+        "talk_time": 139,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 139,
+        "total_dialed": 184
       },
       {
         "date": "2026-02-26",
@@ -1403,7 +1643,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-27",
@@ -1426,7 +1670,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 20,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-02-28",
@@ -1449,7 +1697,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-01",
@@ -1469,10 +1721,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-02",
@@ -1492,10 +1748,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 119
+        "talk_time": 119,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 119,
+        "total_dialed": 204
       },
       {
         "date": "2026-03-03",
@@ -1515,10 +1775,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 138
       },
       {
         "date": "2026-03-04",
@@ -1538,10 +1802,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-05",
@@ -1561,10 +1829,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 142
       },
       {
         "date": "2026-03-06",
@@ -1584,10 +1856,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 108
+        "talk_time": 108,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 108,
+        "total_dialed": 167
       },
       {
         "date": "2026-03-07",
@@ -1607,10 +1883,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-08",
@@ -1630,10 +1910,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-09",
@@ -1653,10 +1937,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 163
       },
       {
         "date": "2026-03-10",
@@ -1676,10 +1964,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 177
       },
       {
         "date": "2026-03-11",
@@ -1699,10 +1991,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 139
       },
       {
         "date": "2026-03-12",
@@ -1722,10 +2018,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 149
+        "talk_time": 149,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 149,
+        "total_dialed": 152
       },
       {
         "date": "2026-03-13",
@@ -1745,10 +2045,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 12,
         "other_connect": 7,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 92
+        "talk_time": 92,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 92,
+        "total_dialed": 146
       },
       {
         "date": "2026-03-14",
@@ -1768,10 +2072,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 161
       },
       {
         "date": "2026-03-15",
@@ -1791,10 +2099,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-16",
@@ -1814,10 +2126,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 169
       },
       {
         "date": "2026-03-17",
@@ -1837,10 +2153,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 103
+        "talk_time": 103,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 103,
+        "total_dialed": 179
       },
       {
         "date": "2026-03-18",
@@ -1860,10 +2180,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 50
+        "talk_time": 50,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 50,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-19",
@@ -1883,10 +2207,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-20",
@@ -1906,10 +2234,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-21",
@@ -1929,10 +2261,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-22",
@@ -1952,10 +2288,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-23",
@@ -1975,10 +2315,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-24",
@@ -1998,10 +2342,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 136
+        "talk_time": 136,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 136,
+        "total_dialed": 189
       },
       {
         "date": "2026-03-25",
@@ -2021,10 +2369,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 120
+        "talk_time": 120,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 120,
+        "total_dialed": 176
       },
       {
         "date": "2026-03-26",
@@ -2044,10 +2396,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 208
       },
       {
         "date": "2026-03-27",
@@ -2067,10 +2423,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 120
+        "talk_time": 120,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 120,
+        "total_dialed": 185
       },
       {
         "date": "2026-03-28",
@@ -2090,10 +2450,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 84
+        "talk_time": 84,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 84,
+        "total_dialed": 155
       },
       {
         "date": "2026-03-29",
@@ -2116,7 +2480,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-30",
@@ -2136,10 +2504,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 163
       },
       {
         "date": "2026-03-31",
@@ -2159,10 +2531,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 157
       },
       {
         "date": "2026-04-01",
@@ -2182,10 +2558,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 152
       },
       {
         "date": "2026-04-02",
@@ -2205,10 +2585,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 121
+        "talk_time": 121,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 121,
+        "total_dialed": 188
       },
       {
         "date": "2026-04-03",
@@ -2228,10 +2612,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 147
       },
       {
         "date": "2026-04-04",
@@ -2251,10 +2639,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 119
+        "talk_time": 119,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 119,
+        "total_dialed": 155
       },
       {
         "date": "2026-04-05",
@@ -2274,10 +2666,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-06",
@@ -2297,10 +2693,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-07",
@@ -2320,10 +2720,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 126
+        "talk_time": 126,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 126,
+        "total_dialed": 169
       },
       {
         "date": "2026-04-08",
@@ -2343,10 +2747,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 158
+        "talk_time": 158,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 158,
+        "total_dialed": 188
       },
       {
         "date": "2026-04-09",
@@ -2366,10 +2774,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 194
       },
       {
         "date": "2026-04-10",
@@ -2389,10 +2801,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 171
       },
       {
         "date": "2026-04-11",
@@ -2412,10 +2828,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-12",
@@ -2435,10 +2855,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-13",
@@ -2458,10 +2882,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 148
+        "talk_time": 148,
+        "total_connected": 83,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 148,
+        "total_dialed": 162
       },
       {
         "date": "2026-04-14",
@@ -2481,10 +2909,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 186
       },
       {
         "date": "2026-04-15",
@@ -2504,10 +2936,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 119
+        "talk_time": 119,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 119,
+        "total_dialed": 170
       },
       {
         "date": "2026-04-16",
@@ -2527,10 +2963,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 154
+        "talk_time": 154,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 154,
+        "total_dialed": 162
       },
       {
         "date": "2026-04-17",
@@ -2550,10 +2990,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 144
+        "talk_time": 144,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 144,
+        "total_dialed": 193
       },
       {
         "date": "2026-04-18",
@@ -2573,10 +3017,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 125
+        "talk_time": 125,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 125,
+        "total_dialed": 167
       },
       {
         "date": "2026-04-19",
@@ -2596,10 +3044,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-20",
@@ -2619,10 +3071,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-21",
@@ -2642,10 +3098,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-22",
@@ -2665,10 +3125,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 128
+        "talk_time": 128,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 128,
+        "total_dialed": 186
       },
       {
         "date": "2026-04-23",
@@ -2688,10 +3152,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-24",
@@ -2711,10 +3179,14 @@ window.RAW_DATA = {
         "phone_connect": 10,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 176
       },
       {
         "date": "2026-04-25",
@@ -2734,10 +3206,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 152
       },
       {
         "date": "2026-04-26",
@@ -2757,10 +3233,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-27",
@@ -2780,10 +3260,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 24,
         "active_ab": 0,
-        "talk_time": 24,
-        "total_connected": 147
+        "talk_time": 147,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 147,
+        "total_dialed": 181
       },
       {
         "date": "2026-04-28",
@@ -2803,10 +3287,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 129
+        "talk_time": 129,
+        "total_connected": 85,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 129,
+        "total_dialed": 184
       },
       {
         "date": "2026-04-29",
@@ -2826,10 +3314,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 166
       },
       {
         "date": "2026-04-30",
@@ -2849,10 +3341,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 131
+        "talk_time": 131,
+        "total_connected": 79,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 131,
+        "total_dialed": 169
       },
       {
         "date": "2026-05-01",
@@ -2872,10 +3368,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-02",
@@ -2895,10 +3395,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 26,
         "active_ab": 0,
-        "talk_time": 26,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 79,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 199
       },
       {
         "date": "2026-05-03",
@@ -2918,10 +3422,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-04",
@@ -2941,10 +3449,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 187
+        "talk_time": 187,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 187,
+        "total_dialed": 164
       },
       {
         "date": "2026-05-05",
@@ -2964,10 +3476,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 129
+        "talk_time": 129,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 129,
+        "total_dialed": 183
       },
       {
         "date": "2026-05-06",
@@ -2987,10 +3503,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 31,
         "active_ab": 0,
-        "talk_time": 31,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 152
       },
       {
         "date": "2026-05-07",
@@ -3010,10 +3530,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 125
+        "talk_time": 125,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 125,
+        "total_dialed": 151
       },
       {
         "date": "2026-05-08",
@@ -3033,10 +3557,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 154
       },
       {
         "date": "2026-05-09",
@@ -3056,10 +3584,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 144
+        "talk_time": 144,
+        "total_connected": 85,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 144,
+        "total_dialed": 193
       },
       {
         "date": "2026-05-10",
@@ -3079,10 +3611,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-11",
@@ -3102,10 +3638,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 159
+        "talk_time": 159,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 159,
+        "total_dialed": 181
       },
       {
         "date": "2026-05-12",
@@ -3125,10 +3665,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 137
+        "talk_time": 137,
+        "total_connected": 86,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 137,
+        "total_dialed": 187
       },
       {
         "date": "2026-05-13",
@@ -3148,10 +3692,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 30,
         "active_ab": 0,
-        "talk_time": 30,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 147
       },
       {
         "date": "2026-05-14",
@@ -3171,10 +3719,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 24,
         "active_ab": 0,
-        "talk_time": 24,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 152
       },
       {
         "date": "2026-05-15",
@@ -3194,10 +3746,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 155
       },
       {
         "date": "2026-05-16",
@@ -3217,10 +3773,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-17",
@@ -3240,10 +3800,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-18",
@@ -3263,10 +3827,14 @@ window.RAW_DATA = {
         "phone_connect": 16,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 113
+        "talk_time": 113,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 113,
+        "total_dialed": 165
       },
       {
         "date": "2026-05-19",
@@ -3286,10 +3854,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 157
       },
       {
         "date": "2026-05-20",
@@ -3309,10 +3881,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 130
+        "talk_time": 130,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 130,
+        "total_dialed": 199
       },
       {
         "date": "2026-05-21",
@@ -3332,10 +3908,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 29,
         "active_ab": 0,
-        "talk_time": 29,
-        "total_connected": 138
+        "talk_time": 138,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 138,
+        "total_dialed": 182
       },
       {
         "date": "2026-05-22",
@@ -3355,10 +3935,14 @@ window.RAW_DATA = {
         "phone_connect": 14,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 27,
         "active_ab": 0,
-        "talk_time": 27,
-        "total_connected": 154
+        "talk_time": 154,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 154,
+        "total_dialed": 175
       },
       {
         "date": "2026-05-23",
@@ -3378,10 +3962,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 208
       },
       {
         "date": "2026-05-24",
@@ -3401,10 +3989,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-25",
@@ -3424,10 +4016,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 188
       },
       {
         "date": "2026-05-26",
@@ -3447,10 +4043,14 @@ window.RAW_DATA = {
         "phone_connect": 17,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 119
+        "talk_time": 119,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 119,
+        "total_dialed": 169
       },
       {
         "date": "2026-05-27",
@@ -3470,10 +4070,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-28",
@@ -3493,10 +4097,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-29",
@@ -3516,10 +4124,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 148
       },
       {
         "date": "2026-05-30",
@@ -3539,10 +4151,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-31",
@@ -3562,10 +4178,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-01",
@@ -3585,10 +4205,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 155
+        "talk_time": 155,
+        "total_connected": 85,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 155,
+        "total_dialed": 202
       },
       {
         "date": "2026-06-02",
@@ -3608,10 +4232,14 @@ window.RAW_DATA = {
         "phone_connect": 14,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 138
+        "talk_time": 138,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 138,
+        "total_dialed": 172
       },
       {
         "date": "2026-06-03",
@@ -3631,10 +4259,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 128
+        "talk_time": 128,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 128,
+        "total_dialed": 188
       },
       {
         "date": "2026-06-04",
@@ -3654,10 +4286,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-05",
@@ -3677,10 +4313,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-06",
@@ -3700,10 +4340,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-07",
@@ -3723,10 +4367,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-08",
@@ -3746,10 +4394,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-09",
@@ -3769,10 +4421,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 26,
         "active_ab": 0,
-        "talk_time": 26,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 151
       },
       {
         "date": "2026-06-10",
@@ -3792,10 +4448,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 170
       },
       {
         "date": "2026-06-11",
@@ -3815,10 +4475,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 131
+        "talk_time": 131,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 131,
+        "total_dialed": 146
       },
       {
         "date": "2026-06-12",
@@ -3838,10 +4502,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-13",
@@ -3861,10 +4529,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 126
+        "talk_time": 126,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 126,
+        "total_dialed": 164
       },
       {
         "date": "2026-06-14",
@@ -3884,10 +4556,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-15",
@@ -3907,10 +4583,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 144
       },
       {
         "date": "2026-06-16",
@@ -3930,10 +4610,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-17",
@@ -3953,10 +4637,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 194
       },
       {
         "date": "2026-06-18",
@@ -3976,10 +4664,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-19",
@@ -3999,10 +4691,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-20",
@@ -4022,10 +4718,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 149
       },
       {
         "date": "2026-06-21",
@@ -4045,10 +4745,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-22",
@@ -4068,10 +4772,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 148
+        "talk_time": 148,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 148,
+        "total_dialed": 169
       },
       {
         "date": "2026-06-23",
@@ -4091,10 +4799,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 5,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 168
       },
       {
         "date": "2026-06-24",
@@ -4114,10 +4826,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-25",
@@ -4137,10 +4853,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-26",
@@ -4160,10 +4880,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 195
       },
       {
         "date": "2026-06-27",
@@ -4183,10 +4907,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-28",
@@ -4206,10 +4934,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-29",
@@ -4229,10 +4961,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 10,
         "other_connect": 7,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 131
+        "talk_time": 131,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 131,
+        "total_dialed": 160
       },
       {
         "date": "2026-06-30",
@@ -4255,7 +4991,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-01",
@@ -4275,10 +5015,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 22,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 167
+        "talk_time": 167,
+        "total_connected": 109,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 167,
+        "total_dialed": 271
       },
       {
         "date": "2026-07-02",
@@ -4298,10 +5042,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 40,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 171
+        "talk_time": 171,
+        "total_connected": 112,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 171,
+        "total_dialed": 279
       },
       {
         "date": "2026-07-03",
@@ -4321,10 +5069,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 26,
         "other_connect": 12,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 107
+        "talk_time": 107,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 107,
+        "total_dialed": 171
       },
       {
         "date": "2026-07-04",
@@ -4344,10 +5096,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 30,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 182
+        "talk_time": 182,
+        "total_connected": 92,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 182,
+        "total_dialed": 266
       },
       {
         "date": "2026-07-05",
@@ -4367,10 +5123,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-06",
@@ -4390,10 +5150,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 17,
         "other_connect": 7,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 142
+        "talk_time": 142,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 142,
+        "total_dialed": 177
       },
       {
         "date": "2026-07-07",
@@ -4413,10 +5177,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 14,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 31,
         "active_ab": 0,
-        "talk_time": 31,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 160
       },
       {
         "date": "2026-07-08",
@@ -4436,10 +5204,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 46,
         "other_connect": 22,
-        "onboardings": 0,
+        "onboardings": 35,
         "active_ab": 0,
-        "talk_time": 35,
-        "total_connected": 178
+        "talk_time": 178,
+        "total_connected": 110,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 178,
+        "total_dialed": 263
       },
       {
         "date": "2026-07-09",
@@ -4459,10 +5231,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 60,
         "other_connect": 23,
-        "onboardings": 0,
+        "onboardings": 28,
         "active_ab": 0,
-        "talk_time": 28,
-        "total_connected": 149
+        "talk_time": 149,
+        "total_connected": 106,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 149,
+        "total_dialed": 265
       },
       {
         "date": "2026-07-10",
@@ -4482,10 +5258,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 19,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 108
+        "talk_time": 108,
+        "total_connected": 85,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 108,
+        "total_dialed": 213
       },
       {
         "date": "2026-07-11",
@@ -4505,10 +5285,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-12",
@@ -4528,10 +5312,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-13",
@@ -4551,10 +5339,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-14",
@@ -4574,10 +5366,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 26,
         "active_ab": 0,
-        "talk_time": 26,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 83,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 180
       },
       {
         "date": "2026-07-15",
@@ -4597,10 +5393,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 26,
         "other_connect": 12,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 109
+        "talk_time": 109,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 109,
+        "total_dialed": 211
       },
       {
         "date": "2026-07-16",
@@ -4620,10 +5420,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 144
       },
       {
         "date": "2026-07-17",
@@ -4643,10 +5447,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 28,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 213
       },
       {
         "date": "2026-07-18",
@@ -4666,10 +5474,14 @@ window.RAW_DATA = {
         "phone_connect": 27,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 191
       },
       {
         "date": "2026-07-19",
@@ -4689,10 +5501,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-20",
@@ -4712,10 +5528,14 @@ window.RAW_DATA = {
         "phone_connect": 17,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 128
+        "talk_time": 128,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 128,
+        "total_dialed": 169
       },
       {
         "date": "2026-07-21",
@@ -4735,10 +5555,14 @@ window.RAW_DATA = {
         "phone_connect": 16,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 178
       },
       {
         "date": "2026-07-22",
@@ -4758,10 +5582,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 224
       },
       {
         "date": "2026-07-23",
@@ -4781,10 +5609,14 @@ window.RAW_DATA = {
         "phone_connect": 17,
         "other_dial": 37,
         "other_connect": 15,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 176
       },
       {
         "date": "2026-07-24",
@@ -4804,10 +5636,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 176
       },
       {
         "date": "2026-07-25",
@@ -4827,10 +5663,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 40,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 198
+        "talk_time": 198,
+        "total_connected": 110,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 198,
+        "total_dialed": 275
       },
       {
         "date": "2026-07-26",
@@ -4850,10 +5690,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-27",
@@ -4873,10 +5717,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 32,
         "other_connect": 12,
-        "onboardings": 0,
+        "onboardings": 27,
         "active_ab": 0,
-        "talk_time": 27,
-        "total_connected": 142
+        "talk_time": 142,
+        "total_connected": 97,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 142,
+        "total_dialed": 252
       },
       {
         "date": "2026-07-28",
@@ -4896,10 +5744,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 208
       },
       {
         "date": "2026-07-29",
@@ -4919,10 +5771,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 183
       },
       {
         "date": "2026-07-30",
@@ -4942,10 +5798,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 183
       },
       {
         "date": "2026-07-31",
@@ -4968,7 +5828,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-01",
@@ -4988,10 +5852,14 @@ window.RAW_DATA = {
         "phone_connect": 16,
         "other_dial": 12,
         "other_connect": 5,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 134
       },
       {
         "date": "2026-08-02",
@@ -5011,10 +5879,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-03",
@@ -5034,10 +5906,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-04",
@@ -5057,10 +5933,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-05",
@@ -5080,10 +5960,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 28,
         "other_connect": 13,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 154
       },
       {
         "date": "2026-08-06",
@@ -5103,10 +5987,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 18,
         "other_connect": 7,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 171
       },
       {
         "date": "2026-08-07",
@@ -5126,10 +6014,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 12,
         "other_connect": 6,
-        "onboardings": 0,
+        "onboardings": 37,
         "active_ab": 0,
-        "talk_time": 37,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 188
       },
       {
         "date": "2026-08-08",
@@ -5149,10 +6041,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 28,
         "active_ab": 0,
-        "talk_time": 28,
-        "total_connected": 92
+        "talk_time": 92,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 92,
+        "total_dialed": 178
       },
       {
         "date": "2026-08-09",
@@ -5172,10 +6068,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-10",
@@ -5195,10 +6095,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 160
       },
       {
         "date": "2026-08-11",
@@ -5218,10 +6122,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 20,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 30,
         "active_ab": 0,
-        "talk_time": 30,
-        "total_connected": 82
+        "talk_time": 82,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 82,
+        "total_dialed": 130
       },
       {
         "date": "2026-08-12",
@@ -5241,10 +6149,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 7,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 29,
         "active_ab": 0,
-        "talk_time": 29,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 178
       },
       {
         "date": "2026-08-13",
@@ -5264,10 +6176,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 148
       },
       {
         "date": "2026-08-14",
@@ -5287,10 +6203,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-15",
@@ -5310,10 +6230,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-16",
@@ -5333,10 +6257,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-17",
@@ -5356,10 +6284,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-18",
@@ -5379,10 +6311,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-19",
@@ -5402,10 +6338,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 33,
         "other_connect": 19,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 137
       },
       {
         "date": "2026-08-20",
@@ -5425,10 +6365,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 180
       },
       {
         "date": "2026-08-21",
@@ -5448,10 +6392,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-22",
@@ -5471,10 +6419,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 15,
         "other_connect": 5,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 82,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 221
       },
       {
         "date": "2026-08-23",
@@ -5494,10 +6446,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-24",
@@ -5517,10 +6473,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 82
+        "talk_time": 82,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 82,
+        "total_dialed": 158
       },
       {
         "date": "2026-08-25",
@@ -5540,10 +6500,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 170
       },
       {
         "date": "2026-08-26",
@@ -5563,10 +6527,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 219
       },
       {
         "date": "2026-08-27",
@@ -5586,10 +6554,14 @@ window.RAW_DATA = {
         "phone_connect": 21,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 144
       },
       {
         "date": "2026-08-28",
@@ -5609,10 +6581,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-29",
@@ -5632,10 +6608,14 @@ window.RAW_DATA = {
         "phone_connect": 14,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 161
       },
       {
         "date": "2026-08-30",
@@ -5655,10 +6635,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-31",
@@ -5678,10 +6662,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 32,
         "other_connect": 11,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 87,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 248
       },
       {
         "date": "2026-09-01",
@@ -5701,10 +6689,14 @@ window.RAW_DATA = {
         "phone_connect": 14,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 68
+        "talk_time": 68,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 68,
+        "total_dialed": 147
       },
       {
         "date": "2026-09-02",
@@ -5724,10 +6716,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 76
+        "talk_time": 76,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 76,
+        "total_dialed": 186
       },
       {
         "date": "2026-09-03",
@@ -5747,10 +6743,14 @@ window.RAW_DATA = {
         "phone_connect": 39,
         "other_dial": 21,
         "other_connect": 11,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 168
       },
       {
         "date": "2026-09-04",
@@ -5770,10 +6770,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-05",
@@ -5793,10 +6797,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-06",
@@ -5816,10 +6824,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-07",
@@ -5839,10 +6851,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 92
+        "talk_time": 92,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 92,
+        "total_dialed": 179
       },
       {
         "date": "2026-09-08",
@@ -5862,10 +6878,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-09",
@@ -5885,10 +6905,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-10",
@@ -5908,10 +6932,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 130
       },
       {
         "date": "2026-09-11",
@@ -5931,10 +6959,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 134
       },
       {
         "date": "2026-09-12",
@@ -5954,10 +6986,14 @@ window.RAW_DATA = {
         "phone_connect": 18,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 194
       },
       {
         "date": "2026-09-13",
@@ -5977,10 +7013,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-14",
@@ -6000,10 +7040,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-15",
@@ -6023,10 +7067,14 @@ window.RAW_DATA = {
         "phone_connect": 52,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 137
+        "talk_time": 137,
+        "total_connected": 97,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 137,
+        "total_dialed": 222
       },
       {
         "date": "2026-09-16",
@@ -6046,10 +7094,14 @@ window.RAW_DATA = {
         "phone_connect": 49,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 103
+        "talk_time": 103,
+        "total_connected": 84,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 103,
+        "total_dialed": 212
       },
       {
         "date": "2026-09-17",
@@ -6069,10 +7121,14 @@ window.RAW_DATA = {
         "phone_connect": 36,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 173
       },
       {
         "date": "2026-09-18",
@@ -6092,10 +7148,14 @@ window.RAW_DATA = {
         "phone_connect": 28,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 76
+        "talk_time": 76,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 76,
+        "total_dialed": 132
       },
       {
         "date": "2026-09-19",
@@ -6115,10 +7175,14 @@ window.RAW_DATA = {
         "phone_connect": 23,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 174
       },
       {
         "date": "2026-09-20",
@@ -6138,10 +7202,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-21",
@@ -6161,10 +7229,14 @@ window.RAW_DATA = {
         "phone_connect": 17,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 26,
         "active_ab": 0,
-        "talk_time": 26,
-        "total_connected": 142
+        "talk_time": 142,
+        "total_connected": 96,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 142,
+        "total_dialed": 230
       },
       {
         "date": "2026-09-22",
@@ -6184,10 +7256,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 132
       },
       {
         "date": "2026-09-23",
@@ -6207,10 +7283,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-24",
@@ -6230,10 +7310,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-25",
@@ -6253,10 +7337,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 109
       },
       {
         "date": "2026-09-26",
@@ -6276,10 +7364,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-27",
@@ -6299,10 +7391,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-28",
@@ -6322,10 +7418,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-29",
@@ -6345,10 +7445,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 133
       },
       {
         "date": "2026-09-30",
@@ -6368,10 +7472,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 92,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 224
       },
       {
         "date": "2026-10-01",
@@ -6391,10 +7499,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 151
+        "talk_time": 151,
+        "total_connected": 106,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 151,
+        "total_dialed": 255
       },
       {
         "date": "2026-10-02",
@@ -6414,10 +7526,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-03",
@@ -6437,10 +7553,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 38,
         "other_connect": 18,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 82
+        "talk_time": 82,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 82,
+        "total_dialed": 147
       },
       {
         "date": "2026-10-04",
@@ -6460,10 +7580,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-05",
@@ -6483,10 +7607,14 @@ window.RAW_DATA = {
         "phone_connect": 16,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 131
       },
       {
         "date": "2026-10-06",
@@ -6506,10 +7634,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 108
+        "talk_time": 108,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 108,
+        "total_dialed": 156
       },
       {
         "date": "2026-10-07",
@@ -6529,10 +7661,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 152
       },
       {
         "date": "2026-10-08",
@@ -6552,10 +7688,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-09",
@@ -6575,10 +7715,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-10",
@@ -6598,10 +7742,14 @@ window.RAW_DATA = {
         "phone_connect": 19,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 145
       },
       {
         "date": "2026-10-11",
@@ -6621,10 +7769,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-12",
@@ -6644,10 +7796,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 78
+        "talk_time": 78,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 78,
+        "total_dialed": 169
       },
       {
         "date": "2026-10-13",
@@ -6667,10 +7823,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-14",
@@ -6690,10 +7850,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 214
       },
       {
         "date": "2026-10-15",
@@ -6713,10 +7877,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 201
       },
       {
         "date": "2026-10-16",
@@ -6736,10 +7904,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-17",
@@ -6759,10 +7931,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-18",
@@ -6782,10 +7958,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-19",
@@ -6805,10 +7985,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 129
+        "talk_time": 129,
+        "total_connected": 86,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 129,
+        "total_dialed": 195
       },
       {
         "date": "2026-10-20",
@@ -6828,10 +8012,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-21",
@@ -6851,10 +8039,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-22",
@@ -6874,10 +8066,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 81,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 214
       },
       {
         "date": "2026-10-23",
@@ -6897,10 +8093,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 131
       },
       {
         "date": "2026-10-24",
@@ -6920,10 +8120,14 @@ window.RAW_DATA = {
         "phone_connect": 10,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 157
       },
       {
         "date": "2026-10-25",
@@ -6943,10 +8147,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-26",
@@ -6966,10 +8174,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 174
       },
       {
         "date": "2026-10-27",
@@ -6989,10 +8201,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 82
+        "talk_time": 82,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 82,
+        "total_dialed": 229
       },
       {
         "date": "2026-10-28",
@@ -7012,10 +8228,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 78
+        "talk_time": 78,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 78,
+        "total_dialed": 128
       },
       {
         "date": "2026-10-29",
@@ -7035,10 +8255,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 130
       },
       {
         "date": "2026-10-30",
@@ -7058,10 +8282,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-31",
@@ -7081,10 +8309,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 60,
-        "active_ab": 15,
-        "talk_time": 10,
-        "total_connected": 93
+        "onboardings": 10,
+        "active_ab": 0,
+        "talk_time": 93,
+        "total_connected": 63,
+        "builder_dial": 60,
+        "builder_connect": 15,
+        "talktime": 93,
+        "total_dialed": 188
       },
       {
         "date": "2026-11-01",
@@ -7104,10 +8336,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-11-02",
@@ -7127,10 +8363,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 50,
-        "active_ab": 11,
-        "talk_time": 7,
-        "total_connected": 122
+        "onboardings": 7,
+        "active_ab": 0,
+        "talk_time": 122,
+        "total_connected": 61,
+        "builder_dial": 50,
+        "builder_connect": 11,
+        "talktime": 122,
+        "total_dialed": 160
       },
       {
         "date": "2026-11-03",
@@ -7150,10 +8390,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 60,
-        "active_ab": 13,
-        "talk_time": 24,
-        "total_connected": 124
+        "onboardings": 24,
+        "active_ab": 0,
+        "talk_time": 124,
+        "total_connected": 78,
+        "builder_dial": 60,
+        "builder_connect": 13,
+        "talktime": 124,
+        "total_dialed": 213
       },
       {
         "date": "2026-11-04",
@@ -7173,10 +8417,14 @@ window.RAW_DATA = {
         "phone_connect": 21,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 60,
-        "active_ab": 16,
-        "talk_time": 18,
-        "total_connected": 103
+        "onboardings": 18,
+        "active_ab": 0,
+        "talk_time": 103,
+        "total_connected": 89,
+        "builder_dial": 60,
+        "builder_connect": 16,
+        "talktime": 103,
+        "total_dialed": 222
       },
       {
         "date": "2026-11-05",
@@ -7196,10 +8444,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 60,
-        "active_ab": 13,
-        "talk_time": 9,
-        "total_connected": 89
+        "onboardings": 9,
+        "active_ab": 0,
+        "talk_time": 89,
+        "total_connected": 63,
+        "builder_dial": 60,
+        "builder_connect": 13,
+        "talktime": 89,
+        "total_dialed": 191
       },
       {
         "date": "2026-11-06",
@@ -7219,10 +8471,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 74,
-        "active_ab": 16,
-        "talk_time": 11,
-        "total_connected": 83
+        "onboardings": 11,
+        "active_ab": 0,
+        "talk_time": 83,
+        "total_connected": 60,
+        "builder_dial": 74,
+        "builder_connect": 16,
+        "talktime": 83,
+        "total_dialed": 170
       },
       {
         "date": "2026-11-07",
@@ -7242,10 +8498,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-11-08",
@@ -7265,10 +8525,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-11-09",
@@ -7288,10 +8552,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 20,
         "other_connect": 11,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 196
       }
     ],
     "Ramya": [
@@ -7315,8 +8583,12 @@ window.RAW_DATA = {
         "other_connect": 2,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 162
       },
       {
         "date": "2025-12-27",
@@ -7336,10 +8608,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 12,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 85
+        "talk_time": 85,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 85,
+        "total_dialed": 159
       },
       {
         "date": "2025-12-29",
@@ -7359,10 +8635,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 4,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 82
+        "talk_time": 82,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 82,
+        "total_dialed": 139
       },
       {
         "date": "2025-12-30",
@@ -7382,10 +8662,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 6,
         "other_connect": 5,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 84
+        "talk_time": 84,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 84,
+        "total_dialed": 131
       },
       {
         "date": "2026-01-02",
@@ -7407,8 +8691,12 @@ window.RAW_DATA = {
         "other_connect": 11,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 138
       },
       {
         "date": "2026-01-03",
@@ -7428,10 +8716,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 5,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 133
       },
       {
         "date": "2026-01-05",
@@ -7451,10 +8743,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 11,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 144
       },
       {
         "date": "2026-01-08",
@@ -7474,10 +8770,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 3,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 36,
         "active_ab": 0,
-        "talk_time": 36,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 140
       },
       {
         "date": "2026-01-09",
@@ -7497,10 +8797,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 151
       },
       {
         "date": "2026-01-10",
@@ -7520,10 +8824,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 28,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 188
       },
       {
         "date": "2026-01-12",
@@ -7543,10 +8851,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 8,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 85
+        "talk_time": 85,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 85,
+        "total_dialed": 160
       },
       {
         "date": "2026-01-13",
@@ -7566,10 +8878,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 164
       },
       {
         "date": "2026-01-14",
@@ -7589,10 +8905,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 147
       },
       {
         "date": "2026-01-16",
@@ -7612,10 +8932,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 11,
         "other_connect": 6,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 94
+        "talk_time": 94,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 94,
+        "total_dialed": 151
       },
       {
         "date": "2026-01-17",
@@ -7635,10 +8959,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 7,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 138
       },
       {
         "date": "2026-01-19",
@@ -7658,10 +8986,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 13,
         "other_connect": 7,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 160
+        "talk_time": 160,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 160,
+        "total_dialed": 141
       },
       {
         "date": "2026-01-20",
@@ -7681,10 +9013,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 149
       },
       {
         "date": "2026-01-21",
@@ -7704,10 +9040,14 @@ window.RAW_DATA = {
         "phone_connect": 15,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 84
+        "talk_time": 84,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 84,
+        "total_dialed": 135
       },
       {
         "date": "2026-01-23",
@@ -7727,10 +9067,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 133
       },
       {
         "date": "2026-01-24",
@@ -7750,10 +9094,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 170
       },
       {
         "date": "2026-01-27",
@@ -7773,10 +9121,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 164
       },
       {
         "date": "2026-01-28",
@@ -7796,10 +9148,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 90
+        "talk_time": 90,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 90,
+        "total_dialed": 141
       },
       {
         "date": "2026-01-29",
@@ -7819,10 +9175,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 139
       },
       {
         "date": "2026-01-30",
@@ -7842,10 +9202,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 24,
         "active_ab": 0,
-        "talk_time": 24,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 129
       },
       {
         "date": "2026-01-31",
@@ -7865,10 +9229,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 194
       },
       {
         "date": "2026-02-02",
@@ -7890,8 +9258,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 76
+        "talk_time": 76,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 76,
+        "total_dialed": 147
       },
       {
         "date": "2026-02-03",
@@ -7913,8 +9285,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 110
       },
       {
         "date": "2026-02-04",
@@ -7936,8 +9312,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 131
       },
       {
         "date": "2026-02-05",
@@ -7959,8 +9339,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 58
+        "talk_time": 58,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 58,
+        "total_dialed": 75
       },
       {
         "date": "2026-02-09",
@@ -7980,10 +9364,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 122
       },
       {
         "date": "2026-02-10",
@@ -8003,10 +9391,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 121
       },
       {
         "date": "2026-02-11",
@@ -8026,10 +9418,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 147
       },
       {
         "date": "2026-02-12",
@@ -8049,10 +9445,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 157
       },
       {
         "date": "2026-02-13",
@@ -8072,10 +9472,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 115
       },
       {
         "date": "2026-02-14",
@@ -8098,7 +9502,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 85
       },
       {
         "date": "2026-02-16",
@@ -8118,10 +9526,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 164
       },
       {
         "date": "2026-02-17",
@@ -8141,10 +9553,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 75
+        "talk_time": 75,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 75,
+        "total_dialed": 140
       },
       {
         "date": "2026-02-18",
@@ -8164,10 +9580,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 153
       },
       {
         "date": "2026-02-19",
@@ -8187,10 +9607,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 147
       },
       {
         "date": "2026-02-20",
@@ -8210,10 +9634,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 172
       },
       {
         "date": "2026-02-23",
@@ -8233,10 +9661,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 115
       },
       {
         "date": "2026-02-24",
@@ -8256,10 +9688,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 127
       },
       {
         "date": "2026-02-25",
@@ -8279,10 +9715,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 137
       },
       {
         "date": "2026-02-26",
@@ -8302,10 +9742,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 144
       },
       {
         "date": "2026-02-27",
@@ -8325,10 +9769,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 148
       },
       {
         "date": "2026-02-28",
@@ -8348,10 +9796,14 @@ window.RAW_DATA = {
         "phone_connect": 19,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 107
       },
       {
         "date": "2026-03-01",
@@ -8371,10 +9823,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-02",
@@ -8394,10 +9850,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 187
       },
       {
         "date": "2026-03-03",
@@ -8417,10 +9877,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-04",
@@ -8440,10 +9904,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-05",
@@ -8463,10 +9931,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-06",
@@ -8486,10 +9958,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-07",
@@ -8509,10 +9985,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-08",
@@ -8532,10 +10012,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-09",
@@ -8555,10 +10039,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 116
       },
       {
         "date": "2026-03-10",
@@ -8578,10 +10066,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 156
       },
       {
         "date": "2026-03-11",
@@ -8601,10 +10093,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 106
       },
       {
         "date": "2026-03-12",
@@ -8624,10 +10120,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 79
+        "talk_time": 79,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 79,
+        "total_dialed": 173
       },
       {
         "date": "2026-03-13",
@@ -8647,10 +10147,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 144
       },
       {
         "date": "2026-03-14",
@@ -8670,10 +10174,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-15",
@@ -8693,10 +10201,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-16",
@@ -8716,10 +10228,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 173
       },
       {
         "date": "2026-03-17",
@@ -8739,10 +10255,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 156
       },
       {
         "date": "2026-03-18",
@@ -8762,10 +10282,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 173
       },
       {
         "date": "2026-03-19",
@@ -8785,10 +10309,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-20",
@@ -8808,10 +10336,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 47,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 113
       },
       {
         "date": "2026-03-21",
@@ -8831,10 +10363,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-22",
@@ -8854,10 +10390,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-23",
@@ -8877,10 +10417,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 112
       },
       {
         "date": "2026-03-24",
@@ -8900,10 +10444,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 175
       },
       {
         "date": "2026-03-25",
@@ -8923,10 +10471,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 121
       },
       {
         "date": "2026-03-26",
@@ -8946,10 +10498,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 122
       },
       {
         "date": "2026-03-27",
@@ -8969,10 +10525,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 132
       },
       {
         "date": "2026-03-28",
@@ -8992,10 +10552,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 79
+        "talk_time": 79,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 79,
+        "total_dialed": 146
       },
       {
         "date": "2026-03-31",
@@ -9015,10 +10579,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 135
       },
       {
         "date": "2026-04-01",
@@ -9038,10 +10606,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 163
       },
       {
         "date": "2026-04-02",
@@ -9061,10 +10633,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 84
+        "talk_time": 84,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 84,
+        "total_dialed": 129
       },
       {
         "date": "2026-04-03",
@@ -9084,10 +10660,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 151
       },
       {
         "date": "2026-04-04",
@@ -9107,10 +10687,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 68
+        "talk_time": 68,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 68,
+        "total_dialed": 128
       },
       {
         "date": "2026-04-05",
@@ -9130,10 +10714,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-06",
@@ -9153,10 +10741,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-07",
@@ -9176,10 +10768,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-08",
@@ -9199,10 +10795,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 7,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 161
       },
       {
         "date": "2026-04-09",
@@ -9222,10 +10822,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 21,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 145
       },
       {
         "date": "2026-04-10",
@@ -9245,10 +10849,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 121
+        "talk_time": 121,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 121,
+        "total_dialed": 102
       },
       {
         "date": "2026-04-11",
@@ -9268,10 +10876,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 108
       },
       {
         "date": "2026-04-12",
@@ -9291,10 +10903,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-13",
@@ -9314,10 +10930,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 172
       },
       {
         "date": "2026-04-14",
@@ -9337,10 +10957,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 158
       },
       {
         "date": "2026-04-15",
@@ -9360,10 +10984,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 138
       },
       {
         "date": "2026-04-16",
@@ -9383,10 +11011,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 120
       },
       {
         "date": "2026-04-17",
@@ -9406,10 +11038,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 101
+        "talk_time": 101,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 101,
+        "total_dialed": 166
       },
       {
         "date": "2026-04-18",
@@ -9429,10 +11065,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 5,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 111
       },
       {
         "date": "2026-04-19",
@@ -9452,10 +11092,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-20",
@@ -9475,10 +11119,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 123
+        "talk_time": 123,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 123,
+        "total_dialed": 173
       },
       {
         "date": "2026-04-21",
@@ -9498,10 +11146,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 163
       },
       {
         "date": "2026-04-22",
@@ -9521,10 +11173,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 17,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 111
+        "talk_time": 111,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 111,
+        "total_dialed": 154
       },
       {
         "date": "2026-04-23",
@@ -9544,10 +11200,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 87,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 207
       },
       {
         "date": "2026-04-24",
@@ -9567,10 +11227,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 13,
         "other_connect": 13,
-        "onboardings": 0,
+        "onboardings": 26,
         "active_ab": 0,
-        "talk_time": 26,
-        "total_connected": 111
+        "talk_time": 111,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 111,
+        "total_dialed": 138
       },
       {
         "date": "2026-04-25",
@@ -9590,10 +11254,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 35,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 163
       },
       {
         "date": "2026-04-26",
@@ -9613,10 +11281,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-27",
@@ -9636,10 +11308,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 51,
         "active_ab": 0,
-        "talk_time": 51,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 153
       },
       {
         "date": "2026-04-28",
@@ -9659,10 +11335,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 101
+        "talk_time": 101,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 101,
+        "total_dialed": 168
       },
       {
         "date": "2026-04-29",
@@ -9682,10 +11362,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-30",
@@ -9705,10 +11389,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 120
       },
       {
         "date": "2026-05-01",
@@ -9728,10 +11416,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-02",
@@ -9751,10 +11443,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 154
       },
       {
         "date": "2026-05-03",
@@ -9774,10 +11470,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-04",
@@ -9797,10 +11497,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 123
+        "talk_time": 123,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 123,
+        "total_dialed": 162
       },
       {
         "date": "2026-05-05",
@@ -9820,10 +11524,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 113
       },
       {
         "date": "2026-05-06",
@@ -9843,10 +11551,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-07",
@@ -9866,10 +11578,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 3,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 111
+        "talk_time": 111,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 111,
+        "total_dialed": 133
       },
       {
         "date": "2026-05-08",
@@ -9889,10 +11605,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 85
+        "talk_time": 85,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 85,
+        "total_dialed": 117
       },
       {
         "date": "2026-05-09",
@@ -9912,10 +11632,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 120
       },
       {
         "date": "2026-05-10",
@@ -9935,10 +11659,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-11",
@@ -9958,10 +11686,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 124
       },
       {
         "date": "2026-05-12",
@@ -9981,10 +11713,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 34,
         "other_connect": 14,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 119
+        "talk_time": 119,
+        "total_connected": 86,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 119,
+        "total_dialed": 176
       },
       {
         "date": "2026-05-13",
@@ -10004,10 +11740,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 109
       },
       {
         "date": "2026-05-14",
@@ -10027,10 +11767,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 125
       },
       {
         "date": "2026-05-15",
@@ -10050,10 +11794,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-16",
@@ -10073,10 +11821,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 186
       },
       {
         "date": "2026-05-17",
@@ -10096,10 +11848,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-18",
@@ -10119,10 +11875,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 113
       },
       {
         "date": "2026-05-19",
@@ -10142,10 +11902,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 153
       },
       {
         "date": "2026-05-20",
@@ -10165,10 +11929,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 11,
         "other_connect": 5,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 130
       },
       {
         "date": "2026-05-21",
@@ -10188,10 +11956,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 3,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 33,
         "active_ab": 0,
-        "talk_time": 33,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 108
       },
       {
         "date": "2026-05-22",
@@ -10211,10 +11983,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 45,
         "active_ab": 0,
-        "talk_time": 45,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 101,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 211
       },
       {
         "date": "2026-05-23",
@@ -10234,10 +12010,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 24,
         "active_ab": 0,
-        "talk_time": 24,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 117
       },
       {
         "date": "2026-05-24",
@@ -10257,10 +12037,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-25",
@@ -10280,10 +12064,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-26",
@@ -10303,10 +12091,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 36,
         "active_ab": 0,
-        "talk_time": 36,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 127
       },
       {
         "date": "2026-05-27",
@@ -10326,10 +12118,14 @@ window.RAW_DATA = {
         "phone_connect": 26,
         "other_dial": 47,
         "other_connect": 31,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 81,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 126
       },
       {
         "date": "2026-05-28",
@@ -10349,10 +12145,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 175
       },
       {
         "date": "2026-05-29",
@@ -10372,10 +12172,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 7,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 137
       },
       {
         "date": "2026-05-30",
@@ -10395,10 +12199,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-31",
@@ -10418,10 +12226,14 @@ window.RAW_DATA = {
         "phone_connect": 14,
         "other_dial": 4,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 145
       },
       {
         "date": "2026-06-01",
@@ -10441,10 +12253,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 128
       },
       {
         "date": "2026-06-02",
@@ -10464,10 +12280,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 143
       },
       {
         "date": "2026-06-03",
@@ -10487,10 +12307,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 84,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 187
       },
       {
         "date": "2026-06-04",
@@ -10510,10 +12334,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 7,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 76
       },
       {
         "date": "2026-06-05",
@@ -10533,10 +12361,14 @@ window.RAW_DATA = {
         "phone_connect": 34,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 79
+        "talk_time": 79,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 79,
+        "total_dialed": 91
       },
       {
         "date": "2026-06-06",
@@ -10556,10 +12388,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 137
       },
       {
         "date": "2026-06-07",
@@ -10579,10 +12415,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-08",
@@ -10602,10 +12442,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 110
       },
       {
         "date": "2026-06-09",
@@ -10625,10 +12469,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 3,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 85
+        "talk_time": 85,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 85,
+        "total_dialed": 124
       },
       {
         "date": "2026-06-10",
@@ -10648,10 +12496,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 36,
         "active_ab": 0,
-        "talk_time": 36,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-11",
@@ -10671,10 +12523,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 39,
         "active_ab": 0,
-        "talk_time": 39,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 121
       },
       {
         "date": "2026-06-12",
@@ -10694,10 +12550,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 39,
         "active_ab": 0,
-        "talk_time": 39,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-13",
@@ -10717,10 +12577,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-14",
@@ -10740,10 +12604,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-15",
@@ -10763,10 +12631,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 32,
         "active_ab": 0,
-        "talk_time": 32,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 172
       },
       {
         "date": "2026-06-16",
@@ -10786,10 +12658,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 38,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 95
       },
       {
         "date": "2026-06-17",
@@ -10809,10 +12685,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 129
       },
       {
         "date": "2026-06-18",
@@ -10832,10 +12712,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 48,
         "active_ab": 0,
-        "talk_time": 48,
-        "total_connected": 79
+        "talk_time": 79,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 79,
+        "total_dialed": 140
       },
       {
         "date": "2026-06-19",
@@ -10855,10 +12739,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 30,
         "active_ab": 0,
-        "talk_time": 30,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 117
       },
       {
         "date": "2026-06-20",
@@ -10878,10 +12766,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-21",
@@ -10901,10 +12793,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-22",
@@ -10924,10 +12820,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 52,
         "active_ab": 0,
-        "talk_time": 52,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 182
       },
       {
         "date": "2026-06-23",
@@ -10947,10 +12847,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 38,
         "other_connect": 6,
-        "onboardings": 0,
+        "onboardings": 42,
         "active_ab": 0,
-        "talk_time": 42,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 191
       },
       {
         "date": "2026-06-24",
@@ -10970,10 +12874,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-25",
@@ -10993,10 +12901,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 115
       },
       {
         "date": "2026-06-26",
@@ -11016,10 +12928,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 137
       },
       {
         "date": "2026-06-27",
@@ -11039,10 +12955,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 85
       },
       {
         "date": "2026-06-28",
@@ -11062,10 +12982,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-29",
@@ -11085,10 +13009,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 26,
         "active_ab": 0,
-        "talk_time": 26,
-        "total_connected": 78
+        "talk_time": 78,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 78,
+        "total_dialed": 177
       },
       {
         "date": "2026-06-30",
@@ -11108,10 +13036,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 76
+        "talk_time": 76,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 76,
+        "total_dialed": 108
       },
       {
         "date": "2026-07-01",
@@ -11131,10 +13063,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 141
       },
       {
         "date": "2026-07-02",
@@ -11154,10 +13090,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 150
       },
       {
         "date": "2026-07-03",
@@ -11177,10 +13117,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 26,
         "active_ab": 0,
-        "talk_time": 26,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 165
       },
       {
         "date": "2026-07-04",
@@ -11200,10 +13144,14 @@ window.RAW_DATA = {
         "phone_connect": 26,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 76
+        "talk_time": 76,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 76,
+        "total_dialed": 98
       },
       {
         "date": "2026-07-05",
@@ -11223,10 +13171,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-06",
@@ -11246,10 +13198,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 160
       },
       {
         "date": "2026-07-07",
@@ -11269,10 +13225,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 29,
         "active_ab": 0,
-        "talk_time": 29,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 102
       },
       {
         "date": "2026-07-08",
@@ -11292,10 +13252,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 28,
         "active_ab": 0,
-        "talk_time": 28,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 82,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 201
       },
       {
         "date": "2026-07-09",
@@ -11315,10 +13279,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 38,
         "other_connect": 7,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 123
+        "talk_time": 123,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 123,
+        "total_dialed": 198
       },
       {
         "date": "2026-07-10",
@@ -11338,10 +13306,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 31,
         "active_ab": 0,
-        "talk_time": 31,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 106
       },
       {
         "date": "2026-07-11",
@@ -11361,10 +13333,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 26,
         "active_ab": 0,
-        "talk_time": 26,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 125
       },
       {
         "date": "2026-07-12",
@@ -11384,10 +13360,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-13",
@@ -11407,10 +13387,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 81,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 211
       },
       {
         "date": "2026-07-14",
@@ -11430,10 +13414,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-15",
@@ -11453,10 +13441,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 99
+        "talk_time": 99,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 99,
+        "total_dialed": 183
       },
       {
         "date": "2026-07-16",
@@ -11476,10 +13468,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 171
       },
       {
         "date": "2026-07-17",
@@ -11499,10 +13495,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 4,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 119
       },
       {
         "date": "2026-07-18",
@@ -11522,10 +13522,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 116
       },
       {
         "date": "2026-07-19",
@@ -11545,10 +13549,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-20",
@@ -11568,10 +13576,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 118
       },
       {
         "date": "2026-07-21",
@@ -11591,10 +13603,14 @@ window.RAW_DATA = {
         "phone_connect": 17,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 64
+        "talk_time": 64,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 64,
+        "total_dialed": 102
       },
       {
         "date": "2026-07-22",
@@ -11614,10 +13630,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-23",
@@ -11637,10 +13657,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 49,
         "active_ab": 0,
-        "talk_time": 49,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-24",
@@ -11660,10 +13684,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 28,
         "other_connect": 11,
-        "onboardings": 0,
+        "onboardings": 31,
         "active_ab": 0,
-        "talk_time": 31,
-        "total_connected": 94
+        "talk_time": 94,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 94,
+        "total_dialed": 156
       },
       {
         "date": "2026-07-25",
@@ -11683,10 +13711,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 24,
         "active_ab": 0,
-        "talk_time": 24,
-        "total_connected": 111
+        "talk_time": 111,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 111,
+        "total_dialed": 163
       },
       {
         "date": "2026-07-26",
@@ -11706,10 +13738,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-27",
@@ -11729,10 +13765,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 34,
         "active_ab": 0,
-        "talk_time": 34,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 196
       },
       {
         "date": "2026-07-28",
@@ -11752,10 +13792,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 35,
         "active_ab": 0,
-        "talk_time": 35,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 173
       },
       {
         "date": "2026-07-29",
@@ -11775,10 +13819,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 99
+        "talk_time": 99,
+        "total_connected": 83,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 99,
+        "total_dialed": 181
       },
       {
         "date": "2026-07-30",
@@ -11798,10 +13846,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 77
       },
       {
         "date": "2026-07-31",
@@ -11824,7 +13876,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-01",
@@ -11844,10 +13900,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 40,
         "active_ab": 0,
-        "talk_time": 40,
-        "total_connected": 119
+        "talk_time": 119,
+        "total_connected": 85,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 119,
+        "total_dialed": 234
       },
       {
         "date": "2026-08-02",
@@ -11867,10 +13927,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-03",
@@ -11890,10 +13954,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 26,
         "active_ab": 0,
-        "talk_time": 26,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 86,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 228
       },
       {
         "date": "2026-08-04",
@@ -11913,10 +13981,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 154
       },
       {
         "date": "2026-08-05",
@@ -11936,10 +14008,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 29,
         "active_ab": 0,
-        "talk_time": 29,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-06",
@@ -11959,10 +14035,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 144
       },
       {
         "date": "2026-08-07",
@@ -11982,10 +14062,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 56,
         "active_ab": 0,
-        "talk_time": 56,
-        "total_connected": 78
+        "talk_time": 78,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 78,
+        "total_dialed": 148
       },
       {
         "date": "2026-08-08",
@@ -12005,10 +14089,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 37,
         "active_ab": 0,
-        "talk_time": 37,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 87,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 199
       },
       {
         "date": "2026-08-09",
@@ -12028,10 +14116,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-10",
@@ -12051,10 +14143,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 47,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 132
       },
       {
         "date": "2026-08-11",
@@ -12074,10 +14170,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 30,
         "active_ab": 0,
-        "talk_time": 30,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 112
       },
       {
         "date": "2026-08-12",
@@ -12097,10 +14197,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 166
       },
       {
         "date": "2026-08-13",
@@ -12120,10 +14224,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-14",
@@ -12143,10 +14251,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-15",
@@ -12166,10 +14278,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-16",
@@ -12189,10 +14305,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-17",
@@ -12212,10 +14332,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-18",
@@ -12235,10 +14359,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-19",
@@ -12258,10 +14386,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 83,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 174
       },
       {
         "date": "2026-08-20",
@@ -12281,10 +14413,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 116
       },
       {
         "date": "2026-08-21",
@@ -12304,10 +14440,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-22",
@@ -12327,10 +14467,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 144
       },
       {
         "date": "2026-08-23",
@@ -12350,10 +14494,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-24",
@@ -12373,10 +14521,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 133
       },
       {
         "date": "2026-08-25",
@@ -12396,10 +14548,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 28,
         "active_ab": 0,
-        "talk_time": 28,
-        "total_connected": 61
+        "talk_time": 61,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 61,
+        "total_dialed": 189
       },
       {
         "date": "2026-08-26",
@@ -12419,10 +14575,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 56
+        "talk_time": 56,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 56,
+        "total_dialed": 84
       },
       {
         "date": "2026-08-27",
@@ -12442,10 +14602,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-28",
@@ -12465,10 +14629,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-29",
@@ -12488,10 +14656,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-30",
@@ -12511,10 +14683,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-31",
@@ -12534,10 +14710,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-01",
@@ -12557,10 +14737,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 143
       },
       {
         "date": "2026-09-02",
@@ -12580,10 +14764,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 68
+        "talk_time": 68,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 68,
+        "total_dialed": 134
       },
       {
         "date": "2026-09-03",
@@ -12603,10 +14791,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 80,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 177
       },
       {
         "date": "2026-09-04",
@@ -12626,10 +14818,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 117
       },
       {
         "date": "2026-09-05",
@@ -12649,10 +14845,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-06",
@@ -12672,10 +14872,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-07",
@@ -12695,10 +14899,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 141
       },
       {
         "date": "2026-09-08",
@@ -12718,10 +14926,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 82,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 207
       },
       {
         "date": "2026-09-09",
@@ -12741,10 +14953,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 173
       },
       {
         "date": "2026-09-10",
@@ -12764,10 +14980,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 24,
         "active_ab": 0,
-        "talk_time": 24,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 136
       },
       {
         "date": "2026-09-11",
@@ -12787,10 +15007,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 163
       },
       {
         "date": "2026-09-12",
@@ -12810,10 +15034,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-13",
@@ -12833,10 +15061,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-14",
@@ -12856,10 +15088,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-15",
@@ -12879,10 +15115,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-16",
@@ -12902,10 +15142,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-17",
@@ -12925,10 +15169,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-18",
@@ -12948,10 +15196,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 38,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 162
       },
       {
         "date": "2026-09-19",
@@ -12971,10 +15223,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 88,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 147
       },
       {
         "date": "2026-09-20",
@@ -12994,10 +15250,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-21",
@@ -13017,10 +15277,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 36,
         "active_ab": 0,
-        "talk_time": 36,
-        "total_connected": 51
+        "talk_time": 51,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 51,
+        "total_dialed": 105
       },
       {
         "date": "2026-09-22",
@@ -13040,10 +15304,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 122
       },
       {
         "date": "2026-09-23",
@@ -13063,10 +15331,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 14,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 78
+        "talk_time": 78,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 78,
+        "total_dialed": 137
       },
       {
         "date": "2026-09-24",
@@ -13086,10 +15358,14 @@ window.RAW_DATA = {
         "phone_connect": 32,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 48
+        "talk_time": 48,
+        "total_connected": 32,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 48,
+        "total_dialed": 83
       },
       {
         "date": "2026-09-25",
@@ -13109,10 +15385,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 56
+        "talk_time": 56,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 56,
+        "total_dialed": 71
       },
       {
         "date": "2026-09-26",
@@ -13132,10 +15412,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 47
+        "talk_time": 47,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 47,
+        "total_dialed": 92
       },
       {
         "date": "2026-09-27",
@@ -13155,10 +15439,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-28",
@@ -13178,10 +15466,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 162
       },
       {
         "date": "2026-09-29",
@@ -13201,10 +15493,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 100
       },
       {
         "date": "2026-09-30",
@@ -13224,10 +15520,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 107
       },
       {
         "date": "2026-10-01",
@@ -13247,10 +15547,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 78
+        "talk_time": 78,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 78,
+        "total_dialed": 136
       },
       {
         "date": "2026-10-02",
@@ -13270,10 +15574,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-03",
@@ -13293,10 +15601,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 142
       },
       {
         "date": "2026-10-04",
@@ -13316,10 +15628,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 31
       },
       {
         "date": "2026-10-05",
@@ -13339,10 +15655,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 79,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 182
       },
       {
         "date": "2026-10-06",
@@ -13362,10 +15682,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 83,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 201
       },
       {
         "date": "2026-10-07",
@@ -13385,10 +15709,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 62
+        "talk_time": 62,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 62,
+        "total_dialed": 136
       },
       {
         "date": "2026-10-08",
@@ -13408,10 +15736,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 137
       },
       {
         "date": "2026-10-09",
@@ -13431,10 +15763,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 92
       },
       {
         "date": "2026-10-10",
@@ -13454,10 +15790,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 43
+        "talk_time": 43,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 43,
+        "total_dialed": 68
       },
       {
         "date": "2026-10-11",
@@ -13477,10 +15817,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-12",
@@ -13500,10 +15844,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 28,
         "active_ab": 0,
-        "talk_time": 28,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 91,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 196
       },
       {
         "date": "2026-10-13",
@@ -13523,10 +15871,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 119
       },
       {
         "date": "2026-10-14",
@@ -13546,10 +15898,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 24,
         "active_ab": 0,
-        "talk_time": 24,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 140
       },
       {
         "date": "2026-10-15",
@@ -13569,10 +15925,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 150
       },
       {
         "date": "2026-10-16",
@@ -13592,10 +15952,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 134
       },
       {
         "date": "2026-10-17",
@@ -13615,10 +15979,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 58
+        "talk_time": 58,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 58,
+        "total_dialed": 102
       },
       {
         "date": "2026-10-18",
@@ -13638,10 +16006,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-19",
@@ -13661,10 +16033,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 129
       },
       {
         "date": "2026-10-20",
@@ -13684,10 +16060,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-21",
@@ -13707,10 +16087,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 57
+        "talk_time": 57,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 57,
+        "total_dialed": 136
       },
       {
         "date": "2026-10-22",
@@ -13730,10 +16114,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 43,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 94
       },
       {
         "date": "2026-10-23",
@@ -13753,10 +16141,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-24",
@@ -13776,10 +16168,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-25",
@@ -13799,10 +16195,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-26",
@@ -13822,10 +16222,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 80,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 179
       },
       {
         "date": "2026-10-27",
@@ -13845,10 +16249,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 155
       },
       {
         "date": "2026-10-28",
@@ -13868,10 +16276,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 43
+        "talk_time": 43,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 43,
+        "total_dialed": 80
       },
       {
         "date": "2026-10-29",
@@ -13891,10 +16303,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 107
       },
       {
         "date": "2026-10-30",
@@ -13914,10 +16330,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 47
+        "talk_time": 47,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 47,
+        "total_dialed": 66
       },
       {
         "date": "2026-10-31",
@@ -13937,10 +16357,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 171
       },
       {
         "date": "2026-11-01",
@@ -13960,10 +16384,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-11-02",
@@ -13983,10 +16411,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 90,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 182
       },
       {
         "date": "2026-11-03",
@@ -14006,10 +16438,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 57
+        "talk_time": 57,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 57,
+        "total_dialed": 130
       },
       {
         "date": "2026-11-04",
@@ -14029,10 +16465,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 60
+        "talk_time": 60,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 60,
+        "total_dialed": 156
       },
       {
         "date": "2026-11-05",
@@ -14052,10 +16492,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 163
       },
       {
         "date": "2026-11-06",
@@ -14075,10 +16519,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 69
+        "talk_time": 69,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 69,
+        "total_dialed": 68
       },
       {
         "date": "2026-11-07",
@@ -14098,10 +16546,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 55
+        "talk_time": 55,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 55,
+        "total_dialed": 135
       }
     ],
     "Dipali": [
@@ -14123,10 +16575,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 15,
         "other_connect": 15,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 261
+        "talk_time": 261,
+        "total_connected": 84,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 261,
+        "total_dialed": 242
       },
       {
         "date": "2025-12-27",
@@ -14146,10 +16602,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 144
+        "talk_time": 144,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 144,
+        "total_dialed": 209
       },
       {
         "date": "2025-12-29",
@@ -14169,10 +16629,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 23,
         "other_connect": 18,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 178
+        "talk_time": 178,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 178,
+        "total_dialed": 159
       },
       {
         "date": "2026-01-02",
@@ -14192,10 +16656,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 158
+        "talk_time": 158,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 158,
+        "total_dialed": 150
       },
       {
         "date": "2026-01-03",
@@ -14215,10 +16683,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 31,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 230
+        "talk_time": 230,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 230,
+        "total_dialed": 192
       },
       {
         "date": "2026-01-05",
@@ -14238,10 +16710,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 15,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 161
+        "talk_time": 161,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 161,
+        "total_dialed": 131
       },
       {
         "date": "2026-01-06",
@@ -14261,10 +16737,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 8,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 32,
         "active_ab": 0,
-        "talk_time": 32,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 189
       },
       {
         "date": "2026-01-07",
@@ -14284,10 +16764,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 11,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 64,
         "active_ab": 0,
-        "talk_time": 64,
-        "total_connected": 158
+        "talk_time": 158,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 158,
+        "total_dialed": 147
       },
       {
         "date": "2026-01-08",
@@ -14307,10 +16791,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 11,
         "other_connect": 6,
-        "onboardings": 0,
+        "onboardings": 36,
         "active_ab": 0,
-        "talk_time": 36,
-        "total_connected": 151
+        "talk_time": 151,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 151,
+        "total_dialed": 188
       },
       {
         "date": "2026-01-09",
@@ -14330,10 +16818,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 10,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 161
+        "talk_time": 161,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 161,
+        "total_dialed": 185
       },
       {
         "date": "2026-01-10",
@@ -14353,10 +16845,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 24,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 117
       },
       {
         "date": "2026-01-12",
@@ -14376,10 +16872,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 30,
         "other_connect": 18,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 143
+        "talk_time": 143,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 143,
+        "total_dialed": 155
       },
       {
         "date": "2026-01-13",
@@ -14399,10 +16899,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 13,
         "other_connect": 13,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 158
+        "talk_time": 158,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 158,
+        "total_dialed": 219
       },
       {
         "date": "2026-01-14",
@@ -14422,10 +16926,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 12,
         "other_connect": 12,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 171
+        "talk_time": 171,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 171,
+        "total_dialed": 185
       },
       {
         "date": "2026-01-16",
@@ -14445,10 +16953,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 6,
         "other_connect": 6,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 188
+        "talk_time": 188,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 188,
+        "total_dialed": 194
       },
       {
         "date": "2026-01-17",
@@ -14468,10 +16980,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 4,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 165
+        "talk_time": 165,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 165,
+        "total_dialed": 190
       },
       {
         "date": "2026-01-19",
@@ -14491,10 +17007,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 143
+        "talk_time": 143,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 143,
+        "total_dialed": 181
       },
       {
         "date": "2026-01-20",
@@ -14514,10 +17034,14 @@ window.RAW_DATA = {
         "phone_connect": 12,
         "other_dial": 7,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 40
+        "talk_time": 40,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 40,
+        "total_dialed": 184
       },
       {
         "date": "2026-01-21",
@@ -14537,10 +17061,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 3,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 130
+        "talk_time": 130,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 130,
+        "total_dialed": 153
       },
       {
         "date": "2026-01-22",
@@ -14560,10 +17088,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 179
+        "talk_time": 179,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 179,
+        "total_dialed": 161
       },
       {
         "date": "2026-01-23",
@@ -14583,10 +17115,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 160
+        "talk_time": 160,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 160,
+        "total_dialed": 113
       },
       {
         "date": "2026-01-24",
@@ -14606,10 +17142,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 197
       },
       {
         "date": "2026-01-27",
@@ -14629,10 +17169,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 51,
         "other_connect": 30,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 155
+        "talk_time": 155,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 155,
+        "total_dialed": 189
       },
       {
         "date": "2026-01-28",
@@ -14652,10 +17196,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 12,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 177
+        "talk_time": 177,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 177,
+        "total_dialed": 193
       },
       {
         "date": "2026-01-29",
@@ -14675,10 +17223,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 12,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 166
       },
       {
         "date": "2026-01-30",
@@ -14698,10 +17250,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 4,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 111
       },
       {
         "date": "2026-01-31",
@@ -14721,10 +17277,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 163
       },
       {
         "date": "2026-02-02",
@@ -14744,10 +17304,14 @@ window.RAW_DATA = {
         "phone_connect": 16,
         "other_dial": 11,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 183
       },
       {
         "date": "2026-02-03",
@@ -14767,10 +17331,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 99
+        "talk_time": 99,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 99,
+        "total_dialed": 135
       },
       {
         "date": "2026-02-04",
@@ -14790,10 +17358,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 124
       },
       {
         "date": "2026-02-05",
@@ -14813,10 +17385,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 16,
         "other_connect": 15,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 100
+        "talk_time": 100,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 100,
+        "total_dialed": 121
       },
       {
         "date": "2026-02-06",
@@ -14836,10 +17412,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 145
       },
       {
         "date": "2026-02-07",
@@ -14859,10 +17439,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 138
+        "talk_time": 138,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 138,
+        "total_dialed": 197
       },
       {
         "date": "2026-02-09",
@@ -14882,10 +17466,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 146
+        "talk_time": 146,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 146,
+        "total_dialed": 181
       },
       {
         "date": "2026-02-10",
@@ -14905,10 +17493,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 160
+        "talk_time": 160,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 160,
+        "total_dialed": 216
       },
       {
         "date": "2026-02-11",
@@ -14928,10 +17520,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 146
+        "talk_time": 146,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 146,
+        "total_dialed": 194
       },
       {
         "date": "2026-02-12",
@@ -14951,10 +17547,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 113
+        "talk_time": 113,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 113,
+        "total_dialed": 118
       },
       {
         "date": "2026-02-13",
@@ -14974,10 +17574,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 129
+        "talk_time": 129,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 129,
+        "total_dialed": 145
       },
       {
         "date": "2026-02-14",
@@ -14997,10 +17601,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 113
+        "talk_time": 113,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 113,
+        "total_dialed": 183
       },
       {
         "date": "2026-02-16",
@@ -15020,10 +17628,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 107
+        "talk_time": 107,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 107,
+        "total_dialed": 177
       },
       {
         "date": "2026-02-17",
@@ -15043,10 +17655,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 101
+        "talk_time": 101,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 101,
+        "total_dialed": 176
       },
       {
         "date": "2026-02-18",
@@ -15066,10 +17682,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 177
       },
       {
         "date": "2026-02-19",
@@ -15089,10 +17709,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 179
       },
       {
         "date": "2026-02-20",
@@ -15112,10 +17736,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 144
+        "talk_time": 144,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 144,
+        "total_dialed": 115
       },
       {
         "date": "2026-02-21",
@@ -15135,10 +17763,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 101
+        "talk_time": 101,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 101,
+        "total_dialed": 185
       },
       {
         "date": "2026-02-23",
@@ -15158,10 +17790,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 147
       },
       {
         "date": "2026-02-24",
@@ -15181,10 +17817,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 149
       },
       {
         "date": "2026-02-25",
@@ -15204,10 +17844,14 @@ window.RAW_DATA = {
         "phone_connect": 14,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 142
+        "talk_time": 142,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 142,
+        "total_dialed": 146
       },
       {
         "date": "2026-02-26",
@@ -15227,10 +17871,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 141
+        "talk_time": 141,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 141,
+        "total_dialed": 177
       },
       {
         "date": "2026-02-27",
@@ -15250,10 +17898,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 131
       },
       {
         "date": "2026-02-28",
@@ -15273,10 +17925,14 @@ window.RAW_DATA = {
         "phone_connect": 12,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 90
+        "talk_time": 90,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 90,
+        "total_dialed": 123
       },
       {
         "date": "2026-03-01",
@@ -15296,10 +17952,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-02",
@@ -15319,10 +17979,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-03",
@@ -15342,10 +18006,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-04",
@@ -15365,10 +18033,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-05",
@@ -15388,10 +18060,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-06",
@@ -15411,10 +18087,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-07",
@@ -15434,10 +18114,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-08",
@@ -15457,10 +18141,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-09",
@@ -15480,10 +18168,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-10",
@@ -15503,10 +18195,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-11",
@@ -15526,10 +18222,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-12",
@@ -15549,10 +18249,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-13",
@@ -15572,10 +18276,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-14",
@@ -15595,10 +18303,14 @@ window.RAW_DATA = {
         "phone_connect": 14,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 90
+        "talk_time": 90,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 90,
+        "total_dialed": 78
       },
       {
         "date": "2026-03-15",
@@ -15618,10 +18330,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-16",
@@ -15641,10 +18357,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 30,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 80
       },
       {
         "date": "2026-03-17",
@@ -15664,10 +18384,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 181
       },
       {
         "date": "2026-03-18",
@@ -15687,10 +18411,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 192
       },
       {
         "date": "2026-03-19",
@@ -15710,10 +18438,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-20",
@@ -15733,10 +18465,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 175
+        "talk_time": 175,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 175,
+        "total_dialed": 162
       },
       {
         "date": "2026-03-21",
@@ -15756,10 +18492,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 170
       },
       {
         "date": "2026-03-22",
@@ -15779,10 +18519,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-23",
@@ -15802,10 +18546,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 149
+        "talk_time": 149,
+        "total_connected": 91,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 149,
+        "total_dialed": 205
       },
       {
         "date": "2026-03-24",
@@ -15825,10 +18573,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 72,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 213
       },
       {
         "date": "2026-03-25",
@@ -15848,10 +18600,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 146
+        "talk_time": 146,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 146,
+        "total_dialed": 168
       },
       {
         "date": "2026-03-26",
@@ -15871,10 +18627,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 199
       },
       {
         "date": "2026-03-27",
@@ -15894,10 +18654,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 198
       },
       {
         "date": "2026-03-28",
@@ -15917,10 +18681,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 183
       },
       {
         "date": "2026-03-29",
@@ -15943,7 +18711,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-03-30",
@@ -15963,10 +18735,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 107
+        "talk_time": 107,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 107,
+        "total_dialed": 142
       },
       {
         "date": "2026-03-31",
@@ -15986,10 +18762,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 80,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 223
       },
       {
         "date": "2026-04-01",
@@ -16009,10 +18789,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 171
       },
       {
         "date": "2026-04-02",
@@ -16032,10 +18816,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 173
       },
       {
         "date": "2026-04-03",
@@ -16055,10 +18843,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 94
+        "talk_time": 94,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 94,
+        "total_dialed": 135
       },
       {
         "date": "2026-04-04",
@@ -16078,10 +18870,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 108
+        "talk_time": 108,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 108,
+        "total_dialed": 176
       },
       {
         "date": "2026-04-05",
@@ -16101,10 +18897,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-06",
@@ -16124,10 +18924,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 92
+        "talk_time": 92,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 92,
+        "total_dialed": 165
       },
       {
         "date": "2026-04-07",
@@ -16147,10 +18951,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 140
       },
       {
         "date": "2026-04-08",
@@ -16170,10 +18978,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 171
       },
       {
         "date": "2026-04-09",
@@ -16193,10 +19005,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 141
+        "talk_time": 141,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 141,
+        "total_dialed": 162
       },
       {
         "date": "2026-04-10",
@@ -16216,10 +19032,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 94
+        "talk_time": 94,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 94,
+        "total_dialed": 135
       },
       {
         "date": "2026-04-11",
@@ -16239,10 +19059,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 125
       },
       {
         "date": "2026-04-12",
@@ -16262,10 +19086,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-13",
@@ -16285,10 +19113,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 161
       },
       {
         "date": "2026-04-14",
@@ -16308,10 +19140,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 8,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 120
+        "talk_time": 120,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 120,
+        "total_dialed": 148
       },
       {
         "date": "2026-04-15",
@@ -16331,10 +19167,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 63,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 160
       },
       {
         "date": "2026-04-16",
@@ -16354,10 +19194,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 153
+        "talk_time": 153,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 153,
+        "total_dialed": 176
       },
       {
         "date": "2026-04-17",
@@ -16377,10 +19221,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 200
       },
       {
         "date": "2026-04-18",
@@ -16400,10 +19248,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 123
+        "talk_time": 123,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 123,
+        "total_dialed": 186
       },
       {
         "date": "2026-04-19",
@@ -16423,10 +19275,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-20",
@@ -16446,10 +19302,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 183
       },
       {
         "date": "2026-04-21",
@@ -16469,10 +19329,14 @@ window.RAW_DATA = {
         "phone_connect": 14,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 121
+        "talk_time": 121,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 121,
+        "total_dialed": 152
       },
       {
         "date": "2026-04-22",
@@ -16492,10 +19356,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 149
+        "talk_time": 149,
+        "total_connected": 80,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 149,
+        "total_dialed": 197
       },
       {
         "date": "2026-04-23",
@@ -16515,10 +19383,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 123
+        "talk_time": 123,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 123,
+        "total_dialed": 198
       },
       {
         "date": "2026-04-24",
@@ -16538,10 +19410,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 69,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 193
       },
       {
         "date": "2026-04-25",
@@ -16561,10 +19437,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 86,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 249
       },
       {
         "date": "2026-04-26",
@@ -16584,10 +19464,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-04-27",
@@ -16607,10 +19491,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 24,
         "active_ab": 0,
-        "talk_time": 24,
-        "total_connected": 137
+        "talk_time": 137,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 137,
+        "total_dialed": 187
       },
       {
         "date": "2026-04-28",
@@ -16630,10 +19518,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 164
+        "talk_time": 164,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 164,
+        "total_dialed": 146
       },
       {
         "date": "2026-04-29",
@@ -16653,10 +19545,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 121
+        "talk_time": 121,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 121,
+        "total_dialed": 209
       },
       {
         "date": "2026-04-30",
@@ -16676,10 +19572,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 84,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 187
       },
       {
         "date": "2026-05-01",
@@ -16699,10 +19599,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-02",
@@ -16722,10 +19626,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 131
+        "talk_time": 131,
+        "total_connected": 81,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 131,
+        "total_dialed": 196
       },
       {
         "date": "2026-05-03",
@@ -16745,10 +19653,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-04",
@@ -16768,10 +19680,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 87,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 198
       },
       {
         "date": "2026-05-05",
@@ -16791,10 +19707,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 130
+        "talk_time": 130,
+        "total_connected": 73,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 130,
+        "total_dialed": 191
       },
       {
         "date": "2026-05-06",
@@ -16814,10 +19734,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 103
+        "talk_time": 103,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 103,
+        "total_dialed": 170
       },
       {
         "date": "2026-05-07",
@@ -16837,10 +19761,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 79,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 199
       },
       {
         "date": "2026-05-08",
@@ -16860,10 +19788,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 109
+        "talk_time": 109,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 109,
+        "total_dialed": 130
       },
       {
         "date": "2026-05-09",
@@ -16883,10 +19815,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 186
+        "talk_time": 186,
+        "total_connected": 84,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 186,
+        "total_dialed": 194
       },
       {
         "date": "2026-05-10",
@@ -16906,10 +19842,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-11",
@@ -16929,10 +19869,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 176
       },
       {
         "date": "2026-05-12",
@@ -16952,10 +19896,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 159
       },
       {
         "date": "2026-05-13",
@@ -16975,10 +19923,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 28,
         "active_ab": 0,
-        "talk_time": 28,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 153
       },
       {
         "date": "2026-05-14",
@@ -16998,10 +19950,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 169
       },
       {
         "date": "2026-05-15",
@@ -17021,10 +19977,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 94
+        "talk_time": 94,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 94,
+        "total_dialed": 164
       },
       {
         "date": "2026-05-16",
@@ -17044,10 +20004,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 190
       },
       {
         "date": "2026-05-17",
@@ -17067,10 +20031,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-18",
@@ -17090,10 +20058,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 96
       },
       {
         "date": "2026-05-19",
@@ -17113,10 +20085,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 65
+        "talk_time": 65,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 65,
+        "total_dialed": 108
       },
       {
         "date": "2026-05-20",
@@ -17136,10 +20112,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 205
       },
       {
         "date": "2026-05-21",
@@ -17159,10 +20139,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 136
+        "talk_time": 136,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 136,
+        "total_dialed": 176
       },
       {
         "date": "2026-05-22",
@@ -17182,10 +20166,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 113
+        "talk_time": 113,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 113,
+        "total_dialed": 169
       },
       {
         "date": "2026-05-23",
@@ -17205,10 +20193,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 107
+        "talk_time": 107,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 107,
+        "total_dialed": 165
       },
       {
         "date": "2026-05-24",
@@ -17228,10 +20220,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-25",
@@ -17251,10 +20247,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 110
       },
       {
         "date": "2026-05-26",
@@ -17274,10 +20274,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 169
       },
       {
         "date": "2026-05-27",
@@ -17297,10 +20301,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 8,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 135
+        "talk_time": 135,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 135,
+        "total_dialed": 136
       },
       {
         "date": "2026-05-28",
@@ -17320,10 +20328,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 98,
         "other_connect": 29,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 158
       },
       {
         "date": "2026-05-29",
@@ -17343,10 +20355,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 166
+        "talk_time": 166,
+        "total_connected": 91,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 166,
+        "total_dialed": 220
       },
       {
         "date": "2026-05-30",
@@ -17366,10 +20382,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 164
       },
       {
         "date": "2026-05-31",
@@ -17389,10 +20409,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-01",
@@ -17412,10 +20436,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 114
       },
       {
         "date": "2026-06-02",
@@ -17435,10 +20463,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 2,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 138
+        "talk_time": 138,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 138,
+        "total_dialed": 197
       },
       {
         "date": "2026-06-03",
@@ -17458,10 +20490,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 120
+        "talk_time": 120,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 120,
+        "total_dialed": 223
       },
       {
         "date": "2026-06-04",
@@ -17481,10 +20517,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 82
+        "talk_time": 82,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 82,
+        "total_dialed": 166
       },
       {
         "date": "2026-06-05",
@@ -17504,10 +20544,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-06",
@@ -17527,10 +20571,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 108
+        "talk_time": 108,
+        "total_connected": 62,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 108,
+        "total_dialed": 148
       },
       {
         "date": "2026-06-07",
@@ -17550,10 +20598,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-08",
@@ -17573,10 +20625,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 113
+        "talk_time": 113,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 113,
+        "total_dialed": 141
       },
       {
         "date": "2026-06-09",
@@ -17596,10 +20652,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 127
       },
       {
         "date": "2026-06-10",
@@ -17619,10 +20679,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 47,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 156
       },
       {
         "date": "2026-06-11",
@@ -17642,10 +20706,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 6,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 29,
         "active_ab": 0,
-        "talk_time": 29,
-        "total_connected": 124
+        "talk_time": 124,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 124,
+        "total_dialed": 142
       },
       {
         "date": "2026-06-12",
@@ -17665,10 +20733,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 6
+        "talk_time": 6,
+        "total_connected": 2,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 6,
+        "total_dialed": 2
       },
       {
         "date": "2026-06-13",
@@ -17688,10 +20760,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 136
+        "talk_time": 136,
+        "total_connected": 78,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 136,
+        "total_dialed": 159
       },
       {
         "date": "2026-06-14",
@@ -17711,10 +20787,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-15",
@@ -17734,10 +20814,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 121
+        "talk_time": 121,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 121,
+        "total_dialed": 154
       },
       {
         "date": "2026-06-16",
@@ -17757,10 +20841,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 161
+        "talk_time": 161,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 161,
+        "total_dialed": 130
       },
       {
         "date": "2026-06-17",
@@ -17780,10 +20868,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 92
+        "talk_time": 92,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 92,
+        "total_dialed": 154
       },
       {
         "date": "2026-06-18",
@@ -17803,10 +20895,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 124
       },
       {
         "date": "2026-06-19",
@@ -17826,10 +20922,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 144
       },
       {
         "date": "2026-06-20",
@@ -17849,10 +20949,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 148
       },
       {
         "date": "2026-06-21",
@@ -17875,7 +20979,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-22",
@@ -17895,10 +21003,14 @@ window.RAW_DATA = {
         "phone_connect": 10,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 22,
         "active_ab": 0,
-        "talk_time": 22,
-        "total_connected": 146
+        "talk_time": 146,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 146,
+        "total_dialed": 121
       },
       {
         "date": "2026-06-23",
@@ -17918,10 +21030,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 21,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 163
+        "talk_time": 163,
+        "total_connected": 83,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 163,
+        "total_dialed": 227
       },
       {
         "date": "2026-06-24",
@@ -17941,10 +21057,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 154
       },
       {
         "date": "2026-06-25",
@@ -17964,10 +21084,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 133
+        "talk_time": 133,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 133,
+        "total_dialed": 190
       },
       {
         "date": "2026-06-26",
@@ -17987,10 +21111,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 87,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 173
       },
       {
         "date": "2026-06-27",
@@ -18010,10 +21138,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 134
+        "talk_time": 134,
+        "total_connected": 100,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 134,
+        "total_dialed": 211
       },
       {
         "date": "2026-06-28",
@@ -18036,7 +21168,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-29",
@@ -18056,10 +21192,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 24,
         "active_ab": 0,
-        "talk_time": 24,
-        "total_connected": 103
+        "talk_time": 103,
+        "total_connected": 80,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 103,
+        "total_dialed": 231
       },
       {
         "date": "2026-06-30",
@@ -18079,10 +21219,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 69,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 170
       },
       {
         "date": "2026-07-01",
@@ -18102,10 +21246,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 174
+        "talk_time": 174,
+        "total_connected": 108,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 174,
+        "total_dialed": 225
       },
       {
         "date": "2026-07-02",
@@ -18125,10 +21273,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 148
       },
       {
         "date": "2026-07-03",
@@ -18148,10 +21300,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 156
+        "talk_time": 156,
+        "total_connected": 87,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 156,
+        "total_dialed": 220
       },
       {
         "date": "2026-07-04",
@@ -18171,10 +21327,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 76,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 234
       },
       {
         "date": "2026-07-05",
@@ -18194,10 +21354,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-06",
@@ -18217,10 +21381,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 153
+        "talk_time": 153,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 153,
+        "total_dialed": 158
       },
       {
         "date": "2026-07-07",
@@ -18240,10 +21408,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 84,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 220
       },
       {
         "date": "2026-07-08",
@@ -18263,10 +21435,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 25,
         "active_ab": 0,
-        "talk_time": 25,
-        "total_connected": 181
+        "talk_time": 181,
+        "total_connected": 79,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 181,
+        "total_dialed": 190
       },
       {
         "date": "2026-07-09",
@@ -18286,10 +21462,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 132
+        "talk_time": 132,
+        "total_connected": 85,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 132,
+        "total_dialed": 217
       },
       {
         "date": "2026-07-10",
@@ -18309,10 +21489,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 87,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 210
       },
       {
         "date": "2026-07-11",
@@ -18332,10 +21516,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 99
+        "talk_time": 99,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 99,
+        "total_dialed": 173
       },
       {
         "date": "2026-07-12",
@@ -18355,10 +21543,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 23,
         "active_ab": 0,
-        "talk_time": 23,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-13",
@@ -18378,10 +21570,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 152
       },
       {
         "date": "2026-07-14",
@@ -18401,10 +21597,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 57
+        "talk_time": 57,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 57,
+        "total_dialed": 91
       },
       {
         "date": "2026-07-15",
@@ -18424,10 +21624,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 150
+        "talk_time": 150,
+        "total_connected": 83,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 150,
+        "total_dialed": 198
       },
       {
         "date": "2026-07-16",
@@ -18447,10 +21651,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 92,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 215
       },
       {
         "date": "2026-07-17",
@@ -18470,10 +21678,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 139
+        "talk_time": 139,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 139,
+        "total_dialed": 183
       },
       {
         "date": "2026-07-18",
@@ -18493,10 +21705,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 168
+        "talk_time": 168,
+        "total_connected": 75,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 168,
+        "total_dialed": 196
       },
       {
         "date": "2026-07-19",
@@ -18516,10 +21732,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-20",
@@ -18539,10 +21759,14 @@ window.RAW_DATA = {
         "phone_connect": 22,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 111
+        "talk_time": 111,
+        "total_connected": 74,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 111,
+        "total_dialed": 160
       },
       {
         "date": "2026-07-21",
@@ -18562,10 +21786,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 75
+        "talk_time": 75,
+        "total_connected": 36,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 75,
+        "total_dialed": 81
       },
       {
         "date": "2026-07-22",
@@ -18585,10 +21813,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 210
       },
       {
         "date": "2026-07-23",
@@ -18608,10 +21840,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 29,
         "active_ab": 0,
-        "talk_time": 29,
-        "total_connected": 64
+        "talk_time": 64,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 64,
+        "total_dialed": 113
       },
       {
         "date": "2026-07-24",
@@ -18631,10 +21867,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 152
       },
       {
         "date": "2026-07-25",
@@ -18654,10 +21894,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 119
+        "talk_time": 119,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 119,
+        "total_dialed": 199
       },
       {
         "date": "2026-07-26",
@@ -18677,10 +21921,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-27",
@@ -18700,10 +21948,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 108
+        "talk_time": 108,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 108,
+        "total_dialed": 218
       },
       {
         "date": "2026-07-28",
@@ -18723,10 +21975,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 140
+        "talk_time": 140,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 140,
+        "total_dialed": 171
       },
       {
         "date": "2026-07-29",
@@ -18746,10 +22002,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 224
       },
       {
         "date": "2026-07-30",
@@ -18769,10 +22029,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 170
       },
       {
         "date": "2026-07-31",
@@ -18792,10 +22056,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-01",
@@ -18815,10 +22083,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-02",
@@ -18838,10 +22110,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-03",
@@ -18861,10 +22137,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-04",
@@ -18884,10 +22164,14 @@ window.RAW_DATA = {
         "phone_connect": 10,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 76
+        "talk_time": 76,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 76,
+        "total_dialed": 76
       },
       {
         "date": "2026-08-05",
@@ -18907,10 +22191,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-06",
@@ -18930,10 +22218,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-07",
@@ -18953,10 +22245,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 28,
         "active_ab": 0,
-        "talk_time": 28,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 97
       },
       {
         "date": "2026-08-08",
@@ -18976,10 +22272,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 153
       },
       {
         "date": "2026-08-09",
@@ -18999,10 +22299,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-10",
@@ -19022,10 +22326,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-11",
@@ -19045,10 +22353,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-12",
@@ -19068,10 +22380,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-13",
@@ -19091,10 +22407,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-14",
@@ -19114,10 +22434,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-15",
@@ -19137,10 +22461,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-16",
@@ -19160,10 +22488,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-17",
@@ -19183,10 +22515,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 42
+        "talk_time": 42,
+        "total_connected": 21,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 42,
+        "total_dialed": 43
       },
       {
         "date": "2026-08-18",
@@ -19206,10 +22542,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 162
       },
       {
         "date": "2026-08-19",
@@ -19229,10 +22569,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 70,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 168
       },
       {
         "date": "2026-08-20",
@@ -19252,10 +22596,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 101
+        "talk_time": 101,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 101,
+        "total_dialed": 145
       },
       {
         "date": "2026-08-21",
@@ -19275,10 +22623,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 169
       },
       {
         "date": "2026-08-22",
@@ -19298,10 +22650,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 133
       },
       {
         "date": "2026-08-23",
@@ -19324,7 +22680,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-24",
@@ -19344,10 +22704,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 80,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 223
       },
       {
         "date": "2026-08-25",
@@ -19367,10 +22731,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 209
       },
       {
         "date": "2026-08-26",
@@ -19390,10 +22758,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 4,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 18,
         "active_ab": 0,
-        "talk_time": 18,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 214
       },
       {
         "date": "2026-08-27",
@@ -19413,10 +22785,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 4,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 90
+        "talk_time": 90,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 90,
+        "total_dialed": 155
       },
       {
         "date": "2026-08-28",
@@ -19439,7 +22815,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-29",
@@ -19459,10 +22839,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 171
       },
       {
         "date": "2026-08-30",
@@ -19485,7 +22869,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-31",
@@ -19505,10 +22893,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 21,
         "active_ab": 0,
-        "talk_time": 21,
-        "total_connected": 133
+        "talk_time": 133,
+        "total_connected": 96,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 133,
+        "total_dialed": 211
       },
       {
         "date": "2026-09-01",
@@ -19528,10 +22920,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 205
       },
       {
         "date": "2026-09-02",
@@ -19551,10 +22947,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 158
       },
       {
         "date": "2026-09-03",
@@ -19574,10 +22974,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 154
       },
       {
         "date": "2026-09-04",
@@ -19597,10 +23001,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 78
+        "talk_time": 78,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 78,
+        "total_dialed": 88
       },
       {
         "date": "2026-09-05",
@@ -19620,10 +23028,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 106
       },
       {
         "date": "2026-09-06",
@@ -19646,7 +23058,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-07",
@@ -19666,10 +23082,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 136
       },
       {
         "date": "2026-09-08",
@@ -19689,10 +23109,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 126
+        "talk_time": 126,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 126,
+        "total_dialed": 164
       },
       {
         "date": "2026-09-09",
@@ -19712,10 +23136,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 128
+        "talk_time": 128,
+        "total_connected": 88,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 128,
+        "total_dialed": 207
       },
       {
         "date": "2026-09-10",
@@ -19735,10 +23163,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 2,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 88
       },
       {
         "date": "2026-09-11",
@@ -19758,10 +23190,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 42
+        "talk_time": 42,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 42,
+        "total_dialed": 85
       },
       {
         "date": "2026-09-12",
@@ -19781,10 +23217,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 205
       },
       {
         "date": "2026-09-13",
@@ -19807,7 +23247,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-14",
@@ -19830,7 +23274,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-15",
@@ -19850,10 +23298,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 100
+        "talk_time": 100,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 100,
+        "total_dialed": 107
       },
       {
         "date": "2026-09-16",
@@ -19873,10 +23325,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 110
       },
       {
         "date": "2026-09-17",
@@ -19896,10 +23352,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 111
       },
       {
         "date": "2026-09-18",
@@ -19919,10 +23379,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 16,
         "active_ab": 0,
-        "talk_time": 16,
-        "total_connected": 56
+        "talk_time": 56,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 56,
+        "total_dialed": 114
       },
       {
         "date": "2026-09-19",
@@ -19942,10 +23406,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 3,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 111
+        "talk_time": 111,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 111,
+        "total_dialed": 174
       },
       {
         "date": "2026-09-20",
@@ -19968,7 +23436,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-21",
@@ -19988,10 +23460,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 4,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 112
       },
       {
         "date": "2026-09-22",
@@ -20011,10 +23487,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 8,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 66
       },
       {
         "date": "2026-09-23",
@@ -20034,10 +23514,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 5,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 15,
         "active_ab": 0,
-        "talk_time": 15,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 87
       },
       {
         "date": "2026-09-24",
@@ -20057,10 +23541,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 65
+        "talk_time": 65,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 65,
+        "total_dialed": 82
       },
       {
         "date": "2026-09-25",
@@ -20080,10 +23568,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 59
+        "talk_time": 59,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 59,
+        "total_dialed": 128
       },
       {
         "date": "2026-09-26",
@@ -20103,10 +23595,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 111
       },
       {
         "date": "2026-09-27",
@@ -20129,7 +23625,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-28",
@@ -20149,10 +23649,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 20,
         "active_ab": 0,
-        "talk_time": 20,
-        "total_connected": 128
+        "talk_time": 128,
+        "total_connected": 66,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 128,
+        "total_dialed": 146
       },
       {
         "date": "2026-09-29",
@@ -20172,10 +23676,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 142
       },
       {
         "date": "2026-09-30",
@@ -20195,10 +23703,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 142
+        "talk_time": 142,
+        "total_connected": 84,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 142,
+        "total_dialed": 209
       },
       {
         "date": "2026-10-01",
@@ -20218,10 +23730,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 95,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 212
       },
       {
         "date": "2026-10-02",
@@ -20241,10 +23757,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-03",
@@ -20264,10 +23784,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 104
       },
       {
         "date": "2026-10-04",
@@ -20287,10 +23811,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-05",
@@ -20310,10 +23838,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 131
+        "talk_time": 131,
+        "total_connected": 77,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 131,
+        "total_dialed": 192
       },
       {
         "date": "2026-10-06",
@@ -20333,10 +23865,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 123
+        "talk_time": 123,
+        "total_connected": 92,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 123,
+        "total_dialed": 219
       },
       {
         "date": "2026-10-07",
@@ -20356,10 +23892,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 50
+        "talk_time": 50,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 50,
+        "total_dialed": 92
       },
       {
         "date": "2026-10-08",
@@ -20379,10 +23919,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 19,
         "active_ab": 0,
-        "talk_time": 19,
-        "total_connected": 68
+        "talk_time": 68,
+        "total_connected": 43,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 68,
+        "total_dialed": 113
       },
       {
         "date": "2026-10-09",
@@ -20402,10 +23946,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 106
       },
       {
         "date": "2026-10-10",
@@ -20425,10 +23973,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 210
       },
       {
         "date": "2026-10-11",
@@ -20448,10 +24000,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-12",
@@ -20471,10 +24027,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 76
+        "talk_time": 76,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 76,
+        "total_dialed": 177
       },
       {
         "date": "2026-10-13",
@@ -20494,10 +24054,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 84,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 196
       },
       {
         "date": "2026-10-14",
@@ -20517,10 +24081,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 17,
         "active_ab": 0,
-        "talk_time": 17,
-        "total_connected": 61
+        "talk_time": 61,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 61,
+        "total_dialed": 164
       },
       {
         "date": "2026-10-15",
@@ -20540,10 +24108,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 65,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 148
       },
       {
         "date": "2026-10-16",
@@ -20563,10 +24135,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 36
+        "talk_time": 36,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 36,
+        "total_dialed": 66
       },
       {
         "date": "2026-10-17",
@@ -20586,10 +24162,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 50
+        "talk_time": 50,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 50,
+        "total_dialed": 104
       },
       {
         "date": "2026-10-18",
@@ -20609,10 +24189,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-19",
@@ -20632,10 +24216,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 71,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 148
       },
       {
         "date": "2026-10-20",
@@ -20655,10 +24243,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-21",
@@ -20678,10 +24270,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 165
       },
       {
         "date": "2026-10-22",
@@ -20701,10 +24297,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 64,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 175
       },
       {
         "date": "2026-10-23",
@@ -20724,10 +24324,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 206
       },
       {
         "date": "2026-10-24",
@@ -20747,10 +24351,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 84
+        "talk_time": 84,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 84,
+        "total_dialed": 187
       },
       {
         "date": "2026-10-25",
@@ -20770,10 +24378,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-26",
@@ -20793,10 +24405,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 152
       },
       {
         "date": "2026-10-27",
@@ -20816,10 +24432,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 79
+        "talk_time": 79,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 79,
+        "total_dialed": 186
       },
       {
         "date": "2026-10-28",
@@ -20839,10 +24459,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 61,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 146
       },
       {
         "date": "2026-10-29",
@@ -20862,10 +24486,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 147
       },
       {
         "date": "2026-10-30",
@@ -20885,10 +24513,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 12
+        "talk_time": 12,
+        "total_connected": 9,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 12,
+        "total_dialed": 40
       },
       {
         "date": "2026-10-31",
@@ -20908,10 +24540,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 12,
-        "active_ab": 6,
-        "talk_time": 2,
-        "total_connected": 74
+        "onboardings": 2,
+        "active_ab": 0,
+        "talk_time": 74,
+        "total_connected": 57,
+        "builder_dial": 12,
+        "builder_connect": 6,
+        "talktime": 74,
+        "total_dialed": 138
       },
       {
         "date": "2026-11-01",
@@ -20934,7 +24570,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-11-02",
@@ -20954,10 +24594,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 43
+        "talk_time": 43,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 43,
+        "total_dialed": 103
       },
       {
         "date": "2026-11-03",
@@ -20977,10 +24621,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 12,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 92
+        "talk_time": 92,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 92,
+        "total_dialed": 171
       },
       {
         "date": "2026-11-04",
@@ -21000,10 +24648,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 5,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 59
+        "talk_time": 59,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 59,
+        "total_dialed": 143
       },
       {
         "date": "2026-11-05",
@@ -21023,10 +24675,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 168
       },
       {
         "date": "2026-11-06",
@@ -21046,10 +24702,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 10,
-        "active_ab": 2,
-        "talk_time": 1,
-        "total_connected": 65
+        "onboardings": 1,
+        "active_ab": 0,
+        "talk_time": 65,
+        "total_connected": 40,
+        "builder_dial": 10,
+        "builder_connect": 2,
+        "talktime": 65,
+        "total_dialed": 103
       }
     ],
     "Shirish": [
@@ -21071,10 +24731,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 63,
         "other_connect": 35,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 93
       },
       {
         "date": "2026-05-06",
@@ -21094,10 +24758,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 31,
         "other_connect": 15,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 99
+        "talk_time": 99,
+        "total_connected": 30,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 99,
+        "total_dialed": 71
       },
       {
         "date": "2026-05-07",
@@ -21117,10 +24785,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 80,
         "other_connect": 22,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 50
+        "talk_time": 50,
+        "total_connected": 22,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 50,
+        "total_dialed": 80
       },
       {
         "date": "2026-05-08",
@@ -21140,10 +24812,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 90,
         "other_connect": 37,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 132
+        "talk_time": 132,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 132,
+        "total_dialed": 90
       },
       {
         "date": "2026-05-09",
@@ -21163,10 +24839,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 60,
         "other_connect": 31,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 113
+        "talk_time": 113,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 113,
+        "total_dialed": 110
       },
       {
         "date": "2026-05-11",
@@ -21186,10 +24866,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 39,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 132
       },
       {
         "date": "2026-05-12",
@@ -21209,10 +24893,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 13,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 114
+        "talk_time": 114,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 114,
+        "total_dialed": 124
       },
       {
         "date": "2026-05-13",
@@ -21232,10 +24920,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 65
+        "talk_time": 65,
+        "total_connected": 27,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 65,
+        "total_dialed": 128
       },
       {
         "date": "2026-05-14",
@@ -21255,10 +24947,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 6,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 23,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 86
       },
       {
         "date": "2026-05-15",
@@ -21278,10 +24974,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 21,
         "other_connect": 7,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 38,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 127
       },
       {
         "date": "2026-05-16",
@@ -21301,10 +25001,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 147
+        "talk_time": 147,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 147,
+        "total_dialed": 85
       },
       {
         "date": "2026-05-17",
@@ -21327,7 +25031,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-05-18",
@@ -21347,10 +25055,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 89
       },
       {
         "date": "2026-05-19",
@@ -21370,10 +25082,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 23,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 78
+        "talk_time": 78,
+        "total_connected": 23,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 78,
+        "total_dialed": 103
       },
       {
         "date": "2026-05-20",
@@ -21393,10 +25109,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 32,
         "other_connect": 17,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 92
+        "talk_time": 92,
+        "total_connected": 47,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 92,
+        "total_dialed": 95
       },
       {
         "date": "2026-05-21",
@@ -21416,10 +25136,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 48,
         "other_connect": 20,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 107
       },
       {
         "date": "2026-05-22",
@@ -21439,10 +25163,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 43,
         "other_connect": 17,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 102
       },
       {
         "date": "2026-05-23",
@@ -21462,10 +25190,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 47,
         "other_connect": 14,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 68
+        "talk_time": 68,
+        "total_connected": 25,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 68,
+        "total_dialed": 106
       },
       {
         "date": "2026-05-25",
@@ -21485,10 +25217,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 45,
         "other_connect": 14,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 75
+        "talk_time": 75,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 75,
+        "total_dialed": 116
       },
       {
         "date": "2026-05-26",
@@ -21508,10 +25244,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 34,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 100
+        "talk_time": 100,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 100,
+        "total_dialed": 136
       },
       {
         "date": "2026-05-27",
@@ -21531,10 +25271,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 46,
         "other_connect": 22,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 91
       },
       {
         "date": "2026-05-28",
@@ -21554,10 +25298,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 140
+        "talk_time": 140,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 140,
+        "total_dialed": 137
       },
       {
         "date": "2026-05-29",
@@ -21577,10 +25325,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 30,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 120
+        "talk_time": 120,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 120,
+        "total_dialed": 114
       },
       {
         "date": "2026-05-30",
@@ -21600,10 +25352,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 25,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 105
       },
       {
         "date": "2026-06-01",
@@ -21623,10 +25379,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 127
       },
       {
         "date": "2026-06-02",
@@ -21646,10 +25406,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 31,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 64
+        "talk_time": 64,
+        "total_connected": 24,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 64,
+        "total_dialed": 88
       },
       {
         "date": "2026-06-03",
@@ -21669,10 +25433,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 11,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 88
+        "talk_time": 88,
+        "total_connected": 25,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 88,
+        "total_dialed": 104
       },
       {
         "date": "2026-06-04",
@@ -21692,10 +25460,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 23,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 30,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 103
       },
       {
         "date": "2026-06-08",
@@ -21715,10 +25487,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 23,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 145
+        "talk_time": 145,
+        "total_connected": 38,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 145,
+        "total_dialed": 117
       },
       {
         "date": "2026-06-09",
@@ -21738,10 +25514,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 66,
         "other_connect": 24,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 108
+        "talk_time": 108,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 108,
+        "total_dialed": 119
       },
       {
         "date": "2026-06-10",
@@ -21761,10 +25541,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 50,
         "other_connect": 22,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 75
+        "talk_time": 75,
+        "total_connected": 27,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 75,
+        "total_dialed": 80
       },
       {
         "date": "2026-06-11",
@@ -21784,10 +25568,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 113
+        "talk_time": 113,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 113,
+        "total_dialed": 100
       },
       {
         "date": "2026-06-12",
@@ -21809,8 +25597,12 @@ window.RAW_DATA = {
         "other_connect": 11,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 94
+        "talk_time": 94,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 94,
+        "total_dialed": 102
       },
       {
         "date": "2026-06-13",
@@ -21830,10 +25622,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 34,
         "other_connect": 17,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 153
+        "talk_time": 153,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 153,
+        "total_dialed": 104
       },
       {
         "date": "2026-06-14",
@@ -21856,7 +25652,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-15",
@@ -21876,10 +25676,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 14,
         "active_ab": 0,
-        "talk_time": 14,
-        "total_connected": 150
+        "talk_time": 150,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 150,
+        "total_dialed": 105
       },
       {
         "date": "2026-06-16",
@@ -21899,10 +25703,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 17,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 113
       },
       {
         "date": "2026-06-17",
@@ -21922,10 +25730,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 29,
         "other_connect": 12,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 100
+        "talk_time": 100,
+        "total_connected": 26,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 100,
+        "total_dialed": 95
       },
       {
         "date": "2026-06-18",
@@ -21945,10 +25757,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 67,
         "other_connect": 21,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 108
+        "talk_time": 108,
+        "total_connected": 32,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 108,
+        "total_dialed": 114
       },
       {
         "date": "2026-06-19",
@@ -21968,10 +25784,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 27,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 127
       },
       {
         "date": "2026-06-20",
@@ -21991,10 +25811,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 24,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 109
       },
       {
         "date": "2026-06-21",
@@ -22017,7 +25841,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-22",
@@ -22037,10 +25865,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 44,
         "other_connect": 26,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 147
+        "talk_time": 147,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 147,
+        "total_dialed": 121
       },
       {
         "date": "2026-06-23",
@@ -22060,10 +25892,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 32,
         "other_connect": 18,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 148
+        "talk_time": 148,
+        "total_connected": 47,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 148,
+        "total_dialed": 133
       },
       {
         "date": "2026-06-24",
@@ -22083,10 +25919,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 26,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 136
+        "talk_time": 136,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 136,
+        "total_dialed": 118
       },
       {
         "date": "2026-06-25",
@@ -22106,10 +25946,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 15,
         "other_connect": 5,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 163
+        "talk_time": 163,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 163,
+        "total_dialed": 125
       },
       {
         "date": "2026-06-26",
@@ -22129,10 +25973,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 30,
         "other_connect": 14,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 110
       },
       {
         "date": "2026-06-27",
@@ -22152,10 +26000,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 78,
         "other_connect": 34,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 129
       },
       {
         "date": "2026-06-28",
@@ -22178,7 +26030,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-29",
@@ -22198,10 +26054,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 32,
         "other_connect": 18,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 124
       },
       {
         "date": "2026-06-30",
@@ -22221,10 +26081,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 90
+        "talk_time": 90,
+        "total_connected": 22,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 90,
+        "total_dialed": 76
       },
       {
         "date": "2026-07-01",
@@ -22244,10 +26108,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 6,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 109
+        "talk_time": 109,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 109,
+        "total_dialed": 97
       },
       {
         "date": "2026-07-02",
@@ -22267,10 +26135,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 60,
         "other_connect": 28,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 130
+        "talk_time": 130,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 130,
+        "total_dialed": 120
       },
       {
         "date": "2026-07-03",
@@ -22290,10 +26162,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 12,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 140
+        "talk_time": 140,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 140,
+        "total_dialed": 130
       },
       {
         "date": "2026-07-04",
@@ -22313,10 +26189,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 41,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 75
+        "talk_time": 75,
+        "total_connected": 26,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 75,
+        "total_dialed": 132
       },
       {
         "date": "2026-07-05",
@@ -22339,7 +26219,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-06",
@@ -22359,10 +26243,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 129
+        "talk_time": 129,
+        "total_connected": 32,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 129,
+        "total_dialed": 129
       },
       {
         "date": "2026-07-07",
@@ -22382,10 +26270,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 7,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 132
+        "talk_time": 132,
+        "total_connected": 30,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 132,
+        "total_dialed": 117
       },
       {
         "date": "2026-07-08",
@@ -22405,10 +26297,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 42,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 121
+        "talk_time": 121,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 121,
+        "total_dialed": 141
       },
       {
         "date": "2026-07-09",
@@ -22428,10 +26324,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 142
+        "talk_time": 142,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 142,
+        "total_dialed": 111
       },
       {
         "date": "2026-07-10",
@@ -22451,10 +26351,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 25,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 97
       },
       {
         "date": "2026-07-11",
@@ -22477,7 +26381,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-13",
@@ -22500,7 +26408,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-14",
@@ -22520,10 +26432,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 10,
         "active_ab": 0,
-        "talk_time": 10,
-        "total_connected": 179
+        "talk_time": 179,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 179,
+        "total_dialed": 116
       },
       {
         "date": "2026-07-15",
@@ -22543,10 +26459,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 121
+        "talk_time": 121,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 121,
+        "total_dialed": 97
       },
       {
         "date": "2026-07-16",
@@ -22566,10 +26486,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 36,
         "other_connect": 11,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 107
       },
       {
         "date": "2026-07-17",
@@ -22589,10 +26513,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 108
       },
       {
         "date": "2026-07-18",
@@ -22612,10 +26540,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 35,
         "other_connect": 21,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 36,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 83
       },
       {
         "date": "2026-07-19",
@@ -22638,7 +26570,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-20",
@@ -22661,7 +26597,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-21",
@@ -22681,10 +26621,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 30,
         "other_connect": 15,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 89
+        "talk_time": 89,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 89,
+        "total_dialed": 114
       },
       {
         "date": "2026-07-22",
@@ -22704,10 +26648,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 21,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 122
       },
       {
         "date": "2026-07-23",
@@ -22727,10 +26675,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 25,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 108
       },
       {
         "date": "2026-07-24",
@@ -22750,10 +26702,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 135
+        "talk_time": 135,
+        "total_connected": 18,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 135,
+        "total_dialed": 95
       },
       {
         "date": "2026-07-25",
@@ -22773,10 +26729,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 132
+        "talk_time": 132,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 132,
+        "total_dialed": 121
       },
       {
         "date": "2026-07-26",
@@ -22799,7 +26759,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-27",
@@ -22819,10 +26783,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 68,
         "other_connect": 32,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 145
+        "talk_time": 145,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 145,
+        "total_dialed": 130
       },
       {
         "date": "2026-07-28",
@@ -22842,10 +26810,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 132
+        "talk_time": 132,
+        "total_connected": 38,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 132,
+        "total_dialed": 131
       },
       {
         "date": "2026-07-29",
@@ -22865,10 +26837,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 37,
         "other_connect": 15,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 127
+        "talk_time": 127,
+        "total_connected": 38,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 127,
+        "total_dialed": 138
       },
       {
         "date": "2026-07-30",
@@ -22888,10 +26864,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 14,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 123
+        "talk_time": 123,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 123,
+        "total_dialed": 143
       },
       {
         "date": "2026-07-31",
@@ -22911,10 +26891,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 58
+        "talk_time": 58,
+        "total_connected": 18,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 58,
+        "total_dialed": 54
       },
       {
         "date": "2026-08-01",
@@ -22934,10 +26918,14 @@ window.RAW_DATA = {
         "phone_connect": 7,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 62
+        "talk_time": 62,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 62,
+        "total_dialed": 100
       },
       {
         "date": "2026-08-02",
@@ -22960,7 +26948,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-03",
@@ -22980,10 +26972,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 39
+        "talk_time": 39,
+        "total_connected": 22,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 39,
+        "total_dialed": 47
       },
       {
         "date": "2026-08-04",
@@ -23006,7 +27002,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-05",
@@ -23026,10 +27026,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 132
+        "talk_time": 132,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 132,
+        "total_dialed": 70
       },
       {
         "date": "2026-08-06",
@@ -23049,10 +27053,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 103
+        "talk_time": 103,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 103,
+        "total_dialed": 131
       },
       {
         "date": "2026-08-07",
@@ -23072,10 +27080,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 23,
         "other_connect": 11,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 120
       },
       {
         "date": "2026-08-08",
@@ -23095,10 +27107,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 32,
         "other_connect": 13,
-        "onboardings": 0,
+        "onboardings": 12,
         "active_ab": 0,
-        "talk_time": 12,
-        "total_connected": 132
+        "talk_time": 132,
+        "total_connected": 48,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 132,
+        "total_dialed": 133
       },
       {
         "date": "2026-08-10",
@@ -23118,10 +27134,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 139
+        "talk_time": 139,
+        "total_connected": 38,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 139,
+        "total_dialed": 121
       },
       {
         "date": "2026-08-11",
@@ -23141,10 +27161,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 38,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 105
       },
       {
         "date": "2026-08-12",
@@ -23164,10 +27188,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 47,
         "other_connect": 17,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 125
+        "talk_time": 125,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 125,
+        "total_dialed": 112
       },
       {
         "date": "2026-08-13",
@@ -23187,10 +27215,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 36,
         "other_connect": 13,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 143
       },
       {
         "date": "2026-08-14",
@@ -23210,10 +27242,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 58
+        "talk_time": 58,
+        "total_connected": 20,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 58,
+        "total_dialed": 48
       },
       {
         "date": "2026-08-15",
@@ -23236,7 +27272,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-16",
@@ -23259,7 +27299,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-17",
@@ -23279,10 +27323,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 109
       },
       {
         "date": "2026-08-18",
@@ -23302,10 +27350,14 @@ window.RAW_DATA = {
         "phone_connect": 18,
         "other_dial": 4,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 94
+        "talk_time": 94,
+        "total_connected": 38,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 94,
+        "total_dialed": 103
       },
       {
         "date": "2026-08-19",
@@ -23325,10 +27377,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 47,
         "other_connect": 21,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 128
+        "talk_time": 128,
+        "total_connected": 67,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 128,
+        "total_dialed": 170
       },
       {
         "date": "2026-08-20",
@@ -23348,10 +27404,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 116
+        "talk_time": 116,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 116,
+        "total_dialed": 109
       },
       {
         "date": "2026-08-21",
@@ -23371,10 +27431,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 19,
         "other_connect": 11,
-        "onboardings": 0,
+        "onboardings": 13,
         "active_ab": 0,
-        "talk_time": 13,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 43,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 130
       },
       {
         "date": "2026-08-22",
@@ -23394,10 +27458,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 19,
         "other_connect": 5,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 36,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 131
       },
       {
         "date": "2026-08-23",
@@ -23420,7 +27488,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-24",
@@ -23440,10 +27512,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 70
+        "talk_time": 70,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 70,
+        "total_dialed": 95
       },
       {
         "date": "2026-08-25",
@@ -23466,7 +27542,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-26",
@@ -23486,10 +27566,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 27,
         "other_connect": 13,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 133
       },
       {
         "date": "2026-08-27",
@@ -23509,10 +27593,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 125
       },
       {
         "date": "2026-08-28",
@@ -23535,7 +27623,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-29",
@@ -23555,10 +27647,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 25,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 93
+        "talk_time": 93,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 93,
+        "total_dialed": 127
       },
       {
         "date": "2026-08-31",
@@ -23580,8 +27676,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 105
+        "talk_time": 105,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 105,
+        "total_dialed": 138
       },
       {
         "date": "2026-09-01",
@@ -23601,10 +27701,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 56,
         "other_connect": 21,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 109
+        "talk_time": 109,
+        "total_connected": 38,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 109,
+        "total_dialed": 132
       },
       {
         "date": "2026-09-02",
@@ -23624,10 +27728,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 84
+        "talk_time": 84,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 84,
+        "total_dialed": 141
       },
       {
         "date": "2026-09-03",
@@ -23647,10 +27755,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 20,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 164
       },
       {
         "date": "2026-09-04",
@@ -23670,10 +27782,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 70
+        "talk_time": 70,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 70,
+        "total_dialed": 135
       },
       {
         "date": "2026-09-05",
@@ -23693,10 +27809,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 29,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 137
       },
       {
         "date": "2026-09-06",
@@ -23719,7 +27839,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-07",
@@ -23739,10 +27863,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 25,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 142
       },
       {
         "date": "2026-09-08",
@@ -23762,10 +27890,14 @@ window.RAW_DATA = {
         "phone_connect": 44,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 103
+        "talk_time": 103,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 103,
+        "total_dialed": 149
       },
       {
         "date": "2026-09-09",
@@ -23785,10 +27917,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 84
+        "talk_time": 84,
+        "total_connected": 60,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 84,
+        "total_dialed": 157
       },
       {
         "date": "2026-09-10",
@@ -23808,10 +27944,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 7,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 46,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 143
       },
       {
         "date": "2026-09-11",
@@ -23831,10 +27971,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 51,
         "other_connect": 19,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 98
       },
       {
         "date": "2026-09-12",
@@ -23854,10 +27998,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 11,
         "other_connect": 10,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 101
+        "talk_time": 101,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 101,
+        "total_dialed": 133
       },
       {
         "date": "2026-09-28",
@@ -23877,10 +28025,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 23,
         "other_connect": 6,
-        "onboardings": 0,
+        "onboardings": 11,
         "active_ab": 0,
-        "talk_time": 11,
-        "total_connected": 129
+        "talk_time": 129,
+        "total_connected": 43,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 129,
+        "total_dialed": 110
       },
       {
         "date": "2026-09-29",
@@ -23902,8 +28054,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 79
+        "talk_time": 79,
+        "total_connected": 56,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 79,
+        "total_dialed": 135
       },
       {
         "date": "2026-09-30",
@@ -23923,10 +28079,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 43,
         "other_connect": 24,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 109
+        "talk_time": 109,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 109,
+        "total_dialed": 122
       },
       {
         "date": "2026-10-01",
@@ -23948,8 +28108,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 118
       },
       {
         "date": "2026-10-03",
@@ -23969,10 +28133,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 98
+        "talk_time": 98,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 98,
+        "total_dialed": 132
       },
       {
         "date": "2026-10-05",
@@ -23992,10 +28160,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 122
       },
       {
         "date": "2026-10-06",
@@ -24015,10 +28187,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 56,
         "other_connect": 32,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 125
+        "talk_time": 125,
+        "total_connected": 68,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 125,
+        "total_dialed": 146
       },
       {
         "date": "2026-10-07",
@@ -24038,10 +28214,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 48,
         "other_connect": 23,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 54,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 141
       },
       {
         "date": "2026-10-08",
@@ -24061,10 +28241,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 12,
         "other_connect": 5,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 90
+        "talk_time": 90,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 90,
+        "total_dialed": 135
       },
       {
         "date": "2026-10-09",
@@ -24084,10 +28268,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 59
+        "talk_time": 59,
+        "total_connected": 27,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 59,
+        "total_dialed": 75
       },
       {
         "date": "2026-10-10",
@@ -24107,10 +28295,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 122
+        "talk_time": 122,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 122,
+        "total_dialed": 117
       },
       {
         "date": "2026-10-12",
@@ -24130,10 +28322,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 51,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 91
+        "talk_time": 91,
+        "total_connected": 58,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 91,
+        "total_dialed": 144
       },
       {
         "date": "2026-10-13",
@@ -24153,10 +28349,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 26,
         "other_connect": 12,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 117
+        "talk_time": 117,
+        "total_connected": 59,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 117,
+        "total_dialed": 147
       },
       {
         "date": "2026-10-14",
@@ -24176,10 +28376,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 131
+        "talk_time": 131,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 131,
+        "total_dialed": 157
       },
       {
         "date": "2026-10-15",
@@ -24199,10 +28403,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 20,
         "other_connect": 6,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 135
+        "talk_time": 135,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 135,
+        "total_dialed": 148
       },
       {
         "date": "2026-10-16",
@@ -24222,10 +28430,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 97
       },
       {
         "date": "2026-10-17",
@@ -24245,10 +28457,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 41,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 47,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 143
       },
       {
         "date": "2026-10-19",
@@ -24268,10 +28484,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 24,
         "other_connect": 11,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 147
       },
       {
         "date": "2026-10-21",
@@ -24291,10 +28511,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 15,
         "other_connect": 7,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 103
+        "talk_time": 103,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 103,
+        "total_dialed": 101
       },
       {
         "date": "2026-10-22",
@@ -24314,10 +28538,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 155
       },
       {
         "date": "2026-10-23",
@@ -24337,10 +28565,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 40,
         "other_connect": 16,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 107
       },
       {
         "date": "2026-10-26",
@@ -24360,10 +28592,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 32,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 108
       },
       {
         "date": "2026-10-27",
@@ -24383,10 +28619,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 48,
         "other_connect": 21,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 131
+        "talk_time": 131,
+        "total_connected": 47,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 131,
+        "total_dialed": 135
       },
       {
         "date": "2026-10-28",
@@ -24406,10 +28646,14 @@ window.RAW_DATA = {
         "phone_connect": 3,
         "other_dial": 24,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 92
+        "talk_time": 92,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 92,
+        "total_dialed": 137
       },
       {
         "date": "2026-10-29",
@@ -24429,10 +28673,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 11,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 25,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 108
       },
       {
         "date": "2026-10-30",
@@ -24452,10 +28700,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 14,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 57
+        "talk_time": 57,
+        "total_connected": 26,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 57,
+        "total_dialed": 75
       },
       {
         "date": "2026-10-31",
@@ -24475,10 +28727,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 39,
         "other_connect": 18,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 136
+        "talk_time": 136,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 136,
+        "total_dialed": 126
       },
       {
         "date": "2026-11-01",
@@ -24501,7 +28757,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-11-02",
@@ -24521,10 +28781,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 30,
         "other_connect": 14,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 104
+        "talk_time": 104,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 104,
+        "total_dialed": 123
       },
       {
         "date": "2026-11-03",
@@ -24544,10 +28808,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 33,
         "other_connect": 13,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 115
+        "talk_time": 115,
+        "total_connected": 53,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 115,
+        "total_dialed": 172
       },
       {
         "date": "2026-11-04",
@@ -24567,10 +28835,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 85
+        "talk_time": 85,
+        "total_connected": 55,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 85,
+        "total_dialed": 172
       },
       {
         "date": "2026-11-05",
@@ -24590,10 +28862,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 21,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 79
+        "talk_time": 79,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 79,
+        "total_dialed": 126
       },
       {
         "date": "2026-11-06",
@@ -24613,10 +28889,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 6,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 36,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 108
       },
       {
         "date": "2026-11-07",
@@ -24636,10 +28916,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 12,
         "other_connect": 8,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 82
+        "talk_time": 82,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 82,
+        "total_dialed": 166
       },
       {
         "date": "2026-11-08",
@@ -24662,7 +28946,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-11-09",
@@ -24682,10 +28970,14 @@ window.RAW_DATA = {
         "phone_connect": 4,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 99
+        "talk_time": 99,
+        "total_connected": 51,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 99,
+        "total_dialed": 193
       }
     ],
     "Anand": [
@@ -24707,10 +28999,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 48
+        "talk_time": 48,
+        "total_connected": 21,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 48,
+        "total_dialed": 107
       },
       {
         "date": "2026-06-14",
@@ -24733,7 +29029,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-15",
@@ -24753,10 +29053,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 79
+        "talk_time": 79,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 79,
+        "total_dialed": 119
       },
       {
         "date": "2026-06-16",
@@ -24776,10 +29080,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 86,
         "other_connect": 23,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 96
+        "talk_time": 96,
+        "total_connected": 30,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 96,
+        "total_dialed": 128
       },
       {
         "date": "2026-06-17",
@@ -24799,10 +29107,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 76
+        "talk_time": 76,
+        "total_connected": 24,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 76,
+        "total_dialed": 102
       },
       {
         "date": "2026-06-18",
@@ -24822,10 +29134,14 @@ window.RAW_DATA = {
         "phone_connect": 28,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 63
       },
       {
         "date": "2026-06-19",
@@ -24847,8 +29163,12 @@ window.RAW_DATA = {
         "other_connect": 4,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 46
+        "talk_time": 46,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 46,
+        "total_dialed": 76
       },
       {
         "date": "2026-06-20",
@@ -24868,10 +29188,14 @@ window.RAW_DATA = {
         "phone_connect": 29,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 60
       },
       {
         "date": "2026-06-21",
@@ -24891,10 +29215,14 @@ window.RAW_DATA = {
         "phone_connect": 21,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 21,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 59
       },
       {
         "date": "2026-06-22",
@@ -24914,10 +29242,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-23",
@@ -24940,7 +29272,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-24",
@@ -24963,7 +29299,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-25",
@@ -24983,10 +29323,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-26",
@@ -25006,10 +29350,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-27",
@@ -25029,10 +29377,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-28",
@@ -25055,7 +29407,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-29",
@@ -25075,10 +29431,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-06-30",
@@ -25098,10 +29458,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-01",
@@ -25121,10 +29485,14 @@ window.RAW_DATA = {
         "phone_connect": 49,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 99
       },
       {
         "date": "2026-07-02",
@@ -25144,10 +29512,14 @@ window.RAW_DATA = {
         "phone_connect": 26,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 108
+        "talk_time": 108,
+        "total_connected": 26,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 108,
+        "total_dialed": 81
       },
       {
         "date": "2026-07-03",
@@ -25167,10 +29539,14 @@ window.RAW_DATA = {
         "phone_connect": 36,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 36,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 74
       },
       {
         "date": "2026-07-04",
@@ -25190,10 +29566,14 @@ window.RAW_DATA = {
         "phone_connect": 31,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 67
+        "talk_time": 67,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 67,
+        "total_dialed": 77
       },
       {
         "date": "2026-07-05",
@@ -25216,7 +29596,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-06",
@@ -25236,10 +29620,14 @@ window.RAW_DATA = {
         "phone_connect": 32,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 32,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 83
       },
       {
         "date": "2026-07-07",
@@ -25259,10 +29647,14 @@ window.RAW_DATA = {
         "phone_connect": 43,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 85
+        "talk_time": 85,
+        "total_connected": 43,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 85,
+        "total_dialed": 91
       },
       {
         "date": "2026-07-08",
@@ -25282,10 +29674,14 @@ window.RAW_DATA = {
         "phone_connect": 35,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 69
+        "talk_time": 69,
+        "total_connected": 43,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 69,
+        "total_dialed": 128
       },
       {
         "date": "2026-07-09",
@@ -25305,10 +29701,14 @@ window.RAW_DATA = {
         "phone_connect": 24,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 85
+        "talk_time": 85,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 85,
+        "total_dialed": 105
       },
       {
         "date": "2026-07-10",
@@ -25328,10 +29728,14 @@ window.RAW_DATA = {
         "phone_connect": 25,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 56
+        "talk_time": 56,
+        "total_connected": 26,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 56,
+        "total_dialed": 64
       },
       {
         "date": "2026-07-11",
@@ -25351,10 +29755,14 @@ window.RAW_DATA = {
         "phone_connect": 34,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 54
+        "talk_time": 54,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 54,
+        "total_dialed": 79
       },
       {
         "date": "2026-07-12",
@@ -25374,10 +29782,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-13",
@@ -25397,10 +29809,14 @@ window.RAW_DATA = {
         "phone_connect": 28,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 48
+        "talk_time": 48,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 48,
+        "total_dialed": 64
       },
       {
         "date": "2026-07-14",
@@ -25420,10 +29836,14 @@ window.RAW_DATA = {
         "phone_connect": 22,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 85
       },
       {
         "date": "2026-07-15",
@@ -25443,10 +29863,14 @@ window.RAW_DATA = {
         "phone_connect": 35,
         "other_dial": 1,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 70
+        "talk_time": 70,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 70,
+        "total_dialed": 84
       },
       {
         "date": "2026-07-16",
@@ -25466,10 +29890,14 @@ window.RAW_DATA = {
         "phone_connect": 34,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 51
+        "talk_time": 51,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 51,
+        "total_dialed": 83
       },
       {
         "date": "2026-07-17",
@@ -25491,8 +29919,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 49
+        "talk_time": 49,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 49,
+        "total_dialed": 101
       },
       {
         "date": "2026-07-18",
@@ -25512,10 +29944,14 @@ window.RAW_DATA = {
         "phone_connect": 50,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 80
+        "talk_time": 80,
+        "total_connected": 50,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 80,
+        "total_dialed": 111
       },
       {
         "date": "2026-07-19",
@@ -25535,10 +29971,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-20",
@@ -25558,10 +29998,14 @@ window.RAW_DATA = {
         "phone_connect": 32,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 32,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 72
       },
       {
         "date": "2026-07-21",
@@ -25581,10 +30025,14 @@ window.RAW_DATA = {
         "phone_connect": 23,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 116
       },
       {
         "date": "2026-07-22",
@@ -25604,10 +30052,14 @@ window.RAW_DATA = {
         "phone_connect": 22,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 75
+        "talk_time": 75,
+        "total_connected": 30,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 75,
+        "total_dialed": 89
       },
       {
         "date": "2026-07-23",
@@ -25627,10 +30079,14 @@ window.RAW_DATA = {
         "phone_connect": 43,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 8,
         "active_ab": 0,
-        "talk_time": 8,
-        "total_connected": 99
+        "talk_time": 99,
+        "total_connected": 43,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 99,
+        "total_dialed": 87
       },
       {
         "date": "2026-07-24",
@@ -25650,10 +30106,14 @@ window.RAW_DATA = {
         "phone_connect": 34,
         "other_dial": 2,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 70
+        "talk_time": 70,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 70,
+        "total_dialed": 129
       },
       {
         "date": "2026-07-25",
@@ -25673,10 +30133,14 @@ window.RAW_DATA = {
         "phone_connect": 29,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 9,
         "active_ab": 0,
-        "talk_time": 9,
-        "total_connected": 70
+        "talk_time": 70,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 70,
+        "total_dialed": 84
       },
       {
         "date": "2026-07-26",
@@ -25696,10 +30160,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-27",
@@ -25719,10 +30187,14 @@ window.RAW_DATA = {
         "phone_connect": 49,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 110
+        "talk_time": 110,
+        "total_connected": 49,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 110,
+        "total_dialed": 105
       },
       {
         "date": "2026-07-28",
@@ -25742,10 +30214,14 @@ window.RAW_DATA = {
         "phone_connect": 2,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 12
+        "talk_time": 12,
+        "total_connected": 15,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 12,
+        "total_dialed": 34
       },
       {
         "date": "2026-07-29",
@@ -25768,7 +30244,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-07-30",
@@ -25788,10 +30268,14 @@ window.RAW_DATA = {
         "phone_connect": 21,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 102
+        "talk_time": 102,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 102,
+        "total_dialed": 101
       },
       {
         "date": "2026-07-31",
@@ -25811,10 +30295,14 @@ window.RAW_DATA = {
         "phone_connect": 10,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 30
+        "talk_time": 30,
+        "total_connected": 18,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 30,
+        "total_dialed": 67
       },
       {
         "date": "2026-08-01",
@@ -25834,10 +30322,14 @@ window.RAW_DATA = {
         "phone_connect": 23,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 69
+        "talk_time": 69,
+        "total_connected": 26,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 69,
+        "total_dialed": 64
       },
       {
         "date": "2026-08-02",
@@ -25857,10 +30349,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-03",
@@ -25880,10 +30376,14 @@ window.RAW_DATA = {
         "phone_connect": 32,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 36,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 92
       },
       {
         "date": "2026-08-04",
@@ -25903,10 +30403,14 @@ window.RAW_DATA = {
         "phone_connect": 35,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 106
+        "talk_time": 106,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 106,
+        "total_dialed": 95
       },
       {
         "date": "2026-08-05",
@@ -25926,10 +30430,14 @@ window.RAW_DATA = {
         "phone_connect": 57,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 130
+        "talk_time": 130,
+        "total_connected": 57,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 130,
+        "total_dialed": 93
       },
       {
         "date": "2026-08-06",
@@ -25949,10 +30457,14 @@ window.RAW_DATA = {
         "phone_connect": 25,
         "other_dial": 2,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 43,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 68
       },
       {
         "date": "2026-08-07",
@@ -25972,10 +30484,14 @@ window.RAW_DATA = {
         "phone_connect": 36,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 118
+        "talk_time": 118,
+        "total_connected": 39,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 118,
+        "total_dialed": 85
       },
       {
         "date": "2026-08-08",
@@ -25995,10 +30511,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-09",
@@ -26018,10 +30538,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-10",
@@ -26044,7 +30568,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-11",
@@ -26064,10 +30592,14 @@ window.RAW_DATA = {
         "phone_connect": 40,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 83
+        "talk_time": 83,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 83,
+        "total_dialed": 81
       },
       {
         "date": "2026-08-12",
@@ -26087,10 +30619,14 @@ window.RAW_DATA = {
         "phone_connect": 5,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 74
+        "talk_time": 74,
+        "total_connected": 32,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 74,
+        "total_dialed": 96
       },
       {
         "date": "2026-08-13",
@@ -26110,10 +30646,14 @@ window.RAW_DATA = {
         "phone_connect": 12,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 97
+        "talk_time": 97,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 97,
+        "total_dialed": 92
       },
       {
         "date": "2026-08-14",
@@ -26136,7 +30676,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 15,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 27
       },
       {
         "date": "2026-08-15",
@@ -26156,10 +30700,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-16",
@@ -26182,7 +30730,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-17",
@@ -26202,10 +30754,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 62
+        "talk_time": 62,
+        "total_connected": 24,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 62,
+        "total_dialed": 67
       },
       {
         "date": "2026-08-18",
@@ -26228,7 +30784,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-19",
@@ -26248,10 +30808,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 76
+        "talk_time": 76,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 76,
+        "total_dialed": 94
       },
       {
         "date": "2026-08-20",
@@ -26271,10 +30835,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 98
       },
       {
         "date": "2026-08-21",
@@ -26294,10 +30862,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 61
+        "talk_time": 61,
+        "total_connected": 22,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 61,
+        "total_dialed": 66
       },
       {
         "date": "2026-08-22",
@@ -26317,10 +30889,14 @@ window.RAW_DATA = {
         "phone_connect": 42,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 107
+        "talk_time": 107,
+        "total_connected": 42,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 107,
+        "total_dialed": 106
       },
       {
         "date": "2026-08-23",
@@ -26343,7 +30919,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-24",
@@ -26363,10 +30943,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 145
       },
       {
         "date": "2026-08-25",
@@ -26386,10 +30970,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 7,
         "active_ab": 0,
-        "talk_time": 7,
-        "total_connected": 87
+        "talk_time": 87,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 87,
+        "total_dialed": 146
       },
       {
         "date": "2026-08-26",
@@ -26409,10 +30997,14 @@ window.RAW_DATA = {
         "phone_connect": 8,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 51
+        "talk_time": 51,
+        "total_connected": 32,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 51,
+        "total_dialed": 111
       },
       {
         "date": "2026-08-27",
@@ -26432,10 +31024,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 23,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 97
       },
       {
         "date": "2026-08-28",
@@ -26455,10 +31051,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-29",
@@ -26478,10 +31078,14 @@ window.RAW_DATA = {
         "phone_connect": 32,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 62
+        "talk_time": 62,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 62,
+        "total_dialed": 71
       },
       {
         "date": "2026-08-30",
@@ -26501,10 +31105,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-08-31",
@@ -26524,10 +31132,14 @@ window.RAW_DATA = {
         "phone_connect": 16,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 55
+        "talk_time": 55,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 55,
+        "total_dialed": 109
       },
       {
         "date": "2026-09-01",
@@ -26547,10 +31159,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 42
+        "talk_time": 42,
+        "total_connected": 19,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 42,
+        "total_dialed": 106
       },
       {
         "date": "2026-09-02",
@@ -26570,10 +31186,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 53
+        "talk_time": 53,
+        "total_connected": 26,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 53,
+        "total_dialed": 109
       },
       {
         "date": "2026-09-03",
@@ -26593,10 +31213,14 @@ window.RAW_DATA = {
         "phone_connect": 28,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 63
+        "talk_time": 63,
+        "total_connected": 30,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 63,
+        "total_dialed": 101
       },
       {
         "date": "2026-09-04",
@@ -26616,10 +31240,14 @@ window.RAW_DATA = {
         "phone_connect": 19,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 40
+        "talk_time": 40,
+        "total_connected": 25,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 40,
+        "total_dialed": 91
       },
       {
         "date": "2026-09-05",
@@ -26639,10 +31267,14 @@ window.RAW_DATA = {
         "phone_connect": 16,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 56
+        "talk_time": 56,
+        "total_connected": 22,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 56,
+        "total_dialed": 103
       },
       {
         "date": "2026-09-06",
@@ -26665,7 +31297,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-07",
@@ -26685,10 +31321,14 @@ window.RAW_DATA = {
         "phone_connect": 25,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 69
+        "talk_time": 69,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 69,
+        "total_dialed": 106
       },
       {
         "date": "2026-09-08",
@@ -26711,7 +31351,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-09",
@@ -26731,10 +31375,14 @@ window.RAW_DATA = {
         "phone_connect": 31,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 4,
         "active_ab": 0,
-        "talk_time": 4,
-        "total_connected": 75
+        "talk_time": 75,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 75,
+        "total_dialed": 113
       },
       {
         "date": "2026-09-10",
@@ -26754,10 +31402,14 @@ window.RAW_DATA = {
         "phone_connect": 24,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 66
+        "talk_time": 66,
+        "total_connected": 26,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 66,
+        "total_dialed": 89
       },
       {
         "date": "2026-09-11",
@@ -26777,10 +31429,14 @@ window.RAW_DATA = {
         "phone_connect": 10,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 40
+        "talk_time": 40,
+        "total_connected": 22,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 40,
+        "total_dialed": 88
       },
       {
         "date": "2026-09-12",
@@ -26800,10 +31456,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 84
+        "talk_time": 84,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 84,
+        "total_dialed": 106
       },
       {
         "date": "2026-09-13",
@@ -26826,7 +31486,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-14",
@@ -26849,7 +31513,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-15",
@@ -26869,10 +31537,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 62
+        "talk_time": 62,
+        "total_connected": 24,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 62,
+        "total_dialed": 82
       },
       {
         "date": "2026-09-16",
@@ -26892,10 +31564,14 @@ window.RAW_DATA = {
         "phone_connect": 33,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 64
+        "talk_time": 64,
+        "total_connected": 41,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 64,
+        "total_dialed": 79
       },
       {
         "date": "2026-09-17",
@@ -26917,8 +31593,12 @@ window.RAW_DATA = {
         "other_connect": 2,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 53
+        "talk_time": 53,
+        "total_connected": 25,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 53,
+        "total_dialed": 85
       },
       {
         "date": "2026-09-18",
@@ -26938,10 +31618,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 30,
         "other_connect": 9,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 50
+        "talk_time": 50,
+        "total_connected": 25,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 50,
+        "total_dialed": 69
       },
       {
         "date": "2026-09-19",
@@ -26961,10 +31645,14 @@ window.RAW_DATA = {
         "phone_connect": 16,
         "other_dial": 4,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 61
+        "talk_time": 61,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 61,
+        "total_dialed": 66
       },
       {
         "date": "2026-09-20",
@@ -26984,10 +31672,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-21",
@@ -27007,10 +31699,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-22",
@@ -27030,10 +31726,14 @@ window.RAW_DATA = {
         "phone_connect": 15,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 47
+        "talk_time": 47,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 47,
+        "total_dialed": 76
       },
       {
         "date": "2026-09-23",
@@ -27053,10 +31753,14 @@ window.RAW_DATA = {
         "phone_connect": 23,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 60
+        "talk_time": 60,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 60,
+        "total_dialed": 49
       },
       {
         "date": "2026-09-24",
@@ -27078,8 +31782,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 56
+        "talk_time": 56,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 56,
+        "total_dialed": 82
       },
       {
         "date": "2026-09-25",
@@ -27099,10 +31807,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 48
+        "talk_time": 48,
+        "total_connected": 26,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 48,
+        "total_dialed": 75
       },
       {
         "date": "2026-09-26",
@@ -27122,10 +31834,14 @@ window.RAW_DATA = {
         "phone_connect": 9,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 38
+        "talk_time": 38,
+        "total_connected": 25,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 38,
+        "total_dialed": 73
       },
       {
         "date": "2026-09-27",
@@ -27148,7 +31864,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-09-28",
@@ -27168,10 +31888,14 @@ window.RAW_DATA = {
         "phone_connect": 13,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 50
+        "talk_time": 50,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 50,
+        "total_dialed": 72
       },
       {
         "date": "2026-09-29",
@@ -27191,10 +31915,14 @@ window.RAW_DATA = {
         "phone_connect": 20,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 52
+        "talk_time": 52,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 52,
+        "total_dialed": 86
       },
       {
         "date": "2026-09-30",
@@ -27214,10 +31942,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 50
+        "talk_time": 50,
+        "total_connected": 20,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 50,
+        "total_dialed": 85
       },
       {
         "date": "2026-10-01",
@@ -27239,8 +31971,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 71
+        "talk_time": 71,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 71,
+        "total_dialed": 79
       },
       {
         "date": "2026-10-02",
@@ -27263,7 +31999,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-03",
@@ -27285,8 +32025,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 68
+        "talk_time": 68,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 68,
+        "total_dialed": 84
       },
       {
         "date": "2026-10-04",
@@ -27309,7 +32053,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-05",
@@ -27329,10 +32077,14 @@ window.RAW_DATA = {
         "phone_connect": 1,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 43
+        "talk_time": 43,
+        "total_connected": 18,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 43,
+        "total_dialed": 89
       },
       {
         "date": "2026-10-06",
@@ -27352,10 +32104,14 @@ window.RAW_DATA = {
         "phone_connect": 26,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 0
+        "talk_time": 0,
+        "total_connected": 28,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 79
       },
       {
         "date": "2026-10-07",
@@ -27375,10 +32131,14 @@ window.RAW_DATA = {
         "phone_connect": 28,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 69
+        "talk_time": 69,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 69,
+        "total_dialed": 89
       },
       {
         "date": "2026-10-08",
@@ -27398,10 +32158,14 @@ window.RAW_DATA = {
         "phone_connect": 39,
         "other_dial": 2,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 86
+        "talk_time": 86,
+        "total_connected": 40,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 86,
+        "total_dialed": 80
       },
       {
         "date": "2026-10-09",
@@ -27421,10 +32185,14 @@ window.RAW_DATA = {
         "phone_connect": 15,
         "other_dial": 4,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 6,
         "active_ab": 0,
-        "talk_time": 6,
-        "total_connected": 55
+        "talk_time": 55,
+        "total_connected": 21,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 55,
+        "total_dialed": 70
       },
       {
         "date": "2026-10-10",
@@ -27444,10 +32212,14 @@ window.RAW_DATA = {
         "phone_connect": 18,
         "other_dial": 4,
         "other_connect": 4,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 72
+        "talk_time": 72,
+        "total_connected": 22,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 72,
+        "total_dialed": 64
       },
       {
         "date": "2026-10-11",
@@ -27470,7 +32242,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-12",
@@ -27493,7 +32269,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-13",
@@ -27513,10 +32293,14 @@ window.RAW_DATA = {
         "phone_connect": 17,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 5,
         "active_ab": 0,
-        "talk_time": 5,
-        "total_connected": 81
+        "talk_time": 81,
+        "total_connected": 30,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 81,
+        "total_dialed": 113
       },
       {
         "date": "2026-10-14",
@@ -27536,10 +32320,14 @@ window.RAW_DATA = {
         "phone_connect": 20,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 64
+        "talk_time": 64,
+        "total_connected": 32,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 64,
+        "total_dialed": 92
       },
       {
         "date": "2026-10-15",
@@ -27559,10 +32347,14 @@ window.RAW_DATA = {
         "phone_connect": 23,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 56
+        "talk_time": 56,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 56,
+        "total_dialed": 96
       },
       {
         "date": "2026-10-16",
@@ -27582,10 +32374,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 2,
         "other_connect": 2,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 46
+        "talk_time": 46,
+        "total_connected": 22,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 46,
+        "total_dialed": 76
       },
       {
         "date": "2026-10-17",
@@ -27605,10 +32401,14 @@ window.RAW_DATA = {
         "phone_connect": 34,
         "other_dial": 4,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 75
+        "talk_time": 75,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 75,
+        "total_dialed": 93
       },
       {
         "date": "2026-10-18",
@@ -27631,7 +32431,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-19",
@@ -27651,10 +32455,14 @@ window.RAW_DATA = {
         "phone_connect": 33,
         "other_dial": 4,
         "other_connect": 3,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 51
+        "talk_time": 51,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 51,
+        "total_dialed": 96
       },
       {
         "date": "2026-10-20",
@@ -27677,7 +32485,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-21",
@@ -27697,10 +32509,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 2,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 48
+        "talk_time": 48,
+        "total_connected": 29,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 48,
+        "total_dialed": 83
       },
       {
         "date": "2026-10-22",
@@ -27720,10 +32536,14 @@ window.RAW_DATA = {
         "phone_connect": 17,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 70
+        "talk_time": 70,
+        "total_connected": 31,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 70,
+        "total_dialed": 89
       },
       {
         "date": "2026-10-23",
@@ -27743,10 +32563,14 @@ window.RAW_DATA = {
         "phone_connect": 32,
         "other_dial": 1,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 3,
         "active_ab": 0,
-        "talk_time": 3,
-        "total_connected": 73
+        "talk_time": 73,
+        "total_connected": 33,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 73,
+        "total_dialed": 92
       },
       {
         "date": "2026-10-24",
@@ -27766,10 +32590,14 @@ window.RAW_DATA = {
         "phone_connect": 34,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 64
+        "talk_time": 64,
+        "total_connected": 34,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 64,
+        "total_dialed": 84
       },
       {
         "date": "2026-10-25",
@@ -27792,7 +32620,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-10-26",
@@ -27812,10 +32644,14 @@ window.RAW_DATA = {
         "phone_connect": 33,
         "other_dial": 1,
         "other_connect": 1,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talk_time": 2,
-        "total_connected": 95
+        "talk_time": 95,
+        "total_connected": 45,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 95,
+        "total_dialed": 115
       },
       {
         "date": "2026-10-27",
@@ -27835,10 +32671,14 @@ window.RAW_DATA = {
         "phone_connect": 11,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 75
+        "talk_time": 75,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 75,
+        "total_dialed": 102
       },
       {
         "date": "2026-10-28",
@@ -27858,10 +32698,14 @@ window.RAW_DATA = {
         "phone_connect": 24,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 84
+        "talk_time": 84,
+        "total_connected": 37,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 84,
+        "total_dialed": 94
       },
       {
         "date": "2026-10-29",
@@ -27881,10 +32725,14 @@ window.RAW_DATA = {
         "phone_connect": 6,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 57
+        "talk_time": 57,
+        "total_connected": 35,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 57,
+        "total_dialed": 152
       },
       {
         "date": "2026-10-30",
@@ -27906,8 +32754,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 35
+        "talk_time": 35,
+        "total_connected": 22,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 35,
+        "total_dialed": 59
       },
       {
         "date": "2026-10-31",
@@ -27929,8 +32781,12 @@ window.RAW_DATA = {
         "other_connect": 1,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 99
+        "talk_time": 99,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 99,
+        "total_dialed": 130
       },
       {
         "date": "2026-11-01",
@@ -27953,7 +32809,11 @@ window.RAW_DATA = {
         "onboardings": 0,
         "active_ab": 0,
         "talk_time": 0,
-        "total_connected": 0
+        "total_connected": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 0,
+        "total_dialed": 0
       },
       {
         "date": "2026-11-02",
@@ -27973,10 +32833,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "onboardings": 0,
+        "onboardings": 1,
         "active_ab": 0,
-        "talk_time": 1,
-        "total_connected": 77
+        "talk_time": 77,
+        "total_connected": 52,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 77,
+        "total_dialed": 163
       },
       {
         "date": "2026-11-03",
@@ -27998,8 +32862,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talk_time": 0,
-        "total_connected": 112
+        "talk_time": 112,
+        "total_connected": 44,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "talktime": 112,
+        "total_dialed": 114
       }
     ]
   },

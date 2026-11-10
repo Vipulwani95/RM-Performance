@@ -489,16 +489,16 @@
 
       const labels = dailyRecords.map(r => r.date.substring(8, 10)); // Day of month
 
-      // 1. Dials
+      // 1. Dials (Sum of columns B, D, F, H, J, L, N, P, R - strictly excluding onboardings)
       createSingleLineChart('chartProfDials', labels, [{
         label: 'Daily Dials',
         data: dailyRecords.map(r => {
-          if (r.total_dialed) return Number(r.total_dialed);
-          return Number(r.onboarding_dial || 0) + Number(r.active_dial || 0) +
+          const sumD = Number(r.onboarding_dial || 0) + Number(r.active_dial || 0) +
             Number(r.reactive_dial || 0) + Number(r.consistent_dial || 0) +
             Number(r.acquisition_dial || 0) + Number(r.home_service_dial || 0) +
             Number(r.phone_dial || 0) + Number(r.other_dial || 0) +
             Number(r.builder_dial || 0);
+          return sumD > 0 ? sumD : Number(r.total_dialed || 0);
         }),
         borderColor: col,
         backgroundColor: conf.subtleColor,
@@ -531,13 +531,12 @@
       createSingleLineChart('chartProfRate', labels, [{
         label: 'Daily Connect %',
         data: dailyRecords.map(r => {
-          const d = Number(r.total_dialed || 0) || (
-            Number(r.onboarding_dial || 0) + Number(r.active_dial || 0) +
+          const sumD = Number(r.onboarding_dial || 0) + Number(r.active_dial || 0) +
             Number(r.reactive_dial || 0) + Number(r.consistent_dial || 0) +
             Number(r.acquisition_dial || 0) + Number(r.home_service_dial || 0) +
             Number(r.phone_dial || 0) + Number(r.other_dial || 0) +
-            Number(r.builder_dial || 0)
-          );
+            Number(r.builder_dial || 0);
+          const d = sumD > 0 ? sumD : Number(r.total_dialed || 0);
           const sumConn = Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
             Number(r.reactive_connect || 0) + Number(r.consistent_connect || 0) +
             Number(r.acquisition_connect || 0) + Number(r.home_service_connect || 0) +

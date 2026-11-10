@@ -366,6 +366,28 @@ function parseSingleRmDaily(sheet, tz) {
   var colTotDial = findCol(['total dialed', 'total dial'], ['total dialed'], 22); // Column W
   var colTotConn = findCol(['total connected', 'total connect'], ['total connected'], 23); // Column X
 
+  // Dynamic detection: Any header mentioning 'dial' (except summary 'total') is counted in Dials
+  // Any header mentioning 'connect' (except summary 'total') is counted in Connected
+  var dialColIndices = [];
+  var connColIndices = [];
+  for (var c = 0; c < headers.length; c++) {
+    var h = headers[c];
+    if (h.indexOf('total') === -1) {
+      if (h.indexOf('dial') !== -1) {
+        dialColIndices.push(c);
+      } else if (h.indexOf('connect') !== -1) {
+        connColIndices.push(c);
+      }
+    }
+  }
+  // Safe fallbacks if headers were empty or unmatched
+  if (dialColIndices.length === 0) {
+    dialColIndices = [colOnbDial, colActDial, colReaDial, colConDial, colHomDial, colAcqDial, colPhoDial, colOthDial, colBuiDial];
+  }
+  if (connColIndices.length === 0) {
+    connColIndices = [colOnbConn, colActConn, colReaConn, colConConn, colHomConn, colAcqConn, colPhoConn, colOthConn, colBuiConn];
+  }
+
   var records = [];
 
   // Start from row index 1 (Row 2, skipping header row)
@@ -383,9 +405,21 @@ function parseSingleRmDaily(sheet, tz) {
       continue;
     }
 
+    // Sum every column whose header mentions 'dial' (strictly excluding onboardings)
+    var calcDials = 0;
+    for (var d = 0; d < dialColIndices.length; d++) {
+      calcDials += toNum(row[dialColIndices[d]]);
+    }
+
+    // Sum every column whose header mentions 'connect' (strictly excluding onboardings)
+    var calcConns = 0;
+    for (var k = 0; k < connColIndices.length; k++) {
+      calcConns += toNum(row[connColIndices[k]]);
+    }
+
     var talkVal = toNum(row[colTalk]);
-    var totDialVal = toNum(row[colTotDial]);
-    var totConnVal = toNum(row[colTotConn]);
+    var totDialVal = calcDials > 0 ? calcDials : toNum(row[colTotDial]);
+    var totConnVal = calcConns > 0 ? calcConns : toNum(row[colTotConn]);
 
     records.push({
       date: formattedDate,
