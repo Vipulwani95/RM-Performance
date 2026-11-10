@@ -273,16 +273,16 @@ function getReportData(ss) {
  * ----------------------------------------------------------------------------
  * Reads daily follow-up and dialing data for each RM.
  * 
- * Column Mapping:
+ * Column Mapping (A to X):
  * A (0)  = Date
- * B (1)  = Onboarding followup-Dial
- * C (2)  = Onboarding followup-Connect
- * D (3)  = Active Followups-Dial
- * E (4)  = Active Followups-Connect
- * F (5)  = Reactive Followups-Dial
- * G (6)  = Reactive Followups-Connect
- * H (7)  = Consistent Followups-Dial
- * I (8)  = Consistent Followups-Connect
+ * B (1)  = Onboarding followup - Dial
+ * C (2)  = Onboarding followup - Connect
+ * D (3)  = Active Followups - Dial
+ * E (4)  = Active Followups - Connect
+ * F (5)  = Reactive Followups - Dial
+ * G (6)  = Reactive Followups - Connect
+ * H (7)  = Consistent Followups - Dial
+ * I (8)  = Consistent Followups - Connect
  * J (9)  = Home Service Dial
  * K (10) = Home Service Connect
  * L (11) = Acquisition Dial
@@ -291,11 +291,13 @@ function getReportData(ss) {
  * O (14) = Phone Connect
  * P (15) = Other Dial
  * Q (16) = Other Connect
- * R (17) = Onboardings
- * S (18) = Active AB
- * T (19) = Talk Time (In Min.)
- * U (20) = GAP COLUMN -> SKIPPED
- * V (21) = Total connected
+ * R (17) = Builder Dial
+ * S (18) = Builder Connect
+ * T (19) = Onboardings
+ * U (20) = Active AB
+ * V (21) = Talk Time (In Min.)
+ * W (22) = Total Dialed
+ * X (23) = Total connected
  */
 function parseAllRmDaily(rmDailySheets, tz) {
   var result = {};
@@ -328,16 +330,38 @@ function parseSingleRmDaily(sheet, tz) {
     return fallbackIdx;
   }
 
-  // Find column indices dynamically
-  var colTalk = findCol(['talk time', 'talktime', 'talk'], 21); // Default to Col V (21)
-  var colConn = findCol(['total connected', 'total connect', 'connected'], 19); // Default to Col T (19)
+  // Find column indices dynamically with fallbacks to the exact A-X column positions
+  var colDate = 0;
+  var colOnbDial = findCol(['onboarding followup -dial', 'onboarding followup-dial', 'onboarding dial'], 1);
+  var colOnbConn = findCol(['onboarding followup - connect', 'onboarding followup-connect', 'onboarding connect'], 2);
+  var colActDial = findCol(['active followups- dial', 'active followups-dial', 'active dial'], 3);
+  var colActConn = findCol(['active followups- connect', 'active followups-connect', 'active connect'], 4);
+  var colReaDial = findCol(['reactive followups- dial', 'reactive followups-dial', 'reactive dial'], 5);
+  var colReaConn = findCol(['reactive followups- connect', 'reactive followups-connect', 'reactive connect'], 6);
+  var colConDial = findCol(['consistent followups- dial', 'consistent followups-dial', 'consistent dial'], 7);
+  var colConConn = findCol(['consistent followups- connect', 'consistent followups-connect', 'consistent connect'], 8);
+  var colHomDial = findCol(['home service dial'], 9);
+  var colHomConn = findCol(['home service connect'], 10);
+  var colAcqDial = findCol(['acquisition dial'], 11);
+  var colAcqConn = findCol(['acquisition connect'], 12);
+  var colPhoDial = findCol(['phone dial'], 13);
+  var colPhoConn = findCol(['phone connect'], 14);
+  var colOthDial = findCol(['other dial'], 15);
+  var colOthConn = findCol(['other connect'], 16);
+  var colBuiDial = findCol(['builder dial'], 17);
+  var colBuiConn = findCol(['builder connect'], 18);
+  var colOnboard = findCol(['onboardings', 'onboarding'], 19);
+  var colActiveAb = findCol(['active ab', 'active_ab'], 20);
+  var colTalk = findCol(['talk time', 'talktime', 'talk'], 21); // Column V
+  var colTotDial = findCol(['total dialed', 'total dial'], 22); // Column W
+  var colTotConn = findCol(['total connected', 'total connect'], 23); // Column X
 
   var records = [];
 
   // Start from row index 1 (Row 2, skipping header row)
   for (var r = 1; r < values.length; r++) {
     var row = values[r];
-    var rawDate = row[0];
+    var rawDate = row[colDate];
 
     // Skip empty rows or rows without a valid date
     if (rawDate === '' || rawDate === null || rawDate === undefined) {
@@ -350,31 +374,35 @@ function parseSingleRmDaily(sheet, tz) {
     }
 
     var talkVal = toNum(row[colTalk]);
-    var connVal = toNum(row[colConn]);
+    var totDialVal = toNum(row[colTotDial]);
+    var totConnVal = toNum(row[colTotConn]);
 
     records.push({
       date: formattedDate,
-      onboarding_dial: toNum(row[1]),
-      onboarding_connect: toNum(row[2]),
-      active_dial: toNum(row[3]),
-      active_connect: toNum(row[4]),
-      reactive_dial: toNum(row[5]),
-      reactive_connect: toNum(row[6]),
-      consistent_dial: toNum(row[7]),
-      consistent_connect: toNum(row[8]),
-      home_service_dial: toNum(row[9]),
-      home_service_connect: toNum(row[10]),
-      acquisition_dial: toNum(row[11]),
-      acquisition_connect: toNum(row[12]),
-      phone_dial: toNum(row[13]),
-      phone_connect: toNum(row[14]),
-      other_dial: toNum(row[15]),
-      other_connect: toNum(row[16]),
-      onboardings: toNum(row[17]),
-      active_ab: toNum(row[18]),
+      onboarding_dial: toNum(row[colOnbDial]),
+      onboarding_connect: toNum(row[colOnbConn]),
+      active_dial: toNum(row[colActDial]),
+      active_connect: toNum(row[colActConn]),
+      reactive_dial: toNum(row[colReaDial]),
+      reactive_connect: toNum(row[colReaConn]),
+      consistent_dial: toNum(row[colConDial]),
+      consistent_connect: toNum(row[colConConn]),
+      home_service_dial: toNum(row[colHomDial]),
+      home_service_connect: toNum(row[colHomConn]),
+      acquisition_dial: toNum(row[colAcqDial]),
+      acquisition_connect: toNum(row[colAcqConn]),
+      phone_dial: toNum(row[colPhoDial]),
+      phone_connect: toNum(row[colPhoConn]),
+      other_dial: toNum(row[colOthDial]),
+      other_connect: toNum(row[colOthConn]),
+      builder_dial: toNum(row[colBuiDial]),
+      builder_connect: toNum(row[colBuiConn]),
+      onboardings: toNum(row[colOnboard]),
+      active_ab: toNum(row[colActiveAb]),
       talktime: talkVal,
       talk_time: talkVal,
-      total_connected: connVal
+      total_dialed: totDialVal,
+      total_connected: totConnVal
     });
   }
 

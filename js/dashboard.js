@@ -219,14 +219,17 @@
         const d_home = Number(r.home_service_dial || 0);
         const d_phone = Number(r.phone_dial || 0);
         const d_other = Number(r.other_dial || 0);
+        const d_builder = Number(r.builder_dial || 0);
 
-        const dayDials = d_onboarding + d_active + d_reactive + d_consistent + d_acq + d_home + d_phone + d_other;
+        const sumDials = d_onboarding + d_active + d_reactive + d_consistent + d_acq + d_home + d_phone + d_other + d_builder;
+        const dayDials = Number(r.total_dialed || 0) || sumDials;
         const dayTalk = Number(r.talktime !== undefined && r.talktime !== null ? r.talktime : (r.talk_time || 0));
 
         const sumConn = (Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
           Number(r.reactive_connect || 0) + Number(r.consistent_connect || 0) +
           Number(r.acquisition_connect || 0) + Number(r.home_service_connect || 0) +
-          Number(r.phone_connect || 0) + Number(r.other_connect || 0));
+          Number(r.phone_connect || 0) + Number(r.other_connect || 0) +
+          Number(r.builder_connect || 0));
         const dayConnected = Number(r.total_connected || 0) || sumConn;
 
         m.dailyDials.push({ date: r.date, dials: dayDials, connected: dayConnected, talktime: dayTalk });
