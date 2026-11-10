@@ -319,10 +319,19 @@ function parseSingleRmDaily(sheet, tz) {
   // Dynamically map columns from Header Row (values[0])
   var headers = values[0].map(function(h) { return String(h || '').trim().toLowerCase(); });
 
-  function findCol(patterns, fallbackIdx) {
+  function findCol(exactPatterns, fallbackPatterns, fallbackIdx) {
+    // 1. First priority: Exact match
     for (var i = 0; i < headers.length; i++) {
-      for (var p = 0; p < patterns.length; p++) {
-        if (headers[i].indexOf(patterns[p]) !== -1) {
+      for (var p = 0; p < exactPatterns.length; p++) {
+        if (headers[i] === exactPatterns[p].toLowerCase().trim()) {
+          return i;
+        }
+      }
+    }
+    // 2. Second priority: Substring match with fallback patterns
+    for (var i = 0; i < headers.length; i++) {
+      for (var p = 0; p < fallbackPatterns.length; p++) {
+        if (headers[i].indexOf(fallbackPatterns[p].toLowerCase().trim()) !== -1) {
           return i;
         }
       }
@@ -332,29 +341,30 @@ function parseSingleRmDaily(sheet, tz) {
 
   // Find column indices dynamically with fallbacks to the exact A-X column positions
   var colDate = 0;
-  var colOnbDial = findCol(['onboarding followup -dial', 'onboarding followup-dial', 'onboarding dial'], 1);
-  var colOnbConn = findCol(['onboarding followup - connect', 'onboarding followup-connect', 'onboarding connect'], 2);
-  var colActDial = findCol(['active followups- dial', 'active followups-dial', 'active dial'], 3);
-  var colActConn = findCol(['active followups- connect', 'active followups-connect', 'active connect'], 4);
-  var colReaDial = findCol(['reactive followups- dial', 'reactive followups-dial', 'reactive dial'], 5);
-  var colReaConn = findCol(['reactive followups- connect', 'reactive followups-connect', 'reactive connect'], 6);
-  var colConDial = findCol(['consistent followups- dial', 'consistent followups-dial', 'consistent dial'], 7);
-  var colConConn = findCol(['consistent followups- connect', 'consistent followups-connect', 'consistent connect'], 8);
-  var colHomDial = findCol(['home service dial'], 9);
-  var colHomConn = findCol(['home service connect'], 10);
-  var colAcqDial = findCol(['acquisition dial'], 11);
-  var colAcqConn = findCol(['acquisition connect'], 12);
-  var colPhoDial = findCol(['phone dial'], 13);
-  var colPhoConn = findCol(['phone connect'], 14);
-  var colOthDial = findCol(['other dial'], 15);
-  var colOthConn = findCol(['other connect'], 16);
-  var colBuiDial = findCol(['builder dial'], 17);
-  var colBuiConn = findCol(['builder connect'], 18);
-  var colOnboard = findCol(['onboardings', 'onboarding'], 19);
-  var colActiveAb = findCol(['active ab', 'active_ab'], 20);
-  var colTalk = findCol(['talk time', 'talktime', 'talk'], 21); // Column V
-  var colTotDial = findCol(['total dialed', 'total dial'], 22); // Column W
-  var colTotConn = findCol(['total connected', 'total connect'], 23); // Column X
+  var colOnbDial = findCol(['onboarding followup -dial', 'onboarding followup-dial'], ['onboarding followup -dial', 'onboarding followup-dial', 'onboarding dial'], 1);
+  var colOnbConn = findCol(['onboarding followup - connect', 'onboarding followup-connect'], ['onboarding followup - connect', 'onboarding followup-connect', 'onboarding connect'], 2);
+  var colActDial = findCol(['active followups- dial', 'active followups-dial'], ['active followups- dial', 'active followups-dial', 'active dial'], 3);
+  var colActConn = findCol(['active followups- connect', 'active followups-connect'], ['active followups- connect', 'active followups-connect', 'active connect'], 4);
+  var colReaDial = findCol(['reactive followups- dial', 'reactive followups-dial'], ['reactive followups- dial', 'reactive followups-dial', 'reactive dial'], 5);
+  var colReaConn = findCol(['reactive followups- connect', 'reactive followups-connect'], ['reactive followups- connect', 'reactive followups-connect', 'reactive connect'], 6);
+  var colConDial = findCol(['consistent followups- dial', 'consistent followups-dial'], ['consistent followups- dial', 'consistent followups-dial', 'consistent dial'], 7);
+  var colConConn = findCol(['consistent followups- connect', 'consistent followups-connect'], ['consistent followups- connect', 'consistent followups-connect', 'consistent connect'], 8);
+  var colHomDial = findCol(['home service dial'], ['home service dial'], 9);
+  var colHomConn = findCol(['home service connect'], ['home service connect'], 10);
+  var colAcqDial = findCol(['acquisition dial'], ['acquisition dial'], 11);
+  var colAcqConn = findCol(['acquisition connect'], ['acquisition connect'], 12);
+  var colPhoDial = findCol(['phone dial'], ['phone dial'], 13);
+  var colPhoConn = findCol(['phone connect'], ['phone connect'], 14);
+  var colOthDial = findCol(['other dial'], ['other dial'], 15);
+  var colOthConn = findCol(['other connect'], ['other connect'], 16);
+  var colBuiDial = findCol(['builder dial'], ['builder dial'], 17);
+  var colBuiConn = findCol(['builder connect', 'builder connect '], ['builder connect'], 18);
+  // EXACT match 'onboardings' or 'onboarding' so it never grabs 'onboarding followup -dial' (Col 1)
+  var colOnboard = findCol(['onboardings', 'onboarding'], ['onboardings'], 19);
+  var colActiveAb = findCol(['active ab', 'active_ab'], ['active ab'], 20);
+  var colTalk = findCol(['talk time (in min.)', 'talk time', 'talktime'], ['talk time', 'talktime'], 21); // Column V
+  var colTotDial = findCol(['total dialed', 'total dial'], ['total dialed'], 22); // Column W
+  var colTotConn = findCol(['total connected', 'total connect'], ['total connected'], 23); // Column X
 
   var records = [];
 
