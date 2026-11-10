@@ -508,10 +508,17 @@
         tension: 0.2
       }], 'Calls');
 
-      // 2. Connected Calls
+      // 2. Connected Calls (Sum of columns C, E, G, I, K, M, O, Q, S - strictly excluding onboardings)
       createSingleLineChart('chartProfConnect', labels, [{
         label: 'Daily Connected',
-        data: dailyRecords.map(r => Number(r.total_connected || 0)),
+        data: dailyRecords.map(r => {
+          const sumConn = Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
+            Number(r.reactive_connect || 0) + Number(r.consistent_connect || 0) +
+            Number(r.acquisition_connect || 0) + Number(r.home_service_connect || 0) +
+            Number(r.phone_connect || 0) + Number(r.other_connect || 0) +
+            Number(r.builder_connect || 0);
+          return sumConn > 0 ? sumConn : Number(r.total_connected || 0);
+        }),
         borderColor: col,
         backgroundColor: conf.subtleColor,
         fill: true,
@@ -531,7 +538,12 @@
             Number(r.phone_dial || 0) + Number(r.other_dial || 0) +
             Number(r.builder_dial || 0)
           );
-          const c = Number(r.total_connected || 0);
+          const sumConn = Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
+            Number(r.reactive_connect || 0) + Number(r.consistent_connect || 0) +
+            Number(r.acquisition_connect || 0) + Number(r.home_service_connect || 0) +
+            Number(r.phone_connect || 0) + Number(r.other_connect || 0) +
+            Number(r.builder_connect || 0);
+          const c = sumConn > 0 ? sumConn : Number(r.total_connected || 0);
           return d > 0 ? Number(((c / d) * 100).toFixed(1)) : 0;
         }),
         borderColor: col,

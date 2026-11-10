@@ -223,16 +223,21 @@
         const d_other = Number(r.other_dial || 0);
         const d_builder = Number(r.builder_dial || 0);
 
+        // Sum of all outbound dials (Columns B, D, F, H, J, L, N, P, R - strictly excluding onboardings)
         const sumDials = d_onboarding + d_active + d_reactive + d_consistent + d_acq + d_home + d_phone + d_other + d_builder;
-        const dayDials = Number(r.total_dialed || 0) || sumDials;
+        const dayDials = Number(r.total_dialed || 0) > 0 ? Number(r.total_dialed) : sumDials;
         const dayTalk = Number(r.talktime !== undefined && r.talktime !== null ? r.talktime : (r.talk_time || 0));
 
-        const sumConn = (Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
+        // Sum of all connected calls (Columns C, E, G, I, K, M, O, Q, S - strictly excluding onboardings)
+        const sumConn = Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
           Number(r.reactive_connect || 0) + Number(r.consistent_connect || 0) +
           Number(r.acquisition_connect || 0) + Number(r.home_service_connect || 0) +
           Number(r.phone_connect || 0) + Number(r.other_connect || 0) +
-          Number(r.builder_connect || 0));
-        const dayConnected = Number(r.total_connected || 0) || sumConn;
+          Number(r.builder_connect || 0);
+        
+        // Use sumConn (which strictly sums all connect categories till Col S)
+        // If raw total_connected erroneously includes onboardings, sumConn guarantees correct connect count
+        const dayConnected = sumConn > 0 ? sumConn : Number(r.total_connected || 0);
 
         m.dailyDials.push({ date: r.date, dials: dayDials, connected: dayConnected, talktime: dayTalk });
 
