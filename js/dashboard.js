@@ -196,6 +196,8 @@
             phone_connect: 0,
             other_dial: 0,
             other_connect: 0,
+            builder_dial: 0,
+            builder_connect: 0,
             totalDials: 0,
             totalConnected: 0,
             talktime: 0,
@@ -257,6 +259,8 @@
         m.phone_connect += Number(r.phone_connect || 0);
         m.other_dial += d_other;
         m.other_connect += Number(r.other_connect || 0);
+        m.builder_dial += d_builder;
+        m.builder_connect += Number(r.builder_connect || 0);
 
         m.totalDials += dayDials;
         m.totalConnected += dayConnected;

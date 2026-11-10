@@ -493,10 +493,12 @@
       createSingleLineChart('chartProfDials', labels, [{
         label: 'Daily Dials',
         data: dailyRecords.map(r => {
+          if (r.total_dialed) return Number(r.total_dialed);
           return Number(r.onboarding_dial || 0) + Number(r.active_dial || 0) +
             Number(r.reactive_dial || 0) + Number(r.consistent_dial || 0) +
             Number(r.acquisition_dial || 0) + Number(r.home_service_dial || 0) +
-            Number(r.phone_dial || 0) + Number(r.other_dial || 0);
+            Number(r.phone_dial || 0) + Number(r.other_dial || 0) +
+            Number(r.builder_dial || 0);
         }),
         borderColor: col,
         backgroundColor: conf.subtleColor,
@@ -522,10 +524,13 @@
       createSingleLineChart('chartProfRate', labels, [{
         label: 'Daily Connect %',
         data: dailyRecords.map(r => {
-          const d = Number(r.onboarding_dial || 0) + Number(r.active_dial || 0) +
+          const d = Number(r.total_dialed || 0) || (
+            Number(r.onboarding_dial || 0) + Number(r.active_dial || 0) +
             Number(r.reactive_dial || 0) + Number(r.consistent_dial || 0) +
             Number(r.acquisition_dial || 0) + Number(r.home_service_dial || 0) +
-            Number(r.phone_dial || 0) + Number(r.other_dial || 0);
+            Number(r.phone_dial || 0) + Number(r.other_dial || 0) +
+            Number(r.builder_dial || 0)
+          );
           const c = Number(r.total_connected || 0);
           return d > 0 ? Number(((c / d) * 100).toFixed(1)) : 0;
         }),
@@ -833,6 +838,7 @@
       { key: 'acquisition_dial', label: 'Acquisition', color: '#8B5CF6' },
       { key: 'home_service_dial', label: 'Home Service', color: '#14B8A6' },
       { key: 'phone_dial', label: 'Phone', color: '#06B6D4' },
+      { key: 'builder_dial', label: 'Builder', color: '#E11D48' },
       { key: 'other_dial', label: 'Other', color: '#94A3B8' }
     ];
 

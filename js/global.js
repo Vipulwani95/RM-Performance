@@ -790,6 +790,7 @@
       { key: 'acquisition_dial', label: 'Acquisition', color: '#8B5CF6' },
       { key: 'home_service_dial', label: 'Home Service', color: '#14B8A6' },
       { key: 'phone_dial', label: 'Phone', color: '#06B6D4' },
+      { key: 'builder_dial', label: 'Builder', color: '#E11D48' },
       { key: 'other_dial', label: 'Other', color: '#94A3B8' }
     ];
 
@@ -859,7 +860,8 @@
       { name: 'Onboarding', dKey: 'onboarding_dial', cKey: 'onboarding_connect' },
       { name: 'Acquisition', dKey: 'acquisition_dial', cKey: 'acquisition_connect' },
       { name: 'Home Service', dKey: 'home_service_dial', cKey: 'home_service_connect' },
-      { name: 'Phone', dKey: 'phone_dial', cKey: 'phone_connect' }
+      { name: 'Phone', dKey: 'phone_dial', cKey: 'phone_connect' },
+      { name: 'Builder', dKey: 'builder_dial', cKey: 'builder_connect' }
     ];
 
     const datasets = rms.map(rm => {
