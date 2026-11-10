@@ -260,6 +260,22 @@
     const tenureEl = document.getElementById('profTenure');
     const avatarEl = document.getElementById('profAvatar');
 
+    // Sticky Top Header RM Pill & Subtitle
+    const headerRmName = document.getElementById('headerRmName');
+    const headerRmDot = document.getElementById('headerRmDot');
+    const headerActiveRmPill = document.getElementById('headerActiveRmPill');
+    const headerSubtitleRm = document.getElementById('headerSubtitleRm');
+    const headerSubtitleZone = document.getElementById('headerSubtitleZone');
+
+    if (headerRmName) headerRmName.textContent = `[ ${conf.name} ]`;
+    if (headerRmDot) headerRmDot.style.backgroundColor = conf.color;
+    if (headerActiveRmPill) {
+      headerActiveRmPill.style.borderColor = conf.color;
+      headerActiveRmPill.style.background = `rgba(${parseInt(conf.color.slice(1,3),16)}, ${parseInt(conf.color.slice(3,5),16)}, ${parseInt(conf.color.slice(5,7),16)}, 0.2)`;
+    }
+    if (headerSubtitleRm) headerSubtitleRm.textContent = conf.name;
+    if (headerSubtitleZone) headerSubtitleZone.textContent = conf.zone;
+
     if (nameEl) nameEl.textContent = conf.name;
     if (zoneBadge) {
       zoneBadge.className = `zone-badge ${conf.badgeClass}`;

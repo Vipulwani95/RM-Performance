@@ -312,6 +312,26 @@ function parseAllRmDaily(rmDailySheets, tz) {
 function parseSingleRmDaily(sheet, tz) {
   var dataRange = sheet.getDataRange();
   var values = dataRange.getValues();
+  if (values.length < 2) return [];
+
+  // Dynamically map columns from Header Row (values[0])
+  var headers = values[0].map(function(h) { return String(h || '').trim().toLowerCase(); });
+
+  function findCol(patterns, fallbackIdx) {
+    for (var i = 0; i < headers.length; i++) {
+      for (var p = 0; p < patterns.length; p++) {
+        if (headers[i].indexOf(patterns[p]) !== -1) {
+          return i;
+        }
+      }
+    }
+    return fallbackIdx;
+  }
+
+  // Find column indices dynamically
+  var colTalk = findCol(['talk time', 'talktime', 'talk'], 21); // Default to Col V (21)
+  var colConn = findCol(['total connected', 'total connect', 'connected'], 19); // Default to Col T (19)
+
   var records = [];
 
   // Start from row index 1 (Row 2, skipping header row)
@@ -328,6 +348,9 @@ function parseSingleRmDaily(sheet, tz) {
     if (!formattedDate) {
       continue;
     }
+
+    var talkVal = toNum(row[colTalk]);
+    var connVal = toNum(row[colConn]);
 
     records.push({
       date: formattedDate,
@@ -349,10 +372,9 @@ function parseSingleRmDaily(sheet, tz) {
       other_connect: toNum(row[16]),
       onboardings: toNum(row[17]),
       active_ab: toNum(row[18]),
-      talktime: toNum(row[19]),
-      talk_time: toNum(row[19]),
-      // Column U (index 20) is skipped
-      total_connected: toNum(row[21])
+      talktime: talkVal,
+      talk_time: talkVal,
+      total_connected: connVal
     });
   }
 
