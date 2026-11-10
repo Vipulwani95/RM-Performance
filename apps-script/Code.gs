@@ -75,7 +75,17 @@ var CONFIG = {
   },
 
   // Fallback timezone (Asia/Kolkata is default for Ambassador Club)
-  DEFAULT_TIMEZONE: 'Asia/Kolkata'
+  DEFAULT_TIMEZONE: 'Asia/Kolkata',
+
+  // GitHub Auto-Sync Configuration (Pushes live sheet data to GitHub repo)
+  GITHUB: {
+    REPO: 'Vipulwani95/RM-Performance',
+    BRANCH: 'main',
+    FILE_PATH: 'js/data.js',
+    // Paste your personal access token (classic with 'repo' scope) here,
+    // OR store it in Script Properties as GITHUB_TOKEN
+    TOKEN: ''
+  }
 };
 
 /**
@@ -881,4 +891,154 @@ function setup() {
     Logger.log('❌ SETUP ERROR: ' + err.message);
     Logger.log(err.stack);
   }
+}
+
+/**
+ * ============================================================================
+ * 7. GITHUB AUTO-SYNC ENGINE
+ * ============================================================================
+ * Exports live spreadsheet data directly to the GitHub repository file
+ * ('js/data.js') using the GitHub REST API.
+ * 
+ * Works even when company Google Workspace prevents public Web App access!
+ */
+
+/**
+ * Custom UI Menu added inside Google Sheet
+ */
+function onOpen() {
+  SpreadsheetApp.getUi()
+    .createMenu('🚀 Dashboard Sync')
+    .addItem('⚡ Sync Live Data to GitHub Now', 'syncToGitHub')
+    .addItem('⏰ Setup Hourly Auto-Sync Trigger', 'setupAutoSyncTrigger')
+    .addToUi();
+}
+
+/**
+ * Resolves the GitHub PAT from CONFIG or Script Properties
+ */
+function getGitHubToken() {
+  if (CONFIG.GITHUB && CONFIG.GITHUB.TOKEN && CONFIG.GITHUB.TOKEN.trim()) {
+    return CONFIG.GITHUB.TOKEN.trim();
+  }
+  var props = PropertiesService.getScriptProperties();
+  return props.getProperty('GITHUB_TOKEN') || '';
+}
+
+/**
+ * Main Sync Function: Reads Sheet, Formats JSON, Commits to GitHub
+ */
+function syncToGitHub() {
+  var token = getGitHubToken();
+  if (!token) {
+    var errorMsg = 'GitHub Token missing! Please set CONFIG.GITHUB.TOKEN in Code.gs ' +
+                   'or save GITHUB_TOKEN in Project Settings > Script Properties.';
+    Logger.log('❌ ' + errorMsg);
+    try {
+      SpreadsheetApp.getUi().alert('Sync Error', errorMsg, SpreadsheetApp.getUi().ButtonSet.OK);
+    } catch (e) {}
+    return;
+  }
+
+  try {
+    var ss = getSpreadsheet();
+    Logger.log('📊 Extracting live data from spreadsheet: ' + ss.getName());
+    var data = getReportData(ss);
+
+    // Format as valid JS file: window.RAW_DATA = { ... };
+    var jsContent = '// Auto-generated from Google Sheet on ' + new Date().toISOString() + '\n' +
+                    'window.RAW_DATA = ' + JSON.stringify(data, null, 2) + ';\n';
+
+    var repo = CONFIG.GITHUB.REPO;
+    var branch = CONFIG.GITHUB.BRANCH || 'main';
+    var filePath = CONFIG.GITHUB.FILE_PATH || 'js/data.js';
+    var apiUrl = 'https://api.github.com/repos/' + repo + '/contents/' + filePath + '?ref=' + branch;
+
+    var headers = {
+      'Authorization': 'token ' + token,
+      'Accept': 'application/vnd.github.v3+json',
+      'User-Agent': 'Google-Apps-Script-RM-Performance-Sync'
+    };
+
+    // 1. Fetch current file SHA from GitHub
+    var currentSha = null;
+    try {
+      var getResponse = UrlFetchApp.fetch(apiUrl, {
+        method: 'get',
+        headers: headers,
+        muteHttpExceptions: true
+      });
+
+      var statusCode = getResponse.getResponseCode();
+      if (statusCode === 200) {
+        var fileMeta = JSON.parse(getResponse.getContentText());
+        currentSha = fileMeta.sha;
+      }
+    } catch (err) {
+      Logger.log('Could not get current file SHA (file might be newly created): ' + err.message);
+    }
+
+    // 2. Commit updated content
+    var commitPayload = {
+      message: 'Auto-sync live data from Google Sheet (' + new Date().toLocaleDateString('en-IN') + ')',
+      content: Utilities.base64Encode(jsContent, Utilities.Charset.UTF_8),
+      branch: branch
+    };
+
+    if (currentSha) {
+      commitPayload.sha = currentSha;
+    }
+
+    var putResponse = UrlFetchApp.fetch('https://api.github.com/repos/' + repo + '/contents/' + filePath, {
+      method: 'put',
+      headers: headers,
+      contentType: 'application/json',
+      payload: JSON.stringify(commitPayload),
+      muteHttpExceptions: true
+    });
+
+    var putCode = putResponse.getResponseCode();
+    if (putCode === 200 || putCode === 201) {
+      Logger.log('✅ SUCCESS: Live data synced directly to GitHub repository (' + repo + '@' + branch + ')');
+      try {
+        SpreadsheetApp.getActiveSpreadsheet().toast('Live data successfully pushed to GitHub dashboard!', 'Sync Complete', 6);
+      } catch (e) {}
+    } else {
+      var errBody = putResponse.getContentText();
+      Logger.log('❌ GitHub API Error (' + putCode + '): ' + errBody);
+      try {
+        SpreadsheetApp.getUi().alert('Sync Failed (' + putCode + ')', errBody, SpreadsheetApp.getUi().ButtonSet.OK);
+      } catch (e) {}
+    }
+
+  } catch (err) {
+    Logger.log('❌ Unexpected error during GitHub sync: ' + err.message);
+    try {
+      SpreadsheetApp.getUi().alert('Error', err.message, SpreadsheetApp.getUi().ButtonSet.OK);
+    } catch (e) {}
+  }
+}
+
+/**
+ * Sets up a recurring 1-hour time-driven trigger to keep the dashboard live
+ */
+function setupAutoSyncTrigger() {
+  // Clear any existing sync triggers
+  var triggers = ScriptApp.getProjectTriggers();
+  for (var i = 0; i < triggers.length; i++) {
+    if (triggers[i].getHandlerFunction() === 'syncToGitHub') {
+      ScriptApp.deleteTrigger(triggers[i]);
+    }
+  }
+
+  // Create an hourly trigger
+  ScriptApp.newTrigger('syncToGitHub')
+    .timeBased()
+    .everyHours(1)
+    .create();
+
+  Logger.log('✅ Hourly auto-sync trigger installed.');
+  try {
+    SpreadsheetApp.getActiveSpreadsheet().toast('Hourly auto-sync trigger created. Data will automatically sync every hour!', 'Trigger Active', 6);
+  } catch (e) {}
 }
