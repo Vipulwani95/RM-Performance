@@ -524,7 +524,7 @@
       // 4. Daily Talktime
       createSingleLineChart('chartProfTalktime', labels, [{
         label: 'Daily Talktime (min)',
-        data: dailyRecords.map(r => Number(r.talktime || 0)),
+        data: dailyRecords.map(r => Number(r.talktime !== undefined && r.talktime !== null ? r.talktime : (r.talk_time || 0))),
         borderColor: col,
         backgroundColor: conf.subtleColor,
         fill: true,
@@ -926,7 +926,7 @@
 
     monthsToRender.forEach((mKey, idx) => {
       const records = (dashboardData.rmDaily[activeRM] || []).filter(r => r.date && r.date.startsWith(mKey));
-      const totalTalk = records.reduce((acc, r) => acc + Number(r.talktime || 0), 0);
+      const totalTalk = records.reduce((acc, r) => acc + Number(r.talktime !== undefined && r.talktime !== null ? r.talktime : (r.talk_time || 0)), 0);
       const avgTalk = records.length > 0 ? totalTalk / records.length : 0;
 
       const wrapper = document.createElement('div');
@@ -945,7 +945,7 @@
       grid.style.gridTemplateColumns = 'repeat(auto-fill, minmax(36px, 1fr))';
 
       records.forEach(r => {
-        const mins = Number(r.talktime || 0);
+        const mins = Number(r.talktime !== undefined && r.talktime !== null ? r.talktime : (r.talk_time || 0));
         let lvl = 'hm-lvl-0';
         if (mins > 0 && mins < 30) lvl = 'hm-lvl-1';
         else if (mins >= 30 && mins < 60) lvl = 'hm-lvl-2';

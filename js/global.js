@@ -947,7 +947,7 @@
       grid.className = 'heatmap-grid';
 
       records.forEach(r => {
-        const mins = Number(r.talktime || 0);
+        const mins = Number(r.talktime !== undefined && r.talktime !== null ? r.talktime : (r.talk_time || 0));
         let lvlClass = 'hm-lvl-0';
         if (mins > 0 && mins < 30) lvlClass = 'hm-lvl-1';
         else if (mins >= 30 && mins < 60) lvlClass = 'hm-lvl-2';

@@ -349,6 +349,7 @@ function parseSingleRmDaily(sheet, tz) {
       other_connect: toNum(row[16]),
       onboardings: toNum(row[17]),
       active_ab: toNum(row[18]),
+      talktime: toNum(row[19]),
       talk_time: toNum(row[19]),
       // Column U (index 20) is skipped
       total_connected: toNum(row[21])

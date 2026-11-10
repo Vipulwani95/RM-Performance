@@ -221,7 +221,7 @@
         const d_other = Number(r.other_dial || 0);
 
         const dayDials = d_onboarding + d_active + d_reactive + d_consistent + d_acq + d_home + d_phone + d_other;
-        const dayTalk = Number(r.talktime || 0);
+        const dayTalk = Number(r.talktime !== undefined && r.talktime !== null ? r.talktime : (r.talk_time || 0));
 
         const sumConn = (Number(r.onboarding_connect || 0) + Number(r.active_connect || 0) +
           Number(r.reactive_connect || 0) + Number(r.consistent_connect || 0) +
