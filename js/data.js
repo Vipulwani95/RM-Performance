@@ -1,4 +1,4 @@
-// Auto-generated from Google Sheet on 2026-11-11T04:11:27.208Z
+// Auto-generated from Google Sheet on 2026-11-11T05:11:28.716Z
 window.RAW_DATA = {
   "rmDaily": {
     "Malik": [
@@ -29026,10 +29026,10 @@ window.RAW_DATA = {
         "other_connect": 11,
         "builder_dial": 0,
         "builder_connect": 0,
-        "onboardings": 5,
+        "onboardings": 12,
         "active_ab": 0,
-        "talktime": 78,
-        "talk_time": 78,
+        "talktime": 161,
+        "talk_time": 161,
         "total_dialed": 158,
         "total_connected": 61
       }
@@ -35342,7 +35342,7 @@ window.RAW_DATA = {
   ],
   "bucketAnalysis": {},
   "metadata": {
-    "lastUpdated": "2026-11-11T09:41:27",
+    "lastUpdated": "2026-11-11T10:41:28",
     "rmList": [
       "Malik",
       "Ramya",
