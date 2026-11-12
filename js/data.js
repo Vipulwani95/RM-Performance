@@ -1,4 +1,4 @@
-// Auto-generated from Google Sheet on 2026-11-12T13:13:07.108Z
+// Auto-generated from Google Sheet on 2026-11-12T14:12:09.457Z
 window.RAW_DATA = {
   "rmDaily": {
     "Malik": [
@@ -8614,6 +8614,33 @@ window.RAW_DATA = {
         "talk_time": 92,
         "total_dialed": 225,
         "total_connected": 66
+      },
+      {
+        "date": "2026-11-12",
+        "onboarding_dial": 26,
+        "onboarding_connect": 8,
+        "active_dial": 31,
+        "active_connect": 16,
+        "reactive_dial": 44,
+        "reactive_connect": 23,
+        "consistent_dial": 15,
+        "consistent_connect": 5,
+        "home_service_dial": 7,
+        "home_service_connect": 2,
+        "acquisition_dial": 54,
+        "acquisition_connect": 13,
+        "phone_dial": 0,
+        "phone_connect": 0,
+        "other_dial": 0,
+        "other_connect": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "onboardings": 0,
+        "active_ab": 0,
+        "talktime": 0,
+        "talk_time": 0,
+        "total_dialed": 177,
+        "total_connected": 67
       }
     ],
     "Ramya": [
@@ -16722,7 +16749,7 @@ window.RAW_DATA = {
         "onboarding_dial": 14,
         "onboarding_connect": 7,
         "active_dial": 23,
-        "active_connect": 0,
+        "active_connect": 13,
         "reactive_dial": 0,
         "reactive_connect": 0,
         "consistent_dial": 38,
@@ -16742,7 +16769,7 @@ window.RAW_DATA = {
         "talktime": 0,
         "talk_time": 0,
         "total_dialed": 205,
-        "total_connected": 51
+        "total_connected": 64
       }
     ],
     "Dipali": [
@@ -35531,7 +35558,7 @@ window.RAW_DATA = {
   ],
   "bucketAnalysis": {},
   "metadata": {
-    "lastUpdated": "2026-11-12T18:43:06",
+    "lastUpdated": "2026-11-12T19:42:09",
     "rmList": [
       "Malik",
       "Ramya",
