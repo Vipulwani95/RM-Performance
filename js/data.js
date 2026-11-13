@@ -1,4 +1,4 @@
-// Auto-generated from Google Sheet on 2026-11-13T11:11:45.967Z
+// Auto-generated from Google Sheet on 2026-11-13T12:11:58.156Z
 window.RAW_DATA = {
   "rmDaily": {
     "Malik": [
@@ -16789,14 +16789,14 @@ window.RAW_DATA = {
         "phone_connect": 0,
         "other_dial": 0,
         "other_connect": 0,
-        "builder_dial": 80,
-        "builder_connect": 0,
+        "builder_dial": 82,
+        "builder_connect": 23,
         "onboardings": 0,
         "active_ab": 0,
         "talktime": 0,
         "talk_time": 0,
-        "total_dialed": 187,
-        "total_connected": 50
+        "total_dialed": 189,
+        "total_connected": 73
       }
     ],
     "Dipali": [
@@ -29308,7 +29308,7 @@ window.RAW_DATA = {
         "onboarding_dial": 18,
         "onboarding_connect": 10,
         "active_dial": 16,
-        "active_connect": 0,
+        "active_connect": 7,
         "reactive_dial": 0,
         "reactive_connect": 0,
         "consistent_dial": 0,
@@ -29323,12 +29323,12 @@ window.RAW_DATA = {
         "other_connect": 0,
         "builder_dial": 0,
         "builder_connect": 0,
-        "onboardings": 0,
+        "onboardings": 2,
         "active_ab": 0,
-        "talktime": 0,
-        "talk_time": 0,
+        "talktime": 114,
+        "talk_time": 114,
         "total_dialed": 175,
-        "total_connected": 44
+        "total_connected": 51
       }
     ],
     "Anand": [
@@ -35639,7 +35639,7 @@ window.RAW_DATA = {
   ],
   "bucketAnalysis": {},
   "metadata": {
-    "lastUpdated": "2026-11-13T16:41:45",
+    "lastUpdated": "2026-11-13T17:41:58",
     "rmList": [
       "Malik",
       "Ramya",
