@@ -1,4 +1,4 @@
-// Auto-generated from Google Sheet on 2026-11-13T05:11:54.036Z
+// Auto-generated from Google Sheet on 2026-11-13T06:11:40.131Z
 window.RAW_DATA = {
   "rmDaily": {
     "Malik": [
@@ -16738,7 +16738,7 @@ window.RAW_DATA = {
         "builder_dial": 0,
         "builder_connect": 0,
         "onboardings": 12,
-        "active_ab": 2,
+        "active_ab": 14,
         "talktime": 78,
         "talk_time": 78,
         "total_dialed": 150,
@@ -16753,7 +16753,7 @@ window.RAW_DATA = {
         "reactive_dial": 0,
         "reactive_connect": 0,
         "consistent_dial": 38,
-        "consistent_connect": 0,
+        "consistent_connect": 11,
         "home_service_dial": 4,
         "home_service_connect": 1,
         "acquisition_dial": 126,
@@ -16764,12 +16764,39 @@ window.RAW_DATA = {
         "other_connect": 0,
         "builder_dial": 0,
         "builder_connect": 0,
+        "onboardings": 13,
+        "active_ab": 6,
+        "talktime": 97,
+        "talk_time": 97,
+        "total_dialed": 205,
+        "total_connected": 75
+      },
+      {
+        "date": "2026-11-13",
+        "onboarding_dial": 10,
+        "onboarding_connect": 3,
+        "active_dial": 0,
+        "active_connect": 0,
+        "reactive_dial": 0,
+        "reactive_connect": 0,
+        "consistent_dial": 0,
+        "consistent_connect": 0,
+        "home_service_dial": 0,
+        "home_service_connect": 0,
+        "acquisition_dial": 0,
+        "acquisition_connect": 0,
+        "phone_dial": 0,
+        "phone_connect": 0,
+        "other_dial": 0,
+        "other_connect": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
         "talktime": 0,
         "talk_time": 0,
-        "total_dialed": 205,
-        "total_connected": 64
+        "total_dialed": 10,
+        "total_connected": 3
       }
     ],
     "Dipali": [
@@ -35558,7 +35585,7 @@ window.RAW_DATA = {
   ],
   "bucketAnalysis": {},
   "metadata": {
-    "lastUpdated": "2026-11-13T10:41:54",
+    "lastUpdated": "2026-11-13T11:41:40",
     "rmList": [
       "Malik",
       "Ramya",
