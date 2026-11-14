@@ -1,4 +1,4 @@
-// Auto-generated from Google Sheet on 2026-11-14T06:11:30.014Z
+// Auto-generated from Google Sheet on 2026-11-14T07:11:26.574Z
 window.RAW_DATA = {
   "rmDaily": {
     "Malik": [
@@ -16774,11 +16774,11 @@ window.RAW_DATA = {
       {
         "date": "2026-11-13",
         "onboarding_dial": 10,
-        "onboarding_connect": 3,
+        "onboarding_connect": 6,
         "active_dial": 19,
         "active_connect": 7,
-        "reactive_dial": 0,
-        "reactive_connect": 0,
+        "reactive_dial": 15,
+        "reactive_connect": 8,
         "consistent_dial": 0,
         "consistent_connect": 0,
         "home_service_dial": 1,
@@ -16793,10 +16793,10 @@ window.RAW_DATA = {
         "builder_connect": 23,
         "onboardings": 15,
         "active_ab": 7,
-        "talktime": 0,
-        "talk_time": 0,
-        "total_dialed": 208,
-        "total_connected": 80
+        "talktime": 116,
+        "talk_time": 116,
+        "total_dialed": 223,
+        "total_connected": 91
       }
     ],
     "Dipali": [
@@ -29329,6 +29329,33 @@ window.RAW_DATA = {
         "talk_time": 114,
         "total_dialed": 175,
         "total_connected": 51
+      },
+      {
+        "date": "2026-11-14",
+        "onboarding_dial": 0,
+        "onboarding_connect": 0,
+        "active_dial": 0,
+        "active_connect": 0,
+        "reactive_dial": 0,
+        "reactive_connect": 0,
+        "consistent_dial": 0,
+        "consistent_connect": 0,
+        "home_service_dial": 0,
+        "home_service_connect": 0,
+        "acquisition_dial": 0,
+        "acquisition_connect": 0,
+        "phone_dial": 1,
+        "phone_connect": 1,
+        "other_dial": 38,
+        "other_connect": 15,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "onboardings": 0,
+        "active_ab": 0,
+        "talktime": 22,
+        "talk_time": 22,
+        "total_dialed": 39,
+        "total_connected": 16
       }
     ],
     "Anand": [
@@ -35639,7 +35666,7 @@ window.RAW_DATA = {
   ],
   "bucketAnalysis": {},
   "metadata": {
-    "lastUpdated": "2026-11-14T11:41:30",
+    "lastUpdated": "2026-11-14T12:41:26",
     "rmList": [
       "Malik",
       "Ramya",
