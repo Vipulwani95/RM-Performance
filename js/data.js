@@ -1,4 +1,4 @@
-// Auto-generated from Google Sheet on 2026-11-14T10:11:45.141Z
+// Auto-generated from Google Sheet on 2026-11-14T11:11:30.797Z
 window.RAW_DATA = {
   "rmDaily": {
     "Malik": [
@@ -16801,16 +16801,16 @@ window.RAW_DATA = {
       {
         "date": "2026-11-14",
         "onboarding_dial": 14,
-        "onboarding_connect": 0,
+        "onboarding_connect": 8,
         "active_dial": 0,
         "active_connect": 0,
         "reactive_dial": 0,
         "reactive_connect": 0,
-        "consistent_dial": 0,
-        "consistent_connect": 0,
-        "home_service_dial": 0,
-        "home_service_connect": 0,
-        "acquisition_dial": 0,
+        "consistent_dial": 10,
+        "consistent_connect": 4,
+        "home_service_dial": 1,
+        "home_service_connect": 1,
+        "acquisition_dial": 48,
         "acquisition_connect": 0,
         "phone_dial": 0,
         "phone_connect": 0,
@@ -16822,8 +16822,8 @@ window.RAW_DATA = {
         "active_ab": 0,
         "talktime": 0,
         "talk_time": 0,
-        "total_dialed": 14,
-        "total_connected": 0
+        "total_dialed": 73,
+        "total_connected": 13
       }
     ],
     "Dipali": [
@@ -29359,10 +29359,10 @@ window.RAW_DATA = {
       },
       {
         "date": "2026-11-14",
-        "onboarding_dial": 0,
-        "onboarding_connect": 0,
-        "active_dial": 0,
-        "active_connect": 0,
+        "onboarding_dial": 8,
+        "onboarding_connect": 4,
+        "active_dial": 16,
+        "active_connect": 6,
         "reactive_dial": 0,
         "reactive_connect": 0,
         "consistent_dial": 0,
@@ -29379,10 +29379,10 @@ window.RAW_DATA = {
         "builder_connect": 0,
         "onboardings": 0,
         "active_ab": 0,
-        "talktime": 22,
-        "talk_time": 22,
-        "total_dialed": 87,
-        "total_connected": 37
+        "talktime": 70,
+        "talk_time": 70,
+        "total_dialed": 111,
+        "total_connected": 47
       }
     ],
     "Anand": [
@@ -35693,7 +35693,7 @@ window.RAW_DATA = {
   ],
   "bucketAnalysis": {},
   "metadata": {
-    "lastUpdated": "2026-11-14T15:41:45",
+    "lastUpdated": "2026-11-14T16:41:30",
     "rmList": [
       "Malik",
       "Ramya",
