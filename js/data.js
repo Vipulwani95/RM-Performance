@@ -1,4 +1,4 @@
-// Auto-generated from Google Sheet on 2026-11-18T06:11:33.887Z
+// Auto-generated from Google Sheet on 2026-11-18T07:11:27.892Z
 window.RAW_DATA = {
   "rmDaily": {
     "Malik": [
@@ -17040,6 +17040,33 @@ window.RAW_DATA = {
         "talk_time": 78,
         "total_dialed": 117,
         "total_connected": 47
+      },
+      {
+        "date": "2026-11-18",
+        "onboarding_dial": 0,
+        "onboarding_connect": 0,
+        "active_dial": 0,
+        "active_connect": 0,
+        "reactive_dial": 0,
+        "reactive_connect": 0,
+        "consistent_dial": 0,
+        "consistent_connect": 0,
+        "home_service_dial": 47,
+        "home_service_connect": 21,
+        "acquisition_dial": 0,
+        "acquisition_connect": 0,
+        "phone_dial": 0,
+        "phone_connect": 0,
+        "other_dial": 0,
+        "other_connect": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "onboardings": 0,
+        "active_ab": 0,
+        "talktime": 0,
+        "talk_time": 0,
+        "total_dialed": 47,
+        "total_connected": 21
       }
     ],
     "Dipali": [
@@ -29977,6 +30004,33 @@ window.RAW_DATA = {
         "talk_time": 91,
         "total_dialed": 166,
         "total_connected": 56
+      },
+      {
+        "date": "2026-11-18",
+        "onboarding_dial": 0,
+        "onboarding_connect": 0,
+        "active_dial": 0,
+        "active_connect": 0,
+        "reactive_dial": 0,
+        "reactive_connect": 0,
+        "consistent_dial": 0,
+        "consistent_connect": 0,
+        "home_service_dial": 0,
+        "home_service_connect": 0,
+        "acquisition_dial": 56,
+        "acquisition_connect": 15,
+        "phone_dial": 0,
+        "phone_connect": 0,
+        "other_dial": 0,
+        "other_connect": 0,
+        "builder_dial": 0,
+        "builder_connect": 0,
+        "onboardings": 2,
+        "active_ab": 0,
+        "talktime": 38,
+        "talk_time": 38,
+        "total_dialed": 56,
+        "total_connected": 15
       }
     ],
     "Anand": [
@@ -36665,7 +36719,7 @@ window.RAW_DATA = {
   ],
   "bucketAnalysis": {},
   "metadata": {
-    "lastUpdated": "2026-11-18T11:41:33",
+    "lastUpdated": "2026-11-18T12:41:27",
     "rmList": [
       "Malik",
       "Ramya",
