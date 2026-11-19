@@ -507,9 +507,12 @@ function parseComparisonReports(sheets) {
 
       return {
         total_leads: total,
+        totalLeads: total,
         workable_leads: workable,
+        workableLeads: workable,
         conversion: conv,
         conversion_pct: convPct,
+        conversionPct: convPct,
         projection: proj
       };
     };

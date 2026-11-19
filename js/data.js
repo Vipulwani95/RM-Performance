@@ -1,4 +1,4 @@
-// Auto-generated from Google Sheet on 2026-11-19T04:11:26.556Z
+// Auto-generated from Google Sheet on 2026-11-19T07:11:57.969Z
 window.RAW_DATA = {
   "rmDaily": {
     "Malik": [
@@ -34350,35 +34350,50 @@ window.RAW_DATA = {
             "workable_leads": 35426,
             "conversion": 4810,
             "conversion_pct": "13.58%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 80574,
+            "workableLeads": 35426,
+            "conversionPct": "13.58%"
           },
           "curr": {
             "total_leads": 65011,
             "workable_leads": 31052,
             "conversion": 4619,
             "conversion_pct": "14.88%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 65011,
+            "workableLeads": 31052,
+            "conversionPct": "14.88%"
           },
           "target": {
             "total_leads": 76616,
             "workable_leads": 36595,
             "conversion": 5443,
             "conversion_pct": "14.88%",
-            "projection": 5727
+            "projection": 5727,
+            "totalLeads": 76616,
+            "workableLeads": 36595,
+            "conversionPct": "14.88%"
           },
           "jump": {
             "total_leads": "-19.3%",
             "workable_leads": "-12.3%",
             "conversion": "-4.0%",
             "conversion_pct": "1.30%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-19.3%",
+            "workableLeads": "-12.3%",
+            "conversionPct": "1.30%"
           },
           "delta": {
             "total_leads": "-15.1%",
             "workable_leads": "-15.1%",
             "conversion": "-15.1%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-15.1%",
+            "workableLeads": "-15.1%",
+            "conversionPct": "0.00%"
           }
         },
         "Dipali": {
@@ -34387,35 +34402,50 @@ window.RAW_DATA = {
             "workable_leads": 16306,
             "conversion": 2439,
             "conversion_pct": "14.96%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 36733,
+            "workableLeads": 16306,
+            "conversionPct": "14.96%"
           },
           "curr": {
             "total_leads": 39195,
             "workable_leads": 18717,
             "conversion": 2769,
             "conversion_pct": "14.79%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 39195,
+            "workableLeads": 18717,
+            "conversionPct": "14.79%"
           },
           "target": {
             "total_leads": 41380,
             "workable_leads": 19760,
             "conversion": 2923,
             "conversion_pct": "14.79%",
-            "projection": 3433
+            "projection": 3433,
+            "totalLeads": 41380,
+            "workableLeads": 19760,
+            "conversionPct": "14.79%"
           },
           "jump": {
             "total_leads": "6.7%",
             "workable_leads": "14.8%",
             "conversion": "13.5%",
             "conversion_pct": "-0.17%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "6.7%",
+            "workableLeads": "14.8%",
+            "conversionPct": "-0.17%"
           },
           "delta": {
             "total_leads": "-5.3%",
             "workable_leads": "-5.3%",
             "conversion": "-5.3%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-5.3%",
+            "workableLeads": "-5.3%",
+            "conversionPct": "0.00%"
           }
         },
         "Ramya": {
@@ -34424,35 +34454,50 @@ window.RAW_DATA = {
             "workable_leads": 7534,
             "conversion": 1163,
             "conversion_pct": "15.44%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 20690,
+            "workableLeads": 7534,
+            "conversionPct": "15.44%"
           },
           "curr": {
             "total_leads": 17936,
             "workable_leads": 6950,
             "conversion": 1179,
             "conversion_pct": "16.96%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 17936,
+            "workableLeads": 6950,
+            "conversionPct": "16.96%"
           },
           "target": {
             "total_leads": 18402,
             "workable_leads": 7130,
             "conversion": 1209,
             "conversion_pct": "16.96%",
-            "projection": 1461
+            "projection": 1461,
+            "totalLeads": 18402,
+            "workableLeads": 7130,
+            "conversionPct": "16.96%"
           },
           "jump": {
             "total_leads": "-13.3%",
             "workable_leads": "-7.8%",
             "conversion": "1.4%",
             "conversion_pct": "1.52%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-13.3%",
+            "workableLeads": "-7.8%",
+            "conversionPct": "1.52%"
           },
           "delta": {
             "total_leads": "-2.5%",
             "workable_leads": "-2.5%",
             "conversion": "-2.5%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-2.5%",
+            "workableLeads": "-2.5%",
+            "conversionPct": "0.00%"
           }
         },
         "Campaign": {
@@ -34461,35 +34506,50 @@ window.RAW_DATA = {
             "workable_leads": 22194,
             "conversion": 1041,
             "conversion_pct": "4.69%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 29263,
+            "workableLeads": 22194,
+            "conversionPct": "4.69%"
           },
           "curr": {
             "total_leads": 20318,
             "workable_leads": 16625,
             "conversion": 1001,
             "conversion_pct": "6.02%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 20318,
+            "workableLeads": 16625,
+            "conversionPct": "6.02%"
           },
           "target": {
             "total_leads": 16369,
             "workable_leads": 13393,
             "conversion": 806,
             "conversion_pct": "6.02%",
-            "projection": 1241
+            "projection": 1241,
+            "totalLeads": 16369,
+            "workableLeads": 13393,
+            "conversionPct": "6.02%"
           },
           "jump": {
             "total_leads": "-30.6%",
             "workable_leads": "-25.1%",
             "conversion": "-3.8%",
             "conversion_pct": "1.33%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-30.6%",
+            "workableLeads": "-25.1%",
+            "conversionPct": "1.33%"
           },
           "delta": {
             "total_leads": "24.1%",
             "workable_leads": "24.1%",
             "conversion": "24.2%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "24.1%",
+            "workableLeads": "24.1%",
+            "conversionPct": "0.00%"
           }
         }
       }
@@ -34541,35 +34601,50 @@ window.RAW_DATA = {
             "workable_leads": 30468,
             "conversion": 5603,
             "conversion_pct": "18.39%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 79525,
+            "workableLeads": 30468,
+            "conversionPct": "18.39%"
           },
           "curr": {
             "total_leads": 86686,
             "workable_leads": 37070,
             "conversion": 6108,
             "conversion_pct": "16.48%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 86686,
+            "workableLeads": 37070,
+            "conversionPct": "16.48%"
           },
           "target": {
             "total_leads": 98793,
             "workable_leads": 42247,
             "conversion": 6961,
             "conversion_pct": "16.48%",
-            "projection": 6108
+            "projection": 6108,
+            "totalLeads": 98793,
+            "workableLeads": 42247,
+            "conversionPct": "16.48%"
           },
           "jump": {
             "total_leads": "9.0%",
             "workable_leads": "21.7%",
             "conversion": "9.0%",
             "conversion_pct": "-1.91%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "9.0%",
+            "workableLeads": "21.7%",
+            "conversionPct": "-1.91%"
           },
           "delta": {
             "total_leads": "-12.3%",
             "workable_leads": "-12.3%",
             "conversion": "-12.3%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-12.3%",
+            "workableLeads": "-12.3%",
+            "conversionPct": "0.00%"
           }
         },
         "Dipali": {
@@ -34578,35 +34653,50 @@ window.RAW_DATA = {
             "workable_leads": 19352,
             "conversion": 2315,
             "conversion_pct": "11.96%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 42530,
+            "workableLeads": 19352,
+            "conversionPct": "11.96%"
           },
           "curr": {
             "total_leads": 48928,
             "workable_leads": 22365,
             "conversion": 3222,
             "conversion_pct": "14.41%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 48928,
+            "workableLeads": 22365,
+            "conversionPct": "14.41%"
           },
           "target": {
             "total_leads": 41109,
             "workable_leads": 18790,
             "conversion": 2707,
             "conversion_pct": "14.41%",
-            "projection": 3222
+            "projection": 3222,
+            "totalLeads": 41109,
+            "workableLeads": 18790,
+            "conversionPct": "14.41%"
           },
           "jump": {
             "total_leads": "15.0%",
             "workable_leads": "15.6%",
             "conversion": "39.2%",
             "conversion_pct": "2.45%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "15.0%",
+            "workableLeads": "15.6%",
+            "conversionPct": "2.45%"
           },
           "delta": {
             "total_leads": "19.0%",
             "workable_leads": "19.0%",
             "conversion": "19.0%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "19.0%",
+            "workableLeads": "19.0%",
+            "conversionPct": "0.00%"
           }
         },
         "Ramya": {
@@ -34615,35 +34705,50 @@ window.RAW_DATA = {
             "workable_leads": 8304,
             "conversion": 1297,
             "conversion_pct": "15.62%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 24500,
+            "workableLeads": 8304,
+            "conversionPct": "15.62%"
           },
           "curr": {
             "total_leads": 24938,
             "workable_leads": 9029,
             "conversion": 1350,
             "conversion_pct": "14.95%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 24938,
+            "workableLeads": 9029,
+            "conversionPct": "14.95%"
           },
           "target": {
             "total_leads": 28575,
             "workable_leads": 10346,
             "conversion": 1546,
             "conversion_pct": "14.95%",
-            "projection": 1350
+            "projection": 1350,
+            "totalLeads": 28575,
+            "workableLeads": 10346,
+            "conversionPct": "14.95%"
           },
           "jump": {
             "total_leads": "1.8%",
             "workable_leads": "8.7%",
             "conversion": "4.1%",
             "conversion_pct": "-0.67%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "1.8%",
+            "workableLeads": "8.7%",
+            "conversionPct": "-0.67%"
           },
           "delta": {
             "total_leads": "-12.7%",
             "workable_leads": "-12.7%",
             "conversion": "-12.7%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-12.7%",
+            "workableLeads": "-12.7%",
+            "conversionPct": "0.00%"
           }
         },
         "Campaign": {
@@ -34652,35 +34757,50 @@ window.RAW_DATA = {
             "workable_leads": 53168,
             "conversion": 2858,
             "conversion_pct": "5.38%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 83177,
+            "workableLeads": 53168,
+            "conversionPct": "5.38%"
           },
           "curr": {
             "total_leads": 42244,
             "workable_leads": 31597,
             "conversion": 1015,
             "conversion_pct": "3.21%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 42244,
+            "workableLeads": 31597,
+            "conversionPct": "3.21%"
           },
           "target": {
             "total_leads": 69747,
             "workable_leads": 52168,
             "conversion": 1675,
             "conversion_pct": "3.21%",
-            "projection": 1015
+            "projection": 1015,
+            "totalLeads": 69747,
+            "workableLeads": 52168,
+            "conversionPct": "3.21%"
           },
           "jump": {
             "total_leads": "-49.2%",
             "workable_leads": "-40.6%",
             "conversion": "-64.5%",
             "conversion_pct": "-2.17%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-49.2%",
+            "workableLeads": "-40.6%",
+            "conversionPct": "-2.17%"
           },
           "delta": {
             "total_leads": "-39.4%",
             "workable_leads": "-39.4%",
             "conversion": "-39.4%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-39.4%",
+            "workableLeads": "-39.4%",
+            "conversionPct": "0.00%"
           }
         }
       }
@@ -34732,35 +34852,50 @@ window.RAW_DATA = {
             "workable_leads": 37070,
             "conversion": 6108,
             "conversion_pct": "16.48%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 86686,
+            "workableLeads": 37070,
+            "conversionPct": "16.48%"
           },
           "curr": {
             "total_leads": 132656,
             "workable_leads": 49092,
             "conversion": 6391,
             "conversion_pct": "13.02%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 132656,
+            "workableLeads": 49092,
+            "conversionPct": "13.02%"
           },
           "target": {
             "total_leads": 144490,
             "workable_leads": 53471,
             "conversion": 6961,
             "conversion_pct": "13.02%",
-            "projection": 6391
+            "projection": 6391,
+            "totalLeads": 144490,
+            "workableLeads": 53471,
+            "conversionPct": "13.02%"
           },
           "jump": {
             "total_leads": "53.0%",
             "workable_leads": "32.4%",
             "conversion": "4.6%",
             "conversion_pct": "-3.46%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "53.0%",
+            "workableLeads": "32.4%",
+            "conversionPct": "-3.46%"
           },
           "delta": {
             "total_leads": "-8.2%",
             "workable_leads": "-8.2%",
             "conversion": "-8.2%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-8.2%",
+            "workableLeads": "-8.2%",
+            "conversionPct": "0.00%"
           }
         },
         "Dipali": {
@@ -34769,35 +34904,50 @@ window.RAW_DATA = {
             "workable_leads": 22365,
             "conversion": 3222,
             "conversion_pct": "14.41%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 48928,
+            "workableLeads": 22365,
+            "conversionPct": "14.41%"
           },
           "curr": {
             "total_leads": 48069,
             "workable_leads": 21133,
             "conversion": 3277,
             "conversion_pct": "15.51%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 48069,
+            "workableLeads": 21133,
+            "conversionPct": "15.51%"
           },
           "target": {
             "total_leads": 39709,
             "workable_leads": 17457,
             "conversion": 2707,
             "conversion_pct": "15.51%",
-            "projection": 3277
+            "projection": 3277,
+            "totalLeads": 39709,
+            "workableLeads": 17457,
+            "conversionPct": "15.51%"
           },
           "jump": {
             "total_leads": "-1.8%",
             "workable_leads": "-5.5%",
             "conversion": "1.7%",
             "conversion_pct": "1.10%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-1.8%",
+            "workableLeads": "-5.5%",
+            "conversionPct": "1.10%"
           },
           "delta": {
             "total_leads": "21.1%",
             "workable_leads": "21.1%",
             "conversion": "21.1%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "21.1%",
+            "workableLeads": "21.1%",
+            "conversionPct": "0.00%"
           }
         },
         "Ramya": {
@@ -34806,35 +34956,50 @@ window.RAW_DATA = {
             "workable_leads": 9029,
             "conversion": 1350,
             "conversion_pct": "14.95%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 24938,
+            "workableLeads": 9029,
+            "conversionPct": "14.95%"
           },
           "curr": {
             "total_leads": 27243,
             "workable_leads": 9284,
             "conversion": 1639,
             "conversion_pct": "17.65%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 27243,
+            "workableLeads": 9284,
+            "conversionPct": "17.65%"
           },
           "target": {
             "total_leads": 25712,
             "workable_leads": 8762,
             "conversion": 1546,
             "conversion_pct": "17.65%",
-            "projection": 1639
+            "projection": 1639,
+            "totalLeads": 25712,
+            "workableLeads": 8762,
+            "conversionPct": "17.65%"
           },
           "jump": {
             "total_leads": "9.2%",
             "workable_leads": "2.8%",
             "conversion": "21.4%",
             "conversion_pct": "2.70%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "9.2%",
+            "workableLeads": "2.8%",
+            "conversionPct": "2.70%"
           },
           "delta": {
             "total_leads": "6.0%",
             "workable_leads": "6.0%",
             "conversion": "6.0%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "6.0%",
+            "workableLeads": "6.0%",
+            "conversionPct": "0.00%"
           }
         },
         "Campaign": {
@@ -34843,35 +35008,50 @@ window.RAW_DATA = {
             "workable_leads": 31597,
             "conversion": 1015,
             "conversion_pct": "3.21%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 42244,
+            "workableLeads": 31597,
+            "conversionPct": "3.21%"
           },
           "curr": {
             "total_leads": 0,
             "workable_leads": 0,
             "conversion": 0,
             "conversion_pct": "0.00%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 0,
+            "workableLeads": 0,
+            "conversionPct": "0.00%"
           },
           "target": {
             "total_leads": 0,
             "workable_leads": 0,
             "conversion": 1675,
             "conversion_pct": "0.00%",
-            "projection": 0
+            "projection": 0,
+            "totalLeads": 0,
+            "workableLeads": 0,
+            "conversionPct": "0.00%"
           },
           "jump": {
             "total_leads": "-100.0%",
             "workable_leads": "-100.0%",
             "conversion": "-100.0%",
             "conversion_pct": "-3.21%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-100.0%",
+            "workableLeads": "-100.0%",
+            "conversionPct": "-3.21%"
           },
           "delta": {
             "total_leads": "N/A",
             "workable_leads": "N/A",
             "conversion": "-100.0%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "N/A",
+            "workableLeads": "N/A",
+            "conversionPct": "0.00%"
           }
         }
       }
@@ -34923,35 +35103,50 @@ window.RAW_DATA = {
             "workable_leads": 49092,
             "conversion": 6391,
             "conversion_pct": "13.02%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 132656,
+            "workableLeads": 49092,
+            "conversionPct": "13.02%"
           },
           "curr": {
             "total_leads": 103442,
             "workable_leads": 42317,
             "conversion": 5624,
             "conversion_pct": "13.29%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 103442,
+            "workableLeads": 42317,
+            "conversionPct": "13.29%"
           },
           "target": {
             "total_leads": 128035,
             "workable_leads": 52378,
             "conversion": 6961,
             "conversion_pct": "13.29%",
-            "projection": 5624
+            "projection": 5624,
+            "totalLeads": 128035,
+            "workableLeads": 52378,
+            "conversionPct": "13.29%"
           },
           "jump": {
             "total_leads": "-22.0%",
             "workable_leads": "-13.8%",
             "conversion": "-12.0%",
             "conversion_pct": "0.27%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-22.0%",
+            "workableLeads": "-13.8%",
+            "conversionPct": "0.27%"
           },
           "delta": {
             "total_leads": "-19.2%",
             "workable_leads": "-19.2%",
             "conversion": "-19.2%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-19.2%",
+            "workableLeads": "-19.2%",
+            "conversionPct": "0.00%"
           }
         },
         "Dipali": {
@@ -34960,35 +35155,50 @@ window.RAW_DATA = {
             "workable_leads": 21133,
             "conversion": 3277,
             "conversion_pct": "15.51%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 48069,
+            "workableLeads": 21133,
+            "conversionPct": "15.51%"
           },
           "curr": {
             "total_leads": 44060,
             "workable_leads": 19337,
             "conversion": 2856,
             "conversion_pct": "14.77%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 44060,
+            "workableLeads": 19337,
+            "conversionPct": "14.77%"
           },
           "target": {
             "total_leads": 41763,
             "workable_leads": 18328,
             "conversion": 2707,
             "conversion_pct": "14.77%",
-            "projection": 2856
+            "projection": 2856,
+            "totalLeads": 41763,
+            "workableLeads": 18328,
+            "conversionPct": "14.77%"
           },
           "jump": {
             "total_leads": "-8.3%",
             "workable_leads": "-8.5%",
             "conversion": "-12.8%",
             "conversion_pct": "-0.74%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-8.3%",
+            "workableLeads": "-8.5%",
+            "conversionPct": "-0.74%"
           },
           "delta": {
             "total_leads": "5.5%",
             "workable_leads": "5.5%",
             "conversion": "5.5%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "5.5%",
+            "workableLeads": "5.5%",
+            "conversionPct": "0.00%"
           }
         },
         "Ramya": {
@@ -34997,35 +35207,50 @@ window.RAW_DATA = {
             "workable_leads": 9284,
             "conversion": 1639,
             "conversion_pct": "17.65%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 27243,
+            "workableLeads": 9284,
+            "conversionPct": "17.65%"
           },
           "curr": {
             "total_leads": 24635,
             "workable_leads": 9047,
             "conversion": 1360,
             "conversion_pct": "15.03%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 24635,
+            "workableLeads": 9047,
+            "conversionPct": "15.03%"
           },
           "target": {
             "total_leads": 28020,
             "workable_leads": 10290,
             "conversion": 1546,
             "conversion_pct": "15.03%",
-            "projection": 1360
+            "projection": 1360,
+            "totalLeads": 28020,
+            "workableLeads": 10290,
+            "conversionPct": "15.03%"
           },
           "jump": {
             "total_leads": "-9.6%",
             "workable_leads": "-2.6%",
             "conversion": "-17.0%",
             "conversion_pct": "-2.62%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-9.6%",
+            "workableLeads": "-2.6%",
+            "conversionPct": "-2.62%"
           },
           "delta": {
             "total_leads": "-12.1%",
             "workable_leads": "-12.1%",
             "conversion": "-12.0%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-12.1%",
+            "workableLeads": "-12.1%",
+            "conversionPct": "0.00%"
           }
         },
         "Campaign": {
@@ -35034,35 +35259,50 @@ window.RAW_DATA = {
             "workable_leads": 0,
             "conversion": 0,
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": 0,
+            "workableLeads": 0,
+            "conversionPct": "0.00%"
           },
           "curr": {
             "total_leads": 44942,
             "workable_leads": 32390,
             "conversion": 1517,
             "conversion_pct": "4.68%",
-            "projection": "Projection"
+            "projection": "Projection",
+            "totalLeads": 44942,
+            "workableLeads": 32390,
+            "conversionPct": "4.68%"
           },
           "target": {
             "total_leads": 49647,
             "workable_leads": 35781,
             "conversion": 1675,
             "conversion_pct": "4.68%",
-            "projection": 1517
+            "projection": 1517,
+            "totalLeads": 49647,
+            "workableLeads": 35781,
+            "conversionPct": "4.68%"
           },
           "jump": {
             "total_leads": "N/A",
             "workable_leads": "N/A",
             "conversion": "N/A",
             "conversion_pct": "4.68%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "N/A",
+            "workableLeads": "N/A",
+            "conversionPct": "4.68%"
           },
           "delta": {
             "total_leads": "-9.5%",
             "workable_leads": "-9.5%",
             "conversion": "-9.4%",
             "conversion_pct": "0.00%",
-            "projection": null
+            "projection": null,
+            "totalLeads": "-9.5%",
+            "workableLeads": "-9.5%",
+            "conversionPct": "0.00%"
           }
         }
       }
@@ -36790,11 +37030,11 @@ window.RAW_DATA = {
         "dialled": 142,
         "dialled_pct": 42.9,
         "connected": 27,
-        "connected_pct": 19.0,
+        "connected_pct": 19,
         "call_patch": 4,
         "sv_booked": 8,
         "sv_done": 2,
-        "sv_conversion": 25.0,
+        "sv_conversion": 25,
         "lead_to_sv": 0.6
       },
       {
@@ -36824,8 +37064,8 @@ window.RAW_DATA = {
         "call_patch": 4,
         "sv_booked": 2,
         "sv_done": 0,
-        "sv_conversion": 0.0,
-        "lead_to_sv": 0.0
+        "sv_conversion": 0,
+        "lead_to_sv": 0
       }
     ],
     "funnel_stages": [
@@ -36833,8 +37073,8 @@ window.RAW_DATA = {
         "stage": "1. Total Ingested Leads",
         "count": 2212,
         "users": 1800,
-        "pct_total": 100.0,
-        "step_conv": 100.0,
+        "pct_total": 100,
+        "step_conv": 100,
         "drop": 0,
         "color": "#1e3a8a",
         "desc": "Gross inbound leads received from Ambassador Club campaigns"
@@ -36864,7 +37104,7 @@ window.RAW_DATA = {
         "count": 74,
         "users": 74,
         "pct_total": 3.3,
-        "step_conv": 18.0,
+        "step_conv": 18,
         "drop": 337,
         "color": "#0d9488",
         "desc": "Leads with validated purchase interest, open follow-ups, or meeting sessions"
@@ -36884,7 +37124,7 @@ window.RAW_DATA = {
         "count": 48,
         "users": 48,
         "pct_total": 2.2,
-        "step_conv": 80.0,
+        "step_conv": 80,
         "drop": 12,
         "color": "#ca8a04",
         "desc": "Customer agreed and scheduled appointment for project site visit"
@@ -36904,7 +37144,7 @@ window.RAW_DATA = {
       {
         "name": "System Expired",
         "count": 799,
-        "pct_rej": 37.0,
+        "pct_rej": 37,
         "pct_tot": 36.1,
         "color": "#ef4444",
         "status": "System Auto-Expiry",
@@ -36913,7 +37153,7 @@ window.RAW_DATA = {
       {
         "name": "Uncontactable / Not Connected",
         "count": 669,
-        "pct_rej": 31.0,
+        "pct_rej": 31,
         "pct_tot": 30.2,
         "color": "#f97316",
         "status": "RNR / Unreachable",
@@ -36987,7 +37227,7 @@ window.RAW_DATA = {
         "reason": "Not Contactable / RNR",
         "category": "Uncontactable",
         "count": 552,
-        "pct": 25.0,
+        "pct": 25,
         "raw": "NOT_CONTACTABLE (530), Non Contactable (22)",
         "contact": "No (Unreachable)"
       },
@@ -37003,7 +37243,7 @@ window.RAW_DATA = {
         "reason": "Duplicate Lead",
         "category": "Duplicate / Transferred",
         "count": 133,
-        "pct": 6.0,
+        "pct": 6,
         "raw": "Duplicate Lead (133)",
         "contact": "No (De-dupe)"
       },
@@ -38337,7 +38577,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 20569.0,
+        "el": 20569,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -38382,7 +38622,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 1526.0,
+        "el": 1526,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -38427,7 +38667,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 252314.0,
+        "el": 252314,
         "rm": ""
       },
       {
@@ -38457,7 +38697,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "SV Done",
         "cp": 0,
-        "el": 4509.0,
+        "el": 4509,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -38472,7 +38712,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 1377.0,
+        "el": 1377,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -38487,7 +38727,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 1730.0,
+        "el": 1730,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -38502,7 +38742,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2517.0,
+        "el": 2517,
         "rm": "bhavya.shree@nobroker.in"
       },
       {
@@ -38517,7 +38757,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 9702.0,
+        "el": 9702,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -38547,7 +38787,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -38577,7 +38817,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 2694.0,
+        "el": 2694,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -38637,7 +38877,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 30420.0,
+        "el": 30420,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -38667,7 +38907,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 867.0,
+        "el": 867,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -38697,7 +38937,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 336.0,
+        "el": 336,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -38757,7 +38997,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1567.0,
+        "el": 1567,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -38772,7 +39012,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 2734.0,
+        "el": 2734,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -38787,7 +39027,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1301.0,
+        "el": 1301,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -38817,7 +39057,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1061.0,
+        "el": 1061,
         "rm": "Satya.choudhary@nobroker.in"
       },
       {
@@ -38862,7 +39102,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1796.0,
+        "el": 1796,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -38892,7 +39132,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 51471.0,
+        "el": 51471,
         "rm": ""
       },
       {
@@ -38922,7 +39162,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 5946.0,
+        "el": 5946,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -38967,7 +39207,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 43046.0,
+        "el": 43046,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -39012,7 +39252,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 336.0,
+        "el": 336,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -39027,7 +39267,7 @@ window.RAW_DATA = {
         "r": "Broker / Channel Partner",
         "sv": "",
         "cp": 0,
-        "el": 1487.0,
+        "el": 1487,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -39057,7 +39297,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263422.0,
+        "el": 263422,
         "rm": ""
       },
       {
@@ -39102,7 +39342,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 1472.0,
+        "el": 1472,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -39132,7 +39372,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 23197.0,
+        "el": 23197,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -39147,7 +39387,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 5925.0,
+        "el": 5925,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -39192,7 +39432,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 1179.0,
+        "el": 1179,
         "rm": "bittu.kumar2@nobroker.in"
       },
       {
@@ -39222,7 +39462,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 11708.0,
+        "el": 11708,
         "rm": ""
       },
       {
@@ -39252,7 +39492,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 9943.0,
+        "el": 9943,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -39357,7 +39597,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 103825.0,
+        "el": 103825,
         "rm": ""
       },
       {
@@ -39387,7 +39627,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263424.0,
+        "el": 263424,
         "rm": ""
       },
       {
@@ -39417,7 +39657,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 1746.0,
+        "el": 1746,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -39462,7 +39702,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 4823.0,
+        "el": 4823,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -39477,7 +39717,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 5384.0,
+        "el": 5384,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -39492,7 +39732,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 4597.0,
+        "el": 4597,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -39507,7 +39747,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1058.0,
+        "el": 1058,
         "rm": "palash.mandle@nobroker.in"
       },
       {
@@ -39522,7 +39762,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 70792.0,
+        "el": 70792,
         "rm": ""
       },
       {
@@ -39537,7 +39777,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1280.0,
+        "el": 1280,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -39567,7 +39807,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 3232.0,
+        "el": 3232,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -39627,7 +39867,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 7202.0,
+        "el": 7202,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -39657,7 +39897,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 908.0,
+        "el": 908,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -39777,7 +40017,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263646.0,
+        "el": 263646,
         "rm": ""
       },
       {
@@ -39822,7 +40062,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1741.0,
+        "el": 1741,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -39852,7 +40092,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "pavan.kumar3@nobroker.in"
       },
       {
@@ -39897,7 +40137,7 @@ window.RAW_DATA = {
         "r": "Property Type / Config Mismatch (Plot/Villa/BHK)",
         "sv": "",
         "cp": 0,
-        "el": 1792.0,
+        "el": 1792,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -39912,7 +40152,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 266538.0,
+        "el": 266538,
         "rm": ""
       },
       {
@@ -39942,7 +40182,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 54587.0,
+        "el": 54587,
         "rm": ""
       },
       {
@@ -39957,7 +40197,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "SV Done",
         "cp": 0,
-        "el": 9997.0,
+        "el": 9997,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -39972,7 +40212,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4448.0,
+        "el": 4448,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -39987,7 +40227,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "SV Done",
         "cp": 0,
-        "el": 51800.0,
+        "el": 51800,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -40002,7 +40242,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 3035.0,
+        "el": 3035,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -40047,7 +40287,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 12075.0,
+        "el": 12075,
         "rm": "thota.krishna@nobroker.in"
       },
       {
@@ -40062,7 +40302,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 2939.0,
+        "el": 2939,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -40077,7 +40317,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 2852.0,
+        "el": 2852,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -40092,7 +40332,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -40107,7 +40347,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 1959.0,
+        "el": 1959,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -40122,7 +40362,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1338.0,
+        "el": 1338,
         "rm": ""
       },
       {
@@ -40137,7 +40377,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 1635.0,
+        "el": 1635,
         "rm": "rayan.ahmed@nobroker.in"
       },
       {
@@ -40152,7 +40392,7 @@ window.RAW_DATA = {
         "r": "Property Type / Config Mismatch (Plot/Villa/BHK)",
         "sv": "",
         "cp": 0,
-        "el": 373.0,
+        "el": 373,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -40182,7 +40422,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 9975.0,
+        "el": 9975,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -40302,7 +40542,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 336.0,
+        "el": 336,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -40317,7 +40557,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 3232.0,
+        "el": 3232,
         "rm": "manjula.bai@nobroker.in"
       },
       {
@@ -40347,7 +40587,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -40362,7 +40602,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263427.0,
+        "el": 263427,
         "rm": ""
       },
       {
@@ -40392,7 +40632,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 21997.0,
+        "el": 21997,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -40422,7 +40662,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -40437,7 +40677,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -40497,7 +40737,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1248.0,
+        "el": 1248,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -40527,7 +40767,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -40557,7 +40797,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 0,
-        "el": 11751.0,
+        "el": 11751,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -40572,7 +40812,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 10070.0,
+        "el": 10070,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -40632,7 +40872,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 906.0,
+        "el": 906,
         "rm": "poornima.basavaraj@nobroker.in"
       },
       {
@@ -40662,7 +40902,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2934.0,
+        "el": 2934,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -40677,7 +40917,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "SV Done",
         "cp": 0,
-        "el": 1719.0,
+        "el": 1719,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -40707,7 +40947,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 336.0,
+        "el": 336,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -40737,7 +40977,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 33335.0,
+        "el": 33335,
         "rm": "soumyaswarup.naik@nobroker.in"
       },
       {
@@ -40752,7 +40992,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 6942.0,
+        "el": 6942,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -40782,7 +41022,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 265151.0,
+        "el": 265151,
         "rm": ""
       },
       {
@@ -40812,7 +41052,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 361.0,
+        "el": 361,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -40842,7 +41082,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 12115.0,
+        "el": 12115,
         "rm": "faizan.shariff@nobroker.in"
       },
       {
@@ -40887,7 +41127,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 4530.0,
+        "el": 4530,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -40932,7 +41172,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1303.0,
+        "el": 1303,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -40962,7 +41202,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 15809.0,
+        "el": 15809,
         "rm": "kratika.sarawgi@nobroker.in"
       },
       {
@@ -40977,7 +41217,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 340.0,
+        "el": 340,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -40992,7 +41232,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1435.0,
+        "el": 1435,
         "rm": ""
       },
       {
@@ -41007,7 +41247,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1158.0,
+        "el": 1158,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -41022,7 +41262,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 134032.0,
+        "el": 134032,
         "rm": ""
       },
       {
@@ -41037,7 +41277,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -41052,7 +41292,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 1254.0,
+        "el": 1254,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -41082,7 +41322,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8429.0,
+        "el": 8429,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -41097,7 +41337,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1047.0,
+        "el": 1047,
         "rm": "adith.kumar@nobroker.in"
       },
       {
@@ -41127,7 +41367,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -41142,7 +41382,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 6014.0,
+        "el": 6014,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -41157,7 +41397,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 1,
-        "el": 30435.0,
+        "el": 30435,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -41172,7 +41412,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 5736.0,
+        "el": 5736,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -41187,7 +41427,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 45459.0,
+        "el": 45459,
         "rm": ""
       },
       {
@@ -41202,7 +41442,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1176.0,
+        "el": 1176,
         "rm": "sangamesh.nimbalagundi@nobroker.in"
       },
       {
@@ -41217,7 +41457,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 31827.0,
+        "el": 31827,
         "rm": "rupa.puttha@nobroker.in"
       },
       {
@@ -41262,7 +41502,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1296.0,
+        "el": 1296,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -41292,7 +41532,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 15177.0,
+        "el": 15177,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -41307,7 +41547,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 5948.0,
+        "el": 5948,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -41337,7 +41577,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 9079.0,
+        "el": 9079,
         "rm": "yalapula.aruna@nobroker.in"
       },
       {
@@ -41352,7 +41592,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 7449.0,
+        "el": 7449,
         "rm": "kratika.sarawgi@nobroker.in"
       },
       {
@@ -41382,7 +41622,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 3107.0,
+        "el": 3107,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -41427,7 +41667,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 63761.0,
+        "el": 63761,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -41487,7 +41727,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 1432.0,
+        "el": 1432,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -41562,7 +41802,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 3225.0,
+        "el": 3225,
         "rm": "bheemambika.badiger1@nobroker.in"
       },
       {
@@ -41592,7 +41832,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 3186.0,
+        "el": 3186,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -41682,7 +41922,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 355.0,
+        "el": 355,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -41742,7 +41982,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 71623.0,
+        "el": 71623,
         "rm": ""
       },
       {
@@ -41757,7 +41997,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4431.0,
+        "el": 4431,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -41787,7 +42027,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 57398.0,
+        "el": 57398,
         "rm": ""
       },
       {
@@ -41817,7 +42057,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 7535.0,
+        "el": 7535,
         "rm": "rangeela.k@nobroker.in"
       },
       {
@@ -41847,7 +42087,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 4057.0,
+        "el": 4057,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -41877,7 +42117,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 8877.0,
+        "el": 8877,
         "rm": "ajaysingh.k@nobroker.in"
       },
       {
@@ -41982,7 +42222,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 344.0,
+        "el": 344,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -41997,7 +42237,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1573.0,
+        "el": 1573,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -42027,7 +42267,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -42072,7 +42312,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8921.0,
+        "el": 8921,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -42087,7 +42327,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 38834.0,
+        "el": 38834,
         "rm": ""
       },
       {
@@ -42132,7 +42372,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3160.0,
+        "el": 3160,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -42192,7 +42432,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 1597.0,
+        "el": 1597,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -42207,7 +42447,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 794.0,
+        "el": 794,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -42222,7 +42462,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 11143.0,
+        "el": 11143,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -42237,7 +42477,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1292.0,
+        "el": 1292,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -42252,7 +42492,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -42297,7 +42537,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -42342,7 +42582,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2999.0,
+        "el": 2999,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -42372,7 +42612,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 2810.0,
+        "el": 2810,
         "rm": "ajaysingh.k@nobroker.in"
       },
       {
@@ -42402,7 +42642,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 4673.0,
+        "el": 4673,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -42447,7 +42687,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4702.0,
+        "el": 4702,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -42492,7 +42732,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1315.0,
+        "el": 1315,
         "rm": "shweta.dhavali@nobroker.in"
       },
       {
@@ -42522,7 +42762,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 16141.0,
+        "el": 16141,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -42582,7 +42822,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1778.0,
+        "el": 1778,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -42597,7 +42837,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1971.0,
+        "el": 1971,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -42627,7 +42867,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 70641.0,
+        "el": 70641,
         "rm": ""
       },
       {
@@ -42642,7 +42882,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1836.0,
+        "el": 1836,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -42672,7 +42912,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 77940.0,
+        "el": 77940,
         "rm": ""
       },
       {
@@ -42717,7 +42957,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 20039.0,
+        "el": 20039,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -42747,7 +42987,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263416.0,
+        "el": 263416,
         "rm": ""
       },
       {
@@ -42837,7 +43077,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 336.0,
+        "el": 336,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -42912,7 +43152,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 17116.0,
+        "el": 17116,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -42957,7 +43197,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 36108.0,
+        "el": 36108,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -42972,7 +43212,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -43047,7 +43287,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 337.0,
+        "el": 337,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -43062,7 +43302,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 1,
-        "el": 13351.0,
+        "el": 13351,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -43152,7 +43392,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1416.0,
+        "el": 1416,
         "rm": "poornima.basavaraj@nobroker.in"
       },
       {
@@ -43167,7 +43407,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 893.0,
+        "el": 893,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -43182,7 +43422,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "p.bhuvaneshwaran@nobroker.in"
       },
       {
@@ -43197,7 +43437,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -43227,7 +43467,7 @@ window.RAW_DATA = {
         "r": "Property Type / Config Mismatch (Plot/Villa/BHK)",
         "sv": "",
         "cp": 0,
-        "el": 344.0,
+        "el": 344,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -43242,7 +43482,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 620.0,
+        "el": 620,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -43257,7 +43497,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1328.0,
+        "el": 1328,
         "rm": "tasmiya.banu1@nobroker.in"
       },
       {
@@ -43287,7 +43527,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 17164.0,
+        "el": 17164,
         "rm": "pavan.kumar3@nobroker.in"
       },
       {
@@ -43317,7 +43557,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 1581.0,
+        "el": 1581,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -43377,7 +43617,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 18568.0,
+        "el": 18568,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -43392,7 +43632,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1706.0,
+        "el": 1706,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -43407,7 +43647,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2751.0,
+        "el": 2751,
         "rm": ""
       },
       {
@@ -43422,7 +43662,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2001.0,
+        "el": 2001,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -43437,7 +43677,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 29547.0,
+        "el": 29547,
         "rm": "sanjay.malviya@nobroker.in"
       },
       {
@@ -43512,7 +43752,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 3211.0,
+        "el": 3211,
         "rm": "palash.mandle@nobroker.in"
       },
       {
@@ -43557,7 +43797,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 1,
-        "el": 4598.0,
+        "el": 4598,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -43572,7 +43812,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 376.0,
+        "el": 376,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -43587,7 +43827,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2942.0,
+        "el": 2942,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -43647,7 +43887,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 43025.0,
+        "el": 43025,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -43677,7 +43917,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 7181.0,
+        "el": 7181,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -43692,7 +43932,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 12951.0,
+        "el": 12951,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -43707,7 +43947,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 3355.0,
+        "el": 3355,
         "rm": "bheemambika.badiger1@nobroker.in"
       },
       {
@@ -43737,7 +43977,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 29142.0,
+        "el": 29142,
         "rm": "sanjay.malviya@nobroker.in"
       },
       {
@@ -43827,7 +44067,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 8479.0,
+        "el": 8479,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -43857,7 +44097,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 6114.0,
+        "el": 6114,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -43872,7 +44112,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -43902,7 +44142,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 7617.0,
+        "el": 7617,
         "rm": "kratika.sarawgi@nobroker.in"
       },
       {
@@ -43947,7 +44187,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 9944.0,
+        "el": 9944,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -44037,7 +44277,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 349.0,
+        "el": 349,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -44052,7 +44292,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 4573.0,
+        "el": 4573,
         "rm": "fahim.shaikh@nobroker.in"
       },
       {
@@ -44067,7 +44307,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 374.0,
+        "el": 374,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -44097,7 +44337,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 3632.0,
+        "el": 3632,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -44112,7 +44352,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 6072.0,
+        "el": 6072,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -44127,7 +44367,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 337.0,
+        "el": 337,
         "rm": "mahesh.7@nobroker.in"
       },
       {
@@ -44142,7 +44382,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 6031.0,
+        "el": 6031,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -44172,7 +44412,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 266533.0,
+        "el": 266533,
         "rm": ""
       },
       {
@@ -44217,7 +44457,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 16157.0,
+        "el": 16157,
         "rm": "bhavya.shree@nobroker.in"
       },
       {
@@ -44232,7 +44472,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 2978.0,
+        "el": 2978,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -44247,7 +44487,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8919.0,
+        "el": 8919,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -44262,7 +44502,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -44277,7 +44517,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -44307,7 +44547,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 11444.0,
+        "el": 11444,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -44322,7 +44562,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 25841.0,
+        "el": 25841,
         "rm": ""
       },
       {
@@ -44337,7 +44577,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1034.0,
+        "el": 1034,
         "rm": "niraj.wakulkar@nobroker.in"
       },
       {
@@ -44352,7 +44592,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 7565.0,
+        "el": 7565,
         "rm": "shweta.dhavali@nobroker.in"
       },
       {
@@ -44367,7 +44607,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1830.0,
+        "el": 1830,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -44427,7 +44667,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1551.0,
+        "el": 1551,
         "rm": "poornima.basavaraj@nobroker.in"
       },
       {
@@ -44442,7 +44682,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 4400.0,
+        "el": 4400,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -44472,7 +44712,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 4018.0,
+        "el": 4018,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -44517,7 +44757,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 2940.0,
+        "el": 2940,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -44547,7 +44787,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4176.0,
+        "el": 4176,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -44562,7 +44802,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 73190.0,
+        "el": 73190,
         "rm": "sanjay.malviya@nobroker.in"
       },
       {
@@ -44577,7 +44817,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 4165.0,
+        "el": 4165,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -44652,7 +44892,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3230.0,
+        "el": 3230,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -44667,7 +44907,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 4541.0,
+        "el": 4541,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -44712,7 +44952,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 20265.0,
+        "el": 20265,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -44772,7 +45012,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 11956.0,
+        "el": 11956,
         "rm": "kratika.sarawgi@nobroker.in"
       },
       {
@@ -44832,7 +45072,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "manoj.kumar12@nobroker.in"
       },
       {
@@ -44877,7 +45117,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8891.0,
+        "el": 8891,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -44907,7 +45147,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 30422.0,
+        "el": 30422,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -44937,7 +45177,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1228.0,
+        "el": 1228,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -44982,7 +45222,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -44997,7 +45237,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -45027,7 +45267,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 2975.0,
+        "el": 2975,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -45102,7 +45342,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1339.0,
+        "el": 1339,
         "rm": ""
       },
       {
@@ -45117,7 +45357,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "Cancelled",
         "cp": 1,
-        "el": 1371.0,
+        "el": 1371,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -45162,7 +45402,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 4676.0,
+        "el": 4676,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -45207,7 +45447,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4890.0,
+        "el": 4890,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -45252,7 +45492,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1056.0,
+        "el": 1056,
         "rm": "anshika.soni@nobroker.in"
       },
       {
@@ -45282,7 +45522,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 367.0,
+        "el": 367,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -45312,7 +45552,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 4505.0,
+        "el": 4505,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -45327,7 +45567,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2544.0,
+        "el": 2544,
         "rm": "kratika.sarawgi@nobroker.in"
       },
       {
@@ -45357,7 +45597,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 676.0,
+        "el": 676,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -45372,7 +45612,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 18998.0,
+        "el": 18998,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -45387,7 +45627,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4296.0,
+        "el": 4296,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -45432,7 +45672,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 651.0,
+        "el": 651,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -45477,7 +45717,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 1,
-        "el": 97850.0,
+        "el": 97850,
         "rm": ""
       },
       {
@@ -45537,7 +45777,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 7903.0,
+        "el": 7903,
         "rm": "harshit.garg2@nobroker.in"
       },
       {
@@ -45552,7 +45792,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 365.0,
+        "el": 365,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -45567,7 +45807,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -45597,7 +45837,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 82111.0,
+        "el": 82111,
         "rm": ""
       },
       {
@@ -45642,7 +45882,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 672.0,
+        "el": 672,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -45657,7 +45897,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 2979.0,
+        "el": 2979,
         "rm": "samata.pujari@nobroker.in"
       },
       {
@@ -45672,7 +45912,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 3317.0,
+        "el": 3317,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -45687,7 +45927,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 1125.0,
+        "el": 1125,
         "rm": "rayan.ahmed@nobroker.in"
       },
       {
@@ -45717,7 +45957,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 4423.0,
+        "el": 4423,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -45747,7 +45987,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -45882,7 +46122,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1586.0,
+        "el": 1586,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -45912,7 +46152,7 @@ window.RAW_DATA = {
         "r": "Property Type / Config Mismatch (Plot/Villa/BHK)",
         "sv": "",
         "cp": 0,
-        "el": 3276.0,
+        "el": 3276,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -45927,7 +46167,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 337.0,
+        "el": 337,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -45957,7 +46197,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8599.0,
+        "el": 8599,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -45972,7 +46212,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "SV Done",
         "cp": 0,
-        "el": 625.0,
+        "el": 625,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -46017,7 +46257,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -46062,7 +46302,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1777.0,
+        "el": 1777,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -46077,7 +46317,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 4520.0,
+        "el": 4520,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -46092,7 +46332,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1272.0,
+        "el": 1272,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -46137,7 +46377,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 338.0,
+        "el": 338,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -46212,7 +46452,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8570.0,
+        "el": 8570,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -46227,7 +46467,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4025.0,
+        "el": 4025,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -46242,7 +46482,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 352.0,
+        "el": 352,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -46257,7 +46497,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 17165.0,
+        "el": 17165,
         "rm": "rayan.ahmed@nobroker.in"
       },
       {
@@ -46272,7 +46512,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 15951.0,
+        "el": 15951,
         "rm": "pavan.kumar3@nobroker.in"
       },
       {
@@ -46287,7 +46527,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -46377,7 +46617,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 1398.0,
+        "el": 1398,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -46407,7 +46647,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 3265.0,
+        "el": 3265,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -46422,7 +46662,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 21920.0,
+        "el": 21920,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -46452,7 +46692,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8603.0,
+        "el": 8603,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -46542,7 +46782,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 20496.0,
+        "el": 20496,
         "rm": "aarav.garg@nobroker.in"
       },
       {
@@ -46557,7 +46797,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1698.0,
+        "el": 1698,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -46602,7 +46842,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 14910.0,
+        "el": 14910,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -46617,7 +46857,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1675.0,
+        "el": 1675,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -46647,7 +46887,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "SV Done",
         "cp": 0,
-        "el": 1660.0,
+        "el": 1660,
         "rm": "bittu.kumar2@nobroker.in"
       },
       {
@@ -46677,7 +46917,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 1171.0,
+        "el": 1171,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -46722,7 +46962,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 344.0,
+        "el": 344,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -46767,7 +47007,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 57475.0,
+        "el": 57475,
         "rm": ""
       },
       {
@@ -46797,7 +47037,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 24881.0,
+        "el": 24881,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -46827,7 +47067,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 613.0,
+        "el": 613,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -46857,7 +47097,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8615.0,
+        "el": 8615,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -46887,7 +47127,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1228.0,
+        "el": 1228,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -46902,7 +47142,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263713.0,
+        "el": 263713,
         "rm": ""
       },
       {
@@ -46947,7 +47187,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8593.0,
+        "el": 8593,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -46962,7 +47202,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -46977,7 +47217,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1063.0,
+        "el": 1063,
         "rm": "anshika.soni@nobroker.in"
       },
       {
@@ -47022,7 +47262,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 4682.0,
+        "el": 4682,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -47037,7 +47277,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1044.0,
+        "el": 1044,
         "rm": "adith.kumar@nobroker.in"
       },
       {
@@ -47067,7 +47307,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -47097,7 +47337,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2525.0,
+        "el": 2525,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -47127,7 +47367,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "SV Scheduled",
         "cp": 1,
-        "el": 3117.0,
+        "el": 3117,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -47187,7 +47427,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -47217,7 +47457,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 354.0,
+        "el": 354,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -47277,7 +47517,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 338.0,
+        "el": 338,
         "rm": "rayan.ahmed@nobroker.in"
       },
       {
@@ -47292,7 +47532,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 2818.0,
+        "el": 2818,
         "rm": "nandlal.halwai@nobroker.in"
       },
       {
@@ -47307,7 +47547,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1062.0,
+        "el": 1062,
         "rm": "niraj.wakulkar@nobroker.in"
       },
       {
@@ -47322,7 +47562,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 897.0,
+        "el": 897,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -47367,7 +47607,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 32122.0,
+        "el": 32122,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -47397,7 +47637,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 336.0,
+        "el": 336,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -47412,7 +47652,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 29269.0,
+        "el": 29269,
         "rm": ""
       },
       {
@@ -47442,7 +47682,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 4642.0,
+        "el": 4642,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -47487,7 +47727,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "palash.mandle@nobroker.in"
       },
       {
@@ -47517,7 +47757,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 90965.0,
+        "el": 90965,
         "rm": "rohit.dalabanjan@nobroker.in"
       },
       {
@@ -47547,7 +47787,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 18656.0,
+        "el": 18656,
         "rm": "nitu.singh@nobroker.in"
       },
       {
@@ -47562,7 +47802,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 11436.0,
+        "el": 11436,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -47727,7 +47967,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -47772,7 +48012,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1319.0,
+        "el": 1319,
         "rm": "chathurvedha.reddy@nobroker.in"
       },
       {
@@ -47817,7 +48057,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 33341.0,
+        "el": 33341,
         "rm": "gulnar.sheikh@nobroker.in"
       },
       {
@@ -47862,7 +48102,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 918.0,
+        "el": 918,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -47892,7 +48132,7 @@ window.RAW_DATA = {
         "r": "Locality Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 633.0,
+        "el": 633,
         "rm": "rohit.dalabanjan@nobroker.in"
       },
       {
@@ -47922,7 +48162,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1320.0,
+        "el": 1320,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -47937,7 +48177,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 4471.0,
+        "el": 4471,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -47967,7 +48207,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 2925.0,
+        "el": 2925,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -47982,7 +48222,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "sourav.gulghane@nobroker.in"
       },
       {
@@ -48012,7 +48252,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 6203.0,
+        "el": 6203,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -48042,7 +48282,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 6038.0,
+        "el": 6038,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -48057,7 +48297,7 @@ window.RAW_DATA = {
         "r": "Locality Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 681.0,
+        "el": 681,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -48072,7 +48312,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 1214.0,
+        "el": 1214,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -48087,7 +48327,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 348.0,
+        "el": 348,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -48102,7 +48342,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 3045.0,
+        "el": 3045,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -48132,7 +48372,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1371.0,
+        "el": 1371,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -48207,7 +48447,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 1665.0,
+        "el": 1665,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -48222,7 +48462,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 8616.0,
+        "el": 8616,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -48282,7 +48522,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263421.0,
+        "el": 263421,
         "rm": ""
       },
       {
@@ -48297,7 +48537,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "SV Scheduled",
         "cp": 0,
-        "el": 23072.0,
+        "el": 23072,
         "rm": ""
       },
       {
@@ -48312,7 +48552,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -48327,7 +48567,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 1,
-        "el": 1263.0,
+        "el": 1263,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -48357,7 +48597,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 15912.0,
+        "el": 15912,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -48372,7 +48612,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1214.0,
+        "el": 1214,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -48447,7 +48687,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4445.0,
+        "el": 4445,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -48507,7 +48747,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 26363.0,
+        "el": 26363,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -48552,7 +48792,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1338.0,
+        "el": 1338,
         "rm": "Satya.choudhary@nobroker.in"
       },
       {
@@ -48582,7 +48822,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 345.0,
+        "el": 345,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -48597,7 +48837,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 5751.0,
+        "el": 5751,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -48627,7 +48867,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 3513.0,
+        "el": 3513,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -48642,7 +48882,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 10470.0,
+        "el": 10470,
         "rm": "sanjay.malviya@nobroker.in"
       },
       {
@@ -48672,7 +48912,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 363.0,
+        "el": 363,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -48702,7 +48942,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 2950.0,
+        "el": 2950,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -48762,7 +49002,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 1243.0,
+        "el": 1243,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -48777,7 +49017,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "rayan.ahmed@nobroker.in"
       },
       {
@@ -48867,7 +49107,7 @@ window.RAW_DATA = {
         "r": "Locality Mismatch",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 9110.0,
+        "el": 9110,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -48897,7 +49137,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 22223.0,
+        "el": 22223,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -48972,7 +49212,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1175.0,
+        "el": 1175,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -49047,7 +49287,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1791.0,
+        "el": 1791,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -49062,7 +49302,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4420.0,
+        "el": 4420,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -49077,7 +49317,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 5752.0,
+        "el": 5752,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -49152,7 +49392,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1250.0,
+        "el": 1250,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -49197,7 +49437,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 874.0,
+        "el": 874,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -49212,7 +49452,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 23136.0,
+        "el": 23136,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -49272,7 +49512,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2696.0,
+        "el": 2696,
         "rm": "rohan.biradar@nobroker.in"
       },
       {
@@ -49317,7 +49557,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1591.0,
+        "el": 1591,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -49332,7 +49572,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263425.0,
+        "el": 263425,
         "rm": ""
       },
       {
@@ -49347,7 +49587,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1812.0,
+        "el": 1812,
         "rm": "amandeep.kour@nobroker.in"
       },
       {
@@ -49377,7 +49617,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 66494.0,
+        "el": 66494,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -49392,7 +49632,7 @@ window.RAW_DATA = {
         "r": "Open / Active Lead",
         "sv": "",
         "cp": 0,
-        "el": 31716.0,
+        "el": 31716,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -49452,7 +49692,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -49497,7 +49737,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 29377.0,
+        "el": 29377,
         "rm": "nayakula.deepika@nobroker.in"
       },
       {
@@ -49542,7 +49782,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2936.0,
+        "el": 2936,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -49557,7 +49797,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 641.0,
+        "el": 641,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -49587,7 +49827,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 10035.0,
+        "el": 10035,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -49602,7 +49842,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 6992.0,
+        "el": 6992,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -49617,7 +49857,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1742.0,
+        "el": 1742,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -49647,7 +49887,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 30182.0,
+        "el": 30182,
         "rm": ""
       },
       {
@@ -49677,7 +49917,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 50724.0,
+        "el": 50724,
         "rm": ""
       },
       {
@@ -49722,7 +49962,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 10142.0,
+        "el": 10142,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -49752,7 +49992,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 25429.0,
+        "el": 25429,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -49767,7 +50007,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 4874.0,
+        "el": 4874,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -49812,7 +50052,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 7311.0,
+        "el": 7311,
         "rm": "ajaysingh.k@nobroker.in"
       },
       {
@@ -49842,7 +50082,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 342.0,
+        "el": 342,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -49992,7 +50232,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 30743.0,
+        "el": 30743,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -50007,7 +50247,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 7467.0,
+        "el": 7467,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -50022,7 +50262,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 30657.0,
+        "el": 30657,
         "rm": "kajapriya.chandran@nobroker.in"
       },
       {
@@ -50067,7 +50307,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 43359.0,
+        "el": 43359,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -50097,7 +50337,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "sannidhi.muthamma@nobroker.in"
       },
       {
@@ -50112,7 +50352,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 50722.0,
+        "el": 50722,
         "rm": ""
       },
       {
@@ -50142,7 +50382,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1502.0,
+        "el": 1502,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -50157,7 +50397,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -50187,7 +50427,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 339.0,
+        "el": 339,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -50217,7 +50457,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "rayan.ahmed@nobroker.in"
       },
       {
@@ -50247,7 +50487,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8628.0,
+        "el": 8628,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -50277,7 +50517,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 17496.0,
+        "el": 17496,
         "rm": "kavyashree.p@nobroker.in"
       },
       {
@@ -50322,7 +50562,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 8892.0,
+        "el": 8892,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -50337,7 +50577,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4656.0,
+        "el": 4656,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -50352,7 +50592,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 338.0,
+        "el": 338,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -50367,7 +50607,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 4180.0,
+        "el": 4180,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -50382,7 +50622,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 1228.0,
+        "el": 1228,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -50397,7 +50637,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 3052.0,
+        "el": 3052,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -50412,7 +50652,7 @@ window.RAW_DATA = {
         "r": "Do Not Call (DNC)",
         "sv": "",
         "cp": 0,
-        "el": 1322.0,
+        "el": 1322,
         "rm": "shweta.dhavali@nobroker.in"
       },
       {
@@ -50472,7 +50712,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 3460.0,
+        "el": 3460,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -50487,7 +50727,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 0,
-        "el": 41747.0,
+        "el": 41747,
         "rm": "abinaya.manickam1@nobroker.in"
       },
       {
@@ -50532,7 +50772,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 56415.0,
+        "el": 56415,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -50562,7 +50802,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 21604.0,
+        "el": 21604,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -50577,7 +50817,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 7444.0,
+        "el": 7444,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -50667,7 +50907,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 2955.0,
+        "el": 2955,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -50682,7 +50922,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263424.0,
+        "el": 263424,
         "rm": ""
       },
       {
@@ -50712,7 +50952,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 10104.0,
+        "el": 10104,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -50727,7 +50967,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 0,
-        "el": 10174.0,
+        "el": 10174,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -50742,7 +50982,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "SV Done",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -50772,7 +51012,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4585.0,
+        "el": 4585,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -50787,7 +51027,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 343.0,
+        "el": 343,
         "rm": "prateek.tirkey@nobroker.in"
       },
       {
@@ -50847,7 +51087,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 54646.0,
+        "el": 54646,
         "rm": ""
       },
       {
@@ -50862,7 +51102,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -50892,7 +51132,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 1542.0,
+        "el": 1542,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -50922,7 +51162,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8652.0,
+        "el": 8652,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -50982,7 +51222,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1381.0,
+        "el": 1381,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -51042,7 +51282,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 6860.0,
+        "el": 6860,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -51072,7 +51312,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2603.0,
+        "el": 2603,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -51147,7 +51387,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 332.0,
+        "el": 332,
         "rm": "sowjanya.m@nobroker.in"
       },
       {
@@ -51207,7 +51447,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8566.0,
+        "el": 8566,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -51252,7 +51492,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 0,
-        "el": 897.0,
+        "el": 897,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -51267,7 +51507,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 2934.0,
+        "el": 2934,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -51282,7 +51522,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 266235.0,
+        "el": 266235,
         "rm": ""
       },
       {
@@ -51327,7 +51567,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 3899.0,
+        "el": 3899,
         "rm": "uddhav.narasimharao@nobroker.in"
       },
       {
@@ -51342,7 +51582,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 180354.0,
+        "el": 180354,
         "rm": ""
       },
       {
@@ -51357,7 +51597,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 8921.0,
+        "el": 8921,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -51372,7 +51612,7 @@ window.RAW_DATA = {
         "r": "Internal Employee Test Lead",
         "sv": "",
         "cp": 0,
-        "el": 1819.0,
+        "el": 1819,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -51402,7 +51642,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 5891.0,
+        "el": 5891,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -51432,7 +51672,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -51447,7 +51687,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 8902.0,
+        "el": 8902,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -51492,7 +51732,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "SV Done",
         "cp": 0,
-        "el": 51758.0,
+        "el": 51758,
         "rm": ""
       },
       {
@@ -51507,7 +51747,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 337.0,
+        "el": 337,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -51537,7 +51777,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1390.0,
+        "el": 1390,
         "rm": "niraj.wakulkar@nobroker.in"
       },
       {
@@ -51597,7 +51837,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8606.0,
+        "el": 8606,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -51627,7 +51867,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 0,
-        "el": 2732.0,
+        "el": 2732,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -51642,7 +51882,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -51657,7 +51897,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 8584.0,
+        "el": 8584,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -51672,7 +51912,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 528.0,
+        "el": 528,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -51702,7 +51942,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2058.0,
+        "el": 2058,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -51717,7 +51957,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263428.0,
+        "el": 263428,
         "rm": ""
       },
       {
@@ -51732,7 +51972,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 151167.0,
+        "el": 151167,
         "rm": ""
       },
       {
@@ -51882,7 +52122,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3156.0,
+        "el": 3156,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -51897,7 +52137,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 8793.0,
+        "el": 8793,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -51912,7 +52152,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 20341.0,
+        "el": 20341,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -51957,7 +52197,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 73770.0,
+        "el": 73770,
         "rm": "kratika.sarawgi@nobroker.in"
       },
       {
@@ -51972,7 +52212,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 6832.0,
+        "el": 6832,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -51987,7 +52227,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 13236.0,
+        "el": 13236,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -52092,7 +52332,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -52152,7 +52392,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3039.0,
+        "el": 3039,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -52197,7 +52437,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 2833.0,
+        "el": 2833,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -52212,7 +52452,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2762.0,
+        "el": 2762,
         "rm": "rohit.dalabanjan@nobroker.in"
       },
       {
@@ -52257,7 +52497,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 4852.0,
+        "el": 4852,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -52287,7 +52527,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 4269.0,
+        "el": 4269,
         "rm": "supreem.kv@nobroker.in"
       },
       {
@@ -52317,7 +52557,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 360.0,
+        "el": 360,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -52332,7 +52572,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263426.0,
+        "el": 263426,
         "rm": ""
       },
       {
@@ -52362,7 +52602,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 3084.0,
+        "el": 3084,
         "rm": "asma.s@nobroker.in"
       },
       {
@@ -52377,7 +52617,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 8817.0,
+        "el": 8817,
         "rm": ""
       },
       {
@@ -52407,7 +52647,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8654.0,
+        "el": 8654,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -52437,7 +52677,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 349.0,
+        "el": 349,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -52512,7 +52752,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 46170.0,
+        "el": 46170,
         "rm": ""
       },
       {
@@ -52557,7 +52797,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 3277.0,
+        "el": 3277,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -52602,7 +52842,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1068.0,
+        "el": 1068,
         "rm": "Satya.choudhary@nobroker.in"
       },
       {
@@ -52677,7 +52917,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 4670.0,
+        "el": 4670,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -52722,7 +52962,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1465.0,
+        "el": 1465,
         "rm": "sangamesh.nimbalagundi@nobroker.in"
       },
       {
@@ -52752,7 +52992,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 881.0,
+        "el": 881,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -52767,7 +53007,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1557.0,
+        "el": 1557,
         "rm": "manoj.kumar12@nobroker.in"
       },
       {
@@ -52782,7 +53022,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 5577.0,
+        "el": 5577,
         "rm": "Satya.choudhary@nobroker.in"
       },
       {
@@ -52857,7 +53097,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 3647.0,
+        "el": 3647,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -52917,7 +53157,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 0,
-        "el": 1256.0,
+        "el": 1256,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -53007,7 +53247,7 @@ window.RAW_DATA = {
         "r": "Open / Active Lead",
         "sv": "",
         "cp": 0,
-        "el": 1997.0,
+        "el": 1997,
         "rm": "rohit.dalabanjan@nobroker.in"
       },
       {
@@ -53022,7 +53262,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1328.0,
+        "el": 1328,
         "rm": "indira.m@nobroker.in"
       },
       {
@@ -53037,7 +53277,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 2965.0,
+        "el": 2965,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -53052,7 +53292,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 5938.0,
+        "el": 5938,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -53082,7 +53322,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 4614.0,
+        "el": 4614,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -53112,7 +53352,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1259.0,
+        "el": 1259,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -53142,7 +53382,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 15256.0,
+        "el": 15256,
         "rm": "agrawal.raj@nobroker.in"
       },
       {
@@ -53172,7 +53412,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1473.0,
+        "el": 1473,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -53217,7 +53457,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -53262,7 +53502,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1038.0,
+        "el": 1038,
         "rm": "anshika.soni@nobroker.in"
       },
       {
@@ -53277,7 +53517,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4028.0,
+        "el": 4028,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -53322,7 +53562,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 77639.0,
+        "el": 77639,
         "rm": "shweta.awachat@nobroker.in"
       },
       {
@@ -53367,7 +53607,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 5738.0,
+        "el": 5738,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -53397,7 +53637,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1320.0,
+        "el": 1320,
         "rm": "indira.m@nobroker.in"
       },
       {
@@ -53427,7 +53667,7 @@ window.RAW_DATA = {
         "r": "Property Type / Config Mismatch (Plot/Villa/BHK)",
         "sv": "",
         "cp": 0,
-        "el": 3004.0,
+        "el": 3004,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -53487,7 +53727,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 10423.0,
+        "el": 10423,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -53517,7 +53757,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 5586.0,
+        "el": 5586,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -53532,7 +53772,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 16388.0,
+        "el": 16388,
         "rm": "shashank.kr@nobroker.in"
       },
       {
@@ -53547,7 +53787,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2953.0,
+        "el": 2953,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -53577,7 +53817,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1391.0,
+        "el": 1391,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -53592,7 +53832,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 30481.0,
+        "el": 30481,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -53607,7 +53847,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8880.0,
+        "el": 8880,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -53637,7 +53877,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263416.0,
+        "el": 263416,
         "rm": ""
       },
       {
@@ -53652,7 +53892,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8251.0,
+        "el": 8251,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -53682,7 +53922,7 @@ window.RAW_DATA = {
         "r": "Open / Active Lead",
         "sv": "",
         "cp": 0,
-        "el": 1275.0,
+        "el": 1275,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -53697,7 +53937,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 19743.0,
+        "el": 19743,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -53712,7 +53952,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 9940.0,
+        "el": 9940,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -53727,7 +53967,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 30736.0,
+        "el": 30736,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -53772,7 +54012,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 3466.0,
+        "el": 3466,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -53802,7 +54042,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "aditi.kasabe@nobroker.in"
       },
       {
@@ -53847,7 +54087,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 4300.0,
+        "el": 4300,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -53892,7 +54132,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2828.0,
+        "el": 2828,
         "rm": "bollam.keerthi@nobroker.in"
       },
       {
@@ -53952,7 +54192,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 83680.0,
+        "el": 83680,
         "rm": ""
       },
       {
@@ -54012,7 +54252,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 18967.0,
+        "el": 18967,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -54042,7 +54282,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4142.0,
+        "el": 4142,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -54087,7 +54327,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 1,
-        "el": 6239.0,
+        "el": 6239,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -54117,7 +54357,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 10368.0,
+        "el": 10368,
         "rm": "thota.krishna@nobroker.in"
       },
       {
@@ -54147,7 +54387,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -54177,7 +54417,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 263422.0,
+        "el": 263422,
         "rm": ""
       },
       {
@@ -54192,7 +54432,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 595.0,
+        "el": 595,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -54207,7 +54447,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 341.0,
+        "el": 341,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -54237,7 +54477,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -54267,7 +54507,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 2934.0,
+        "el": 2934,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -54312,7 +54552,7 @@ window.RAW_DATA = {
         "r": "Locality Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 1515.0,
+        "el": 1515,
         "rm": "prateek.tirkey@nobroker.in"
       },
       {
@@ -54342,7 +54582,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1801.0,
+        "el": 1801,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -54387,7 +54627,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 3766.0,
+        "el": 3766,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -54447,7 +54687,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 21601.0,
+        "el": 21601,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -54477,7 +54717,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 343.0,
+        "el": 343,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -54522,7 +54762,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 6838.0,
+        "el": 6838,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -54537,7 +54777,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 2922.0,
+        "el": 2922,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -54552,7 +54792,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 9961.0,
+        "el": 9961,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -54567,7 +54807,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "SV Done",
         "cp": 0,
-        "el": 2980.0,
+        "el": 2980,
         "rm": "chandrappa.d1@nobroker.in"
       },
       {
@@ -54582,7 +54822,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1324.0,
+        "el": 1324,
         "rm": "shweta.dhavali@nobroker.in"
       },
       {
@@ -54612,7 +54852,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 382.0,
+        "el": 382,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -54642,7 +54882,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 222152.0,
+        "el": 222152,
         "rm": ""
       },
       {
@@ -54657,7 +54897,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 21895.0,
+        "el": 21895,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -54687,7 +54927,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 1307.0,
+        "el": 1307,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -54702,7 +54942,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 6368.0,
+        "el": 6368,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -54732,7 +54972,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 3330.0,
+        "el": 3330,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -54747,7 +54987,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "sannidhi.muthamma@nobroker.in"
       },
       {
@@ -54762,7 +55002,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263425.0,
+        "el": 263425,
         "rm": ""
       },
       {
@@ -54777,7 +55017,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "manoj.kumar12@nobroker.in"
       },
       {
@@ -54822,7 +55062,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 2937.0,
+        "el": 2937,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -54852,7 +55092,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 59658.0,
+        "el": 59658,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -54867,7 +55107,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 24761.0,
+        "el": 24761,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -54912,7 +55152,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 1,
-        "el": 70354.0,
+        "el": 70354,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -54957,7 +55197,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1289.0,
+        "el": 1289,
         "rm": ""
       },
       {
@@ -54972,7 +55212,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 336.0,
+        "el": 336,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -54987,7 +55227,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4106.0,
+        "el": 4106,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -55002,7 +55242,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263420.0,
+        "el": 263420,
         "rm": ""
       },
       {
@@ -55032,7 +55272,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 64755.0,
+        "el": 64755,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -55047,7 +55287,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 2865.0,
+        "el": 2865,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -55077,7 +55317,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 4582.0,
+        "el": 4582,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -55122,7 +55362,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4181.0,
+        "el": 4181,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -55137,7 +55377,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 13187.0,
+        "el": 13187,
         "rm": "sanjay.malviya@nobroker.in"
       },
       {
@@ -55152,7 +55392,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 9069.0,
+        "el": 9069,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -55182,7 +55422,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 21906.0,
+        "el": 21906,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -55197,7 +55437,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 4442.0,
+        "el": 4442,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -55212,7 +55452,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 264847.0,
+        "el": 264847,
         "rm": ""
       },
       {
@@ -55242,7 +55482,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3021.0,
+        "el": 3021,
         "rm": "pavan.kumar3@nobroker.in"
       },
       {
@@ -55257,7 +55497,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1604.0,
+        "el": 1604,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -55272,7 +55512,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 1206.0,
+        "el": 1206,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -55302,7 +55542,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 7205.0,
+        "el": 7205,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -55317,7 +55557,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 42128.0,
+        "el": 42128,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -55347,7 +55587,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8568.0,
+        "el": 8568,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -55362,7 +55602,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 1683.0,
+        "el": 1683,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -55407,7 +55647,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 4738.0,
+        "el": 4738,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -55437,7 +55677,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 610.0,
+        "el": 610,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -55452,7 +55692,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 4421.0,
+        "el": 4421,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -55467,7 +55707,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 25822.0,
+        "el": 25822,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -55497,7 +55737,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 21922.0,
+        "el": 21922,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -55527,7 +55767,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 3456.0,
+        "el": 3456,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -55722,7 +55962,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 1254.0,
+        "el": 1254,
         "rm": "sangamesh.nimbalagundi@nobroker.in"
       },
       {
@@ -55737,7 +55977,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 40207.0,
+        "el": 40207,
         "rm": ""
       },
       {
@@ -55752,7 +55992,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1271.0,
+        "el": 1271,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -55767,7 +56007,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 63198.0,
+        "el": 63198,
         "rm": ""
       },
       {
@@ -55782,7 +56022,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 3007.0,
+        "el": 3007,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -55812,7 +56052,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -55842,7 +56082,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1338.0,
+        "el": 1338,
         "rm": "savarapu.priyanka@nobroker.in"
       },
       {
@@ -55872,7 +56112,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 4758.0,
+        "el": 4758,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -55887,7 +56127,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 105820.0,
+        "el": 105820,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -55917,7 +56157,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 28450.0,
+        "el": 28450,
         "rm": "santana.paul@nobroker.in"
       },
       {
@@ -55962,7 +56202,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 9633.0,
+        "el": 9633,
         "rm": "rohan.biradar@nobroker.in"
       },
       {
@@ -55977,7 +56217,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 355.0,
+        "el": 355,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -56037,7 +56277,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 5449.0,
+        "el": 5449,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -56052,7 +56292,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 4260.0,
+        "el": 4260,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -56082,7 +56322,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1714.0,
+        "el": 1714,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -56097,7 +56337,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 4321.0,
+        "el": 4321,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -56112,7 +56352,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 30773.0,
+        "el": 30773,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -56172,7 +56412,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 71144.0,
+        "el": 71144,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -56187,7 +56427,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 2834.0,
+        "el": 2834,
         "rm": ""
       },
       {
@@ -56202,7 +56442,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 2761.0,
+        "el": 2761,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -56217,7 +56457,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 264854.0,
+        "el": 264854,
         "rm": ""
       },
       {
@@ -56232,7 +56472,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 1,
-        "el": 244917.0,
+        "el": 244917,
         "rm": ""
       },
       {
@@ -56262,7 +56502,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 3209.0,
+        "el": 3209,
         "rm": "niraj.wakulkar@nobroker.in"
       },
       {
@@ -56277,7 +56517,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 338.0,
+        "el": 338,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -56322,7 +56562,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 6353.0,
+        "el": 6353,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -56352,7 +56592,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 11544.0,
+        "el": 11544,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -56397,7 +56637,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 355.0,
+        "el": 355,
         "rm": "sangamesh.nimbalagundi@nobroker.in"
       },
       {
@@ -56457,7 +56697,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 4678.0,
+        "el": 4678,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -56517,7 +56757,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1287.0,
+        "el": 1287,
         "rm": "s.vishali@nobroker.in"
       },
       {
@@ -56547,7 +56787,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263716.0,
+        "el": 263716,
         "rm": ""
       },
       {
@@ -56577,7 +56817,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 5867.0,
+        "el": 5867,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -56637,7 +56877,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4432.0,
+        "el": 4432,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -56727,7 +56967,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4411.0,
+        "el": 4411,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -56742,7 +56982,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 1944.0,
+        "el": 1944,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -56787,7 +57027,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 266546.0,
+        "el": 266546,
         "rm": ""
       },
       {
@@ -56907,7 +57147,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 10536.0,
+        "el": 10536,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -57012,7 +57252,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 351.0,
+        "el": 351,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -57027,7 +57267,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 10024.0,
+        "el": 10024,
         "rm": "abinaya.manickam1@nobroker.in"
       },
       {
@@ -57057,7 +57297,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 1,
-        "el": 49140.0,
+        "el": 49140,
         "rm": ""
       },
       {
@@ -57102,7 +57342,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1313.0,
+        "el": 1313,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -57147,7 +57387,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -57177,7 +57417,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -57192,7 +57432,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 4384.0,
+        "el": 4384,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -57222,7 +57462,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4361.0,
+        "el": 4361,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -57267,7 +57507,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 20079.0,
+        "el": 20079,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -57282,7 +57522,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "poornima.basavaraj@nobroker.in"
       },
       {
@@ -57327,7 +57567,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 9812.0,
+        "el": 9812,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -57357,7 +57597,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 8623.0,
+        "el": 8623,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -57432,7 +57672,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1581.0,
+        "el": 1581,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -57447,7 +57687,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 6153.0,
+        "el": 6153,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -57567,7 +57807,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "Cancelled",
         "cp": 1,
-        "el": 18693.0,
+        "el": 18693,
         "rm": ""
       },
       {
@@ -57582,7 +57822,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 4401.0,
+        "el": 4401,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -57597,7 +57837,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 1267.0,
+        "el": 1267,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -57612,7 +57852,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -57627,7 +57867,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1561.0,
+        "el": 1561,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -57642,7 +57882,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1799.0,
+        "el": 1799,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -57702,7 +57942,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1547.0,
+        "el": 1547,
         "rm": "manoj.kumar12@nobroker.in"
       },
       {
@@ -57717,7 +57957,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8752.0,
+        "el": 8752,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -57732,7 +57972,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -57747,7 +57987,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -57762,7 +58002,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 583.0,
+        "el": 583,
         "rm": "prateek.tirkey@nobroker.in"
       },
       {
@@ -57822,7 +58062,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 5896.0,
+        "el": 5896,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -57852,7 +58092,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2747.0,
+        "el": 2747,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -57867,7 +58107,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 264850.0,
+        "el": 264850,
         "rm": ""
       },
       {
@@ -57942,7 +58182,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 7113.0,
+        "el": 7113,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -57957,7 +58197,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 20088.0,
+        "el": 20088,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -58002,7 +58242,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 21906.0,
+        "el": 21906,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -58047,7 +58287,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 66161.0,
+        "el": 66161,
         "rm": ""
       },
       {
@@ -58062,7 +58302,7 @@ window.RAW_DATA = {
         "r": "Open / Active Lead",
         "sv": "",
         "cp": 0,
-        "el": 337.0,
+        "el": 337,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -58092,7 +58332,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 46885.0,
+        "el": 46885,
         "rm": "soumyaswarup.naik@nobroker.in"
       },
       {
@@ -58182,7 +58422,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -58227,7 +58467,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 336.0,
+        "el": 336,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -58272,7 +58512,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1311.0,
+        "el": 1311,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -58287,7 +58527,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 77915.0,
+        "el": 77915,
         "rm": ""
       },
       {
@@ -58317,7 +58557,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2939.0,
+        "el": 2939,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -58332,7 +58572,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1692.0,
+        "el": 1692,
         "rm": "adith.kumar@nobroker.in"
       },
       {
@@ -58392,7 +58632,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 18601.0,
+        "el": 18601,
         "rm": ""
       },
       {
@@ -58407,7 +58647,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 8357.0,
+        "el": 8357,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -58452,7 +58692,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 1205.0,
+        "el": 1205,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -58467,7 +58707,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 6227.0,
+        "el": 6227,
         "rm": "archana.gupta@nobroker.in"
       },
       {
@@ -58497,7 +58737,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263713.0,
+        "el": 263713,
         "rm": ""
       },
       {
@@ -58512,7 +58752,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 315221.0,
+        "el": 315221,
         "rm": ""
       },
       {
@@ -58572,7 +58812,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 266238.0,
+        "el": 266238,
         "rm": ""
       },
       {
@@ -58632,7 +58872,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263415.0,
+        "el": 263415,
         "rm": ""
       },
       {
@@ -58647,7 +58887,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8963.0,
+        "el": 8963,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -58677,7 +58917,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3212.0,
+        "el": 3212,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -58692,7 +58932,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3219.0,
+        "el": 3219,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -58707,7 +58947,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -58752,7 +58992,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "sannidhi.muthamma@nobroker.in"
       },
       {
@@ -58767,7 +59007,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "Cancelled",
         "cp": 1,
-        "el": 8869.0,
+        "el": 8869,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -58827,7 +59067,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 31721.0,
+        "el": 31721,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -58842,7 +59082,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 19007.0,
+        "el": 19007,
         "rm": ""
       },
       {
@@ -58932,7 +59172,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 0,
-        "el": 1289.0,
+        "el": 1289,
         "rm": "kajapriya.chandran@nobroker.in"
       },
       {
@@ -58947,7 +59187,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 350.0,
+        "el": 350,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -58977,7 +59217,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 331.0,
+        "el": 331,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -58992,7 +59232,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 4638.0,
+        "el": 4638,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -59037,7 +59277,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 6167.0,
+        "el": 6167,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -59052,7 +59292,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1033.0,
+        "el": 1033,
         "rm": "rohit.dalabanjan@nobroker.in"
       },
       {
@@ -59157,7 +59397,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3164.0,
+        "el": 3164,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -59217,7 +59457,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -59247,7 +59487,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 544.0,
+        "el": 544,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -59277,7 +59517,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4398.0,
+        "el": 4398,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -59322,7 +59562,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 100491.0,
+        "el": 100491,
         "rm": "nayakula.deepika@nobroker.in"
       },
       {
@@ -59367,7 +59607,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1321.0,
+        "el": 1321,
         "rm": "chathurvedha.reddy@nobroker.in"
       },
       {
@@ -59382,7 +59622,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 16192.0,
+        "el": 16192,
         "rm": "samata.pujari@nobroker.in"
       },
       {
@@ -59397,7 +59637,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263380.0,
+        "el": 263380,
         "rm": ""
       },
       {
@@ -59442,7 +59682,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8888.0,
+        "el": 8888,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -59457,7 +59697,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 4832.0,
+        "el": 4832,
         "rm": "aarav.garg@nobroker.in"
       },
       {
@@ -59502,7 +59742,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 120986.0,
+        "el": 120986,
         "rm": ""
       },
       {
@@ -59517,7 +59757,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 24505.0,
+        "el": 24505,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -59577,7 +59817,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 495.0,
+        "el": 495,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -59592,7 +59832,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 72278.0,
+        "el": 72278,
         "rm": ""
       },
       {
@@ -59607,7 +59847,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 2364.0,
+        "el": 2364,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -59637,7 +59877,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 54518.0,
+        "el": 54518,
         "rm": ""
       },
       {
@@ -59652,7 +59892,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 3295.0,
+        "el": 3295,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -59667,7 +59907,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 1,
-        "el": 49493.0,
+        "el": 49493,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -59682,7 +59922,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1778.0,
+        "el": 1778,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -59772,7 +60012,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1243.0,
+        "el": 1243,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -59802,7 +60042,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -59817,7 +60057,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 4423.0,
+        "el": 4423,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -59832,7 +60072,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 685.0,
+        "el": 685,
         "rm": "abinaya.manickam1@nobroker.in"
       },
       {
@@ -59862,7 +60102,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8583.0,
+        "el": 8583,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -59877,7 +60117,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 21452.0,
+        "el": 21452,
         "rm": ""
       },
       {
@@ -59952,7 +60192,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263419.0,
+        "el": 263419,
         "rm": "Satya.choudhary@nobroker.in"
       },
       {
@@ -59967,7 +60207,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 41727.0,
+        "el": 41727,
         "rm": ""
       },
       {
@@ -60057,7 +60297,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -60102,7 +60342,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 890.0,
+        "el": 890,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -60147,7 +60387,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 31826.0,
+        "el": 31826,
         "rm": "dhanashree.shirekar@nobroker.in"
       },
       {
@@ -60207,7 +60447,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1309.0,
+        "el": 1309,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -60252,7 +60492,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 2349.0,
+        "el": 2349,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -60312,7 +60552,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 20080.0,
+        "el": 20080,
         "rm": "sanjay.malviya@nobroker.in"
       },
       {
@@ -60342,7 +60582,7 @@ window.RAW_DATA = {
         "r": "Open / Active Lead",
         "sv": "",
         "cp": 0,
-        "el": 365.0,
+        "el": 365,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -60402,7 +60642,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 19767.0,
+        "el": 19767,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -60432,7 +60672,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 56026.0,
+        "el": 56026,
         "rm": ""
       },
       {
@@ -60492,7 +60732,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 90964.0,
+        "el": 90964,
         "rm": "rohit.dalabanjan@nobroker.in"
       },
       {
@@ -60522,7 +60762,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1916.0,
+        "el": 1916,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -60537,7 +60777,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -60552,7 +60792,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 2608.0,
+        "el": 2608,
         "rm": "rayan.ahmed@nobroker.in"
       },
       {
@@ -60567,7 +60807,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 3032.0,
+        "el": 3032,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -60612,7 +60852,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1480.0,
+        "el": 1480,
         "rm": "sarnab.deb@nobroker.in"
       },
       {
@@ -60732,7 +60972,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1629.0,
+        "el": 1629,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -60777,7 +61017,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 6244.0,
+        "el": 6244,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -60792,7 +61032,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1284.0,
+        "el": 1284,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -60822,7 +61062,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 1,
-        "el": 173028.0,
+        "el": 173028,
         "rm": ""
       },
       {
@@ -60837,7 +61077,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 18462.0,
+        "el": 18462,
         "rm": "kratika.sarawgi@nobroker.in"
       },
       {
@@ -60957,7 +61197,7 @@ window.RAW_DATA = {
         "r": "Open / Active Lead",
         "sv": "",
         "cp": 0,
-        "el": 2160.0,
+        "el": 2160,
         "rm": "manoj.kumar12@nobroker.in"
       },
       {
@@ -61002,7 +61242,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 26347.0,
+        "el": 26347,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -61017,7 +61257,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -61032,7 +61272,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 23387.0,
+        "el": 23387,
         "rm": "ajaysingh.k@nobroker.in"
       },
       {
@@ -61047,7 +61287,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 911.0,
+        "el": 911,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -61062,7 +61302,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 15082.0,
+        "el": 15082,
         "rm": "kratika.sarawgi@nobroker.in"
       },
       {
@@ -61092,7 +61332,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 4822.0,
+        "el": 4822,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -61107,7 +61347,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 30658.0,
+        "el": 30658,
         "rm": "vishnu.prasad1@nobroker.in"
       },
       {
@@ -61122,7 +61362,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1060.0,
+        "el": 1060,
         "rm": "anshika.soni@nobroker.in"
       },
       {
@@ -61137,7 +61377,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 13092.0,
+        "el": 13092,
         "rm": "nandlal.halwai@nobroker.in"
       },
       {
@@ -61182,7 +61422,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 1317.0,
+        "el": 1317,
         "rm": "adith.kumar@nobroker.in"
       },
       {
@@ -61227,7 +61467,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 331.0,
+        "el": 331,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -61272,7 +61512,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 339.0,
+        "el": 339,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -61317,7 +61557,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 82584.0,
+        "el": 82584,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -61332,7 +61572,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2703.0,
+        "el": 2703,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -61377,7 +61617,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 3170.0,
+        "el": 3170,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -61542,7 +61782,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 2969.0,
+        "el": 2969,
         "rm": "kavyashree.p@nobroker.in"
       },
       {
@@ -61572,7 +61812,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2794.0,
+        "el": 2794,
         "rm": "rohit.dalabanjan@nobroker.in"
       },
       {
@@ -61587,7 +61827,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 27841.0,
+        "el": 27841,
         "rm": "niraj.wakulkar@nobroker.in"
       },
       {
@@ -61602,7 +61842,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1149.0,
+        "el": 1149,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -61617,7 +61857,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 23404.0,
+        "el": 23404,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -61662,7 +61902,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 48861.0,
+        "el": 48861,
         "rm": "sanjay.malviya@nobroker.in"
       },
       {
@@ -61677,7 +61917,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 14942.0,
+        "el": 14942,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -61692,7 +61932,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4750.0,
+        "el": 4750,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -61722,7 +61962,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 345.0,
+        "el": 345,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -61767,7 +62007,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 9045.0,
+        "el": 9045,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -61797,7 +62037,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 725.0,
+        "el": 725,
         "rm": "meena.surendra@nobroker.in"
       },
       {
@@ -61812,7 +62052,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 3019.0,
+        "el": 3019,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -61842,7 +62082,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 608.0,
+        "el": 608,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -61857,7 +62097,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263416.0,
+        "el": 263416,
         "rm": ""
       },
       {
@@ -61887,7 +62127,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 42029.0,
+        "el": 42029,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -61992,7 +62232,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "SV Done",
         "cp": 0,
-        "el": 18757.0,
+        "el": 18757,
         "rm": ""
       },
       {
@@ -62007,7 +62247,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 1318.0,
+        "el": 1318,
         "rm": "indira.m@nobroker.in"
       },
       {
@@ -62022,7 +62262,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -62052,7 +62292,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 3339.0,
+        "el": 3339,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -62097,7 +62337,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 2724.0,
+        "el": 2724,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -62127,7 +62367,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263420.0,
+        "el": 263420,
         "rm": ""
       },
       {
@@ -62157,7 +62397,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 40852.0,
+        "el": 40852,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -62172,7 +62412,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 1065.0,
+        "el": 1065,
         "rm": "palash.mandle@nobroker.in"
       },
       {
@@ -62262,7 +62502,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "Cancelled",
         "cp": 1,
-        "el": 335.0,
+        "el": 335,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -62277,7 +62517,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 1289.0,
+        "el": 1289,
         "rm": "rangeela.k@nobroker.in"
       },
       {
@@ -62307,7 +62547,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2759.0,
+        "el": 2759,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -62322,7 +62562,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2790.0,
+        "el": 2790,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -62337,7 +62577,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 30117.0,
+        "el": 30117,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -62352,7 +62592,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 42148.0,
+        "el": 42148,
         "rm": "nandanan.u@nobroker.in"
       },
       {
@@ -62397,7 +62637,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1326.0,
+        "el": 1326,
         "rm": "chathurvedha.reddy@nobroker.in"
       },
       {
@@ -62457,7 +62697,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 1,
-        "el": 31823.0,
+        "el": 31823,
         "rm": "soumyaswarup.naik@nobroker.in"
       },
       {
@@ -62487,7 +62727,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8767.0,
+        "el": 8767,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -62502,7 +62742,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 8038.0,
+        "el": 8038,
         "rm": ""
       },
       {
@@ -62517,7 +62757,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 45610.0,
+        "el": 45610,
         "rm": "joohi.gupta@nobroker.in"
       },
       {
@@ -62622,7 +62862,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 5200.0,
+        "el": 5200,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -62637,7 +62877,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -62652,7 +62892,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 32148.0,
+        "el": 32148,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -62682,7 +62922,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2858.0,
+        "el": 2858,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -62712,7 +62952,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 1677.0,
+        "el": 1677,
         "rm": "bhavya.shree@nobroker.in"
       },
       {
@@ -62727,7 +62967,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 4656.0,
+        "el": 4656,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -62787,7 +63027,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "SV Done",
         "cp": 0,
-        "el": 21887.0,
+        "el": 21887,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -62802,7 +63042,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 15619.0,
+        "el": 15619,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -62832,7 +63072,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 30118.0,
+        "el": 30118,
         "rm": ""
       },
       {
@@ -62847,7 +63087,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 6178.0,
+        "el": 6178,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -62862,7 +63102,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -62892,7 +63132,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 4527.0,
+        "el": 4527,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -62922,7 +63162,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -62967,7 +63207,7 @@ window.RAW_DATA = {
         "r": "Do Not Call (DNC)",
         "sv": "",
         "cp": 0,
-        "el": 3293.0,
+        "el": 3293,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -63012,7 +63252,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 54954.0,
+        "el": 54954,
         "rm": ""
       },
       {
@@ -63087,7 +63327,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 2786.0,
+        "el": 2786,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -63102,7 +63342,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1493.0,
+        "el": 1493,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -63177,7 +63417,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1610.0,
+        "el": 1610,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -63237,7 +63477,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 21888.0,
+        "el": 21888,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -63387,7 +63627,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "SV Scheduled",
         "cp": 0,
-        "el": 23336.0,
+        "el": 23336,
         "rm": ""
       },
       {
@@ -63402,7 +63642,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 3201.0,
+        "el": 3201,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -63462,7 +63702,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 21624.0,
+        "el": 21624,
         "rm": "anurag.sapehia@nobroker.in"
       },
       {
@@ -63477,7 +63717,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 11235.0,
+        "el": 11235,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -63492,7 +63732,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2948.0,
+        "el": 2948,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -63537,7 +63777,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1701.0,
+        "el": 1701,
         "rm": "sannidhi.muthamma@nobroker.in"
       },
       {
@@ -63552,7 +63792,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1306.0,
+        "el": 1306,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -63582,7 +63822,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 1057.0,
+        "el": 1057,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -63627,7 +63867,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 27333.0,
+        "el": 27333,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -63672,7 +63912,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 2747.0,
+        "el": 2747,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -63687,7 +63927,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 2621.0,
+        "el": 2621,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -63717,7 +63957,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 0,
-        "el": 11986.0,
+        "el": 11986,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -63732,7 +63972,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 1323.0,
+        "el": 1323,
         "rm": "chathurvedha.reddy@nobroker.in"
       },
       {
@@ -63777,7 +64017,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -63822,7 +64062,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -63882,7 +64122,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3099.0,
+        "el": 3099,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -63912,7 +64152,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 266274.0,
+        "el": 266274,
         "rm": ""
       },
       {
@@ -63927,7 +64167,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 4675.0,
+        "el": 4675,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -63972,7 +64212,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3995.0,
+        "el": 3995,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -63987,7 +64227,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3519.0,
+        "el": 3519,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -64032,7 +64272,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 31934.0,
+        "el": 31934,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -64092,7 +64332,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 89720.0,
+        "el": 89720,
         "rm": ""
       },
       {
@@ -64107,7 +64347,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1519.0,
+        "el": 1519,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -64167,7 +64407,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 54710.0,
+        "el": 54710,
         "rm": ""
       },
       {
@@ -64212,7 +64452,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4821.0,
+        "el": 4821,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -64257,7 +64497,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2718.0,
+        "el": 2718,
         "rm": "santana.paul@nobroker.in"
       },
       {
@@ -64272,7 +64512,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1064.0,
+        "el": 1064,
         "rm": "adith.kumar@nobroker.in"
       },
       {
@@ -64302,7 +64542,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 3663.0,
+        "el": 3663,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -64317,7 +64557,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "Cancelled",
         "cp": 1,
-        "el": 57594.0,
+        "el": 57594,
         "rm": ""
       },
       {
@@ -64332,7 +64572,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 3869.0,
+        "el": 3869,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -64347,7 +64587,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263424.0,
+        "el": 263424,
         "rm": ""
       },
       {
@@ -64392,7 +64632,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2880.0,
+        "el": 2880,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -64437,7 +64677,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 22318.0,
+        "el": 22318,
         "rm": ""
       },
       {
@@ -64452,7 +64692,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2837.0,
+        "el": 2837,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -64512,7 +64752,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 4348.0,
+        "el": 4348,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -64527,7 +64767,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 1,
-        "el": 2985.0,
+        "el": 2985,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -64602,7 +64842,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 1622.0,
+        "el": 1622,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -64677,7 +64917,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1615.0,
+        "el": 1615,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -64692,7 +64932,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 264847.0,
+        "el": 264847,
         "rm": ""
       },
       {
@@ -64707,7 +64947,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4425.0,
+        "el": 4425,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -64737,7 +64977,7 @@ window.RAW_DATA = {
         "r": "Internal Employee Test Lead",
         "sv": "",
         "cp": 0,
-        "el": 7187.0,
+        "el": 7187,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -64752,7 +64992,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 2749.0,
+        "el": 2749,
         "rm": "prabha.s@nobroker.in"
       },
       {
@@ -64812,7 +65052,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "SV Scheduled",
         "cp": 0,
-        "el": 13970.0,
+        "el": 13970,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -64827,7 +65067,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 2084.0,
+        "el": 2084,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -64842,7 +65082,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2917.0,
+        "el": 2917,
         "rm": "adith.kumar@nobroker.in"
       },
       {
@@ -64872,7 +65112,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 8591.0,
+        "el": 8591,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -64917,7 +65157,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 8626.0,
+        "el": 8626,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -64977,7 +65217,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1066.0,
+        "el": 1066,
         "rm": "niraj.wakulkar@nobroker.in"
       },
       {
@@ -65037,7 +65277,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 20648.0,
+        "el": 20648,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -65097,7 +65337,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4436.0,
+        "el": 4436,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -65172,7 +65412,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 7355.0,
+        "el": 7355,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -65217,7 +65457,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 692.0,
+        "el": 692,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -65232,7 +65472,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1864.0,
+        "el": 1864,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -65247,7 +65487,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 19133.0,
+        "el": 19133,
         "rm": ""
       },
       {
@@ -65277,7 +65517,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1589.0,
+        "el": 1589,
         "rm": "poornima.basavaraj@nobroker.in"
       },
       {
@@ -65322,7 +65562,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 5974.0,
+        "el": 5974,
         "rm": "kajapriya.chandran@nobroker.in"
       },
       {
@@ -65367,7 +65607,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 21983.0,
+        "el": 21983,
         "rm": "anuj.biswas@nobroker.in"
       },
       {
@@ -65412,7 +65652,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 15937.0,
+        "el": 15937,
         "rm": "adarshgouda.mahanteshgouda@nobroker.in"
       },
       {
@@ -65442,7 +65682,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 4374.0,
+        "el": 4374,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -65517,7 +65757,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4774.0,
+        "el": 4774,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -65532,7 +65772,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 7462.0,
+        "el": 7462,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -65577,7 +65817,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1796.0,
+        "el": 1796,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -65592,7 +65832,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -65607,7 +65847,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 4043.0,
+        "el": 4043,
         "rm": "pratiksha.dwivedi@nobroker.in"
       },
       {
@@ -65622,7 +65862,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 23351.0,
+        "el": 23351,
         "rm": "kratika.sarawgi@nobroker.in"
       },
       {
@@ -65637,7 +65877,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 1,
-        "el": 4397.0,
+        "el": 4397,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -65712,7 +65952,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1633.0,
+        "el": 1633,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -65742,7 +65982,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1191.0,
+        "el": 1191,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -65832,7 +66072,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 331.0,
+        "el": 331,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -65862,7 +66102,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 366.0,
+        "el": 366,
         "rm": "supreem.kv@nobroker.in"
       },
       {
@@ -65907,7 +66147,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 5650.0,
+        "el": 5650,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -65937,7 +66177,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -65952,7 +66192,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "SV Done",
         "cp": 0,
-        "el": 332.0,
+        "el": 332,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -65982,7 +66222,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1346.0,
+        "el": 1346,
         "rm": "niraj.wakulkar@nobroker.in"
       },
       {
@@ -65997,7 +66237,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263369.0,
+        "el": 263369,
         "rm": ""
       },
       {
@@ -66012,7 +66252,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 2916.0,
+        "el": 2916,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -66042,7 +66282,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 263420.0,
+        "el": 263420,
         "rm": "bapi.sen@nobroker.in"
       },
       {
@@ -66117,7 +66357,7 @@ window.RAW_DATA = {
         "r": "Open / Active Lead",
         "sv": "",
         "cp": 0,
-        "el": 349.0,
+        "el": 349,
         "rm": ""
       },
       {
@@ -66222,7 +66462,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 428.0,
+        "el": 428,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -66267,7 +66507,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 37533.0,
+        "el": 37533,
         "rm": "bhavya.shree@nobroker.in"
       },
       {
@@ -66297,7 +66537,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 1,
-        "el": 363.0,
+        "el": 363,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -66312,7 +66552,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 1259.0,
+        "el": 1259,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -66327,7 +66567,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 73629.0,
+        "el": 73629,
         "rm": ""
       },
       {
@@ -66357,7 +66597,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 108343.0,
+        "el": 108343,
         "rm": ""
       },
       {
@@ -66417,7 +66657,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263424.0,
+        "el": 263424,
         "rm": ""
       },
       {
@@ -66432,7 +66672,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -66462,7 +66702,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4566.0,
+        "el": 4566,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -66522,7 +66762,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263378.0,
+        "el": 263378,
         "rm": ""
       },
       {
@@ -66552,7 +66792,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 378.0,
+        "el": 378,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -66612,7 +66852,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 336.0,
+        "el": 336,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -66627,7 +66867,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1737.0,
+        "el": 1737,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -66732,7 +66972,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263424.0,
+        "el": 263424,
         "rm": ""
       },
       {
@@ -66762,7 +67002,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "rayan.ahmed@nobroker.in"
       },
       {
@@ -66777,7 +67017,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -66792,7 +67032,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 611.0,
+        "el": 611,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -66807,7 +67047,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1325.0,
+        "el": 1325,
         "rm": "santosh.shinde@nobroker.in"
       },
       {
@@ -66897,7 +67137,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 4364.0,
+        "el": 4364,
         "rm": "gangula.deepa@nobroker.in"
       },
       {
@@ -66912,7 +67152,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 1505.0,
+        "el": 1505,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -66927,7 +67167,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 4801.0,
+        "el": 4801,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -66942,7 +67182,7 @@ window.RAW_DATA = {
         "r": "Open / Active Lead",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "manoj.kumar12@nobroker.in"
       },
       {
@@ -66957,7 +67197,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1315.0,
+        "el": 1315,
         "rm": "rangeela.k@nobroker.in"
       },
       {
@@ -66972,7 +67212,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 86407.0,
+        "el": 86407,
         "rm": ""
       },
       {
@@ -67032,7 +67272,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 5160.0,
+        "el": 5160,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -67077,7 +67317,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 9986.0,
+        "el": 9986,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -67092,7 +67332,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4352.0,
+        "el": 4352,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -67107,7 +67347,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 23295.0,
+        "el": 23295,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -67122,7 +67362,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1266.0,
+        "el": 1266,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -67137,7 +67377,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 53704.0,
+        "el": 53704,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -67152,7 +67392,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1327.0,
+        "el": 1327,
         "rm": "adith.kumar@nobroker.in"
       },
       {
@@ -67167,7 +67407,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8958.0,
+        "el": 8958,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -67242,7 +67482,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 1312.0,
+        "el": 1312,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -67272,7 +67512,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 2990.0,
+        "el": 2990,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -67332,7 +67572,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 904.0,
+        "el": 904,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -67347,7 +67587,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8883.0,
+        "el": 8883,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -67407,7 +67647,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 633.0,
+        "el": 633,
         "rm": "ajaysingh.k@nobroker.in"
       },
       {
@@ -67422,7 +67662,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 3641.0,
+        "el": 3641,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -67452,7 +67692,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 1859.0,
+        "el": 1859,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -67482,7 +67722,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 4393.0,
+        "el": 4393,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -67542,7 +67782,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 30113.0,
+        "el": 30113,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -67557,7 +67797,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 2742.0,
+        "el": 2742,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -67587,7 +67827,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -67617,7 +67857,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 339.0,
+        "el": 339,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -67632,7 +67872,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 3951.0,
+        "el": 3951,
         "rm": "mounashree.m@nobroker.in"
       },
       {
@@ -67677,7 +67917,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1062.0,
+        "el": 1062,
         "rm": "anshika.soni@nobroker.in"
       },
       {
@@ -67692,7 +67932,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 4462.0,
+        "el": 4462,
         "rm": "sakshi.pradhan@nobroker.in"
       },
       {
@@ -67722,7 +67962,7 @@ window.RAW_DATA = {
         "r": "Clicked By Mistake / Accidental Click",
         "sv": "",
         "cp": 0,
-        "el": 2982.0,
+        "el": 2982,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -67752,7 +67992,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "Cancelled",
         "cp": 0,
-        "el": 32742.0,
+        "el": 32742,
         "rm": ""
       },
       {
@@ -67812,7 +68052,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 4418.0,
+        "el": 4418,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -67872,7 +68112,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "Cancelled",
         "cp": 1,
-        "el": 160069.0,
+        "el": 160069,
         "rm": "manish.raj@nobroker.in"
       },
       {
@@ -67917,7 +68157,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 8587.0,
+        "el": 8587,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -67932,7 +68172,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 10578.0,
+        "el": 10578,
         "rm": "ajaysingh.k@nobroker.in"
       },
       {
@@ -67962,7 +68202,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 6144.0,
+        "el": 6144,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -67977,7 +68217,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263355.0,
+        "el": 263355,
         "rm": ""
       },
       {
@@ -68007,7 +68247,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 43547.0,
+        "el": 43547,
         "rm": ""
       },
       {
@@ -68022,7 +68262,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263421.0,
+        "el": 263421,
         "rm": ""
       },
       {
@@ -68052,7 +68292,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -68097,7 +68337,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 11331.0,
+        "el": 11331,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -68112,7 +68352,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "gunalan.manoharan1@nobroker.in"
       },
       {
@@ -68127,7 +68367,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 625.0,
+        "el": 625,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -68187,7 +68427,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 11556.0,
+        "el": 11556,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -68202,7 +68442,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1344.0,
+        "el": 1344,
         "rm": "anshika.soni@nobroker.in"
       },
       {
@@ -68217,7 +68457,7 @@ window.RAW_DATA = {
         "r": "Rental / Rent Out Enquiry",
         "sv": "",
         "cp": 0,
-        "el": 25103.0,
+        "el": 25103,
         "rm": "seetha.lakshmi@nobroker.in"
       },
       {
@@ -68292,7 +68532,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263422.0,
+        "el": 263422,
         "rm": ""
       },
       {
@@ -68307,7 +68547,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 9955.0,
+        "el": 9955,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -68322,7 +68562,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1911.0,
+        "el": 1911,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -68367,7 +68607,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 264847.0,
+        "el": 264847,
         "rm": ""
       },
       {
@@ -68382,7 +68622,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 3470.0,
+        "el": 3470,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -68397,7 +68637,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 334.0,
+        "el": 334,
         "rm": "amandeep.kour@nobroker.in"
       },
       {
@@ -68412,7 +68652,7 @@ window.RAW_DATA = {
         "r": "Purchase Plan Dropped",
         "sv": "",
         "cp": 1,
-        "el": 12757.0,
+        "el": 12757,
         "rm": ""
       },
       {
@@ -68457,7 +68697,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 1323.0,
+        "el": 1323,
         "rm": "indira.m@nobroker.in"
       },
       {
@@ -68487,7 +68727,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 3807.0,
+        "el": 3807,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -68502,7 +68742,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 21603.0,
+        "el": 21603,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -68517,7 +68757,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 1401.0,
+        "el": 1401,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -68532,7 +68772,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2702.0,
+        "el": 2702,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -68547,7 +68787,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 6041.0,
+        "el": 6041,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -68577,7 +68817,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 1208.0,
+        "el": 1208,
         "rm": "mahesh.7@nobroker.in"
       },
       {
@@ -68592,7 +68832,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 33307.0,
+        "el": 33307,
         "rm": "chougule.prashant@nobroker.in"
       },
       {
@@ -68712,7 +68952,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 4422.0,
+        "el": 4422,
         "rm": "samata.pujari@nobroker.in"
       },
       {
@@ -68757,7 +68997,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "cyril.jose@nobroker.in"
       },
       {
@@ -68787,7 +69027,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "Cancelled",
         "cp": 1,
-        "el": 4166.0,
+        "el": 4166,
         "rm": "avinash.singh1@nobroker.in"
       },
       {
@@ -68802,7 +69042,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 23242.0,
+        "el": 23242,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -68832,7 +69072,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 1797.0,
+        "el": 1797,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -68877,7 +69117,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 21421.0,
+        "el": 21421,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -68907,7 +69147,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 97896.0,
+        "el": 97896,
         "rm": ""
       },
       {
@@ -68937,7 +69177,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 995.0,
+        "el": 995,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -68967,7 +69207,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 9032.0,
+        "el": 9032,
         "rm": "sanjay.ananthan@nobroker.in"
       },
       {
@@ -68982,7 +69222,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1607.0,
+        "el": 1607,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -69042,7 +69282,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -69057,7 +69297,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263722.0,
+        "el": 263722,
         "rm": ""
       },
       {
@@ -69072,7 +69312,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 4802.0,
+        "el": 4802,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -69087,7 +69327,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2082.0,
+        "el": 2082,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -69117,7 +69357,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 21886.0,
+        "el": 21886,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -69132,7 +69372,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4393.0,
+        "el": 4393,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -69192,7 +69432,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1204.0,
+        "el": 1204,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -69222,7 +69462,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1315.0,
+        "el": 1315,
         "rm": "anjum.kouser@nobroker.in"
       },
       {
@@ -69237,7 +69477,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -69252,7 +69492,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 1407.0,
+        "el": 1407,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -69267,7 +69507,7 @@ window.RAW_DATA = {
         "r": "Open / Active Lead",
         "sv": "",
         "cp": 0,
-        "el": 1680.0,
+        "el": 1680,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -69282,7 +69522,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263426.0,
+        "el": 263426,
         "rm": ""
       },
       {
@@ -69297,7 +69537,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "SV Done",
         "cp": 0,
-        "el": 83499.0,
+        "el": 83499,
         "rm": ""
       },
       {
@@ -69402,7 +69642,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 90330.0,
+        "el": 90330,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -69447,7 +69687,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 4492.0,
+        "el": 4492,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -69462,7 +69702,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 3484.0,
+        "el": 3484,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -69507,7 +69747,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 380.0,
+        "el": 380,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -69522,7 +69762,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 35499.0,
+        "el": 35499,
         "rm": ""
       },
       {
@@ -69537,7 +69777,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 8570.0,
+        "el": 8570,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -69567,7 +69807,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "SV Scheduled",
         "cp": 1,
-        "el": 4033.0,
+        "el": 4033,
         "rm": "mohammed.junaid3@nobroker.in"
       },
       {
@@ -69612,7 +69852,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 2788.0,
+        "el": 2788,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -69627,7 +69867,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263716.0,
+        "el": 263716,
         "rm": ""
       },
       {
@@ -69687,7 +69927,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 27233.0,
+        "el": 27233,
         "rm": ""
       },
       {
@@ -69702,7 +69942,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 350.0,
+        "el": 350,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -69717,7 +69957,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 338.0,
+        "el": 338,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -69732,7 +69972,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 2754.0,
+        "el": 2754,
         "rm": "kajapriya.chandran@nobroker.in"
       },
       {
@@ -69792,7 +70032,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -69807,7 +70047,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "SV Done",
         "cp": 0,
-        "el": 335.0,
+        "el": 335,
         "rm": "supreem.kv@nobroker.in"
       },
       {
@@ -69867,7 +70107,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1540.0,
+        "el": 1540,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -69882,7 +70122,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 8668.0,
+        "el": 8668,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -69897,7 +70137,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 3163.0,
+        "el": 3163,
         "rm": "karishma.kumari@nobroker.in"
       },
       {
@@ -69927,7 +70167,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 31825.0,
+        "el": 31825,
         "rm": "nilesh.kodam@nobroker.in"
       },
       {
@@ -69942,7 +70182,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1059.0,
+        "el": 1059,
         "rm": "adith.kumar@nobroker.in"
       },
       {
@@ -69957,7 +70197,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263716.0,
+        "el": 263716,
         "rm": ""
       },
       {
@@ -69972,7 +70212,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1712.0,
+        "el": 1712,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -70002,7 +70242,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 7570.0,
+        "el": 7570,
         "rm": "varsha.b@nobroker.in"
       },
       {
@@ -70047,7 +70287,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 58623.0,
+        "el": 58623,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -70062,7 +70302,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 620.0,
+        "el": 620,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -70077,7 +70317,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -70107,7 +70347,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 4639.0,
+        "el": 4639,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -70137,7 +70377,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 2953.0,
+        "el": 2953,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -70152,7 +70392,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 73307.0,
+        "el": 73307,
         "rm": ""
       },
       {
@@ -70167,7 +70407,7 @@ window.RAW_DATA = {
         "r": "Locality Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 1310.0,
+        "el": 1310,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -70197,7 +70437,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 1,
-        "el": 1846.0,
+        "el": 1846,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -70257,7 +70497,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 1,
-        "el": 3097.0,
+        "el": 3097,
         "rm": ""
       },
       {
@@ -70287,7 +70527,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 63396.0,
+        "el": 63396,
         "rm": ""
       },
       {
@@ -70317,7 +70557,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263420.0,
+        "el": 263420,
         "rm": ""
       },
       {
@@ -70392,7 +70632,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 9936.0,
+        "el": 9936,
         "rm": "uday.ram@nobroker.in"
       },
       {
@@ -70482,7 +70722,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 1559.0,
+        "el": 1559,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -70527,7 +70767,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 8874.0,
+        "el": 8874,
         "rm": "gulbarga.thahaseenbanu@nobroker.in"
       },
       {
@@ -70542,7 +70782,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 338.0,
+        "el": 338,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -70557,7 +70797,7 @@ window.RAW_DATA = {
         "r": "Cloned / Transferred To Matching Project",
         "sv": "",
         "cp": 1,
-        "el": 332.0,
+        "el": 332,
         "rm": "srihari.2@nobroker.in"
       },
       {
@@ -70587,7 +70827,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 4079.0,
+        "el": 4079,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -70617,7 +70857,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 30428.0,
+        "el": 30428,
         "rm": "akshay.tr@nobroker.in"
       },
       {
@@ -70662,7 +70902,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 47480.0,
+        "el": 47480,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -70692,7 +70932,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 41748.0,
+        "el": 41748,
         "rm": "gunalan.manoharan1@nobroker.in"
       },
       {
@@ -70737,7 +70977,7 @@ window.RAW_DATA = {
         "r": "Rejected - Reason Missing",
         "sv": "",
         "cp": 0,
-        "el": 3470.0,
+        "el": 3470,
         "rm": "mouliswaran.k@nobroker.in"
       },
       {
@@ -70752,7 +70992,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 0,
-        "el": 337.0,
+        "el": 337,
         "rm": "sushma.patil1@nobroker.in"
       },
       {
@@ -70767,7 +71007,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1421.0,
+        "el": 1421,
         "rm": "rayan.ahmed@nobroker.in"
       },
       {
@@ -70797,7 +71037,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 55126.0,
+        "el": 55126,
         "rm": ""
       },
       {
@@ -70827,7 +71067,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 92256.0,
+        "el": 92256,
         "rm": ""
       },
       {
@@ -70842,7 +71082,7 @@ window.RAW_DATA = {
         "r": "Property Type / Config Mismatch (Plot/Villa/BHK)",
         "sv": "",
         "cp": 0,
-        "el": 4522.0,
+        "el": 4522,
         "rm": "aishwarya.r2@nobroker.in"
       },
       {
@@ -70872,7 +71112,7 @@ window.RAW_DATA = {
         "r": "Looking for Resale Property",
         "sv": "",
         "cp": 0,
-        "el": 4332.0,
+        "el": 4332,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       },
       {
@@ -70932,7 +71172,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1068.0,
+        "el": 1068,
         "rm": "niraj.wakulkar@nobroker.in"
       },
       {
@@ -70947,7 +71187,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 77694.0,
+        "el": 77694,
         "rm": ""
       },
       {
@@ -71037,7 +71277,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 263418.0,
+        "el": 263418,
         "rm": ""
       },
       {
@@ -71067,7 +71307,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 122161.0,
+        "el": 122161,
         "rm": "ajaysingh.k@nobroker.in"
       },
       {
@@ -71097,7 +71337,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4391.0,
+        "el": 4391,
         "rm": "bharathachari.b@nobroker.in"
       },
       {
@@ -71202,7 +71442,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 381586.0,
+        "el": 381586,
         "rm": ""
       },
       {
@@ -71232,7 +71472,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 956.0,
+        "el": 956,
         "rm": "sangamesh.nimbalagundi@nobroker.in"
       },
       {
@@ -71277,7 +71517,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 337.0,
+        "el": 337,
         "rm": "rajendran.s@nobroker.in"
       },
       {
@@ -71307,7 +71547,7 @@ window.RAW_DATA = {
         "r": "Budget Mismatch",
         "sv": "",
         "cp": 0,
-        "el": 8594.0,
+        "el": 8594,
         "rm": "manish.gupta2@nobroker.in"
       },
       {
@@ -71337,7 +71577,7 @@ window.RAW_DATA = {
         "r": "Duplicate Lead",
         "sv": "",
         "cp": 1,
-        "el": 1891.0,
+        "el": 1891,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -71367,7 +71607,7 @@ window.RAW_DATA = {
         "r": "Not Contactable / RNR",
         "sv": "",
         "cp": 0,
-        "el": 1592.0,
+        "el": 1592,
         "rm": "devika.k@nobroker.in"
       },
       {
@@ -71427,7 +71667,7 @@ window.RAW_DATA = {
         "r": "Follow-up Not Contactable Reject",
         "sv": "",
         "cp": 0,
-        "el": 333.0,
+        "el": 333,
         "rm": "vikas.goud@nobroker.in"
       },
       {
@@ -71457,7 +71697,7 @@ window.RAW_DATA = {
         "r": "Already Bought / Booked (Self / Other NB Project)",
         "sv": "",
         "cp": 0,
-        "el": 8299.0,
+        "el": 8299,
         "rm": "asma.shaikh@nobroker.in"
       },
       {
@@ -71472,7 +71712,7 @@ window.RAW_DATA = {
         "r": "Not Interested for Purchase",
         "sv": "",
         "cp": 0,
-        "el": 1582.0,
+        "el": 1582,
         "rm": "abhishek.b1@nobroker.in"
       },
       {
@@ -71487,7 +71727,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 4712.0,
+        "el": 4712,
         "rm": "anil.babu@nobroker.in"
       },
       {
@@ -71502,7 +71742,7 @@ window.RAW_DATA = {
         "r": "Lead Expired (Auto-expired)",
         "sv": "",
         "cp": 0,
-        "el": 339.0,
+        "el": 339,
         "rm": "harivarthanan.gopalakrishnan@nobroker.in"
       }
     ]

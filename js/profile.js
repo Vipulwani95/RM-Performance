@@ -1066,10 +1066,10 @@
     const comp = dashboardData.comparison[comparisonMonth];
     if (comp && comp.rms && comp.rms[activeRM] && comp.rms[activeRM].curr) {
       const curr = comp.rms[activeRM].curr;
-      const totalLeads = curr.totalLeads || 1;
-      const workable = curr.workableLeads || 0;
+      const totalLeads = curr.total_leads || curr.totalLeads || 1;
+      const workable = curr.workable_leads || curr.workableLeads || 0;
       const conv = curr.conversion || 0;
-      const convPct = curr.conversionPct || '0%';
+      const convPct = curr.conversion_pct || curr.conversionPct || '0%';
       const convNum = parseFloat(convPct) || 0;
       const workPct = ((workable / totalLeads) * 100).toFixed(1);
       // Proportional bar widths:
@@ -1127,8 +1127,8 @@
 
       compMonths.forEach(m => {
         const c = dashboardData.comparison[m]?.rms?.[activeRM]?.curr;
-        totalLeadsData.push(c?.totalLeads || 0);
-        workableData.push(c?.workableLeads || 0);
+        totalLeadsData.push(c?.total_leads || c?.totalLeads || 0);
+        workableData.push(c?.workable_leads || c?.workableLeads || 0);
         convData.push(c?.conversion || 0);
       });
 
@@ -1177,14 +1177,14 @@
                 label: (ctx) => {
                   const m = compMonths[ctx.dataIndex];
                   const c = dashboardData.comparison[m]?.rms?.[activeRM]?.curr;
-                  const total = c?.totalLeads || 0;
-                  const work = c?.workableLeads || 0;
+                  const total = c?.total_leads || c?.totalLeads || 0;
+                  const work = c?.workable_leads || c?.workableLeads || 0;
                   const val = ctx.parsed.y;
                   if (ctx.dataset.label === 'Workable Leads') {
                     const pct = total > 0 ? ((work / total) * 100).toFixed(1) : 0;
                     return ` ${ctx.dataset.label}: ${val.toLocaleString('en-IN')} (${pct}% of Total)`;
                   } else if (ctx.dataset.label === 'Conversions') {
-                    const pct = c?.conversionPct || '0%';
+                    const pct = c?.conversion_pct || c?.conversionPct || '0%';
                     return ` ${ctx.dataset.label}: ${val.toLocaleString('en-IN')} (${pct} of Workable)`;
                   }
                   return ` ${ctx.dataset.label}: ${val.toLocaleString('en-IN')}`;

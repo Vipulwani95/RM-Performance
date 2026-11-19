@@ -43,7 +43,7 @@
       background: white;
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 16px 20px;
+      padding: 18px 20px;
       margin-bottom: 22px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.04);
     }
@@ -51,8 +51,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 12px;
-      padding-bottom: 10px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
       border-bottom: 1px solid #f1f5f9;
       flex-wrap: wrap;
       gap: 10px;
@@ -71,7 +71,7 @@
       gap: 8px;
       background: #eff6ff;
       border: 1px solid #bfdbfe;
-      padding: 4px 12px;
+      padding: 5px 14px;
       border-radius: 9999px;
       font-size: 12px;
       font-weight: 600;
@@ -82,27 +82,27 @@
       flex-direction: column;
       gap: 12px;
     }
-    .month-pills-wrap {
+    .month-pills-wrap, .city-pills-wrap {
       display: flex;
       align-items: center;
       gap: 12px;
       flex-wrap: wrap;
     }
     .filter-sublabel {
-      font-size: 12px;
-      font-weight: 700;
+      font-size: 11px;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.6px;
       color: var(--text-muted);
       min-width: 95px;
     }
-    .month-pills {
+    .month-pills, .city-pills {
       display: flex;
       gap: 6px;
       flex-wrap: wrap;
       align-items: center;
     }
-    .month-pill {
+    .month-pill, .city-pill-btn {
       background: #f1f5f9;
       border: 1px solid #cbd5e1;
       padding: 6px 12px;
@@ -116,32 +116,39 @@
       align-items: center;
       gap: 6px;
     }
-    .month-pill:hover {
+    .month-pill:hover, .city-pill-btn:hover {
       background: #e2e8f0;
       border-color: #94a3b8;
     }
-    .month-pill.active {
+    .month-pill.active, .city-pill-btn.active {
       background: #1e40af;
       border-color: #1e3a8a;
       color: white;
       box-shadow: 0 2px 8px rgba(30, 64, 175, 0.3);
     }
-    .month-pill .pill-cnt {
+    .month-pill .pill-cnt, .city-pill-btn .pill-cnt {
       background: rgba(0,0,0,0.08);
       padding: 1px 6px;
       border-radius: 9999px;
       font-size: 11px;
     }
-    .month-pill.active .pill-cnt {
+    .month-pill.active .pill-cnt, .city-pill-btn.active .pill-cnt {
       background: rgba(255,255,255,0.25);
       color: white;
     }
+    
+    .city-pill-btn.active[data-city="bangalore"] { background: #2563eb; border-color: #1d4ed8; }
+    .city-pill-btn.active[data-city="chennai"] { background: #0d9488; border-color: #0f766e; }
+    .city-pill-btn.active[data-city="pune"] { background: #8b5cf6; border-color: #7c3aed; }
+    .city-pill-btn.active[data-city="mumbai"] { background: #f59e0b; border-color: #d97706; }
+    .city-pill-btn.active[data-city="hyderabad"] { background: #ec4899; border-color: #db2777; }
+
     .date-range-wrap {
       display: flex;
       align-items: center;
       gap: 12px;
       flex-wrap: wrap;
-      padding-top: 8px;
+      padding-top: 10px;
       border-top: 1px dashed #e2e8f0;
     }
     .date-inputs {
@@ -274,6 +281,51 @@
     .city-bom { background: #fef3c7; color: #b45309; }
     .city-hyd { background: #fce7f3; color: #be185d; }
 
+    /* In-tab filter bar */
+    .tab-filter-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding: 10px 14px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .tab-filter-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .tab-filter-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .city-tab-pill {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text);
+      transition: all 0.2s;
+    }
+    .city-tab-pill:hover {
+      border-color: #94a3b8;
+    }
+    .city-tab-pill.active {
+      background: #1e40af;
+      color: white;
+      border-color: #1e3a8a;
+    }
+
     /* Grid Two Columns */
     .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 20px; }
     
@@ -348,7 +400,7 @@
       <!-- Top Header -->
       <div class="header">
         <div class="header-left">
-          <h1>Builder Leads — Conversion Funnel &amp; Leads Flow Dashboard</h1>
+          <h1>Builder Leads — Conversion Funnel, Leads Flow &amp; Rejection Intelligence</h1>
           <p>Interactive Performance Intelligence for Ambassador Club Builder Leads across 5 Major Indian Metros (Bangalore, Chennai, Pune, Mumbai, Hyderabad).</p>
         </div>
         <div class="header-badge">
@@ -357,39 +409,64 @@
         </div>
       </div>
 
-      <!-- INTERACTIVE DATE & MONTH FILTER BAR -->
+      <!-- INTERACTIVE DATE, MONTH & CITY FILTER CARD -->
       <div class="filter-card">
         <div class="filter-card-header">
           <div class="filter-header-title">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-            <span>Filter Leads Intake Timeline</span>
+            <span>Filter Ingested Leads by Month &amp; City</span>
           </div>
           <div class="filter-feedback" id="filter-feedback-badge">
             <span class="pulse-dot"></span>
-            <span id="active-filter-text">Showing: All Time (2,212 Ingested Leads across 5 Metros)</span>
+            <span id="active-filter-text">Showing: All Time • All Metros (2,212 Ingested Leads)</span>
           </div>
         </div>
 
         <div class="filter-card-body">
           <!-- Month Quick Selection Pills -->
           <div class="month-pills-wrap">
-            <span class="filter-sublabel">By Month:</span>
+            <span class="filter-sublabel">Select Month:</span>
             <div class="month-pills" id="month-pills-container">
               <button class="month-pill active" data-month="all" onclick="selectMonthFilter('all', this)">All Time</button>
-              <button class="month-pill" data-month="2026-11" onclick="selectMonthFilter('2026-11', this)">Nov 2026 <span class="pill-cnt">112</span></button>
-              <button class="month-pill" data-month="2026-10" onclick="selectMonthFilter('2026-10', this)">Oct 2026 <span class="pill-cnt">345</span></button>
-              <button class="month-pill" data-month="2026-09" onclick="selectMonthFilter('2026-09', this)">Sep 2026 <span class="pill-cnt">504</span></button>
-              <button class="month-pill" data-month="2026-08" onclick="selectMonthFilter('2026-08', this)">Aug 2026 <span class="pill-cnt">330</span></button>
-              <button class="month-pill" data-month="2026-07" onclick="selectMonthFilter('2026-07', this)">Jul 2026 <span class="pill-cnt">380</span></button>
-              <button class="month-pill" data-month="2026-06" onclick="selectMonthFilter('2026-06', this)">Jun 2026 <span class="pill-cnt">239</span></button>
-              <button class="month-pill" data-month="2026-05" onclick="selectMonthFilter('2026-05', this)">May 2026 <span class="pill-cnt">11</span></button>
-              <button class="month-pill" data-month="2026-01" onclick="selectMonthFilter('2026-01', this)">Jan 2026 <span class="pill-cnt">291</span></button>
+              <button class="month-pill" data-month="2026-11" onclick="selectMonthFilter('2026-11', this)">Nov 2026 <span class="pill-cnt" id="mcnt-2026-11">112</span></button>
+              <button class="month-pill" data-month="2026-10" onclick="selectMonthFilter('2026-10', this)">Oct 2026 <span class="pill-cnt" id="mcnt-2026-10">345</span></button>
+              <button class="month-pill" data-month="2026-09" onclick="selectMonthFilter('2026-09', this)">Sep 2026 <span class="pill-cnt" id="mcnt-2026-09">504</span></button>
+              <button class="month-pill" data-month="2026-08" onclick="selectMonthFilter('2026-08', this)">Aug 2026 <span class="pill-cnt" id="mcnt-2026-08">330</span></button>
+              <button class="month-pill" data-month="2026-07" onclick="selectMonthFilter('2026-07', this)">Jul 2026 <span class="pill-cnt" id="mcnt-2026-07">380</span></button>
+              <button class="month-pill" data-month="2026-06" onclick="selectMonthFilter('2026-06', this)">Jun 2026 <span class="pill-cnt" id="mcnt-2026-06">239</span></button>
+              <button class="month-pill" data-month="2026-05" onclick="selectMonthFilter('2026-05', this)">May 2026 <span class="pill-cnt" id="mcnt-2026-05">11</span></button>
+              <button class="month-pill" data-month="2026-01" onclick="selectMonthFilter('2026-01', this)">Jan 2026 <span class="pill-cnt" id="mcnt-2026-01">291</span></button>
+            </div>
+          </div>
+
+          <!-- City Selection Pills -->
+          <div class="city-pills-wrap">
+            <span class="filter-sublabel">Select City:</span>
+            <div class="city-pills" id="city-pills-container">
+              <button class="city-pill-btn active" data-city="all" onclick="selectCityFilter('all', this)">
+                Pan-India (All Cities) <span class="pill-cnt" id="ccnt-all">2,212</span>
+              </button>
+              <button class="city-pill-btn" data-city="bangalore" onclick="selectCityFilter('bangalore', this)">
+                Bangalore <span class="pill-cnt" id="ccnt-bangalore">929</span>
+              </button>
+              <button class="city-pill-btn" data-city="chennai" onclick="selectCityFilter('chennai', this)">
+                Chennai <span class="pill-cnt" id="ccnt-chennai">480</span>
+              </button>
+              <button class="city-pill-btn" data-city="pune" onclick="selectCityFilter('pune', this)">
+                Pune <span class="pill-cnt" id="ccnt-pune">376</span>
+              </button>
+              <button class="city-pill-btn" data-city="mumbai" onclick="selectCityFilter('mumbai', this)">
+                Mumbai <span class="pill-cnt" id="ccnt-mumbai">331</span>
+              </button>
+              <button class="city-pill-btn" data-city="hyderabad" onclick="selectCityFilter('hyderabad', this)">
+                Hyderabad <span class="pill-cnt" id="ccnt-hyderabad">96</span>
+              </button>
             </div>
           </div>
 
           <!-- Custom Date Range -->
           <div class="date-range-wrap">
-            <span class="filter-sublabel">Custom Range:</span>
+            <span class="filter-sublabel">Date Range:</span>
             <div class="date-inputs">
               <div class="date-input-group">
                 <label for="date-start">From</label>
@@ -456,12 +533,12 @@
             <span>End-to-End Pipeline Progression</span>
             <div style="display:flex; align-items:center; gap: 8px;">
               <span style="font-size: 13px; font-weight: 600; color: var(--text);">City View:</span>
-              <select id="city-selector" class="filter-select" onchange="updateCityFilter(this.value)" style="padding: 7px 12px; border-radius: 8px; border: 1px solid var(--border); font-size: 13px; font-weight: 600; outline: none; background: white; cursor: pointer;">
+              <select id="funnel-city-selector" class="filter-select" onchange="syncCityFromDropdown(this.value)" style="padding: 7px 12px; border-radius: 8px; border: 1px solid var(--border); font-size: 13px; font-weight: 600; outline: none; background: white; cursor: pointer;">
                 <option value="all">Pan-India (All 5 Cities)</option>
                 <option value="bangalore">Bangalore</option>
+                <option value="chennai">Chennai</option>
                 <option value="pune">Pune</option>
                 <option value="mumbai">Mumbai</option>
-                <option value="chennai">Chennai</option>
                 <option value="hyderabad">Hyderabad</option>
               </select>
             </div>
@@ -519,7 +596,7 @@
         </div>
       </div>
 
-      <!-- TAB 3: LEADS FLOW ACROSS CITIES (NEW!) -->
+      <!-- TAB 3: LEADS FLOW ACROSS CITIES -->
       <div id="tab-flow" class="tab-content" style="display: none;">
         
         <!-- Flow Highlights -->
@@ -601,12 +678,56 @@
       
       <!-- TAB 4: REJECTIONS -->
       <div id="tab-rejections" class="tab-content" style="display: none;">
+        
+        <!-- Rejection Filter Bar by City -->
+        <div class="tab-filter-bar">
+          <div class="tab-filter-left">
+            <span class="tab-filter-label">Filter Rejections by City:</span>
+            <button class="city-tab-pill active" data-city="all" onclick="syncCityFilter('all')">Pan-India (All Metros)</button>
+            <button class="city-tab-pill" data-city="bangalore" onclick="syncCityFilter('bangalore')">Bangalore</button>
+            <button class="city-tab-pill" data-city="chennai" onclick="syncCityFilter('chennai')">Chennai</button>
+            <button class="city-tab-pill" data-city="pune" onclick="syncCityFilter('pune')">Pune</button>
+            <button class="city-tab-pill" data-city="mumbai" onclick="syncCityFilter('mumbai')">Mumbai</button>
+            <button class="city-tab-pill" data-city="hyderabad" onclick="syncCityFilter('hyderabad')">Hyderabad</button>
+          </div>
+          <div style="font-size: 12px; font-weight: 600; color: #1e40af;" id="rejection-scope-label">
+            Showing All Cities Rejections
+          </div>
+        </div>
+
+        <!-- Cross-City Rejection Comparison Matrix (Only when all cities selected) -->
+        <div class="card" id="city-rejection-matrix-card">
+          <div class="card-title">
+            <span>Cross-City Rejection Breakdown Matrix (Selected Month / Timeline)</span>
+            <span style="font-size: 12px; font-weight: 600; color: var(--text-muted);" id="matrix-period-label">All Time Comparison</span>
+          </div>
+          <div style="overflow-x: auto;">
+            <table class="data-table" id="city-rejection-matrix-table">
+              <thead>
+                <tr>
+                  <th>Standardized Rejection Category</th>
+                  <th>Bangalore</th>
+                  <th>Chennai</th>
+                  <th>Pune</th>
+                  <th>Mumbai</th>
+                  <th>Hyderabad</th>
+                  <th>Total Rejections</th>
+                  <th>Most Affected Metro</th>
+                </tr>
+              </thead>
+              <tbody id="city-rejection-matrix-tbody">
+                <!-- Dynamically generated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <div class="grid-2">
           <!-- Rejection Category Summary -->
           <div class="card">
             <div class="card-title">Standardized Rejection Categories (Executive Summary)</div>
             <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
-              Consolidated from 26 raw CRM labels into 8 normalized operational buckets.
+              Consolidated from 26 raw CRM labels into 8 normalized operational buckets for the selected city &amp; month.
             </p>
             <div id="rejection-categories-list" style="display: flex; flex-direction: column; gap: 12px;">
               <!-- Categories -->
@@ -750,25 +871,6 @@
         { id: "chennai", name: "Chennai", leads: 480, users: 403, dialled: 436, dialled_pct: 90.8, connected: 99, connected_pct: 22.7, call_patch: 6, sv_booked: 7, sv_done: 1, sv_conversion: 14.3, lead_to_sv: 0.21 },
         { id: "hyderabad", name: "Hyderabad", leads: 96, users: 85, dialled: 57, dialled_pct: 59.4, connected: 17, connected_pct: 29.8, call_patch: 4, sv_booked: 2, sv_done: 0, sv_conversion: 0.0, lead_to_sv: 0.0 }
       ],
-      funnel_stages: [
-        { stage: "1. Total Ingested Leads", count: 2212, users: 1800, pct_total: 100.0, step_conv: 100.0, drop: 0, color: "#1e3a8a", desc: "Gross inbound leads received from Ambassador Club campaigns" },
-        { stage: "2. Dialled / Contact Attempted", count: 1699, users: 1403, pct_total: 76.8, step_conv: 76.8, drop: 513, color: "#2563eb", desc: "Leads with RM calling activity, telephony duration, or contact dispositions" },
-        { stage: "3. Connected / Spoken Conversation", count: 411, users: 375, pct_total: 18.6, step_conv: 24.2, drop: 1288, color: "#0284c7", desc: "Live two-way conversations between relationship manager and customer" },
-        { stage: "4. Warm Prospect / Pitch Follow-up", count: 74, users: 74, pct_total: 3.3, step_conv: 18.0, drop: 337, color: "#0d9488", desc: "Leads with validated purchase interest, open follow-ups, or meeting sessions" },
-        { stage: "5. Call Patch Pitch Done", count: 60, users: 60, pct_total: 2.7, step_conv: 81.1, drop: 14, color: "#16a34a", desc: "Completed 3-way conference/pitch call with developer representative (65 patches)" },
-        { stage: "6. Site Visit Scheduled / Booked", count: 48, users: 48, pct_total: 2.2, step_conv: 80.0, drop: 12, color: "#ca8a04", desc: "Customer agreed and scheduled appointment for project site visit" },
-        { stage: "7. Site Visit Done (Completed)", count: 16, users: 16, pct_total: 0.72, step_conv: 33.3, drop: 32, color: "#15803d", desc: "Physical on-ground builder site visit completed by prospect (20 total visits)" }
-      ],
-      rejection_categories: [
-        { name: "System Expired", count: 799, pct_rej: 37.0, pct_tot: 36.1, color: "#ef4444", status: "System Auto-Expiry", desc: "Timed out past SLA without RM contact or conversion" },
-        { name: "Uncontactable / Not Connected", count: 669, pct_rej: 31.0, pct_tot: 30.2, color: "#f97316", status: "RNR / Unreachable", desc: "Customer did not answer across 1-5 dial attempts (nc_1 to nc_5)" },
-        { name: "Not Interested (Direct Pitch)", count: 218, pct_rej: 10.1, pct_tot: 9.9, color: "#eab308", status: "Spoken / Connected", desc: "Directly declined project or purchase intent during call" },
-        { name: "Duplicate / Project Transferred", count: 203, pct_rej: 9.4, pct_tot: 9.2, color: "#8b5cf6", status: "System / De-dupe", desc: "Duplicate submissions (133) or cloned to matching project (70)" },
-        { name: "Invalid / Ineligible Lead Source", count: 83, pct_rej: 3.8, pct_tot: 3.8, color: "#ec4899", status: "Spoken / Screened", desc: "Mistake click (30), broker (25), rental (13), plan dropped (11), DNC/test (4)" },
-        { name: "Other / Unspecified Reason", count: 80, pct_rej: 3.7, pct_tot: 3.6, color: "#64748b", status: "Unspecified", desc: "Marked lead_reject in CRM without sub-reason note" },
-        { name: "Requirement Mismatch", count: 55, pct_rej: 2.5, pct_tot: 2.5, color: "#06b6d4", status: "Spoken / Qualified", desc: "Budget (30), resale (12), villa/plot/BHK (8), locality (5)" },
-        { name: "Already Purchased / Closed", count: 51, pct_rej: 2.4, pct_tot: 2.3, color: "#10b981", status: "Spoken / Closed", desc: "Already bought house (48), booked flat (1), closed other project (2)" }
-      ],
       granular_rejections: [
         { reason: "Lead Expired (Auto-expired)", category: "System Expired", count: 799, pct: 36.1, raw: "lead_expired (799)", contact: "No (Auto-expiry)" },
         { reason: "Not Contactable / RNR", category: "Uncontactable", count: 552, pct: 25.0, raw: "NOT_CONTACTABLE (530), Non Contactable (22)", contact: "No (Unreachable)" },
@@ -800,7 +902,7 @@
       month: 'all',
       startDate: null,
       endDate: null,
-      city: 'all'
+      city: 'all' // 'all' or city id: 'bangalore', 'chennai', 'pune', 'mumbai', 'hyderabad'
     };
 
     let flowViewMode = 'monthly'; // 'monthly' or 'daily'
@@ -813,7 +915,7 @@
       document.getElementById(tabId).style.display = 'block';
       btn.classList.add('active');
 
-      if (tabId === 'tab-flow' && !flowChartInstance) {
+      if (tabId === 'tab-flow') {
         renderFlowChart();
       }
     }
@@ -829,6 +931,40 @@
       currentFilter.endDate = null;
 
       applyFilter();
+    }
+
+    // City filter selection
+    function selectCityFilter(cityVal, btn) {
+      currentFilter.city = cityVal;
+      syncCityUI(cityVal);
+      applyFilter();
+    }
+
+    // Sync city across UI components (top pills, dropdown, and in-tab pills)
+    function syncCityFilter(cityVal) {
+      currentFilter.city = cityVal;
+      syncCityUI(cityVal);
+      applyFilter();
+    }
+
+    function syncCityFromDropdown(cityVal) {
+      currentFilter.city = cityVal;
+      syncCityUI(cityVal);
+      applyFilter();
+    }
+
+    function syncCityUI(cityVal) {
+      // Top filter card pills
+      document.querySelectorAll('.city-pill-btn').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-city') === cityVal);
+      });
+      // Tab 1 funnel dropdown
+      const funnelSelect = document.getElementById('funnel-city-selector');
+      if (funnelSelect) funnelSelect.value = cityVal;
+      // Tab 4 in-tab city pills
+      document.querySelectorAll('.city-tab-pill').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-city') === cityVal);
+      });
     }
 
     // Apply custom date range
@@ -863,43 +999,76 @@
 
     // Main filter recalculation engine
     function applyFilter() {
-      let filtered = ALL_LEADS;
-      let filterLabel = '';
+      // 1. Filter by timeline (month or custom dates)
+      let timelineLeads = ALL_LEADS;
+      let timeLabel = 'All Time';
 
-      if (currentFilter.type === 'month' && currentFilter.month) {
-        filtered = ALL_LEADS.filter(l => l.m === currentFilter.month);
+      if (currentFilter.type === 'month' && currentFilter.month && currentFilter.month !== 'all') {
+        timelineLeads = ALL_LEADS.filter(l => l.m === currentFilter.month);
         const mNames = {
           '2026-11': 'November 2026', '2026-10': 'October 2026', '2026-09': 'September 2026',
           '2026-08': 'August 2026', '2026-07': 'July 2026', '2026-06': 'June 2026',
           '2026-05': 'May 2026', '2026-01': 'January 2026'
         };
-        filterLabel = `Showing: ${mNames[currentFilter.month] || currentFilter.month} (${filtered.length.toLocaleString()} Leads)`;
+        timeLabel = mNames[currentFilter.month] || currentFilter.month;
       } else if (currentFilter.type === 'custom' && currentFilter.startDate && currentFilter.endDate) {
-        filtered = ALL_LEADS.filter(l => l.d >= currentFilter.startDate && l.d <= currentFilter.endDate);
-        filterLabel = `Showing: ${currentFilter.startDate} to ${currentFilter.endDate} (${filtered.length.toLocaleString()} Leads)`;
-      } else {
-        filterLabel = `Showing: All Time (${ALL_LEADS.length.toLocaleString()} Ingested Leads across 5 Metros)`;
+        timelineLeads = ALL_LEADS.filter(l => l.d >= currentFilter.startDate && l.d <= currentFilter.endDate);
+        timeLabel = `${currentFilter.startDate} to ${currentFilter.endDate}`;
       }
 
-      document.getElementById('active-filter-text').textContent = filterLabel;
+      // Update dynamic city count pill labels for the active timeline
+      updateCityPillCounts(timelineLeads);
 
-      // Compute aggregates for filtered subset
-      const computed = computeDatasetMetrics(filtered);
+      // 2. Filter by city if selected
+      let finalLeads = timelineLeads;
+      let cityLabel = 'All Metros (Pan-India)';
+      if (currentFilter.city && currentFilter.city !== 'all') {
+        finalLeads = timelineLeads.filter(l => l.c === currentFilter.city);
+        const cNames = {
+          bangalore: 'Bangalore', chennai: 'Chennai', pune: 'Pune', mumbai: 'Mumbai', hyderabad: 'Hyderabad'
+        };
+        cityLabel = cNames[currentFilter.city] || currentFilter.city;
+      }
 
-      // 1. Update KPIs
+      // Dynamic feedback label
+      const feedbackText = `Showing: ${timeLabel} • ${cityLabel} (${finalLeads.length.toLocaleString()} Leads)`;
+      document.getElementById('active-filter-text').textContent = feedbackText;
+
+      // In Tab 4 rejection scope label
+      const rejScope = document.getElementById('rejection-scope-label');
+      if (rejScope) {
+        rejScope.textContent = `Active Scope: ${timeLabel} • ${cityLabel} (${finalLeads.length.toLocaleString()} Leads)`;
+      }
+      const matPeriod = document.getElementById('matrix-period-label');
+      if (matPeriod) {
+        matPeriod.textContent = `${timeLabel} Cross-City Comparison`;
+      }
+
+      // 3. Compute metrics for final filtered dataset
+      const computed = computeDatasetMetrics(finalLeads);
+
+      // Also compute per-city metrics on timelineLeads for the City Tab & Matrix
+      const timelineComputed = computeDatasetMetrics(timelineLeads);
+
+      // 4. Update UI sections
       updateKPICards(computed.total);
+      updateFunnelSection(computed, currentFilter.city);
+      renderCitySection(timelineComputed);
+      renderRejectionsSection(computed, finalLeads.length);
+      renderCityRejectionMatrix(timelineLeads);
+      renderFlowSection(ALL_LEADS);
+    }
 
-      // 2. Update Funnel
-      updateFunnelSection(computed);
-
-      // 3. Update Cities table & bars
-      renderCitySection(computed);
-
-      // 4. Update Rejections
-      renderRejectionsSection(computed, filtered.length);
-
-      // 5. Update Leads Flow
-      renderFlowSection(filtered);
+    // Helper: Update dynamic counts on city pills for current timeline
+    function updateCityPillCounts(timelineLeads) {
+      const counts = { all: timelineLeads.length, bangalore: 0, chennai: 0, pune: 0, mumbai: 0, hyderabad: 0 };
+      timelineLeads.forEach(l => {
+        if (counts[l.c] !== undefined) counts[l.c]++;
+      });
+      for (let k in counts) {
+        const el = document.getElementById(`ccnt-${k}`);
+        if (el) el.textContent = counts[k].toLocaleString();
+      }
     }
 
     // Helper: Compute metrics from filtered leads
@@ -1016,7 +1185,7 @@
 
       return {
         total: {
-          name: "Pan-India (All Cities)",
+          name: "Filtered Leads",
           leads: totalLeads,
           users: totalUsers,
           dialled: totalDialled,
@@ -1053,52 +1222,23 @@
     }
 
     // Update Funnel section
-    function updateFunnelSection(computed) {
-      const citySelector = document.getElementById('city-selector');
-      const selectedCity = citySelector.value;
+    function updateFunnelSection(computed, selectedCity) {
+      const citySelector = document.getElementById('funnel-city-selector');
+      if (citySelector) citySelector.value = selectedCity;
 
-      // Update selector option labels with dynamic counts
-      const cityCountMap = { all: computed.total.leads };
-      computed.cities.forEach(c => cityCountMap[c.id] = c.leads);
+      const tot = computed.total;
+      const cityObj = selectedCity !== 'all' ? computed.cities.find(c => c.id === selectedCity) : null;
+      const titlePrefix = cityObj ? ` (${cityObj.name})` : '';
 
-      citySelector.options[0].textContent = `Pan-India (${computed.total.leads.toLocaleString()} leads)`;
-      for (let i = 1; i < citySelector.options.length; i++) {
-        const cid = citySelector.options[i].value;
-        const cName = citySelector.options[i].text.split(' (')[0];
-        const cnt = cityCountMap[cid] || 0;
-        citySelector.options[i].textContent = `${cName} (${cnt.toLocaleString()} leads)`;
-      }
-
-      if (selectedCity === 'all') {
-        const tot = computed.total;
-        const stages = [
-          { stage: "1. Total Ingested Leads", count: tot.leads, color: "#1e3a8a", desc: "Gross inbound leads received in filtered timeline" },
-          { stage: "2. Dialled / Contact Attempted", count: tot.dialled, color: "#2563eb", desc: "Leads with RM calling activity or contact disposition" },
-          { stage: "3. Connected / Spoken Conversation", count: tot.connected, color: "#0284c7", desc: "Live two-way conversations between RM and customer" },
-          { stage: "4. Call Patch Pitch Done", count: tot.call_patch, color: "#16a34a", desc: "Completed 3-way conference/pitch call with developer" },
-          { stage: "5. Site Visit Scheduled / Booked", count: tot.sv_booked, color: "#ca8a04", desc: "Customer agreed and scheduled site visit appointment" },
-          { stage: "6. Site Visit Done (Completed)", count: tot.sv_done, color: "#15803d", desc: "Physical on-ground builder site visit completed by prospect" }
-        ];
-        renderFunnelBars(stages, tot.leads);
-      } else {
-        const city = computed.cities.find(c => c.id === selectedCity);
-        if (city) {
-          const stages = [
-            { stage: `1. Total Leads (${city.name})`, count: city.leads, color: "#1e3a8a", desc: `Inbound leads in ${city.name}` },
-            { stage: "2. Dialled / Attempted", count: city.dialled, color: "#2563eb", desc: `Attempted contact by ${city.name} RMs` },
-            { stage: "3. Connected / Spoken", count: city.connected, color: "#0284c7", desc: "Spoken customer conversations" },
-            { stage: "4. Call Patch Done", count: city.call_patch, color: "#16a34a", desc: "Call patch completed" },
-            { stage: "5. Site Visit Scheduled", count: city.sv_booked, color: "#ca8a04", desc: "Site visits booked" },
-            { stage: "6. Site Visit Completed", count: city.sv_done, color: "#15803d", desc: "On-ground site visit done" }
-          ];
-          renderFunnelBars(stages, city.leads);
-        }
-      }
-    }
-
-    function updateCityFilter(cityId) {
-      currentFilter.city = cityId;
-      applyFilter();
+      const stages = [
+        { stage: `1. Total Leads${titlePrefix}`, count: tot.leads, color: "#1e3a8a", desc: "Gross inbound leads in filtered scope" },
+        { stage: "2. Dialled / Contact Attempted", count: tot.dialled, color: "#2563eb", desc: "Leads with RM calling activity or disposition" },
+        { stage: "3. Connected / Spoken Conversation", count: tot.connected, color: "#0284c7", desc: "Live two-way conversations between RM and customer" },
+        { stage: "4. Call Patch Pitch Done", count: tot.call_patch, color: "#16a34a", desc: "Completed 3-way conference/pitch call with developer" },
+        { stage: "5. Site Visit Scheduled / Booked", count: tot.sv_booked, color: "#ca8a04", desc: "Customer agreed and scheduled site visit appointment" },
+        { stage: "6. Site Visit Done (Completed)", count: tot.sv_done, color: "#15803d", desc: "Physical on-ground builder site visit completed by prospect" }
+      ];
+      renderFunnelBars(stages, tot.leads);
     }
 
     function renderFunnelBars(stages, totalBaseline) {
@@ -1145,9 +1285,11 @@
 
       computed.cities.forEach(c => {
         const connToSv = c.connected > 0 ? ((c.sv_done / c.connected) * 100).toFixed(1) : '0.0';
+        const isHighlight = currentFilter.city === c.id;
         const tr = document.createElement('tr');
+        if (isHighlight) tr.style.background = '#eff6ff';
         tr.innerHTML = `
-          <td><strong>${c.name}</strong></td>
+          <td><strong>${c.name} ${isHighlight ? '★' : ''}</strong></td>
           <td>${c.leads.toLocaleString()}</td>
           <td>${c.users.toLocaleString()}</td>
           <td>${c.dialled.toLocaleString()}</td>
@@ -1222,6 +1364,93 @@
       });
     }
 
+    // Cross-City Rejection Breakdown Matrix (Table in Tab 4)
+    function renderCityRejectionMatrix(timelineLeads) {
+      const tbody = document.getElementById('city-rejection-matrix-tbody');
+      if (!tbody) return;
+      tbody.innerHTML = '';
+
+      const catDefs = [
+        { name: "System Expired", match: "System Expired", color: "#ef4444" },
+        { name: "Uncontactable / Not Connected", match: "Uncontactable", color: "#f97316" },
+        { name: "Not Interested (Direct Pitch)", match: "Not Interested", color: "#eab308" },
+        { name: "Duplicate / Project Transferred", match: "Duplicate", color: "#8b5cf6" },
+        { name: "Invalid / Ineligible Lead Source", match: "Invalid", color: "#ec4899" },
+        { name: "Other / Unspecified Reason", match: "Other", color: "#64748b" },
+        { name: "Requirement Mismatch", match: "Requirement Mismatch", color: "#06b6d4" },
+        { name: "Already Purchased / Closed", match: "Already Purchased", color: "#10b981" }
+      ];
+
+      const cityCols = ['bangalore', 'chennai', 'pune', 'mumbai', 'hyderabad'];
+      const cityNames = { bangalore: 'Bangalore', chennai: 'Chennai', pune: 'Pune', mumbai: 'Mumbai', hyderabad: 'Hyderabad' };
+      const cityClasses = { bangalore: 'city-blr', chennai: 'city-chn', pune: 'city-pun', mumbai: 'city-bom', hyderabad: 'city-hyd' };
+
+      // Pre-aggregate
+      const matrix = {};
+      catDefs.forEach(def => {
+        matrix[def.name] = { total: 0, bangalore: 0, chennai: 0, pune: 0, mumbai: 0, hyderabad: 0, color: def.color };
+      });
+
+      let totalMatrixRejections = 0;
+      const cityTotals = { bangalore: 0, chennai: 0, pune: 0, mumbai: 0, hyderabad: 0 };
+
+      timelineLeads.forEach(l => {
+        if (!l.ct || l.ct === 'Open / In Progress') return;
+        totalMatrixRejections++;
+        if (cityTotals[l.c] !== undefined) cityTotals[l.c]++;
+
+        for (let i = 0; i < catDefs.length; i++) {
+          const def = catDefs[i];
+          if (l.ct.toLowerCase().includes(def.match.toLowerCase()) || def.match.toLowerCase().includes(l.ct.toLowerCase())) {
+            matrix[def.name].total++;
+            if (matrix[def.name][l.c] !== undefined) matrix[def.name][l.c]++;
+            break;
+          }
+        }
+      });
+
+      catDefs.forEach(def => {
+        const row = matrix[def.name];
+        const scores = cityCols.map(c => ({ city: c, name: cityNames[c], count: row[c], cls: cityClasses[c] }));
+        scores.sort((a, b) => b.count - a.count);
+        const topCity = scores[0];
+        const topPct = row.total > 0 ? ((topCity.count / row.total) * 100).toFixed(1) : 0;
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span style="width:10px; height:10px; border-radius:2px; background:${def.color}"></span>
+              <strong>${def.name}</strong>
+            </div>
+          </td>
+          <td>${row.bangalore} <span style="font-size:11px; color:#64748b;">(${row.total > 0 ? ((row.bangalore/row.total)*100).toFixed(0) : 0}%)</span></td>
+          <td>${row.chennai} <span style="font-size:11px; color:#64748b;">(${row.total > 0 ? ((row.chennai/row.total)*100).toFixed(0) : 0}%)</span></td>
+          <td>${row.pune} <span style="font-size:11px; color:#64748b;">(${row.total > 0 ? ((row.pune/row.total)*100).toFixed(0) : 0}%)</span></td>
+          <td>${row.mumbai} <span style="font-size:11px; color:#64748b;">(${row.total > 0 ? ((row.mumbai/row.total)*100).toFixed(0) : 0}%)</span></td>
+          <td>${row.hyderabad} <span style="font-size:11px; color:#64748b;">(${row.total > 0 ? ((row.hyderabad/row.total)*100).toFixed(0) : 0}%)</span></td>
+          <td><strong>${row.total.toLocaleString()}</strong></td>
+          <td>${row.total > 0 ? `<span class="city-pill ${topCity.cls}">${topCity.name} (${topPct}%)</span>` : '<span style="color:#94a3b8;">-</span>'}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Total Row
+      const totTr = document.createElement('tr');
+      totTr.className = 'total-row';
+      totTr.innerHTML = `
+        <td>Total Rejected Leads</td>
+        <td>${cityTotals.bangalore.toLocaleString()}</td>
+        <td>${cityTotals.chennai.toLocaleString()}</td>
+        <td>${cityTotals.pune.toLocaleString()}</td>
+        <td>${cityTotals.mumbai.toLocaleString()}</td>
+        <td>${cityTotals.hyderabad.toLocaleString()}</td>
+        <td>${totalMatrixRejections.toLocaleString()}</td>
+        <td><span class="city-pill city-blr">Pan-India Total</span></td>
+      `;
+      tbody.appendChild(totTr);
+    }
+
     // Render Rejections Section
     function renderRejectionsSection(computed, totalCount) {
       const catList = document.getElementById('rejection-categories-list');
@@ -1260,7 +1489,7 @@
             </div>
             <div style="text-align:right;">
               <div style="font-weight:800; font-size:14px;">${count.toLocaleString()}</div>
-              <div style="font-size:11px; font-weight:600; color:#64748b;">${pctTot}% of Filtered</div>
+              <div style="font-size:11px; font-weight:600; color:#64748b;">${pctTot}% of Scope</div>
             </div>
           </div>
         `;
@@ -1370,9 +1599,7 @@
           hyderabad.push(flow.hyderabad || 0);
         });
       } else {
-        // Daily timeline (sorted chronologically)
         const sortedDates = Object.keys(dailyData).sort();
-        // Show recent or full timeline
         sortedDates.forEach(d => {
           labels.push(d.substring(5)); // MM-DD
           const flow = dailyData[d] || { bangalore: 0, chennai: 0, pune: 0, mumbai: 0, hyderabad: 0 };
@@ -1502,7 +1729,6 @@
         const bomPct = r.total > 0 ? ((r.bom / r.total) * 100).toFixed(1) : 0;
         const hydPct = r.total > 0 ? ((r.hyd / r.total) * 100).toFixed(1) : 0;
 
-        // Determine dominant city
         const cityScores = [
           { name: 'Bangalore', count: r.blr, pct: blrPct, cls: 'city-blr' },
           { name: 'Chennai', count: r.chn, pct: chnPct, cls: 'city-chn' },

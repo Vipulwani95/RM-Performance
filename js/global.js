@@ -1109,10 +1109,10 @@
       if (!rData || !rData.curr) return;
 
       const curr = rData.curr;
-      const totalLeads = curr.totalLeads || 1;
-      const workable = curr.workableLeads || 0;
+      const totalLeads = curr.total_leads || curr.totalLeads || 1;
+      const workable = curr.workable_leads || curr.workableLeads || 0;
       const conv = curr.conversion || 0;
-      const convPct = curr.conversionPct || '0%';
+      const convPct = curr.conversion_pct || curr.conversionPct || '0%';
 
       const workPct = ((workable / totalLeads) * 100).toFixed(1);
       const conf = RM_CONFIG[rm];
@@ -1174,7 +1174,7 @@
       const dataPoints = compMonths.map(m => {
         const c = dashboardData.comparison[m];
         if (c && c.rms && c.rms[rm] && c.rms[rm].curr) {
-          return c.rms[rm].curr.totalLeads || 0;
+          return c.rms[rm].curr.total_leads || c.rms[rm].curr.totalLeads || 0;
         }
         return 0;
       });
@@ -1237,7 +1237,7 @@
       const dataPoints = compMonths.map(m => {
         const c = dashboardData.comparison[m];
         if (c && c.rms && c.rms[rm] && c.rms[rm].curr) {
-          return c.rms[rm].curr.workableLeads || 0;
+          return c.rms[rm].curr.workable_leads || c.rms[rm].curr.workableLeads || 0;
         }
         return 0;
       });
@@ -1348,7 +1348,8 @@
       `;
 
       compMonths.forEach(m => {
-        const val = dashboardData.comparison[m]?.rms?.[rm]?.curr?.totalLeads || 0;
+        const c = dashboardData.comparison[m]?.rms?.[rm]?.curr;
+        const val = c?.total_leads || c?.totalLeads || 0;
         sumTotalLeads += val;
         html += `<td style="text-align: right; font-weight: 600;">${val > 0 ? val.toLocaleString('en-IN') : '—'}</td>`;
       });
@@ -1357,7 +1358,8 @@
       // Row 2: Workable Leads
       html += `<tr><td style="font-weight: 600; color: #4f46e5;">Workable Leads</td>`;
       compMonths.forEach(m => {
-        const val = dashboardData.comparison[m]?.rms?.[rm]?.curr?.workableLeads || 0;
+        const c = dashboardData.comparison[m]?.rms?.[rm]?.curr;
+        const val = c?.workable_leads || c?.workableLeads || 0;
         sumWorkable += val;
         html += `<td style="text-align: right; font-weight: 600; color: #4f46e5;">${val > 0 ? val.toLocaleString('en-IN') : '—'}</td>`;
       });
@@ -1367,8 +1369,8 @@
       html += `<tr><td style="color: var(--text-muted);">Workable % (Eligibility)</td>`;
       compMonths.forEach(m => {
         const c = dashboardData.comparison[m]?.rms?.[rm]?.curr;
-        const tot = c?.totalLeads || 0;
-        const work = c?.workableLeads || 0;
+        const tot = c?.total_leads || c?.totalLeads || 0;
+        const work = c?.workable_leads || c?.workableLeads || 0;
         const pct = tot > 0 ? ((work / tot) * 100).toFixed(1) : 0;
         html += `<td style="text-align: right; color: var(--text-secondary);">${tot > 0 ? pct + '%' : '—'}</td>`;
       });
@@ -1388,7 +1390,7 @@
       html += `<tr><td style="color: var(--text-muted);">Conversion % of Workable</td>`;
       compMonths.forEach(m => {
         const c = dashboardData.comparison[m]?.rms?.[rm]?.curr;
-        const pctStr = c?.conversionPct || '0%';
+        const pctStr = c?.conversion_pct || c?.conversionPct || '0%';
         html += `<td style="text-align: right; font-weight: 600;">${pctStr}</td>`;
       });
       const avgConvPct = sumWorkable > 0 ? ((sumConv / sumWorkable) * 100).toFixed(1) : 0;
@@ -1416,7 +1418,7 @@
       const dataPoints = compMonths.map(m => {
         const c = dashboardData.comparison[m];
         if (c && c.rms && c.rms[rm] && c.rms[rm].curr) {
-          return parseFloat(c.rms[rm].curr.conversionPct) || 0;
+          return parseFloat(c.rms[rm].curr.conversion_pct || c.rms[rm].curr.conversionPct) || 0;
         }
         return 0;
       });
@@ -1721,7 +1723,7 @@
       const connRate = dials > 0 ? (connected / dials) * 100 : 0;
       const avgTalk = working > 0 ? talk / working : 0;
       const conv = compObj.rms && compObj.rms[rm] && compObj.rms[rm].curr
-        ? parseFloat(compObj.rms[rm].curr.conversionPct) || 0
+        ? parseFloat(compObj.rms[rm].curr.conversion_pct || compObj.rms[rm].curr.conversionPct) || 0
         : 0;
 
       rawScores[rm] = [
@@ -1825,7 +1827,7 @@
       const avgTalk = working > 0 ? talk / working : 0;
       const consistency = working > 0 ? (consistent / working) * 100 : 0;
       const conv = compObj.rms && compObj.rms[rm] && compObj.rms[rm].curr
-        ? compObj.rms[rm].curr.conversionPct
+        ? (compObj.rms[rm].curr.conversion_pct || compObj.rms[rm].curr.conversionPct)
         : 'N/A';
 
       return {
