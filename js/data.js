@@ -36734,5 +36734,391 @@ window.RAW_DATA = {
       "Shirish": "New",
       "Anand": "New"
     }
+  },
+  "builders": {
+    "total": {
+      "name": "Pan-India (All Cities)",
+      "leads": 2212,
+      "users": 1800,
+      "dialled": 1699,
+      "dialled_pct": 76.8,
+      "connected": 411,
+      "connected_pct": 24.2,
+      "interested": 74,
+      "call_patch": 60,
+      "sv_booked": 48,
+      "sv_done": 16,
+      "sv_conversion": 33.3,
+      "lead_to_sv": 0.72
+    },
+    "cities": [
+      {
+        "id": "bangalore",
+        "name": "Bangalore",
+        "leads": 929,
+        "users": 795,
+        "dialled": 819,
+        "dialled_pct": 88.2,
+        "connected": 186,
+        "connected_pct": 22.7,
+        "call_patch": 33,
+        "sv_booked": 22,
+        "sv_done": 9,
+        "sv_conversion": 40.9,
+        "lead_to_sv": 0.97
+      },
+      {
+        "id": "pune",
+        "name": "Pune",
+        "leads": 376,
+        "users": 303,
+        "dialled": 245,
+        "dialled_pct": 65.2,
+        "connected": 82,
+        "connected_pct": 33.5,
+        "call_patch": 13,
+        "sv_booked": 9,
+        "sv_done": 4,
+        "sv_conversion": 44.4,
+        "lead_to_sv": 1.06
+      },
+      {
+        "id": "mumbai",
+        "name": "Mumbai",
+        "leads": 331,
+        "users": 230,
+        "dialled": 142,
+        "dialled_pct": 42.9,
+        "connected": 27,
+        "connected_pct": 19.0,
+        "call_patch": 4,
+        "sv_booked": 8,
+        "sv_done": 2,
+        "sv_conversion": 25.0,
+        "lead_to_sv": 0.6
+      },
+      {
+        "id": "chennai",
+        "name": "Chennai",
+        "leads": 480,
+        "users": 403,
+        "dialled": 436,
+        "dialled_pct": 90.8,
+        "connected": 99,
+        "connected_pct": 22.7,
+        "call_patch": 6,
+        "sv_booked": 7,
+        "sv_done": 1,
+        "sv_conversion": 14.3,
+        "lead_to_sv": 0.21
+      },
+      {
+        "id": "hyderabad",
+        "name": "Hyderabad",
+        "leads": 96,
+        "users": 85,
+        "dialled": 57,
+        "dialled_pct": 59.4,
+        "connected": 17,
+        "connected_pct": 29.8,
+        "call_patch": 4,
+        "sv_booked": 2,
+        "sv_done": 0,
+        "sv_conversion": 0.0,
+        "lead_to_sv": 0.0
+      }
+    ],
+    "funnel_stages": [
+      {
+        "stage": "1. Total Ingested Leads",
+        "count": 2212,
+        "users": 1800,
+        "pct_total": 100.0,
+        "step_conv": 100.0,
+        "drop": 0,
+        "color": "#1e3a8a",
+        "desc": "Gross inbound leads received from Ambassador Club campaigns"
+      },
+      {
+        "stage": "2. Dialled / Contact Attempted",
+        "count": 1699,
+        "users": 1403,
+        "pct_total": 76.8,
+        "step_conv": 76.8,
+        "drop": 513,
+        "color": "#2563eb",
+        "desc": "Leads with RM calling activity, telephony duration, or contact dispositions"
+      },
+      {
+        "stage": "3. Connected / Spoken Conversation",
+        "count": 411,
+        "users": 375,
+        "pct_total": 18.6,
+        "step_conv": 24.2,
+        "drop": 1288,
+        "color": "#0284c7",
+        "desc": "Live two-way conversations between relationship manager and customer"
+      },
+      {
+        "stage": "4. Warm Prospect / Pitch Follow-up",
+        "count": 74,
+        "users": 74,
+        "pct_total": 3.3,
+        "step_conv": 18.0,
+        "drop": 337,
+        "color": "#0d9488",
+        "desc": "Leads with validated purchase interest, open follow-ups, or meeting sessions"
+      },
+      {
+        "stage": "5. Call Patch Pitch Done",
+        "count": 60,
+        "users": 60,
+        "pct_total": 2.7,
+        "step_conv": 81.1,
+        "drop": 14,
+        "color": "#16a34a",
+        "desc": "Completed 3-way conference/pitch call with developer representative (65 patches)"
+      },
+      {
+        "stage": "6. Site Visit Scheduled / Booked",
+        "count": 48,
+        "users": 48,
+        "pct_total": 2.2,
+        "step_conv": 80.0,
+        "drop": 12,
+        "color": "#ca8a04",
+        "desc": "Customer agreed and scheduled appointment for project site visit"
+      },
+      {
+        "stage": "7. Site Visit Done (Completed)",
+        "count": 16,
+        "users": 16,
+        "pct_total": 0.72,
+        "step_conv": 33.3,
+        "drop": 32,
+        "color": "#15803d",
+        "desc": "Physical on-ground builder site visit completed by prospect (20 total visits)"
+      }
+    ],
+    "rejection_categories": [
+      {
+        "name": "System Expired",
+        "count": 799,
+        "pct_rej": 37.0,
+        "pct_tot": 36.1,
+        "color": "#ef4444",
+        "status": "System Auto-Expiry",
+        "desc": "Timed out past SLA without RM contact or conversion"
+      },
+      {
+        "name": "Uncontactable / Not Connected",
+        "count": 669,
+        "pct_rej": 31.0,
+        "pct_tot": 30.2,
+        "color": "#f97316",
+        "status": "RNR / Unreachable",
+        "desc": "Customer did not answer across 1-5 dial attempts (nc_1 to nc_5)"
+      },
+      {
+        "name": "Not Interested (Direct Pitch)",
+        "count": 218,
+        "pct_rej": 10.1,
+        "pct_tot": 9.9,
+        "color": "#eab308",
+        "status": "Spoken / Connected",
+        "desc": "Directly declined project or purchase intent during call"
+      },
+      {
+        "name": "Duplicate / Project Transferred",
+        "count": 203,
+        "pct_rej": 9.4,
+        "pct_tot": 9.2,
+        "color": "#8b5cf6",
+        "status": "System / De-dupe",
+        "desc": "Duplicate submissions (133) or cloned to matching project (70)"
+      },
+      {
+        "name": "Invalid / Ineligible Lead Source",
+        "count": 83,
+        "pct_rej": 3.8,
+        "pct_tot": 3.8,
+        "color": "#ec4899",
+        "status": "Spoken / Screened",
+        "desc": "Mistake click (30), broker (25), rental (13), plan dropped (11), DNC/test (4)"
+      },
+      {
+        "name": "Other / Unspecified Reason",
+        "count": 80,
+        "pct_rej": 3.7,
+        "pct_tot": 3.6,
+        "color": "#64748b",
+        "status": "Unspecified",
+        "desc": "Marked lead_reject in CRM without sub-reason note"
+      },
+      {
+        "name": "Requirement Mismatch",
+        "count": 55,
+        "pct_rej": 2.5,
+        "pct_tot": 2.5,
+        "color": "#06b6d4",
+        "status": "Spoken / Qualified",
+        "desc": "Budget (30), resale (12), villa/plot/BHK (8), locality (5)"
+      },
+      {
+        "name": "Already Purchased / Closed",
+        "count": 51,
+        "pct_rej": 2.4,
+        "pct_tot": 2.3,
+        "color": "#10b981",
+        "status": "Spoken / Closed",
+        "desc": "Already bought house (48), booked flat (1), closed other project (2)"
+      }
+    ],
+    "granular_rejections": [
+      {
+        "reason": "Lead Expired (Auto-expired)",
+        "category": "System Expired",
+        "count": 799,
+        "pct": 36.1,
+        "raw": "lead_expired (799)",
+        "contact": "No (Auto-expiry)"
+      },
+      {
+        "reason": "Not Contactable / RNR",
+        "category": "Uncontactable",
+        "count": 552,
+        "pct": 25.0,
+        "raw": "NOT_CONTACTABLE (530), Non Contactable (22)",
+        "contact": "No (Unreachable)"
+      },
+      {
+        "reason": "Not Interested for Purchase",
+        "category": "Not Interested",
+        "count": 218,
+        "pct": 9.9,
+        "raw": "LEAD_NOT_INTERESTED (133), Not Interested for Purchase (85)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Duplicate Lead",
+        "category": "Duplicate / Transferred",
+        "count": 133,
+        "pct": 6.0,
+        "raw": "Duplicate Lead (133)",
+        "contact": "No (De-dupe)"
+      },
+      {
+        "reason": "Follow-up Not Contactable Reject",
+        "category": "Uncontactable",
+        "count": 117,
+        "pct": 5.3,
+        "raw": "FOLLOWUP_NC_REJECT (115), Follow Up NC Reject (1), followup_nc_reject (1)",
+        "contact": "No (Failed Follow-up)"
+      },
+      {
+        "reason": "Rejected - Reason Missing",
+        "category": "Other / Unspecified",
+        "count": 80,
+        "pct": 3.6,
+        "raw": "NaN with status=lead_reject (80)",
+        "contact": "Unknown"
+      },
+      {
+        "reason": "Cloned To Matching Project",
+        "category": "Duplicate / Transferred",
+        "count": 70,
+        "pct": 3.2,
+        "raw": "Cloned To Matching Project (70)",
+        "contact": "No (Transferred)"
+      },
+      {
+        "reason": "Already Bought / Booked",
+        "category": "Already Purchased",
+        "count": 51,
+        "pct": 2.3,
+        "raw": "Already Got A House (48), Booked Flat (1), Closed via NB (2)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Budget Mismatch",
+        "category": "Requirement Mismatch",
+        "count": 30,
+        "pct": 1.4,
+        "raw": "Budget Mismatch (30)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Clicked By Mistake / Accidental",
+        "category": "Invalid / Ineligible",
+        "count": 30,
+        "pct": 1.4,
+        "raw": "Clicked By Mistake (30)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Broker / Channel Partner",
+        "category": "Invalid / Ineligible",
+        "count": 25,
+        "pct": 1.1,
+        "raw": "Broker (25)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Rental / Rent Out Enquiry",
+        "category": "Invalid / Ineligible",
+        "count": 13,
+        "pct": 0.6,
+        "raw": "Rental Lead (12), Rent out Calling (1)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Looking for Resale Property",
+        "category": "Requirement Mismatch",
+        "count": 12,
+        "pct": 0.5,
+        "raw": "Looking for Resale Property (12)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Purchase Plan Dropped",
+        "category": "Invalid / Ineligible",
+        "count": 11,
+        "pct": 0.5,
+        "raw": "Plan Dropped (11)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Property Type / Config Mismatch",
+        "category": "Requirement Mismatch",
+        "count": 8,
+        "pct": 0.4,
+        "raw": "Independent House (6), Plot (1), Specific Config (1)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Locality Mismatch",
+        "category": "Requirement Mismatch",
+        "count": 5,
+        "pct": 0.2,
+        "raw": "Locality Mismatch (5)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Do Not Call (DNC)",
+        "category": "Invalid / Ineligible",
+        "count": 2,
+        "pct": 0.1,
+        "raw": "Do Not Call (2)",
+        "contact": "Yes (Spoken)"
+      },
+      {
+        "reason": "Internal Employee Test Lead",
+        "category": "Invalid / Ineligible",
+        "count": 2,
+        "pct": 0.1,
+        "raw": "NB Employee (2)",
+        "contact": "Internal Test"
+      }
+    ]
   }
 };

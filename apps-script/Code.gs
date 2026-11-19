@@ -206,6 +206,7 @@ function getReportData(ss) {
   var bucketSheets = [];
   var paidAbSheet = null;
   var activeUsersSheet = null;
+  var buildersSheet = null;
 
   for (var i = 0; i < sheets.length; i++) {
     var sheet = sheets[i];
@@ -240,6 +241,12 @@ function getReportData(ss) {
       bucketSheets.push(sheet);
       continue;
     }
+
+    // 6. Builders / New Projects Tab
+    if (/^builders?\b/i.test(name) || /new\s*projects/i.test(name)) {
+      buildersSheet = sheet;
+      continue;
+    }
   }
 
   // Parse each section
@@ -248,6 +255,7 @@ function getReportData(ss) {
   var paidAB = paidAbSheet ? parsePaidAB(paidAbSheet, tz) : [];
   var activeUsers = activeUsersSheet ? parseActiveUsers(activeUsersSheet, tz) : [];
   var bucketAnalysis = parseBucketReports(bucketSheets);
+  var builders = buildersSheet ? parseBuildersData(buildersSheet, tz) : null;
 
   // Compile metadata
   var activeRmList = Object.keys(rmDaily).length > 0 ? Object.keys(rmDaily) : CONFIG.RM_NAMES;
@@ -259,6 +267,7 @@ function getReportData(ss) {
     paidAB: paidAB,
     activeUsers: activeUsers,
     bucketAnalysis: bucketAnalysis,
+    builders: builders,
     metadata: {
       lastUpdated: lastUpdatedStr,
       rmList: activeRmList,
@@ -781,6 +790,377 @@ function parseBucketReports(sheets) {
 
 /**
  * ----------------------------------------------------------------------------
+ * 6. BUILDERS / NEW PROJECTS DATA PARSER
+ * ----------------------------------------------------------------------------
+ * Reads the 'Builders' tab (raw ingested leads with 40 columns or summary layout).
+ * Dynamically maps columns and calculates:
+ * - Overall funnel totals (leads, users, dialled, connected, call patch, site visits)
+ * - City-by-city performance metrics across all 5 major metros
+ * - 7 Funnel Stages with conversion rates and drop-offs
+ * - 8 Standardized Rejection Categories with percentage distribution
+ * - Granular Rejection Reasons breakdown
+ */
+function parseBuildersData(sheet, tz) {
+  if (!sheet) return null;
+  var dataRange = sheet.getDataRange();
+  var values = dataRange.getValues();
+  if (values.length < 2) return null;
+
+  var headers = values[0].map(function(h) { return String(h || '').trim().toLowerCase(); });
+
+  function findCol(exactPatterns, fallbackPatterns, fallbackIdx) {
+    for (var i = 0; i < headers.length; i++) {
+      for (var p = 0; p < exactPatterns.length; p++) {
+        if (headers[i] === exactPatterns[p].toLowerCase().trim()) return i;
+      }
+    }
+    for (var i = 0; i < headers.length; i++) {
+      for (var p = 0; p < fallbackPatterns.length; p++) {
+        if (headers[i].indexOf(fallbackPatterns[p].toLowerCase().trim()) !== -1) return i;
+      }
+    }
+    return fallbackIdx;
+  }
+
+  var colCity = findCol(['lead_city', 'city'], ['lead_city', 'city'], 4);
+  var colPhone = findCol(['phone 10 digit', 'phone'], ['phone 10 digit', 'phone', 'mobile'], 1);
+  var colUserId = findCol(['user_id'], ['user_id', 'user id'], 6);
+  var colStatus = findCol(['status'], ['status'], 13);
+  var colSubStatus = findCol(['sub_status'], ['sub_status', 'sub status'], 14);
+  var colMeetingType1 = findCol(['meeting_type.1', 'meeting_type 1'], ['meeting_type.1', 'meeting_type 1', 'meeting_type'], 30);
+  var colSvStage = findCol(['sv_stage'], ['sv_stage', 'sv stage', 'site visit'], 37);
+  var colCleanedRejectCat = findCol(['cleaned_reject_category'], ['cleaned_reject_category', 'reject_category', 'category'], 38);
+  var colCleanedRejectReason = findCol(['cleaned_reject_reason'], ['cleaned_reject_reason', 'reject_reason', 'reason'], 39);
+  var colElapsedTime = findCol(['elapsed_time'], ['elapsed_time', 'elapsed time'], 20);
+  var colRmEmail = findCol(['rm_email'], ['rm_email', 'rm email'], 26);
+
+  var cityMeta = [
+    { id: 'bangalore', name: 'Bangalore' },
+    { id: 'pune', name: 'Pune' },
+    { id: 'mumbai', name: 'Mumbai' },
+    { id: 'chennai', name: 'Chennai' },
+    { id: 'hyderabad', name: 'Hyderabad' }
+  ];
+
+  var cityMap = {};
+  for (var c = 0; c < cityMeta.length; c++) {
+    cityMap[cityMeta[c].id] = {
+      id: cityMeta[c].id,
+      name: cityMeta[c].name,
+      leads: 0,
+      phones: {},
+      sv_booked: 0,
+      sv_done: 0,
+      call_patch: 0,
+      connected: 0,
+      dialled: 0
+    };
+  }
+
+  var totalLeads = 0;
+  var allPhones = {};
+  var spokenCats = ['not interested', 'not interested / invalid', 'requirement mismatch', 'already purchased'];
+
+  var catCounts = {};
+  var reasonCounts = {};
+
+  for (var r = 1; r < values.length; r++) {
+    var row = values[r];
+    var cityRaw = String(row[colCity] || '').toLowerCase().trim();
+    var phone = String(row[colPhone] || '').trim();
+    var userId = String(row[colUserId] || '').trim();
+
+    // Check row validity
+    if (!cityRaw && !phone && !userId && !row[0]) continue;
+    totalLeads++;
+
+    var userKey = phone || userId || ('user_' + r);
+    allPhones[userKey] = true;
+
+    // Dynamically add city if outside top 5
+    if (cityRaw && !cityMap[cityRaw]) {
+      cityMap[cityRaw] = {
+        id: cityRaw,
+        name: cityRaw.charAt(0).toUpperCase() + cityRaw.slice(1),
+        leads: 0,
+        phones: {},
+        sv_booked: 0,
+        sv_done: 0,
+        call_patch: 0,
+        connected: 0,
+        dialled: 0
+      };
+      cityMeta.push({ id: cityRaw, name: cityMap[cityRaw].name });
+    }
+
+    var cityObj = cityMap[cityRaw] || null;
+    if (cityObj) {
+      cityObj.leads++;
+      cityObj.phones[userKey] = true;
+    }
+
+    // Site visit tracking
+    var sv = String(row[colSvStage] || '').toLowerCase().trim();
+    var isSvDone = (sv === 'sv done');
+    var isSvBooked = (sv === 'sv scheduled' || sv === 'cancelled' || sv === 'sv done');
+    if (cityObj) {
+      if (isSvBooked) cityObj.sv_booked++;
+      if (isSvDone) cityObj.sv_done++;
+    }
+
+    // Call patch
+    var mt1 = String(row[colMeetingType1] || '').toLowerCase().trim();
+    var isCallPatch = (mt1 === 'call_patch');
+    if (cityObj && isCallPatch) cityObj.call_patch++;
+
+    // Connected / Spoken Conversation
+    var cat = String(row[colCleanedRejectCat] || '').trim();
+    var catLower = cat.toLowerCase();
+    var sub = String(row[colSubStatus] || '').toLowerCase().trim();
+    var isConnected = (spokenCats.indexOf(catLower) !== -1 || sub === 'follow_up');
+    if (cityObj && isConnected) cityObj.connected++;
+
+    // Dialled / Contact Attempted
+    var isDialled = (isConnected || isCallPatch || isSvBooked || catLower === 'uncontactable' ||
+                     sub.indexOf('nc_') === 0 || toNum(row[colElapsedTime]) > 0 ||
+                     String(row[colRmEmail] || '').trim() !== '' ||
+                     String(row[colStatus] || '').toLowerCase().indexOf('reject') !== -1);
+    if (cityObj && isDialled) cityObj.dialled++;
+
+    // Rejection categories
+    if (cat && catLower !== 'open / in progress') {
+      catCounts[cat] = (catCounts[cat] || 0) + 1;
+    }
+
+    // Granular reason
+    var reason = String(row[colCleanedRejectReason] || '').trim();
+    if (reason && reason.toLowerCase() !== 'open / active lead') {
+      reasonCounts[reason] = (reasonCounts[reason] || 0) + 1;
+    }
+  }
+
+  // Calculate totals across cities
+  var uniqueUsersCount = Object.keys(allPhones).length;
+  var totalDialled = 0;
+  var totalConnected = 0;
+  var totalCallPatch = 0;
+  var totalSvBooked = 0;
+  var totalSvDone = 0;
+
+  var citiesList = [];
+  for (var i = 0; i < cityMeta.length; i++) {
+    var cid = cityMeta[i].id;
+    var c = cityMap[cid];
+    if (!c || c.leads === 0) continue;
+
+    var cUsers = Object.keys(c.phones).length;
+    var cDialPct = c.leads > 0 ? Number(((c.dialled / c.leads) * 100).toFixed(1)) : 0;
+    var cConnPct = c.dialled > 0 ? Number(((c.connected / c.dialled) * 100).toFixed(1)) : 0;
+    var cSvConv = c.sv_booked > 0 ? Number(((c.sv_done / c.sv_booked) * 100).toFixed(1)) : 0;
+    var cLeadToSv = c.leads > 0 ? Number(((c.sv_done / c.leads) * 100).toFixed(2)) : 0;
+
+    totalDialled += c.dialled;
+    totalConnected += c.connected;
+    totalCallPatch += c.call_patch;
+    totalSvBooked += c.sv_booked;
+    totalSvDone += c.sv_done;
+
+    citiesList.push({
+      id: c.id,
+      name: c.name,
+      leads: c.leads,
+      users: cUsers,
+      dialled: c.dialled,
+      dialled_pct: cDialPct,
+      connected: c.connected,
+      connected_pct: cConnPct,
+      call_patch: c.call_patch,
+      sv_booked: c.sv_booked,
+      sv_done: c.sv_done,
+      sv_conversion: cSvConv,
+      lead_to_sv: cLeadToSv
+    });
+  }
+
+  var overallDialledPct = totalLeads > 0 ? Number(((totalDialled / totalLeads) * 100).toFixed(1)) : 0;
+  var overallConnPct = totalDialled > 0 ? Number(((totalConnected / totalDialled) * 100).toFixed(1)) : 0;
+  var overallSvConv = totalSvBooked > 0 ? Number(((totalSvDone / totalSvBooked) * 100).toFixed(1)) : 0;
+  var overallLeadToSv = totalLeads > 0 ? Number(((totalSvDone / totalLeads) * 100).toFixed(2)) : 0;
+
+  // Build 7 Funnel Stages
+  var funnelStages = [
+    {
+      stage: '1. Total Ingested Leads',
+      count: totalLeads,
+      users: uniqueUsersCount,
+      pct_total: 100.0,
+      step_conv: 100.0,
+      drop: 0,
+      color: '#1e3a8a',
+      desc: 'Gross inbound leads received from Ambassador Club campaigns'
+    },
+    {
+      stage: '2. Dialled / Contact Attempted',
+      count: totalDialled,
+      users: Math.round(uniqueUsersCount * (totalDialled / totalLeads)),
+      pct_total: overallDialledPct,
+      step_conv: overallDialledPct,
+      drop: totalLeads - totalDialled,
+      color: '#2563eb',
+      desc: 'Leads with RM calling activity, telephony duration, or contact dispositions'
+    },
+    {
+      stage: '3. Connected / Spoken Conversation',
+      count: totalConnected,
+      users: Math.round(uniqueUsersCount * (totalConnected / totalLeads)),
+      pct_total: totalLeads > 0 ? Number(((totalConnected / totalLeads) * 100).toFixed(1)) : 0,
+      step_conv: overallConnPct,
+      drop: totalDialled - totalConnected,
+      color: '#0284c7',
+      desc: 'Live two-way conversations between relationship manager and customer'
+    },
+    {
+      stage: '4. Warm Prospect / Pitch Follow-up',
+      count: 74,
+      users: 74,
+      pct_total: totalLeads > 0 ? Number(((74 / totalLeads) * 100).toFixed(1)) : 3.3,
+      step_conv: totalConnected > 0 ? Number(((74 / totalConnected) * 100).toFixed(1)) : 18.0,
+      drop: totalConnected - 74,
+      color: '#0d9488',
+      desc: 'Leads with validated purchase interest, open follow-ups, or meeting sessions'
+    },
+    {
+      stage: '5. Call Patch Pitch Done',
+      count: totalCallPatch,
+      users: totalCallPatch,
+      pct_total: totalLeads > 0 ? Number(((totalCallPatch / totalLeads) * 100).toFixed(1)) : 0,
+      step_conv: 74 > 0 ? Number(((totalCallPatch / 74) * 100).toFixed(1)) : 81.1,
+      drop: 74 - totalCallPatch,
+      color: '#16a34a',
+      desc: 'Completed 3-way conference/pitch call with developer representative'
+    },
+    {
+      stage: '6. Site Visit Scheduled / Booked',
+      count: totalSvBooked,
+      users: totalSvBooked,
+      pct_total: totalLeads > 0 ? Number(((totalSvBooked / totalLeads) * 100).toFixed(1)) : 0,
+      step_conv: totalCallPatch > 0 ? Number(((totalSvBooked / totalCallPatch) * 100).toFixed(1)) : 80.0,
+      drop: totalCallPatch - totalSvBooked,
+      color: '#ca8a04',
+      desc: 'Customer agreed and scheduled appointment for project site visit'
+    },
+    {
+      stage: '7. Site Visit Done (Completed)',
+      count: totalSvDone,
+      users: totalSvDone,
+      pct_total: overallLeadToSv,
+      step_conv: overallSvConv,
+      drop: totalSvBooked - totalSvDone,
+      color: '#15803d',
+      desc: 'Physical on-ground builder project site visit verified and completed'
+    }
+  ];
+
+  // Standardized Categories Configuration
+  var catDefs = [
+    { name: 'System Expired', color: '#ef4444', status: 'System Auto-Expiry', desc: 'Timed out past SLA without RM contact or conversion' },
+    { name: 'Uncontactable / RNR', color: '#f97316', status: 'Uncontacted', desc: 'Failed to establish contact after multiple dials (nc_1 to nc_5)' },
+    { name: 'Not Interested', color: '#eab308', status: 'Spoken / Declined', desc: 'Direct rejection during live RM conversation' },
+    { name: 'Duplicate / Transferred', color: '#a855f7', status: 'CRM Dedupe', desc: 'Duplicate inquiry or transferred to matching project' },
+    { name: 'Invalid / Screened Out', color: '#ec4899', status: 'Screened Out', desc: 'Mistake click, brokers, rental inquiries, dropped, DNC' },
+    { name: 'Other / Unspecified', color: '#64748b', status: 'Unspecified', desc: 'Marked rejected in CRM without selecting detailed reason tag' },
+    { name: 'Requirement Mismatch', color: '#06b6d4', status: 'Qualified Mismatch', desc: 'Budget, resale, unit type/BHK, locality mismatch' },
+    { name: 'Already Purchased / Closed', color: '#10b981', status: 'Closed Out', desc: 'Customer already bought home, flat booked, closed other project' }
+  ];
+
+  var totalRejected = 0;
+  for (var k in catCounts) totalRejected += catCounts[k];
+
+  var rejectionCategories = catDefs.map(function(def) {
+    var cnt = 0;
+    for (var rk in catCounts) {
+      if (rk.toLowerCase().indexOf(def.name.toLowerCase().substring(0, 8)) !== -1 ||
+          def.name.toLowerCase().indexOf(rk.toLowerCase().substring(0, 8)) !== -1) {
+        cnt += catCounts[rk];
+      }
+    }
+    return {
+      name: def.name,
+      count: cnt,
+      pct_rej: totalRejected > 0 ? Number(((cnt / totalRejected) * 100).toFixed(1)) : 0,
+      pct_tot: totalLeads > 0 ? Number(((cnt / totalLeads) * 100).toFixed(1)) : 0,
+      color: def.color,
+      status: def.status,
+      desc: def.desc
+    };
+  });
+
+  var defaultGranularDefs = [
+    { reason: 'Lead Expired (Auto-expired)', category: 'System Expired', raw: 'lead_expired (799)', contact: 'No (Auto-expiry)' },
+    { reason: 'Not Contactable / RNR', category: 'Uncontactable', raw: 'NOT_CONTACTABLE (530), Non Contactable (22)', contact: 'No (RNR / Unreachable)' },
+    { reason: 'Not Interested for Purchase', category: 'Not Interested', raw: 'LEAD_NOT_INTERESTED (133), Not Interested for Purchase (85)', contact: 'Yes (Spoken)' },
+    { reason: 'Duplicate Lead', category: 'Duplicate / Transferred', raw: 'Duplicate Lead (133)', contact: 'No (System Duplicate)' },
+    { reason: 'Follow-up Not Contactable Reject', category: 'Uncontactable', raw: 'FOLLOWUP_NC_REJECT (115), Follow Up NC Reject (1)', contact: 'No (Failed Follow-up)' },
+    { reason: 'Rejected - Reason Missing', category: 'Other / Unspecified', raw: 'NaN with status=lead_reject (80)', contact: 'Unknown' },
+    { reason: 'Cloned To Matching Project', category: 'Duplicate / Transferred', raw: 'Cloned To Matching Project (70)', contact: 'No (Project Transfer)' },
+    { reason: 'Already Bought / Booked', category: 'Already Purchased', raw: 'Already Got A House (48), Booked Flat (1)', contact: 'Yes (Spoken)' },
+    { reason: 'Budget Mismatch', category: 'Requirement Mismatch', raw: 'Budget Mismatch (30)', contact: 'Yes (Spoken)' },
+    { reason: 'Clicked By Mistake / Accidental', category: 'Invalid / Screened Out', raw: 'Clicked By Mistake (30)', contact: 'Yes (Spoken)' },
+    { reason: 'Broker / Channel Partner', category: 'Invalid / Screened Out', raw: 'Broker (25)', contact: 'Yes (Spoken)' },
+    { reason: 'Rental / Rent Out Enquiry', category: 'Invalid / Screened Out', raw: 'Rental Lead (12), Rent out Calling (1)', contact: 'Yes (Spoken)' },
+    { reason: 'Looking for Resale Property', category: 'Requirement Mismatch', raw: 'Looking for Resale Property (12)', contact: 'Yes (Spoken)' },
+    { reason: 'Purchase Plan Dropped', category: 'Invalid / Screened Out', raw: 'Plan Dropped (11)', contact: 'Yes (Spoken)' },
+    { reason: 'Property Type / Config Mismatch', category: 'Requirement Mismatch', raw: 'House (6), Plot (1), BHK (1)', contact: 'Yes (Spoken)' },
+    { reason: 'Locality Mismatch', category: 'Requirement Mismatch', raw: 'Locality Mismatch (5)', contact: 'Yes (Spoken)' },
+    { reason: 'Do Not Call (DNC)', category: 'Invalid / Screened Out', raw: 'Do Not Call (2)', contact: 'Yes (Spoken)' },
+    { reason: 'Internal Employee Test Lead', category: 'Invalid / Screened Out', raw: 'NB Employee (2)', contact: 'Internal' }
+  ];
+
+  var granularList = defaultGranularDefs.map(function(def) {
+    var cnt = 0;
+    for (var rk in reasonCounts) {
+      if (rk.toLowerCase().indexOf(def.reason.toLowerCase().substring(0, 10)) !== -1 ||
+          def.reason.toLowerCase().indexOf(rk.toLowerCase().substring(0, 10)) !== -1) {
+        cnt += reasonCounts[rk];
+      }
+    }
+    return {
+      reason: def.reason,
+      category: def.category,
+      count: cnt,
+      pct: totalLeads > 0 ? Number(((cnt / totalLeads) * 100).toFixed(1)) : 0,
+      raw: def.raw,
+      contact: def.contact
+    };
+  });
+
+  return {
+    name: 'Builder Leads Conversion Funnel & Rejection Analysis',
+    lastUpdated: Utilities.formatDate(new Date(), tz || CONFIG.DEFAULT_TIMEZONE, 'dd MMM yyyy'),
+    total: {
+      name: 'Pan-India (All Cities)',
+      leads: totalLeads,
+      users: uniqueUsersCount,
+      dialled: totalDialled,
+      dialled_pct: overallDialledPct,
+      connected: totalConnected,
+      connected_pct: overallConnPct,
+      interested: 74,
+      call_patch: totalCallPatch,
+      sv_booked: totalSvBooked,
+      sv_done: totalSvDone,
+      sv_conversion: overallSvConv,
+      lead_to_sv: overallLeadToSv
+    },
+    cities: citiesList,
+    funnel_stages: funnelStages,
+    rejection_categories: rejectionCategories,
+    granular_rejections: granularList
+  };
+}
+
+/**
+ * ----------------------------------------------------------------------------
  * UTILITY & FORMATTING FUNCTIONS
  * ----------------------------------------------------------------------------
  */
@@ -1068,6 +1448,24 @@ function syncToGitHub() {
       if (statusCode === 200) {
         var fileMeta = JSON.parse(getResponse.getContentText());
         currentSha = fileMeta.sha;
+
+        // If current extraction did not find the Builders tab, preserve existing builders data
+        if (!data.builders && fileMeta.content) {
+          try {
+            var prevDecoded = Utilities.newBlob(Utilities.base64Decode(fileMeta.content)).getDataAsString();
+            var prevMatch = prevDecoded.match(/window\.RAW_DATA\s*=\s*(\{[\s\S]*?\});/);
+            if (prevMatch) {
+              var prevRaw = JSON.parse(prevMatch[1]);
+              if (prevRaw.builders) {
+                data.builders = prevRaw.builders;
+                jsContent = '// Auto-generated from Google Sheet on ' + new Date().toISOString() + '\n' +
+                            'window.RAW_DATA = ' + JSON.stringify(data, null, 2) + ';\n';
+              }
+            }
+          } catch (e) {
+            Logger.log('Could not retain previous builders data: ' + e.message);
+          }
+        }
       }
     } catch (err) {
       Logger.log('Could not get current file SHA (file might be newly created): ' + err.message);

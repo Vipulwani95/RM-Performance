@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Projects - Builders | Conversion Funnel &amp; Rejection Dashboard</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+
+    :root {
+      --primary: #1e40af;
+      --primary-light: #3b82f6;
+      --navy: #0f172a;
+      --card-bg: #ffffff;
+      --bg: #f8fafc;
+      --border: #e2e8f0;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --purple: #8b5cf6;
+      --teal: #0d9488;
+    }
+    
+    
+    .container { max-width: 1300px; margin: 0 auto; }
+    
+    /* Header */
+    .header { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 28px 32px; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.2); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .header-left h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    .header-left p { font-size: 13px; opacity: 0.85; max-width: 700px; }
+    .header-badge { background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); padding: 8px 16px; border-radius: 9999px; font-size: 12px; font-weight: 600; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; gap: 8px; }
+    
+    /* Nav Tabs */
+    .tabs { display: flex; gap: 10px; margin-bottom: 24px; border-bottom: 2px solid var(--border); padding-bottom: 12px; flex-wrap: wrap; }
+    .tab-btn { background: transparent; border: none; padding: 10px 20px; font-size: 14px; font-weight: 600; color: var(--text-muted); cursor: pointer; border-radius: 8px; transition: all 0.2s; }
+    .tab-btn:hover { background: #e2e8f0; color: var(--text); }
+    .tab-btn.active { background: var(--primary); color: white; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25); }
+    
+    /* KPI Cards */
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; margin-bottom: 24px; }
+    .kpi-card { background: var(--card-bg); padding: 20px 18px; border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: transform 0.2s, box-shadow 0.2s; position: relative; overflow: hidden; }
+    .kpi-card:hover { transform: translateY(-2px); box-shadow: 0 8px 16px -4px rgba(0,0,0,0.08); }
+    .kpi-card::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--kpi-color, var(--primary)); }
+    .kpi-title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; }
+    .kpi-val { font-size: 26px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+    .kpi-sub { font-size: 12px; font-weight: 600; color: var(--kpi-color, var(--primary)); display: flex; align-items: center; gap: 4px; }
+    
+    /* Section Layouts */
+    .card { background: var(--card-bg); border-radius: 14px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); padding: 24px; margin-bottom: 24px; }
+    .card-title { font-size: 17px; font-weight: 700; color: var(--text); margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    
+    /* Interactive Filter Bar */
+    .filter-bar { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding: 12px 18px; background: #f1f5f9; border-radius: 10px; }
+    .filter-label { font-size: 13px; font-weight: 600; color: var(--text); }
+    .filter-select { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border); background: white; font-size: 13px; font-weight: 600; color: var(--text); cursor: pointer; outline: none; }
+    
+    /* Funnel Visual Bars */
+    .funnel-container { display: flex; flex-direction: column; gap: 14px; }
+    .funnel-step { background: #f8fafc; border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; transition: all 0.2s; position: relative; }
+    .funnel-step:hover { border-color: var(--primary-light); background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.04); }
+    .step-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
+    .step-name { font-weight: 700; font-size: 15px; display: flex; align-items: center; gap: 10px; }
+    .step-badge { font-size: 11px; padding: 3px 10px; border-radius: 9999px; font-weight: 700; }
+    .step-counts { display: flex; align-items: baseline; gap: 10px; }
+    .step-count-val { font-size: 20px; font-weight: 800; color: var(--text); }
+    .step-count-pct { font-size: 12px; font-weight: 600; color: var(--text-muted); }
+    
+    .bar-track { height: 14px; background: #e2e8f0; border-radius: 7px; overflow: hidden; position: relative; margin-bottom: 8px; }
+    .bar-fill { height: 100%; border-radius: 7px; transition: width 0.8s ease-in-out; }
+    
+    .step-meta { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--text-muted); flex-wrap: wrap; gap: 8px; }
+    .step-conv-badge { font-weight: 700; color: #166534; background: #dcfce7; padding: 2px 8px; border-radius: 6px; }
+    .step-drop-badge { font-weight: 700; color: #991b1b; background: #fee2e2; padding: 2px 8px; border-radius: 6px; }
+    
+    /* Table Styling */
+    .data-table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+    .data-table th { background: #f1f5f9; padding: 12px 14px; font-weight: 700; color: var(--text); border-bottom: 2px solid var(--border); white-space: nowrap; }
+    .data-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    .data-table tr:hover td { background: #f8fafc; }
+    .data-table tr.total-row td { font-weight: 800; background: #f0fdf4; border-top: 2px solid #86efac; color: #166534; }
+    
+    /* Category Badges */
+    .badge { display: inline-block; padding: 3px 9px; border-radius: 6px; font-size: 11px; font-weight: 700; }
+    .badge-expired { background: #fee2e2; color: #b91c1c; }
+    .badge-nc { background: #ffedd5; color: #c2410c; }
+    .badge-notint { background: #fef9c3; color: #a16207; }
+    .badge-dupe { background: #f3e8ff; color: #7e22ce; }
+    .badge-invalid { background: #fce7f3; color: #be185d; }
+    .badge-mismatch { background: #cffafe; color: #0e7490; }
+    .badge-closed { background: #dcfce7; color: #15803d; }
+    .badge-unspec { background: #f1f5f9; color: #475569; }
+    .badge-active { background: #dbeafe; color: #1d4ed8; }
+    
+    /* Grid Two Columns */
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 24px; }
+    
+    /* Search Box */
+    .search-box { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--border); font-size: 13px; width: 260px; outline: none; }
+    .search-box:focus { border-color: var(--primary-light); box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); }
+    
+    /* Callouts / Recommendations */
+    .recom-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+    .recom-card { background: white; border-radius: 12px; border: 1px solid var(--border); padding: 20px; position: relative; border-left: 5px solid var(--primary); }
+    .recom-card.warning { border-left-color: var(--warning); }
+    .recom-card.success { border-left-color: var(--success); }
+    .recom-card.danger { border-left-color: var(--danger); }
+    .recom-title { font-weight: 700; font-size: 15px; margin-bottom: 8px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+    .recom-text { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+    
+    @media (max-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  
+    .builders-page-wrap {
+      padding: 1.5rem 1.5rem 3rem 1.5rem;
+      max-width: 1350px;
+      margin: 0 auto;
+    }
+  </style>
+  <!-- Global Data -->
+  <script src="js/data.js"></script>
+</head>
+<body style="background: #f8fafc;">
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-section">
+        <div class="brand-icon">AC</div>
+        <div class="brand-titles">
+          <h1>RM Performance Dashboard <span class="brand-badge">Executive</span></h1>
+          <p>Ambassador Club • Executive Performance & Productivity Intelligence</p>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Home
+        </a>
+        <a href="global.html" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          Team Comparison
+        </a>
+        <a href="profile.html?rm=Malik" class="nav-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          RM Profile
+        </a>
+        <a href="builders.html" class="nav-link active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="22" x2="9" y2="22"></line><line x1="9" y1="6" x2="9" y2="6"></line><line x1="15" y1="6" x2="15" y2="6"></line><line x1="9" y1="10" x2="9" y2="10"></line><line x1="15" y1="10" x2="15" y2="10"></line><line x1="9" y1="14" x2="9" y2="14"></line><line x1="15" y1="14" x2="15" y2="14"></line><line x1="9" y1="18" x2="15" y2="18"></line></svg>
+          New Projects- Builders
+        </a>
+      </nav>
+
+      <div class="header-meta">
+        <div class="meta-pill">
+          <span class="pulse-dot"></span>
+          <span>Live Reporting</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="builders-page-wrap">
+<div class="container">
+    
+    <!-- Top Header -->
+    <div class="header">
+      <div class="header-left">
+        <h1>Builder Leads — Conversion Funnel & Rejection Analysis</h1>
+        <p>Interactive Performance Dashboard for Ambassador Club Builder Leads across 5 Major Indian Metros (2,212 Total Ingested Leads).</p>
+      </div>
+      <div class="header-badge">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span>Data Refreshed: Nov 2026</span>
+      </div>
+    </div>
+    
+    <!-- KPI Scorecard -->
+    <div class="kpi-grid">
+      <div class="kpi-card" style="--kpi-color: #1e40af;">
+        <div class="kpi-title">Total Ingested Leads</div>
+        <div class="kpi-val" id="kpi-leads">2,212</div>
+        <div class="kpi-sub" id="kpi-users">1,800 Unique Prospects</div>
+      </div>
+      <div class="kpi-card" style="--kpi-color: #2563eb;">
+        <div class="kpi-title">Dialled / Attempted</div>
+        <div class="kpi-val" id="kpi-dialled">1,699</div>
+        <div class="kpi-sub" id="kpi-dialled-sub">76.8% Coverage Rate</div>
+      </div>
+      <div class="kpi-card" style="--kpi-color: #0284c7;">
+        <div class="kpi-title">Connected (Spoken)</div>
+        <div class="kpi-val" id="kpi-conn">411</div>
+        <div class="kpi-sub" id="kpi-conn-sub">24.2% of Dialled Leads</div>
+      </div>
+      <div class="kpi-card" style="--kpi-color: #16a34a;">
+        <div class="kpi-title">Call Patch Completed</div>
+        <div class="kpi-val" id="kpi-cp">60</div>
+        <div class="kpi-sub" id="kpi-cp-sub">65 Total Sessions</div>
+      </div>
+      <div class="kpi-card" style="--kpi-color: #f59e0b;">
+        <div class="kpi-title">Site Visits Scheduled</div>
+        <div class="kpi-val" id="kpi-sv-sched">48</div>
+        <div class="kpi-sub" id="kpi-sv-sched-sub">80.0% Pitch to Visit Booking</div>
+      </div>
+      <div class="kpi-card" style="--kpi-color: #15803d;">
+        <div class="kpi-title">Site Visit Completed</div>
+        <div class="kpi-val" id="kpi-sv-done">16</div>
+        <div class="kpi-sub" id="kpi-sv-done-sub">33.3% Scheduled to Done</div>
+      </div>
+    </div>
+    
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-funnel', this)">Conversion Funnel</button>
+      <button class="tab-btn" onclick="switchTab('tab-cities', this)">City Performance</button>
+      <button class="tab-btn" onclick="switchTab('tab-rejections', this)">Rejection Reason Breakdown</button>
+      <button class="tab-btn" onclick="switchTab('tab-strategy', this)">Pipeline Leaks & Playbook</button>
+    </div>
+    
+    <!-- TAB 1: FUNNEL -->
+    <div id="tab-funnel" class="tab-content">
+      <div class="card">
+        <div class="card-title">
+          <span>End-to-End Pipeline Progression</span>
+          <div class="filter-bar" style="margin: 0; padding: 6px 12px;">
+            <span class="filter-label">Filter by City:</span>
+            <select id="city-selector" class="filter-select" onchange="updateCityFilter(this.value)">
+              <option value="all">Pan-India (All 5 Cities)</option>
+              <option value="bangalore">Bangalore (929 leads)</option>
+              <option value="pune">Pune (376 leads)</option>
+              <option value="mumbai">Mumbai (331 leads)</option>
+              <option value="chennai">Chennai (480 leads)</option>
+              <option value="hyderabad">Hyderabad (96 leads)</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="funnel-container" id="funnel-steps-container">
+          <!-- Dynamically generated via JS -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- TAB 2: CITIES -->
+    <div id="tab-cities" class="tab-content" style="display: none;">
+      <div class="card">
+        <div class="card-title">City-by-City Funnel Comparison</div>
+        <div style="overflow-x: auto;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>City</th>
+                <th>Total Leads</th>
+                <th>Unique Users</th>
+                <th>Dialled Leads</th>
+                <th>Dialled %</th>
+                <th>Connected</th>
+                <th>Connected %</th>
+                <th>Call Patch Done</th>
+                <th>SV Booked</th>
+                <th>SV Done</th>
+                <th>SV / Total Leads %</th>
+                <th>SV / Connected %</th>
+              </tr>
+            </thead>
+            <tbody id="city-table-body">
+              <!-- Dynamically generated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- Visual City Rank Cards -->
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Volume Contribution by City</div>
+          <div id="city-volume-bars" style="display: flex; flex-direction: column; gap: 14px;">
+            <!-- Bars -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Site Visit Conversion Rate (% of Leads)</div>
+          <div id="city-conv-bars" style="display: flex; flex-direction: column; gap: 14px;">
+            <!-- Bars -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- TAB 3: REJECTIONS -->
+    <div id="tab-rejections" class="tab-content" style="display: none;">
+      <div class="grid-2">
+        <!-- Rejection Category Summary -->
+        <div class="card">
+          <div class="card-title">Standardized Rejection Categories (Executive Summary)</div>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+            Consolidated from 26 raw CRM labels into 8 normalized operational buckets (2,158 Rejected + 54 Open Leads).
+          </p>
+          <div id="rejection-categories-list" style="display: flex; flex-direction: column; gap: 12px;">
+            <!-- Categories -->
+          </div>
+        </div>
+        
+        <!-- Rejection Category Share Visual -->
+        <div class="card">
+          <div class="card-title">Rejection Reason Distribution (% Share)</div>
+          <div id="rejection-visual-bars" style="display: flex; flex-direction: column; gap: 12px; margin-top: 10px;">
+            <!-- Bars -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Detailed Granular Table -->
+      <div class="card">
+        <div class="card-title">
+          <span>Granular Rejection Reasons & Raw Label Mapping</span>
+          <input type="text" id="reason-search" class="search-box" placeholder="Search reason or raw text..." onkeyup="filterRejectionTable(this.value)">
+        </div>
+        <div style="overflow-x: auto;">
+          <table class="data-table" id="granular-rejection-table">
+            <thead>
+              <tr>
+                <th>Standardized Rejection Reason</th>
+                <th>Category</th>
+                <th>Raw CRM Labels Consolidated</th>
+                <th>Lead Count</th>
+                <th>% of Total Leads (2,212)</th>
+                <th>Contact Status</th>
+              </tr>
+            </thead>
+            <tbody id="granular-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <!-- TAB 4: STRATEGY & BOTTLENECKS -->
+    <div id="tab-strategy" class="tab-content" style="display: none;">
+      <div class="recom-grid">
+        <div class="recom-card danger">
+          <div class="recom-title">
+            <svg width="20" height="20" fill="none" stroke="#ef4444" stroke-width="2" viewBox="0 0 24 24"><polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            Leak 1: 66.3% Volume Lost in Expired & NC
+          </div>
+          <div class="recom-text">
+            <strong>799 Auto-Expired</strong> leads and <strong>669 Uncontactable (RNR)</strong> leads make up 1,468 lost opportunities.
+            <br><br>
+            <strong>Actionable Solution:</strong>
+            <ul style="padding-left: 18px; margin-top: 6px;">
+              <li>Enforce a strict <strong>5-minute SLA</strong> for initial dialling after lead creation.</li>
+              <li>Deploy an automated <strong>WhatsApp Bot / IVR confirmation</strong> instantly upon lead capture.</li>
+              <li>Introduce a scheduled alternate-time reachout for unreached numbers.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="recom-card warning">
+          <div class="recom-title">
+            <svg width="20" height="20" fill="none" stroke="#f59e0b" stroke-width="2" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+            Leak 2: Site Visit Cancellation Rate (66.7%)
+          </div>
+          <div class="recom-text">
+            Out of <strong>48 Site Visits booked</strong>, only <strong>16 were completed</strong> while 24 were cancelled and 8 are pending.
+            <br><br>
+            <strong>Actionable Solution:</strong>
+            <ul style="padding-left: 18px; margin-top: 6px;">
+              <li>Provide <strong>NoBroker-sponsored cab pickup/drop</strong> service for confirmed site visits.</li>
+              <li>Send WhatsApp calendar reminders with direct location links and RM contact at T-24h and T-2h.</li>
+              <li>Engage the buyer with a curated project video walkthrough 12 hours prior to the visit.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="recom-card success">
+          <div class="recom-title">
+            <svg width="20" height="20" fill="none" stroke="#10b981" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            Strength: High Call Patch Conversion (80%)
+          </div>
+          <div class="recom-text">
+            When an RM successfully completes a 3-way Call Patch pitch (60 leads), <strong>80% (48 leads)</strong> agree to schedule a Site Visit!
+            <br><br>
+            <strong>Actionable Solution:</strong>
+            <ul style="padding-left: 18px; margin-top: 6px;">
+              <li>Double down on getting spoken leads onto <strong>instant call patches</strong> with builder project specialists.</li>
+              <li>Incentivize tele-calling RMs specifically on Call Patch patch-through rates.</li>
+              <li>Replicate Bangalore and Pune's pitch playbooks across Chennai and Mumbai.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  </div>
+
+  <footer class="app-footer" style="margin-top: 3rem;">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <strong>Ambassador Club</strong> • Executive Performance & Productivity Intelligence
+      </div>
+      <div class="footer-right">
+        Auto-synced with Live Google Sheets &amp; GitHub
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    const DEFAULT_DATA = {"total": {"name": "Pan-India (All Cities)", "leads": 2212, "users": 1800, "dialled": 1699, "dialled_pct": 76.8, "connected": 411, "connected_pct": 24.2, "interested": 74, "call_patch": 60, "sv_booked": 48, "sv_done": 16, "sv_conversion": 33.3, "lead_to_sv": 0.72}, "cities": [{"id": "bangalore", "name": "Bangalore", "leads": 929, "users": 795, "dialled": 819, "dialled_pct": 88.2, "connected": 186, "connected_pct": 22.7, "call_patch": 33, "sv_booked": 22, "sv_done": 9, "sv_conversion": 40.9, "lead_to_sv": 0.97}, {"id": "pune", "name": "Pune", "leads": 376, "users": 303, "dialled": 245, "dialled_pct": 65.2, "connected": 82, "connected_pct": 33.5, "call_patch": 13, "sv_booked": 9, "sv_done": 4, "sv_conversion": 44.4, "lead_to_sv": 1.06}, {"id": "mumbai", "name": "Mumbai", "leads": 331, "users": 230, "dialled": 142, "dialled_pct": 42.9, "connected": 27, "connected_pct": 19.0, "call_patch": 4, "sv_booked": 8, "sv_done": 2, "sv_conversion": 25.0, "lead_to_sv": 0.6}, {"id": "chennai", "name": "Chennai", "leads": 480, "users": 403, "dialled": 436, "dialled_pct": 90.8, "connected": 99, "connected_pct": 22.7, "call_patch": 6, "sv_booked": 7, "sv_done": 1, "sv_conversion": 14.3, "lead_to_sv": 0.21}, {"id": "hyderabad", "name": "Hyderabad", "leads": 96, "users": 85, "dialled": 57, "dialled_pct": 59.4, "connected": 17, "connected_pct": 29.8, "call_patch": 4, "sv_booked": 2, "sv_done": 0, "sv_conversion": 0.0, "lead_to_sv": 0.0}], "funnel_stages": [{"stage": "1. Total Ingested Leads", "count": 2212, "users": 1800, "pct_total": 100.0, "step_conv": 100.0, "drop": 0, "color": "#1e3a8a", "desc": "Gross inbound leads received from Ambassador Club campaigns"}, {"stage": "2. Dialled / Contact Attempted", "count": 1699, "users": 1403, "pct_total": 76.8, "step_conv": 76.8, "drop": 513, "color": "#2563eb", "desc": "Leads with RM calling activity, telephony duration, or contact dispositions"}, {"stage": "3. Connected / Spoken Conversation", "count": 411, "users": 375, "pct_total": 18.6, "step_conv": 24.2, "drop": 1288, "color": "#0284c7", "desc": "Live two-way conversations between relationship manager and customer"}, {"stage": "4. Warm Prospect / Pitch Follow-up", "count": 74, "users": 74, "pct_total": 3.3, "step_conv": 18.0, "drop": 337, "color": "#0d9488", "desc": "Leads with validated purchase interest, open follow-ups, or meeting sessions"}, {"stage": "5. Call Patch Pitch Done", "count": 60, "users": 60, "pct_total": 2.7, "step_conv": 81.1, "drop": 14, "color": "#16a34a", "desc": "Completed 3-way conference/pitch call with developer representative (65 patches)"}, {"stage": "6. Site Visit Scheduled / Booked", "count": 48, "users": 48, "pct_total": 2.2, "step_conv": 80.0, "drop": 12, "color": "#ca8a04", "desc": "Customer agreed and scheduled appointment for project site visit"}, {"stage": "7. Site Visit Done (Completed)", "count": 16, "users": 16, "pct_total": 0.72, "step_conv": 33.3, "drop": 32, "color": "#15803d", "desc": "Physical on-ground builder site visit completed by prospect (20 total visits)"}], "rejection_categories": [{"name": "System Expired", "count": 799, "pct_rej": 37.0, "pct_tot": 36.1, "color": "#ef4444", "status": "System Auto-Expiry", "desc": "Timed out past SLA without RM contact or conversion"}, {"name": "Uncontactable / Not Connected", "count": 669, "pct_rej": 31.0, "pct_tot": 30.2, "color": "#f97316", "status": "RNR / Unreachable", "desc": "Customer did not answer across 1-5 dial attempts (nc_1 to nc_5)"}, {"name": "Not Interested (Direct Pitch)", "count": 218, "pct_rej": 10.1, "pct_tot": 9.9, "color": "#eab308", "status": "Spoken / Connected", "desc": "Directly declined project or purchase intent during call"}, {"name": "Duplicate / Project Transferred", "count": 203, "pct_rej": 9.4, "pct_tot": 9.2, "color": "#8b5cf6", "status": "System / De-dupe", "desc": "Duplicate submissions (133) or cloned to matching project (70)"}, {"name": "Invalid / Ineligible Lead Source", "count": 83, "pct_rej": 3.8, "pct_tot": 3.8, "color": "#ec4899", "status": "Spoken / Screened", "desc": "Mistake click (30), broker (25), rental (13), plan dropped (11), DNC/test (4)"}, {"name": "Other / Unspecified Reason", "count": 80, "pct_rej": 3.7, "pct_tot": 3.6, "color": "#64748b", "status": "Unspecified", "desc": "Marked lead_reject in CRM without sub-reason note"}, {"name": "Requirement Mismatch", "count": 55, "pct_rej": 2.5, "pct_tot": 2.5, "color": "#06b6d4", "status": "Spoken / Qualified", "desc": "Budget (30), resale (12), villa/plot/BHK (8), locality (5)"}, {"name": "Already Purchased / Closed", "count": 51, "pct_rej": 2.4, "pct_tot": 2.3, "color": "#10b981", "status": "Spoken / Closed", "desc": "Already bought house (48), booked flat (1), closed other project (2)"}], "granular_rejections": [{"reason": "Lead Expired (Auto-expired)", "category": "System Expired", "count": 799, "pct": 36.1, "raw": "lead_expired (799)", "contact": "No (Auto-expiry)"}, {"reason": "Not Contactable / RNR", "category": "Uncontactable", "count": 552, "pct": 25.0, "raw": "NOT_CONTACTABLE (530), Non Contactable (22)", "contact": "No (Unreachable)"}, {"reason": "Not Interested for Purchase", "category": "Not Interested", "count": 218, "pct": 9.9, "raw": "LEAD_NOT_INTERESTED (133), Not Interested for Purchase (85)", "contact": "Yes (Spoken)"}, {"reason": "Duplicate Lead", "category": "Duplicate / Transferred", "count": 133, "pct": 6.0, "raw": "Duplicate Lead (133)", "contact": "No (De-dupe)"}, {"reason": "Follow-up Not Contactable Reject", "category": "Uncontactable", "count": 117, "pct": 5.3, "raw": "FOLLOWUP_NC_REJECT (115), Follow Up NC Reject (1), followup_nc_reject (1)", "contact": "No (Failed Follow-up)"}, {"reason": "Rejected - Reason Missing", "category": "Other / Unspecified", "count": 80, "pct": 3.6, "raw": "NaN with status=lead_reject (80)", "contact": "Unknown"}, {"reason": "Cloned To Matching Project", "category": "Duplicate / Transferred", "count": 70, "pct": 3.2, "raw": "Cloned To Matching Project (70)", "contact": "No (Transferred)"}, {"reason": "Already Bought / Booked", "category": "Already Purchased", "count": 51, "pct": 2.3, "raw": "Already Got A House (48), Booked Flat (1), Closed via NB (2)", "contact": "Yes (Spoken)"}, {"reason": "Budget Mismatch", "category": "Requirement Mismatch", "count": 30, "pct": 1.4, "raw": "Budget Mismatch (30)", "contact": "Yes (Spoken)"}, {"reason": "Clicked By Mistake / Accidental", "category": "Invalid / Ineligible", "count": 30, "pct": 1.4, "raw": "Clicked By Mistake (30)", "contact": "Yes (Spoken)"}, {"reason": "Broker / Channel Partner", "category": "Invalid / Ineligible", "count": 25, "pct": 1.1, "raw": "Broker (25)", "contact": "Yes (Spoken)"}, {"reason": "Rental / Rent Out Enquiry", "category": "Invalid / Ineligible", "count": 13, "pct": 0.6, "raw": "Rental Lead (12), Rent out Calling (1)", "contact": "Yes (Spoken)"}, {"reason": "Looking for Resale Property", "category": "Requirement Mismatch", "count": 12, "pct": 0.5, "raw": "Looking for Resale Property (12)", "contact": "Yes (Spoken)"}, {"reason": "Purchase Plan Dropped", "category": "Invalid / Ineligible", "count": 11, "pct": 0.5, "raw": "Plan Dropped (11)", "contact": "Yes (Spoken)"}, {"reason": "Property Type / Config Mismatch", "category": "Requirement Mismatch", "count": 8, "pct": 0.4, "raw": "Independent House (6), Plot (1), Specific Config (1)", "contact": "Yes (Spoken)"}, {"reason": "Locality Mismatch", "category": "Requirement Mismatch", "count": 5, "pct": 0.2, "raw": "Locality Mismatch (5)", "contact": "Yes (Spoken)"}, {"reason": "Do Not Call (DNC)", "category": "Invalid / Ineligible", "count": 2, "pct": 0.1, "raw": "Do Not Call (2)", "contact": "Yes (Spoken)"}, {"reason": "Internal Employee Test Lead", "category": "Invalid / Ineligible", "count": 2, "pct": 0.1, "raw": "NB Employee (2)", "contact": "Internal Test"}]};
+    const DATA = (window.RAW_DATA && window.RAW_DATA.builders) ? window.RAW_DATA.builders : DEFAULT_DATA;
+    
+    // Tab switching
+    function switchTab(tabId, btn) {
+      document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById(tabId).style.display = 'block';
+      btn.classList.add('active');
+    }
+    
+    // Render Funnel Steps
+    function renderFunnel(stages, totalBaseline) {
+      const container = document.getElementById('funnel-steps-container');
+      container.innerHTML = '';
+      
+      stages.forEach((st, idx) => {
+        const widthPct = Math.max(Math.min((st.count / totalBaseline) * 100, 100), 2);
+        const prevCount = idx === 0 ? st.count : stages[idx - 1].count;
+        const stepConv = idx === 0 ? 100 : ((st.count / prevCount) * 100).toFixed(1);
+        const dropCount = idx === 0 ? 0 : (prevCount - st.count);
+        const dropPct = idx === 0 ? 0 : ((dropCount / prevCount) * 100).toFixed(1);
+        
+        const stepDiv = document.createElement('div');
+        stepDiv.className = 'funnel-step';
+        stepDiv.innerHTML = `
+          <div class="step-header">
+            <div class="step-name">
+              <span style="display:inline-block; width:12px; height:12px; border-radius:3px; background:${st.color}"></span>
+              <span>${st.stage}</span>
+              ${idx > 0 ? `<span class="step-badge step-conv-badge">↓ ${stepConv}% Conversion</span>` : ''}
+            </div>
+            <div class="step-counts">
+              <span class="step-count-val">${st.count.toLocaleString()}</span>
+              <span class="step-count-pct">(${((st.count / totalBaseline) * 100).toFixed(1)}% of Leads)</span>
+            </div>
+          </div>
+          <div class="bar-track">
+            <div class="bar-fill" style="width: ${widthPct}%; background: ${st.color};"></div>
+          </div>
+          <div class="step-meta">
+            <span>${st.desc}</span>
+            ${idx > 0 && dropCount > 0 ? `<span class="step-badge step-drop-badge">-${dropCount.toLocaleString()} Drop-off (${dropPct}%)</span>` : '<span>Top of Funnel</span>'}
+          </div>
+        `;
+        container.appendChild(stepDiv);
+      });
+    }
+    
+    // Filter by city
+    function updateCityFilter(cityId) {
+      if (cityId === 'all') {
+        renderFunnel(DATA.funnel_stages, DATA.total.leads);
+        document.getElementById('kpi-leads').textContent = DATA.total.leads.toLocaleString();
+        document.getElementById('kpi-users').textContent = `${DATA.total.users.toLocaleString()} Unique Prospects`;
+        document.getElementById('kpi-dialled').textContent = DATA.total.dialled.toLocaleString();
+        document.getElementById('kpi-dialled-sub').textContent = `${DATA.total.dialled_pct}% Coverage Rate`;
+        document.getElementById('kpi-conn').textContent = DATA.total.connected.toLocaleString();
+        document.getElementById('kpi-conn-sub').textContent = `${DATA.total.connected_pct}% of Dialled`;
+        document.getElementById('kpi-cp').textContent = DATA.total.call_patch;
+        document.getElementById('kpi-sv-sched').textContent = DATA.total.sv_booked;
+        document.getElementById('kpi-sv-done').textContent = DATA.total.sv_done;
+        document.getElementById('kpi-sv-done-sub').textContent = `${DATA.total.sv_conversion}% Scheduled to Done`;
+      } else {
+        const city = DATA.cities.find(c => c.id === cityId);
+        if (!city) return;
+        
+        document.getElementById('kpi-leads').textContent = city.leads.toLocaleString();
+        document.getElementById('kpi-users').textContent = `${city.users.toLocaleString()} Unique Prospects`;
+        document.getElementById('kpi-dialled').textContent = city.dialled.toLocaleString();
+        document.getElementById('kpi-dialled-sub').textContent = `${city.dialled_pct}% Coverage Rate`;
+        document.getElementById('kpi-conn').textContent = city.connected.toLocaleString();
+        document.getElementById('kpi-conn-sub').textContent = `${city.connected_pct}% of Dialled`;
+        document.getElementById('kpi-cp').textContent = city.call_patch;
+        document.getElementById('kpi-sv-sched').textContent = city.sv_booked;
+        document.getElementById('kpi-sv-done').textContent = city.sv_done;
+        document.getElementById('kpi-sv-done-sub').textContent = `${city.sv_conversion}% Scheduled to Done`;
+        
+        // Build city stages
+        const cityStages = [
+          {"stage": "1. Total Leads", "count": city.leads, "color": "#1e3a8a", "desc": `Inbound leads in ${city.name}`},
+          {"stage": "2. Dialled / Attempted", "count": city.dialled, "color": "#2563eb", "desc": "Attempted contact by city RMs"},
+          {"stage": "3. Connected / Spoken", "count": city.connected, "color": "#0284c7", "desc": "Spoken customer conversations"},
+          {"stage": "4. Call Patch Done", "count": city.call_patch, "color": "#16a34a", "desc": "Call patch completed"},
+          {"stage": "5. Site Visit Scheduled", "count": city.sv_booked, "color": "#ca8a04", "desc": "Site visits booked"},
+          {"stage": "6. Site Visit Completed", "count": city.sv_done, "color": "#15803d", "desc": "On-ground site visit done"}
+        ];
+        renderFunnel(cityStages, city.leads);
+      }
+    }
+    
+    // Render City Table & Bars
+    function renderCitySection() {
+      const tbody = document.getElementById('city-table-body');
+      tbody.innerHTML = '';
+      
+      DATA.cities.forEach(c => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${c.name}</strong></td>
+          <td>${c.leads.toLocaleString()}</td>
+          <td>${c.users.toLocaleString()}</td>
+          <td>${c.dialled.toLocaleString()}</td>
+          <td>${c.dialled_pct}%</td>
+          <td>${c.connected.toLocaleString()}</td>
+          <td>${c.connected_pct}%</td>
+          <td>${c.call_patch}</td>
+          <td>${c.sv_booked}</td>
+          <td><strong>${c.sv_done}</strong></td>
+          <td><span class="badge" style="background:#e0f2fe; color:#0369a1;">${c.lead_to_sv}%</span></td>
+          <td><span class="badge" style="background:#f0fdf4; color:#15803d;">${((c.sv_done / c.connected) * 100).toFixed(1)}%</span></td>
+        `;
+        tbody.appendChild(tr);
+      });
+      
+      // Total Row
+      const totTr = document.createElement('tr');
+      totTr.className = 'total-row';
+      totTr.innerHTML = `
+        <td>Total / Pan-India</td>
+        <td>${DATA.total.leads.toLocaleString()}</td>
+        <td>${DATA.total.users.toLocaleString()}</td>
+        <td>${DATA.total.dialled.toLocaleString()}</td>
+        <td>${DATA.total.dialled_pct}%</td>
+        <td>${DATA.total.connected.toLocaleString()}</td>
+        <td>${DATA.total.connected_pct}%</td>
+        <td>${DATA.total.call_patch}</td>
+        <td>${DATA.total.sv_booked}</td>
+        <td>${DATA.total.sv_done}</td>
+        <td>${DATA.total.lead_to_sv}%</td>
+        <td>${((DATA.total.sv_done / DATA.total.connected) * 100).toFixed(1)}%</td>
+      `;
+      tbody.appendChild(totTr);
+      
+      // Render City Volume Bars
+      const volContainer = document.getElementById('city-volume-bars');
+      volContainer.innerHTML = '';
+      DATA.cities.forEach(c => {
+        const pct = ((c.leads / DATA.total.leads) * 100).toFixed(1);
+        volContainer.innerHTML += `
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:600; margin-bottom:4px;">
+              <span>${c.name}</span>
+              <span>${c.leads.toLocaleString()} leads (${pct}%)</span>
+            </div>
+            <div class="bar-track" style="height:10px;">
+              <div class="bar-fill" style="width: ${pct}%; background: #2563eb;"></div>
+            </div>
+          </div>
+        `;
+      });
+      
+      // Render City Conv Bars
+      const convContainer = document.getElementById('city-conv-bars');
+      convContainer.innerHTML = '';
+      const maxConv = Math.max(...DATA.cities.map(c => c.lead_to_sv));
+      DATA.cities.forEach(c => {
+        const width = maxConv > 0 ? (c.lead_to_sv / maxConv) * 100 : 0;
+        convContainer.innerHTML += `
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:13px; font-weight:600; margin-bottom:4px;">
+              <span>${c.name}</span>
+              <span>${c.lead_to_sv}% (SV Done: ${c.sv_done})</span>
+            </div>
+            <div class="bar-track" style="height:10px;">
+              <div class="bar-fill" style="width: ${width}%; background: #10b981;"></div>
+            </div>
+          </div>
+        `;
+      });
+    }
+    
+    // Render Rejection Categories & Table
+    function renderRejectionSection() {
+      const catList = document.getElementById('rejection-categories-list');
+      const visualBars = document.getElementById('rejection-visual-bars');
+      catList.innerHTML = '';
+      visualBars.innerHTML = '';
+      
+      DATA.rejection_categories.forEach(cat => {
+        catList.innerHTML += `
+          <div style="display:flex; align-items:center; justify-content:space-between; padding:10px 14px; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:12px; height:12px; border-radius:3px; background:${cat.color}"></span>
+              <div>
+                <div style="font-weight:700; font-size:13px;">${cat.name}</div>
+                <div style="font-size:11px; color:#64748b;">${cat.desc}</div>
+              </div>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-weight:800; font-size:15px;">${cat.count.toLocaleString()}</div>
+              <div style="font-size:11px; font-weight:600; color:#64748b;">${cat.pct_tot}% of Total</div>
+            </div>
+          </div>
+        `;
+        
+        visualBars.innerHTML += `
+          <div>
+            <div style="display:flex; justify-content:space-between; font-size:12px; font-weight:600; margin-bottom:4px;">
+              <span>${cat.name}</span>
+              <span>${cat.count} (${cat.pct_tot}%)</span>
+            </div>
+            <div class="bar-track" style="height:12px;">
+              <div class="bar-fill" style="width: ${cat.pct_tot * 2.5}%; background: ${cat.color};"></div>
+            </div>
+          </div>
+        `;
+      });
+      
+      // Render Granular Table
+      const gbody = document.getElementById('granular-table-body');
+      gbody.innerHTML = '';
+      DATA.granular_rejections.forEach(g => {
+        let bClass = 'badge-unspec';
+        if (g.category.includes('Expired')) bClass = 'badge-expired';
+        else if (g.category.includes('Uncontactable')) bClass = 'badge-nc';
+        else if (g.category.includes('Not Interested')) bClass = 'badge-notint';
+        else if (g.category.includes('Duplicate')) bClass = 'badge-dupe';
+        else if (g.category.includes('Invalid')) bClass = 'badge-invalid';
+        else if (g.category.includes('Mismatch')) bClass = 'badge-mismatch';
+        else if (g.category.includes('Purchased')) bClass = 'badge-closed';
+        
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${g.reason}</strong></td>
+          <td><span class="badge ${bClass}">${g.category}</span></td>
+          <td style="color:#64748b; font-size:12px;">${g.raw}</td>
+          <td><strong>${g.count}</strong></td>
+          <td>${g.pct}%</td>
+          <td><span style="font-size:11px; font-weight:600; color:${g.contact.includes('Yes') ? '#15803d' : '#64748b'}">${g.contact}</span></td>
+        `;
+        gbody.appendChild(tr);
+      });
+    }
+    
+    // Filter granular table
+    function filterRejectionTable(query) {
+      const q = query.toLowerCase();
+      const rows = document.querySelectorAll('#granular-table-body tr');
+      rows.forEach(r => {
+        const text = r.textContent.toLowerCase();
+        r.style.display = text.includes(q) ? '' : 'none';
+      });
+    }
+    
+    // Initialize
+    window.addEventListener('DOMContentLoaded', () => {
+      renderFunnel(DATA.funnel_stages, DATA.total.leads);
+      renderCitySection();
+      renderRejectionSection();
+    });
+  
+  </script>
+</body>
+</html>
