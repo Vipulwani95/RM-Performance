@@ -822,6 +822,8 @@ function parseBuildersData(sheet, tz) {
     return fallbackIdx;
   }
 
+  var colLeadId = findCol(['lead_id', 'id'], ['lead_id', 'id'], 0);
+  var colLeadCreatedOn = findCol(['lead_created_on', 'created_on', 'date'], ['lead_created_on', 'created_on', 'created'], 3);
   var colCity = findCol(['lead_city', 'city'], ['lead_city', 'city'], 4);
   var colPhone = findCol(['phone 10 digit', 'phone'], ['phone 10 digit', 'phone', 'mobile'], 1);
   var colUserId = findCol(['user_id'], ['user_id', 'user id'], 6);
@@ -863,6 +865,9 @@ function parseBuildersData(sheet, tz) {
 
   var catCounts = {};
   var reasonCounts = {};
+  var monthlyFlow = {};
+  var dailyFlow = {};
+  var cleanLeads = [];
 
   for (var r = 1; r < values.length; r++) {
     var row = values[r];
@@ -937,6 +942,57 @@ function parseBuildersData(sheet, tz) {
     if (reason && reason.toLowerCase() !== 'open / active lead') {
       reasonCounts[reason] = (reasonCounts[reason] || 0) + 1;
     }
+
+    // Timeline parsing
+    var rawDate = row[colLeadCreatedOn];
+    var dateStr = '';
+    var monthStr = '';
+    if (rawDate instanceof Date) {
+      dateStr = Utilities.formatDate(rawDate, tz || CONFIG.DEFAULT_TIMEZONE, 'yyyy-MM-dd');
+      monthStr = Utilities.formatDate(rawDate, tz || CONFIG.DEFAULT_TIMEZONE, 'yyyy-MM');
+    } else if (rawDate) {
+      var dMatch = String(rawDate).match(/^(\d{4}-\d{2}-\d{2})/);
+      if (dMatch) {
+        dateStr = dMatch[1];
+        monthStr = dateStr.substring(0, 7);
+      }
+    }
+
+    if (monthStr && cityRaw) {
+      if (!monthlyFlow[monthStr]) {
+        monthlyFlow[monthStr] = { bangalore: 0, chennai: 0, pune: 0, mumbai: 0, hyderabad: 0, total: 0 };
+      }
+      if (monthlyFlow[monthStr][cityRaw] !== undefined) {
+        monthlyFlow[monthStr][cityRaw]++;
+      }
+      monthlyFlow[monthStr].total = (monthlyFlow[monthStr].total || 0) + 1;
+    }
+
+    if (dateStr && cityRaw) {
+      if (!dailyFlow[dateStr]) {
+        dailyFlow[dateStr] = { bangalore: 0, chennai: 0, pune: 0, mumbai: 0, hyderabad: 0, total: 0 };
+      }
+      if (dailyFlow[dateStr][cityRaw] !== undefined) {
+        dailyFlow[dateStr][cityRaw]++;
+      }
+      dailyFlow[dateStr].total = (dailyFlow[dateStr].total || 0) + 1;
+    }
+
+    cleanLeads.push({
+      i: String(row[colLeadId] || ''),
+      d: dateStr,
+      m: monthStr,
+      c: cityRaw,
+      p: phone,
+      s: String(row[colStatus] || ''),
+      sb: sub,
+      ct: cat,
+      r: reason,
+      sv: String(row[colSvStage] || '').trim(),
+      cp: isCallPatch ? 1 : 0,
+      el: toNum(row[colElapsedTime]),
+      rm: String(row[colRmEmail] || '').trim()
+    });
   }
 
   // Calculate totals across cities
@@ -1155,7 +1211,10 @@ function parseBuildersData(sheet, tz) {
     cities: citiesList,
     funnel_stages: funnelStages,
     rejection_categories: rejectionCategories,
-    granular_rejections: granularList
+    granular_rejections: granularList,
+    monthly_flow: monthlyFlow,
+    daily_flow: dailyFlow,
+    leads: cleanLeads
   };
 }
 
