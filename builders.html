@@ -352,6 +352,7 @@
   </style>
   <!-- Global Data -->
   <script src="js/data.js"></script>
+  <script src="js/builders_data.js"></script>
 </head>
 <body style="background: #f8fafc;">
 
@@ -893,7 +894,7 @@
       ]
     };
 
-    const DATA = (window.RAW_DATA && window.RAW_DATA.builders) ? window.RAW_DATA.builders : DEFAULT_DATA;
+    const DATA = window.BUILDERS_DATA || (window.RAW_DATA && window.RAW_DATA.builders) || DEFAULT_DATA;
     const ALL_LEADS = DATA.leads || [];
 
     // Filter states

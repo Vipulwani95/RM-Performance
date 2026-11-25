@@ -1463,6 +1463,62 @@ function getGitHubToken() {
 }
 
 /**
+ * Fetches a GitHub file's SHA reliably via its parent directory listing
+ * (avoids the 1 MB blob limit on GET /contents/{file}).
+ */
+function getGitHubFileSha(repo, branch, filePath, headers) {
+  var parts = filePath.split('/');
+  var fileName = parts.pop();
+  var dirPath = parts.join('/');
+  var dirUrl = 'https://api.github.com/repos/' + repo + '/contents/' + dirPath + '?ref=' + branch;
+
+  try {
+    var resp = UrlFetchApp.fetch(dirUrl, {
+      method: 'get',
+      headers: headers,
+      muteHttpExceptions: true
+    });
+    if (resp.getResponseCode() === 200) {
+      var entries = JSON.parse(resp.getContentText());
+      if (Array.isArray(entries)) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].name === fileName) {
+            return entries[i].sha;
+          }
+        }
+      }
+    }
+  } catch (e) {
+    Logger.log('Directory SHA lookup failed for ' + filePath + ': ' + e.message);
+  }
+  return null;
+}
+
+/**
+ * Helper to commit a single JS file to GitHub Contents API
+ */
+function putGitHubFile(repo, branch, filePath, contentStr, commitMsg, headers) {
+  var currentSha = getGitHubFileSha(repo, branch, filePath, headers);
+  var commitPayload = {
+    message: commitMsg,
+    content: Utilities.base64Encode(contentStr, Utilities.Charset.UTF_8),
+    branch: branch
+  };
+  if (currentSha) {
+    commitPayload.sha = currentSha;
+  }
+
+  var putResponse = UrlFetchApp.fetch('https://api.github.com/repos/' + repo + '/contents/' + filePath, {
+    method: 'put',
+    headers: headers,
+    contentType: 'application/json',
+    payload: JSON.stringify(commitPayload),
+    muteHttpExceptions: true
+  });
+  return putResponse;
+}
+
+/**
  * Main Sync Function: Reads Sheet, Formats JSON, Commits to GitHub
  */
 function syncToGitHub() {
@@ -1482,14 +1538,20 @@ function syncToGitHub() {
     Logger.log('📊 Extracting live data from spreadsheet: ' + ss.getName());
     var data = getReportData(ss);
 
-    // Format as valid JS file: window.RAW_DATA = { ... };
-    var jsContent = '// Auto-generated from Google Sheet on ' + new Date().toISOString() + '\n' +
-                    'window.RAW_DATA = ' + JSON.stringify(data, null, 2) + ';\n';
+    // Separate Builders data into js/builders_data.js so js/data.js stays compact (<1 MB)
+    var buildersData = data.builders || null;
+    if (data.hasOwnProperty('builders')) {
+      delete data.builders;
+    }
+
+    var timestamp = new Date().toISOString();
+    var jsContent = '// Auto-generated from Google Sheet on ' + timestamp + '\n' +
+                    'window.RAW_DATA = ' + JSON.stringify(data) + ';\n';
 
     var repo = CONFIG.GITHUB.REPO;
     var branch = CONFIG.GITHUB.BRANCH || 'main';
     var filePath = CONFIG.GITHUB.FILE_PATH || 'js/data.js';
-    var apiUrl = 'https://api.github.com/repos/' + repo + '/contents/' + filePath + '?ref=' + branch;
+    var commitMsg = 'Auto-sync live data from Google Sheet (' + new Date().toLocaleDateString('en-IN') + ')';
 
     var headers = {
       'Authorization': 'token ' + token,
@@ -1497,62 +1559,16 @@ function syncToGitHub() {
       'User-Agent': 'Google-Apps-Script-RM-Performance-Sync'
     };
 
-    // 1. Fetch current file SHA from GitHub
-    var currentSha = null;
-    try {
-      var getResponse = UrlFetchApp.fetch(apiUrl, {
-        method: 'get',
-        headers: headers,
-        muteHttpExceptions: true
-      });
-
-      var statusCode = getResponse.getResponseCode();
-      if (statusCode === 200) {
-        var fileMeta = JSON.parse(getResponse.getContentText());
-        currentSha = fileMeta.sha;
-
-        // If current extraction did not find the Builders tab, preserve existing builders data
-        if (!data.builders && fileMeta.content) {
-          try {
-            var prevDecoded = Utilities.newBlob(Utilities.base64Decode(fileMeta.content)).getDataAsString();
-            var prevMatch = prevDecoded.match(/window\.RAW_DATA\s*=\s*(\{[\s\S]*?\});/);
-            if (prevMatch) {
-              var prevRaw = JSON.parse(prevMatch[1]);
-              if (prevRaw.builders) {
-                data.builders = prevRaw.builders;
-                jsContent = '// Auto-generated from Google Sheet on ' + new Date().toISOString() + '\n' +
-                            'window.RAW_DATA = ' + JSON.stringify(data, null, 2) + ';\n';
-              }
-            }
-          } catch (e) {
-            Logger.log('Could not retain previous builders data: ' + e.message);
-          }
-        }
-      }
-    } catch (err) {
-      Logger.log('Could not get current file SHA (file might be newly created): ' + err.message);
-    }
-
-    // 2. Commit updated content
-    var commitPayload = {
-      message: 'Auto-sync live data from Google Sheet (' + new Date().toLocaleDateString('en-IN') + ')',
-      content: Utilities.base64Encode(jsContent, Utilities.Charset.UTF_8),
-      branch: branch
-    };
-
-    if (currentSha) {
-      commitPayload.sha = currentSha;
-    }
-
-    var putResponse = UrlFetchApp.fetch('https://api.github.com/repos/' + repo + '/contents/' + filePath, {
-      method: 'put',
-      headers: headers,
-      contentType: 'application/json',
-      payload: JSON.stringify(commitPayload),
-      muteHttpExceptions: true
-    });
-
+    var putResponse = putGitHubFile(repo, branch, filePath, jsContent, commitMsg, headers);
     var putCode = putResponse.getResponseCode();
+
+    if (buildersData) {
+      var buildersContent = '// Auto-generated from Google Sheet on ' + timestamp + '\n' +
+                            'window.BUILDERS_DATA = ' + JSON.stringify(buildersData) + ';\n';
+      var bResp = putGitHubFile(repo, branch, 'js/builders_data.js', buildersContent, commitMsg + ' [Builders]', headers);
+      Logger.log('Builders sync status: ' + bResp.getResponseCode());
+    }
+
     if (putCode === 200 || putCode === 201) {
       Logger.log('✅ SUCCESS: Live data synced directly to GitHub repository (' + repo + '@' + branch + ')');
       try {
